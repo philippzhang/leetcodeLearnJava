@@ -1461,19 +1461,6 @@ public class Utilitys {
 	}
 
 
-	private static Comparator<String> getComparator()
-	{
-		Comparator<String> c = new Comparator<String>()
-		{
-			public int compare(String o1, String o2)
-			{
-				return o1.compareTo(o2);
-			}
-		};
-
-		return c;
-	}
-
 	public static void sort(JsonElement e)
 	{
 		if (e.isJsonNull())
@@ -1498,7 +1485,7 @@ public class Utilitys {
 
 		if (e.isJsonObject())
 		{
-			Map<String, JsonElement> tm = new TreeMap<String, JsonElement>(getComparator());
+			Map<String, JsonElement> tm = new TreeMap<String, JsonElement>(String::compareTo);
 			for (Map.Entry<String, JsonElement> en : e.getAsJsonObject().entrySet())
 			{
 				tm.put(en.getKey(), en.getValue());
@@ -1520,105 +1507,11 @@ public class Utilitys {
 	 * @return
 	 */
 	public static String sortJsonObject(String json){
-		Gson g = new GsonBuilder()./*setPrettyPrinting().*/create();
-
 		JsonParser p = new JsonParser();
 		JsonElement e = p.parse(json);
 
 		sort(e);
-		//return g.toJson(e);
 		return e.toString();
 	}
-
-
-	/*public static TreeNode buildTree(String data) {
-		if (data.equals("[]")) {
-			return null;
-		}
-		data = data.substring(1, data.length() - 1);
-		String[] split = data.split(",");
-		int len  = split.length;
-		TreeNode[] treeNodes = new TreeNode[len];
-		//data = data.substring(1, data.length() - 1);
-		for (int i = 0; i < len; i++) {
-			if (!split[i].equals("null")) {
-				treeNodes[i] = new TreeNode(Integer.valueOf(split[i]));
-			}
-		}
-		for (int i = 0; i < len; i++) {
-			if (treeNodes[i] != null) {
-				int leftIndex = i * 2 + 1;
-				if (leftIndex < len) {
-					treeNodes[i].left = treeNodes[leftIndex];
-				}
-				int rightIndex = leftIndex + 1;
-				if (rightIndex < len) {
-					treeNodes[i].right = treeNodes[rightIndex];
-				}
-			}
-		}
-		return treeNodes[0];
-	}
-
-
-	public static String[] intialInput(String s) {
-		String s1=s.substring(1,s.length()-1);
-		String[] partTree=s1.split(",");
-		return partTree;
-	}
-
-	public static TreeNode createNode(TreeNode rot,int index,String[] partTree) {				//传入root给rot后，由于rot会new一下，从而指向别的地方，
-		if(index>= partTree.length ) {						//从而root实际指向位置不变，所以返回值类型为TreeNode
-			return null;
-		}
-		if(partTree[index].equals("null")  ) {					//equals判断，而不是==
-			return null;
-		}
-		rot=new TreeNode(Integer.parseInt(partTree[index]));
-		rot.left=createNode(rot.left,2*index+1,partTree);
-		rot.right=createNode(rot.right,2*index+2,partTree);
-		return rot;
-	}
-
-	public static TreeNode createTree(String s) {
-		String[] partTree=intialInput(s);
-		TreeNode root=createNode(null,0,partTree);
-		return root;
-	}*/
-
-
-	/*public static void print(TreeNode root) {
-		print(root, 0);
-	}
-
-	private static final String space = "      ";
-
-	private static void print(TreeNode node, int deep) {
-		if (node == null) {
-			printSpace(deep);
-			System.out.println("#");
-			return;
-		}
-		print(node.right, deep + 1);
-		printSpace(deep);
-		printNode(node.val);
-		print(node.left, deep + 1);
-	}
-
-	private static void printSpace(int count) {
-		for (int i = 0; i < count; i++) {
-			System.out.printf(space);
-		}
-	}
-
-	private static void printNode(int val) {
-		StringBuilder res = new StringBuilder(val + "<");
-		int spaceNum = space.length() - res.length();
-		for (int i = 0; i < spaceNum; i++) {
-			res.append(" ");
-		}
-		System.out.println(res);
-	}*/
-
 
 }
