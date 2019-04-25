@@ -655,7 +655,7 @@ public class Utilitys {
 	 */
 	public static String format(Object obj) {
 		StringBuffer stringBuffer = new StringBuffer();
-		Utilitys.format(obj, stringBuffer);
+		format(obj, stringBuffer);
 		String testInputResult = stringBuffer.toString();
 		return testInputResult;
 	}
@@ -892,7 +892,7 @@ public class Utilitys {
 	 * @param mainClass
 	 */
 	public static boolean test(Class<? extends CallBack> mainClass) {
-		List<List<String>> testList = Utilitys.readTxtFile(mainClass);
+		List<List<String>> testList = readTxtFile(mainClass);
 		//类方法定义
 		List<String> classList = testList.get(0);
 		//备注
@@ -942,7 +942,7 @@ public class Utilitys {
 				List<String> dataList = testList.get(j);
 				if(dataList!=null&&dataList.size()>0) {
 					System.out.println("第" + jCount + "组数据:");
-					boolean resultFlag = Utilitys.test(mainClass, algorithmClassName, algorithmFuncName, dataList);
+					boolean resultFlag = test(mainClass, algorithmClassName, algorithmFuncName, dataList);
 					if (!resultFlag) {
 						testFlag = false;
 					}
@@ -1183,7 +1183,7 @@ public class Utilitys {
 									int[] array = buildArray(data.toString());
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("[C")) {
-									char[] array = Utilitys.buildArrayChar(data.toString());
+									char[] array = buildArrayChar(data.toString());
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("[[I")) {
 									int[][] matrix = buildMatrix(data.toString());
@@ -1224,7 +1224,7 @@ public class Utilitys {
 	public static List<List<String>> readTxtFile(Class clazz) {
 		String packageName = clazz.getPackage().getName();
 		String path = "/" + packageName.replaceAll("\\.", "/") + "/README.md";
-		String str = Utilitys.readTxtFile(path);
+		String str = readTxtFile(path);
 		String[] strArr = str.split("---\r", -1);
 		List<List<String>> dataList = new ArrayList<>();
 		for (int i = 0; i < strArr.length; i++) {
