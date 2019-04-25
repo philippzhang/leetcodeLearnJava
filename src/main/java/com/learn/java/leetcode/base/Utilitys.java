@@ -53,6 +53,17 @@ public class Utilitys {
 		return results;
 	}
 
+	public static int[] buildArray(List list) {
+		if(list==null||list.size()==0){
+			return null;
+		}
+		int[] results = new int[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = Integer.parseInt(list.get(i).toString());
+		}
+		return results;
+	}
+
 	/**
 	 * 字符串构建字符串数组
 	 * 例如["flower","flow","flight"]
@@ -76,6 +87,17 @@ public class Utilitys {
 		return results;
 	}
 
+	public static String[] buildArrayString(List list) {
+		if(list==null|| list.size()==0){
+			return null;
+		}
+		String[] results = new String[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = chageStr(list.get(i).toString());
+		}
+		return results;
+	}
+
 	/**
 	 * 构建字符数组
 	 *
@@ -94,6 +116,17 @@ public class Utilitys {
 		char[] results = new char[length];
 		for (int i = 0; i < length; i++) {
 			results[i] = chageStr(arr[i]).charAt(0);
+		}
+		return results;
+	}
+
+	public static char[] buildArrayChar(List list) {
+		if(list==null||list.size()==0){
+			return null;
+		}
+		char[] results = new char[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = chageStr(list.get(i).toString()).charAt(0);
 		}
 		return results;
 	}
@@ -313,26 +346,55 @@ public class Utilitys {
 			return new ArrayList<>();
 		}
 		data = data.trim();
+		//去掉最外层的[]
 		data = data.substring(1, data.length() - 1);
 
 		String splitStr;
 		boolean flag = false;
+		String[] arr = null;
 		if (data.indexOf("[") >= 0) {
-			splitStr = "],\\[";
-			data = data.substring(1, data.length() - 1);
+			//splitStr = "],\\[";
+			//data = data.substring(1, data.length() - 1);
 			flag = true;
+			List<String> vList = new ArrayList<>();
+			int count = 0;
+			StringBuffer stringBuffer = new StringBuffer();
+			for(int i = 0;i<data.length();i++){
+				char c = data.charAt(i);
+				stringBuffer.append(c);
+				if(c=='['){
+					count++;
+				}else if(c==']'){
+					count--;
+				}else if(c==','&&count==0){
+					stringBuffer.deleteCharAt(stringBuffer.length()-1);
+					vList.add(stringBuffer.toString());
+					stringBuffer = new StringBuffer();
+				}
+			}
+			vList.add(stringBuffer.toString());
+			arr = new String[vList.size()];
+			for(int i =0;i<vList.size();i++){
+				arr[i] = vList.get(i);
+			}
+
 		} else {
 			splitStr = ",";
+			arr = data.split(splitStr, -1);
 		}
 
 
-		String[] arr = data.split(splitStr, -1);
+
 		int length = arr.length;
 		List list = new ArrayList<>();
 		for (int i = 0; i < length; i++) {
 			String newData = arr[i];
+			flag =false;
+			if (newData.indexOf("[") >= 0) {
+				flag = true ;
+			}
 			if (flag) {
-				list.add(buildList("[" + newData + "]"));
+				list.add(buildList( newData ));
 			} else {
 				if (arr[i] == null || arr[i].trim().length() == 0) {
 					list.add(null);
@@ -1128,10 +1190,62 @@ public class Utilitys {
 						Constructor<?>[] constructors = algorithmClass.getConstructors();
 						for (int j = 0; j < constructors.length; j++) {
 							Constructor c = constructors[j];
+							if (params.size()==0&&c.getParameterTypes().length ==0) {
+								obj =  c.newInstance();
+							}
 							//通过参数个数判断,可能有更好的办法
-							if (c.getParameterTypes().length == params.size()) {
-								obj = params.size() == 0 ? c.newInstance() : c.newInstance(params.toArray());
-								break;
+							else if (params.size()>0&&c.getParameterTypes().length == params.size()) {
+								boolean flag = true;
+								Object[] inputObjArr =  new Object[params.size()];
+								for(int k=0;k<params.size();k++){
+									String parameterName = c.getParameterTypes()[k].getName();
+									Object data = params.get(k);
+
+									if (parameterName.equals("int")&&data instanceof Integer) {
+										inputObjArr[k] = Integer.parseInt(data.toString());
+									} else if (parameterName.equals("long")&&data instanceof Long) {
+										inputObjArr[k] = Long.parseLong(data.toString());
+									} else if (parameterName.equals("double")&&data instanceof Double) {
+										inputObjArr[k] = Double.parseDouble(data.toString());
+									} else if (parameterName.equals("float")&&data instanceof Float) {
+										inputObjArr[k] = Float.parseFloat(data.toString());
+									} else if (parameterName.equals("boolean")&&data instanceof Boolean) {
+										inputObjArr[k] = Boolean.parseBoolean(data.toString());
+									} else if (parameterName.equals("java.lang.Integer")&&data instanceof Integer) {
+										inputObjArr[k] = Integer.valueOf(data.toString());
+									} else if (parameterName.equals("java.lang.Long")&&data instanceof Long) {
+										inputObjArr[k] = Long.valueOf(data.toString());
+									} else if (parameterName.equals("java.lang.Double")&&data instanceof Double) {
+										inputObjArr[k] = Double.valueOf(data.toString());
+									} else if (parameterName.equals("java.lang.Float")&&data instanceof Float) {
+										inputObjArr[k] = Float.valueOf(data.toString());
+									} else if (parameterName.equals("java.lang.Boolean")&&data instanceof Boolean) {
+										inputObjArr[k] = Boolean.valueOf(data.toString());
+									} else if (parameterName.equals("java.lang.String")&&data instanceof String) {
+										inputObjArr[k] = chageStr(data.toString());
+									} else if (parameterName.equals("[I")&&data instanceof List) {
+										int[] array = buildArray((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("[C")&&data instanceof List) {
+										char[] array = buildArrayChar((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("[Ljava.lang.String;")&&data instanceof List) {
+										String[] array = buildArrayString((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("java.util.List")&&data instanceof List) {
+										List list = (List)data;
+										inputObjArr[k] = list;
+									}else{
+										//可能有未处理的类型
+										flag = false;
+										break;
+									}
+
+								}
+								if(flag) {
+									obj = c.newInstance(inputObjArr);
+									break;
+								}
 							}
 
 						}

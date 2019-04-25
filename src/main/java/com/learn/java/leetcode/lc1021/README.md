@@ -123,6 +123,20 @@ After removing outer parentheses of each part, this is "" + "" = "".
 # 测试用例
 ```
 1021. Remove Outermost Parentheses 1021. 删除最外层的括号 Easy
+Solution.removeOuterParentheses
+---
+"(()())(())"
+
+="()()()"
+---
+"(()())(())(()(()))"
+
+="()()()()(())"
+---
+"()()"
+
+=""
+
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-outermost-parentheses/
