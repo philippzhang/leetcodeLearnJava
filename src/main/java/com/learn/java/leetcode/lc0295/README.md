@@ -70,6 +70,17 @@ findMedian() -> 2
 # 测试用例
 ```
 295. Find Median from Data Stream 295. 数据流的中位数 Hard
+Main.funcListTest
+---
+["MedianFinder","addNum","addNum","findMedian","addNum","findMedian"]
+[[],[1],[2],[],[3],[]]
+
+=[null,null,null,1.5,null,2.0]
+---
+["MedianFinder","addNum","findMedian","addNum","findMedian","addNum","findMedian","addNum","findMedian","addNum","findMedian"]
+[[],[-1],[],[-2],[],[-3],[],[-4],[],[-5],[]]
+
+=[null,null,-1.0,null,-1.5,null,-2.0,null,-2.5,null,-3.0]
 ```
 
 [enTitle]: https://leetcode.com/problems/find-median-from-data-stream/
