@@ -9,13 +9,13 @@ public class Solution {
 		for(int i =0;i<nums.length;i++){
 			indexes[i]=i+nums[i];
 		}
-		int max_step = indexes[0];
+		int max_dis = indexes[0];
 		for(int i = 1;i<nums.length;i++){
-			if(i<=max_step&&indexes[i]>max_step){
-				max_step = indexes[i];
+			if(i<=max_dis&&indexes[i]>max_dis){
+				max_dis = indexes[i];
 			}
 		}
-		if(max_step<nums.length-1) {
+		if(max_dis<nums.length-1) {
 			return false;
 		}
 		return true;
