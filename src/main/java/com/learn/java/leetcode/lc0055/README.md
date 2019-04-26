@@ -60,6 +60,19 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum
 # 测试用例
 ```
 55. Jump Game 55. 跳跃游戏 Medium
+Solution.canJump
+---
+[2,3,1,1,4]
+
+=true
+---
+[3,2,1,0,4]
+
+=false
+---
+[1,2,3]
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/jump-game/
