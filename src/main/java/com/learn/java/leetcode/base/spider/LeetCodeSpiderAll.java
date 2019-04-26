@@ -58,10 +58,12 @@ public class LeetCodeSpiderAll implements Spider {
 				Elements enElementsTd = element.children();
 				String id = enElementsTd.get(1).text();
 				Element enElementsTdHref = enElementsTd.get(2).children().first().children().first();
+				String href = enElementsTdHref.attr("href");
+				String title = href.substring("/problems/".length());
 				String cnHref = "https://leetcode-cn.com" + enElementsTdHref.attr("href") + "/";
 				String enHref = "https://leetcode.com" + enElementsTdHref.attr("href") + "/";
 
-				stringBuffer.append(id + " " + enHref + " " + cnHref + " " + enElementsTdHref.text() + "\n\n");
+				stringBuffer.append(id + " " + enHref + " " + cnHref + " " +title+ " \""+ enElementsTdHref.text() + "\"\n\n");
 			}
 
 			stringBuffer.append("# 共"+length+"题\n\n");

@@ -1,10 +1,12 @@
 package com.learn.java.leetcode.base.spider;
 
+import com.learn.java.leetcode.base.utils.InitializationConfig;
 import okhttp3.*;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 import static java.lang.System.out;
@@ -13,20 +15,24 @@ public class LoginCn {
 	public static final String boundary = "----WebKitFormBoundaryhG2vKxp7y2GAwhPX";
 	public static final MediaType MULTIPART = MediaType.parse("multipart/form-data; boundary=" + boundary);
 
-	public static void main(String... args) throws IOException {
-		Scanner scanner = new Scanner(System.in);
+	public static String csrftoken;
+	public static String __cfduid;
+	public static String LEETCODE_SESSION;
+
+	public static boolean main(String... args) throws IOException {
+
 
 
 		String url = "https://leetcode-cn.com/accounts/login/";
-		String usrname = "XXXXX";
-		String passwd = "XXXXX";
+		String usrname = InitializationConfig.readProperties().getProperty("cn_username");
+		String passwd = InitializationConfig.readProperties().getProperty("cn_password");
 
 		Connection.Response response1 = Jsoup.connect(url)
 				.method(Connection.Method.GET)
 				.execute();
 
-		String csrftoken = response1.cookie("csrftoken");
-		String __cfduid = response1.cookie("__cfduid");
+		 csrftoken = response1.cookie("csrftoken");
+		 __cfduid = response1.cookie("__cfduid");
 		out.println("csrftoken = " + csrftoken);
 		out.println("__cfduid = " + __cfduid);
 
@@ -61,8 +67,32 @@ public class LoginCn {
 				.build();
 
 		Response response = client.newCall(request).execute();
+
+		Headers headers = response.headers();
+		List<String> cookies = headers.values("Set-Cookie");
+		for (String cookie : cookies){
+			int found = cookie.indexOf("LEETCODE_SESSION");
+			if (found > -1){
+				int last = cookie.indexOf(";");
+				LEETCODE_SESSION = cookie.substring("LEETCODE_SESSION".length() + 1, last);
+
+			}
+		}
 		out.println(response.message());
 		out.println(response.headers());
 		out.println(response.body().string());
+
+
+		boolean success;
+		if (LEETCODE_SESSION != null){
+			success = true;
+			out.println("Login Successfully");
+		}else{
+			success = false;
+			out.println("Login Unsuccessfully");
+		}
+		response.close();
+
+		return success;
 	}
 }

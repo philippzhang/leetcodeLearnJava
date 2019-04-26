@@ -23,6 +23,7 @@ public class SpiderUtils {
 			String[] arr = line.split(" ", -1);
 			retList.add(arr[1]);
 			retList.add(arr[2]);
+			retList.add(arr[3]);
 		}
 		return retList;
 	}

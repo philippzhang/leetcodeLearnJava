@@ -1,11 +1,19 @@
 package com.learn.java.leetcode.base.spider;
 
+import okhttp3.Headers;
+import okhttp3.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
+import static java.lang.System.out;
 
 public class LeetCodeSpider  {
 
@@ -155,5 +163,7 @@ public class LeetCodeSpider  {
 		}
 		return stringBuffer.toString();
 	}
+
+
 
 }
