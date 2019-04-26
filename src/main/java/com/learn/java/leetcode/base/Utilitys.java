@@ -159,7 +159,8 @@ public class Utilitys {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		data = data.replaceAll(" ", "").substring(2, data.length() - 2);
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);
 		int row = arr.length;
 		int cow = countString(arr[0], ',') + 1;
@@ -207,7 +208,8 @@ public class Utilitys {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.equals("[]")) {
 			return null;
 		}
-		data = data.replaceAll(" ", "").substring(2, data.length() - 2);
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);
 		int row = arr.length;
 		ListNode[] results = new ListNode[row];

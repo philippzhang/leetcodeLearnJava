@@ -49,6 +49,11 @@ One way is to shoot one arrow for example at x = 6 (bursting the balloons [2,8] 
 # 测试用例
 ```
 452. Minimum Number of Arrows to Burst Balloons 452. 用最少数量的箭引爆气球 Medium
+Solution.findMinArrowShots
+---
+[[10,16],[2,8],[1,6],[7,12]]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
