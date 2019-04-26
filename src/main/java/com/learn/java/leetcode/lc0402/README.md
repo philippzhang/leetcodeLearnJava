@@ -87,6 +87,33 @@ Explanation: Remove all the digits from the number and it is left with nothing w
 # 测试用例
 ```
 402. Remove K Digits 402. 移掉K位数字 Medium
+Solution.removeKdigits
+---
+"1432219"
+3
+
+="1219"
+---
+"10200"
+1
+
+="200"
+---
+"10"
+2
+
+="0"
+---
+"10"
+1
+
+="0"
+---
+"1234567890"
+9
+
+="0"
+
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-k-digits/
