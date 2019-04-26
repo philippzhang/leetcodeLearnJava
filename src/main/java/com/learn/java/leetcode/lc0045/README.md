@@ -50,6 +50,11 @@ You can assume that you can always reach the last index.
 # 测试用例
 ```
 45. Jump Game II 45. 跳跃游戏 II Hard
+Solution.jump
+---
+[2,3,1,1,4]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/jump-game-ii/
