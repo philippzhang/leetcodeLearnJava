@@ -80,6 +80,19 @@ Follow up: Can you do it in O(n) time?
 # 测试用例
 ```
 376. Wiggle Subsequence 376. 摆动序列 Medium
+Solution.wiggleMaxLength
+---
+[1,7,4,9,2,5]
+
+=6
+---
+[1,17,5,10,13,15,10,5,16,8]
+
+=7
+---
+[1,2,3,4,5,6,7,8,9]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/wiggle-subsequence/
