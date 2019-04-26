@@ -79,6 +79,17 @@ You need to output 2.
 # 测试用例
 ```
 455. Assign Cookies 455. 分发饼干 Easy
+Solution.findContentChildren
+---
+[1,2,3]
+[1,1]
+
+=1
+---
+[1,2]
+[1,2,3]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/assign-cookies/
