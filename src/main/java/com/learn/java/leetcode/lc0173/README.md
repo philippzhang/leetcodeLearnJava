@@ -74,6 +74,12 @@ iterator.hasNext(); // 返回 false
 # 测试用例
 ```
 173. Binary Search Tree Iterator 173. 二叉搜索树迭代器 Medium
+Main.funcListTest
+---
+["BSTIterator","next","next","hasNext","next","hasNext","next","hasNext","next","hasNext"]
+[[[7,3,15,null,null,9,20]],[null],[null],[null],[null],[null],[null],[null],[null],[null]]
+
+=[null,3,7,true,9,true,15,true,20,false]
 ```
 
 [enTitle]: https://leetcode.com/problems/binary-search-tree-iterator/

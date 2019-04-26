@@ -139,6 +139,9 @@ public class Utilitys {
 	 * @return
 	 */
 	public static String chageStr(String temp) {
+		if(temp==null||temp.equals("null")){
+			return null;
+		}
 		if (temp.startsWith("\"")) {
 			temp = temp.substring(1);
 		}
@@ -198,6 +201,20 @@ public class Utilitys {
 		return listNode[0];
 	}
 
+	public static ListNode buildListNode(List list) {
+		if(list==null|| list.size()==0){
+			return null;
+		}
+		int len = list.size();
+		ListNode[] listNode = new ListNode[len + 1];
+		listNode[0] = new ListNode(Integer.valueOf(list.get(0).toString()));
+		for (int i = 1; i < len; i++) {
+			listNode[i] = new ListNode(Integer.valueOf(list.get(i).toString()));
+			listNode[i - 1].next = listNode[i];
+		}
+		return listNode[0];
+	}
+
 	/**
 	 * 构建链表数组
 	 *
@@ -215,6 +232,21 @@ public class Utilitys {
 		ListNode[] results = new ListNode[row];
 		for (int i = 0; i < row; i++) {
 			ListNode listNode = buildListNode("[" + arr[i] + "]");
+			results[i] = listNode;
+		}
+
+		return results;
+
+	}
+
+	public static ListNode[] buildListNodeArray(List list) {
+		if(list==null|| list.size()==0){
+			return null;
+		}
+		int row = list.size();
+		ListNode[] results = new ListNode[row];
+		for (int i = 0; i < row; i++) {
+			ListNode listNode = buildListNode((List)list.get(i));
 			results[i] = listNode;
 		}
 
@@ -333,6 +365,30 @@ public class Utilitys {
 		return root;
 	}
 
+	public static TreeNode buildBinaryTree(List list) {
+		if(list==null|| list.size()==0){
+			return null;
+		}
+		TreeNode root = new TreeNode(Integer.parseInt(list.get(0).toString()));
+		Queue<TreeNode> queue = new ArrayDeque<>();
+		queue.offer(root);
+		int i = 1;
+		while (!queue.isEmpty() && i < list.size()) {
+			TreeNode node = queue.poll();
+			if (i < list.size() && (list.get(i)!= null)&& !list.get(i).toString().equals("null")) {
+				node.left = new TreeNode(Integer.parseInt(list.get(i).toString()));
+				queue.offer(node.left);
+			}
+			if (i + 1 < list.size() && list.get(i+1)!= null && !list.get(i+1).toString().equals("null")) {
+				node.right = new TreeNode(Integer.parseInt(list.get(i+1).toString()));
+				queue.offer(node.right);
+			}
+			i += 2;
+		}
+		queue.clear();
+		return root;
+	}
+
 	/**
 	 * 字符串构建List
 	 * 例如[1,2,3]
@@ -401,7 +457,7 @@ public class Utilitys {
 				if (arr[i] == null || arr[i].trim().length() == 0) {
 					list.add(null);
 				} else {
-					if (judgeNumber(data)) {
+					if (judgeNumber(arr[i])) {
 						list.add(Integer.parseInt(arr[i]));
 					} else {
 						list.add(chageStr(arr[i]));
@@ -1235,8 +1291,17 @@ public class Utilitys {
 										String[] array = buildArrayString((List)data);
 										inputObjArr[k] = array;
 									} else if (parameterName.equals("java.util.List")&&data instanceof List) {
-										List list = (List)data;
+										List list = (List) data;
 										inputObjArr[k] = list;
+									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
+										TreeNode treeNode = Utilitys.buildBinaryTree((List) data);
+										inputObjArr[k] = treeNode;
+									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
+											ListNode listNode = Utilitys.buildListNode((List)data);
+											inputObjArr[k] = listNode;
+									} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
+											ListNode[] listNode = Utilitys.buildListNodeArray((List)data);
+											inputObjArr[k] = listNode;
 									}else{
 										//可能有未处理的类型
 										flag = false;
@@ -1310,6 +1375,15 @@ public class Utilitys {
 								} else if (parameterName.equals("java.util.List")) {
 									List list = buildList(data.toString());
 									inputObjArr[j] = list;
+								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
+									TreeNode treeNode = Utilitys.buildBinaryTree((List) data);
+									inputObjArr[j] = treeNode;
+								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
+									ListNode listNode = Utilitys.buildListNode((List)data);
+									inputObjArr[j] = listNode;
+								} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
+									ListNode[] listNode = Utilitys.buildListNodeArray((List) data);
+									inputObjArr[j] = listNode;
 								}
 							}
 							//调用方法

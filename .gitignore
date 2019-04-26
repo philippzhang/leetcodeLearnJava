@@ -35,18 +35,3 @@ jacoco.exec
 target/
 logs/
 *.log
-
-
-
-# Hive
-metastore_db/
-
-# Derby
-derby.log
-
-
-
-
-
-
-paramsConf/*
