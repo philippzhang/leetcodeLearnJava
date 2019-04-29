@@ -165,7 +165,7 @@ public class Utilitys {
 						testFlag = false;
 					}
 					long endTime = System.currentTimeMillis();
-					//测试
+					//格式化打印
 					if (!"void".equals(returnTypeName)) {
 						//打印输出
 						try {
@@ -186,7 +186,7 @@ public class Utilitys {
 								if (StringUtils.isNotBlank(trueResult)) {
 									trueResultOutputList.add(trueResult);
 								}
-							} else if (StringUtil.judgeNumber(trueResult)) {
+							} else if (StringUtil.judgeINumber(trueResult)) {
 								/**
 								 * 验证输入参数
 								 */

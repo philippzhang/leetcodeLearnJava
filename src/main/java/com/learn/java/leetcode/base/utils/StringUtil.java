@@ -7,8 +7,6 @@ import java.util.regex.Pattern;
  */
 public class StringUtil {
 
-	private static Pattern inputPattern = Pattern.compile("^I[0-9]=.+$");
-
 	/**
 	 * 统计字符串中出现的某个字符个数
 	 *
@@ -35,6 +33,10 @@ public class StringUtil {
 	public static boolean judgeNumber(String str) {
 		return str.matches("-?[0-9]+.*[0-9]*");
 
+	}
+
+	public static boolean judgeINumber(String str){
+		return str.matches("^I[0-9]=.+$");
 	}
 
 	/**
