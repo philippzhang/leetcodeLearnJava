@@ -5,6 +5,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.learn.java.leetcode.base.Utilitys;
+import com.learn.java.leetcode.base.utils.Counter;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -87,7 +88,7 @@ class Utils {
 			return null;
 		}
 		Map<String, Integer> map = new HashMap<>();
-		Utilitys.Counter counter = new Utilitys.Counter();
+		Counter counter = new Counter();
 		counter.index = 0;
 		Node cur = head;
 
@@ -102,7 +103,7 @@ class Utils {
 	}
 
 
-	private static JsonObject format(Node cur, Map<String, Integer> map, Utilitys.Counter counter) {
+	private static JsonObject format(Node cur, Map<String, Integer> map, Counter counter) {
 		if (cur == null) {
 			return null;
 		}

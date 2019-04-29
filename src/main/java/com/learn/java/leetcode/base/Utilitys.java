@@ -1,9 +1,14 @@
 package com.learn.java.leetcode.base;
 
 
-import com.google.gson.*;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
+import com.learn.java.leetcode.base.utils.Build;
+import com.learn.java.leetcode.base.utils.Format;
+import com.learn.java.leetcode.base.utils.StringUtil;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
@@ -11,7 +16,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
-import java.util.regex.Pattern;
+
 
 /**
  * Leetcode测试工具类
@@ -20,990 +25,7 @@ import java.util.regex.Pattern;
  */
 public class Utilitys {
 
-	private static Pattern inputPattern = Pattern.compile("^I[0-9]=.+$");
 
-	/**
-	 * 计数器
-	 */
-	public static class Counter {
-		public Integer index;
-	}
-
-
-	/**
-	 * 字符串构建数组
-	 * 例如[1,2,3]
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static int[] buildArray(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
-			return null;
-		}
-		data = data.trim();
-		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
-
-		String[] arr = data.split(",", -1);
-		int length = arr.length;
-		int[] results = new int[length];
-		for (int i = 0; i < length; i++) {
-			results[i] = Integer.parseInt(arr[i]);
-		}
-		return results;
-	}
-
-	public static int[] buildArray(List list) {
-		if(list==null||list.size()==0){
-			return null;
-		}
-		int[] results = new int[list.size()];
-		for (int i = 0; i < list.size(); i++) {
-			results[i] = Integer.parseInt(list.get(i).toString());
-		}
-		return results;
-	}
-
-	/**
-	 * 字符串构建字符串数组
-	 * 例如["flower","flow","flight"]
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static String[] buildArrayString(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
-			return null;
-		}
-		data = data.trim();
-		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
-
-		String[] arr = data.split(",", -1);
-		int length = arr.length;
-		String[] results = new String[length];
-		for (int i = 0; i < length; i++) {
-			results[i] = chageStr(arr[i]);
-		}
-		return results;
-	}
-
-	public static String[] buildArrayString(List list) {
-		if(list==null|| list.size()==0){
-			return null;
-		}
-		String[] results = new String[list.size()];
-		for (int i = 0; i < list.size(); i++) {
-			results[i] = chageStr(list.get(i).toString());
-		}
-		return results;
-	}
-
-	/**
-	 * 构建字符数组
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static char[] buildArrayChar(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
-			return null;
-		}
-		data = data.trim();
-		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
-
-		String[] arr = data.split(",", -1);
-		int length = arr.length;
-		char[] results = new char[length];
-		for (int i = 0; i < length; i++) {
-			results[i] = chageStr(arr[i]).charAt(0);
-		}
-		return results;
-	}
-
-	public static char[] buildArrayChar(List list) {
-		if(list==null||list.size()==0){
-			return null;
-		}
-		char[] results = new char[list.size()];
-		for (int i = 0; i < list.size(); i++) {
-			results[i] = chageStr(list.get(i).toString()).charAt(0);
-		}
-		return results;
-	}
-
-
-	/**
-	 * 处理字符串
-	 *
-	 * @param temp
-	 * @return
-	 */
-	public static String chageStr(String temp) {
-		if(temp==null||temp.equals("null")){
-			return null;
-		}
-		if (temp.startsWith("\"")) {
-			temp = temp.substring(1);
-		}
-		if (temp.endsWith("\"")) {
-			temp = temp.substring(0, temp.length() - 1);
-		}
-		return temp;
-	}
-
-	/**
-	 * 构建二维数组
-	 * 例如[[1,2,3],[4,5,6],[7,8,9]]
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static int[][] buildMatrix(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
-			return null;
-		}
-		data = data.replaceAll(" ", "");
-		data = data.substring(2, data.length() - 2);
-		String[] arr = data.split("],\\[", -1);
-		int row = arr.length;
-		int cow = countString(arr[0], ',') + 1;
-		int[][] results = new int[row][cow];
-		for (int i = 0; i < row; i++) {
-			String[] arr2 = arr[i].split(",", -1);
-			for (int j = 0; j < cow; j++) {
-				results[i][j] = Integer.valueOf(arr2[j]);
-			}
-		}
-
-		return results;
-	}
-
-	/**
-	 * 构建链表
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static ListNode buildListNode(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.equals("[]")) {
-			return null;
-		}
-		data = data.replaceAll(" ", "");
-		data = data.substring(1, data.length() - 1);
-		String[] split = data.split(",", -1);
-		int len = split.length;
-		ListNode[] listNode = new ListNode[len + 1];
-		listNode[0] = new ListNode(Integer.valueOf(split[0]));
-		for (int i = 1; i < len; i++) {
-			listNode[i] = new ListNode(Integer.valueOf(split[i]));
-			listNode[i - 1].next = listNode[i];
-		}
-		return listNode[0];
-	}
-
-	public static ListNode buildListNode(List list) {
-		if(list==null|| list.size()==0){
-			return null;
-		}
-		int len = list.size();
-		ListNode[] listNode = new ListNode[len + 1];
-		listNode[0] = new ListNode(Integer.valueOf(list.get(0).toString()));
-		for (int i = 1; i < len; i++) {
-			listNode[i] = new ListNode(Integer.valueOf(list.get(i).toString()));
-			listNode[i - 1].next = listNode[i];
-		}
-		return listNode[0];
-	}
-
-	/**
-	 * 构建链表数组
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static ListNode[] buildListNodeArray(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.equals("[]")) {
-			return null;
-		}
-		data = data.replaceAll(" ", "");
-		data = data.substring(2, data.length() - 2);
-		String[] arr = data.split("],\\[", -1);
-		int row = arr.length;
-		ListNode[] results = new ListNode[row];
-		for (int i = 0; i < row; i++) {
-			ListNode listNode = buildListNode("[" + arr[i] + "]");
-			results[i] = listNode;
-		}
-
-		return results;
-
-	}
-
-	public static ListNode[] buildListNodeArray(List list) {
-		if(list==null|| list.size()==0){
-			return null;
-		}
-		int row = list.size();
-		ListNode[] results = new ListNode[row];
-		for (int i = 0; i < row; i++) {
-			ListNode listNode = buildListNode((List)list.get(i));
-			results[i] = listNode;
-		}
-
-		return results;
-
-	}
-
-	/**
-	 * 构建带环形链表，pos是环的位置
-	 *
-	 * @param listNode
-	 * @param pos
-	 */
-	public static void buildCycleListNode(ListNode listNode, int pos) {
-		if (pos >= 0) {
-			ListNode cur = listNode;
-			if (cur == null) {
-				return;
-			}
-			int i = 0;
-			ListNode cycleNode = null;
-			while (cur.next != null) {
-				if (i == pos) {
-					cycleNode = cur;
-				}
-				cur = cur.next;
-				i++;
-			}
-			cur.next = cycleNode;
-		}
-	}
-
-	/**
-	 * 构造相交链表
-	 *
-	 * @param listA
-	 * @param listB
-	 * @param skipA
-	 * @param skipB
-	 */
-	public static ListNode[] buildIntersectListNode(ListNode listA, ListNode listB, int skipA, int skipB) {
-		ListNode[] listNodesArr = new ListNode[2];
-		listNodesArr[0] = listA;
-		listNodesArr[1] = listB;
-		if (listA == null || listB == null || skipA < 0 || skipB < 0) {
-			return listNodesArr;
-		}
-		int a = 1;
-		ListNode p1 = listA;
-		while (skipA > 0 && p1 != null) {
-			if (a == skipA) {
-				break;
-			}
-			p1 = p1.next;
-			a++;
-		}
-
-		int b = 1;
-		ListNode p2 = listB;
-		while (skipB > 0 && p2 != null) {
-			if (b == skipB) {
-				break;
-			}
-			p2 = p2.next;
-			b++;
-		}
-		if (p1 != null && p2 != null) {
-			if (skipA == 0 && skipA == 0) {
-				listNodesArr[1] = listA;
-			} else if (skipA == 0) {
-				p2.next = p1;
-			} else if (skipB == 0) {
-				p1.next = p2;
-			} else {
-				p1.next = null;
-				p1.next = p2.next;
-			}
-		}
-
-		return listNodesArr;
-
-	}
-
-	/**
-	 * 构建树
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static TreeNode buildBinaryTree(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.equals("[]")) {
-			return null;
-		}
-
-		data = data.replaceAll(" ", "");
-		String s1 = data.substring(1, data.length() - 1);
-		String[] partTree = s1.split(",", -1);
-
-		TreeNode root = new TreeNode(Integer.parseInt(partTree[0]));
-		Queue<TreeNode> queue = new ArrayDeque<>();
-		queue.offer(root);
-		int i = 1;
-		while (!queue.isEmpty() && i < partTree.length) {
-			TreeNode node = queue.poll();
-			if (i < partTree.length && partTree[i] != null && !partTree[i].equals("null")) {
-				node.left = new TreeNode(Integer.parseInt(partTree[i]));
-				queue.offer(node.left);
-			}
-			if (i + 1 < partTree.length && partTree[i + 1] != null && !partTree[i + 1].equals("null")) {
-				node.right = new TreeNode(Integer.parseInt(partTree[i + 1]));
-				queue.offer(node.right);
-			}
-			i += 2;
-		}
-		queue.clear();
-		return root;
-	}
-
-	public static TreeNode buildBinaryTree(List list) {
-		if(list==null|| list.size()==0){
-			return null;
-		}
-		TreeNode root = new TreeNode(Integer.parseInt(list.get(0).toString()));
-		Queue<TreeNode> queue = new ArrayDeque<>();
-		queue.offer(root);
-		int i = 1;
-		while (!queue.isEmpty() && i < list.size()) {
-			TreeNode node = queue.poll();
-			if (i < list.size() && (list.get(i)!= null)&& !list.get(i).toString().equals("null")) {
-				node.left = new TreeNode(Integer.parseInt(list.get(i).toString()));
-				queue.offer(node.left);
-			}
-			if (i + 1 < list.size() && list.get(i+1)!= null && !list.get(i+1).toString().equals("null")) {
-				node.right = new TreeNode(Integer.parseInt(list.get(i+1).toString()));
-				queue.offer(node.right);
-			}
-			i += 2;
-		}
-		queue.clear();
-		return root;
-	}
-
-	/**
-	 * 字符串构建List
-	 * 例如[1,2,3]
-	 *
-	 * @param data
-	 * @return
-	 */
-	public static List buildList(String data) {
-		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
-			return null;
-		}
-		if (data.equals("[]")) {
-			return new ArrayList<>();
-		}
-		data = data.trim();
-		//去掉最外层的[]
-		data = data.substring(1, data.length() - 1);
-
-		String splitStr;
-		boolean flag = false;
-		String[] arr = null;
-		if (data.indexOf("[") >= 0) {
-			//splitStr = "],\\[";
-			//data = data.substring(1, data.length() - 1);
-			flag = true;
-			List<String> vList = new ArrayList<>();
-			int count = 0;
-			StringBuffer stringBuffer = new StringBuffer();
-			for(int i = 0;i<data.length();i++){
-				char c = data.charAt(i);
-				stringBuffer.append(c);
-				if(c=='['){
-					count++;
-				}else if(c==']'){
-					count--;
-				}else if(c==','&&count==0){
-					stringBuffer.deleteCharAt(stringBuffer.length()-1);
-					vList.add(stringBuffer.toString());
-					stringBuffer = new StringBuffer();
-				}
-			}
-			vList.add(stringBuffer.toString());
-			arr = new String[vList.size()];
-			for(int i =0;i<vList.size();i++){
-				arr[i] = vList.get(i);
-			}
-
-		} else {
-			splitStr = ",";
-			arr = data.split(splitStr, -1);
-		}
-
-
-
-		int length = arr.length;
-		List list = new ArrayList<>();
-		for (int i = 0; i < length; i++) {
-			String newData = arr[i];
-			flag =false;
-			if (newData.indexOf("[") >= 0) {
-				flag = true ;
-			}
-			if (flag) {
-				list.add(buildList( newData ));
-			} else {
-				if (arr[i] == null || arr[i].trim().length() == 0) {
-					list.add(null);
-				} else {
-					if (judgeNumber(arr[i])) {
-						list.add(Integer.parseInt(arr[i]));
-					} else {
-						list.add(chageStr(arr[i]));
-					}
-				}
-			}
-		}
-		return list;
-	}
-
-
-	/**
-	 * 统计字符串中出现的某个字符个数
-	 *
-	 * @param str
-	 * @param s
-	 * @return
-	 */
-	private static int countString(String str, char s) {
-		int count = 0;
-		while (str.indexOf(s) != -1) {
-			str = str.substring(str.indexOf(s) + 1, str.length());
-			count++;
-		}
-		return count;
-	}
-
-	/**
-	 * 打印数组
-	 *
-	 * @param array
-	 */
-	public static void print(int[] array) {
-		if (array == null) {
-			return;
-		}
-		System.out.print("[");
-		for (int i = 0; i < array.length; i++) {
-			System.out.print(array[i]);
-			if (i < array.length - 1) {
-				System.out.print(',');
-			}
-		}
-		System.out.print("]");
-		System.out.println();
-	}
-
-
-	public static void print(char[] array) {
-		if (array == null) {
-			return;
-		}
-		System.out.print("[");
-		for (int i = 0; i < array.length; i++) {
-			System.out.print("\"" + array[i] + "\"");
-			if (i < array.length - 1) {
-				System.out.print(',');
-			}
-		}
-		System.out.print("]");
-		System.out.println();
-	}
-
-	public static void print(ListNode[] array) {
-		if (array == null) {
-			return;
-		}
-		System.out.println("[");
-		for (int i = 0; i < array.length; i++) {
-
-			if (i < array.length - 1) {
-				print(array[i], ",");
-			} else {
-				print(array[i]);
-			}
-		}
-		System.out.print("]");
-		System.out.println();
-	}
-
-	public static void print(Object[] array) {
-		if (array == null) {
-			return;
-		}
-		System.out.print("[");
-		for (int i = 0; i < array.length; i++) {
-
-			Object dataObj = array[i];
-			if (dataObj == null) {
-				System.out.print("null");
-			} else {
-				String data = dataObj.toString();
-				if (judgeNumber(data)) {
-					System.out.print(data);
-				} else {
-					System.out.print("\"" + chageStr(data) + "\"");
-				}
-			}
-			if (i < array.length - 1) {
-				System.out.print(',');
-			}
-		}
-		System.out.print("]");
-		System.out.println();
-	}
-
-	/**
-	 * 打印矩阵
-	 *
-	 * @param matrix
-	 */
-	public static void print(int[][] matrix) {
-		if (matrix == null) {
-			return;
-		}
-		int row = matrix.length;
-		int cow = matrix[0].length;
-		System.out.print("[");
-		for (int i = 0; i < row; i++) {
-			if (i == 0) {
-				System.out.println();
-			}
-			System.out.print("[");
-			for (int j = 0; j < cow; j++) {
-				System.out.print(matrix[i][j]);
-				if (j < cow - 1) {
-					System.out.print(',');
-				}
-			}
-			System.out.print("]");
-			if (i < row - 1) {
-				System.out.print(',');
-			}
-			System.out.println();
-		}
-		System.out.print("]");
-		System.out.println();
-	}
-
-	/**
-	 * 二叉树的高度
-	 *
-	 * @param root
-	 * @return
-	 */
-	private static int getDepth(TreeNode root) {
-		if (root != null) {
-			int lDepth = getDepth(root.left);
-			int rDepth = getDepth(root.right);
-			return (lDepth > rDepth ? lDepth : rDepth) + 1;
-		} else {
-			return 0;
-		}
-	}
-
-	/**
-	 * 竖向打印二叉树
-	 *
-	 * @param root 二叉树根节点
-	 */
-	public static void print(TreeNode root) {
-		if (root == null) {
-			return;
-		}
-		Stack<TreeNode> globalStack = new Stack();
-		globalStack.push(root);
-		int depth = getDepth(root);
-		int nBlank = (int) Math.pow(2, depth + 1);
-		int ndot = nBlank * 2;
-		boolean isRowEmpty = false;
-		for (int i = 0; i < ndot; i++) {
-			System.out.print('.');
-		}
-		System.out.println();
-		while (isRowEmpty == false) {
-			Stack<TreeNode> localStack = new Stack();
-			isRowEmpty = true;
-			for (int j = 0; j < nBlank; j++) {
-				System.out.print(' ');
-			}
-			while (!globalStack.isEmpty()) {
-				//里面的while循环用于查看全局的栈是否为空
-				TreeNode temp = globalStack.pop();
-				if (temp != null) {
-					System.out.print(temp.val);
-					System.out.print(' ');
-					localStack.push(temp.left);
-					localStack.push(temp.right);
-					//如果当前的节点下面还有子节点，则必须要进行下一层的循环
-					if (temp.left != null || temp.right != null) {
-						isRowEmpty = false;
-					}
-				} else {
-					//如果全局的栈则不为空
-					System.out.print("# ");
-					localStack.push(null);
-					localStack.push(null);
-				}
-				//打印一些空格
-				for (int j = 0; j < nBlank * 2 - 2; j++) {
-					System.out.print(' ');
-				}
-			}//while end
-			System.out.println();
-			nBlank /= 2;
-			//这个while循环用来判断，local栈是否为空,不为空的话，则取出来放入全局栈中
-			while (!localStack.isEmpty()) {
-				globalStack.push(localStack.pop());
-			}
-		}//大while循环结束之后，输出换行
-		for (int i = 0; i < ndot; i++) {
-			System.out.print('.');
-		}
-		System.out.println();
-	}
-
-
-	/**
-	 * 打印
-	 *
-	 * @param obj
-	 */
-	public static void print(Object obj) {
-		print(obj, null);
-	}
-
-	public static void print(Object obj, String ext) {
-		if (obj == null) {
-			System.out.println("null");
-			return;
-		}
-		if (obj instanceof Integer || obj instanceof String || obj instanceof Long || obj instanceof Double || obj instanceof Float || obj instanceof Boolean) {
-			System.out.println(obj);
-		} else if (obj instanceof List) {
-			List results = (List) obj;
-			System.out.print("[");
-			for (int i = 0; i < results.size(); i++) {
-				Object item = results.get(i);
-				if (item == null) {
-					System.out.print("null");
-					if (i < results.size() - 1) {
-						System.out.print(',');
-					}
-				}
-				if (item instanceof Integer || item instanceof String || item instanceof Long || item instanceof Double || item instanceof Float || item instanceof Boolean) {
-					System.out.print(item);
-					if (i < results.size() - 1) {
-						System.out.print(',');
-					}
-				} else if (item instanceof List) {
-					if (i == 0) {
-						System.out.println();
-					}
-
-					if (i < results.size() - 1) {
-						print(item, ",");
-					} else {
-						print(item, null);
-					}
-				}
-			}
-			System.out.print("]");
-			if (ext != null) {
-				System.out.print(ext);
-			}
-			System.out.println();
-		} else if (obj instanceof ListNode) {
-			ListNode listNode = (ListNode) obj;
-			StringBuilder str = new StringBuilder("[" + String.valueOf(listNode.val));
-			ListNode p = listNode.next;
-			while (p != null) {
-				str.append(",").append(String.valueOf(p.val));
-				p = p.next;
-			}
-			System.out.print(str.append("]"));
-			if (ext != null) {
-				System.out.print(ext);
-			}
-			System.out.println();
-		} else if (obj.getClass().isArray()) {
-			String className = obj.getClass().getName();
-			if (className.equals("[I")) {
-				print((int[]) obj);
-			} else if (className.equals("[[I")) {
-				print((int[][]) obj);
-			} else if (className.equals("[C")) {
-				print((char[]) obj);
-			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				print((ListNode[]) obj);
-			} else {
-				print((Object[]) obj);
-			}
-		} else if (obj instanceof TreeNode) {
-			print((TreeNode) obj);
-		}
-
-	}
-
-	/**
-	 * 判读字符串是否数字
-	 *
-	 * @param str
-	 * @return
-	 */
-	private static boolean judgeNumber(String str) {
-		return str.matches("-?[0-9]+.*[0-9]*");
-
-	}
-
-	/**
-	 * 格式化对象为字符串
-	 *
-	 * @param obj
-	 * @return
-	 */
-	public static String format(Object obj) {
-		StringBuffer stringBuffer = new StringBuffer();
-		format(obj, stringBuffer);
-		String testInputResult = stringBuffer.toString();
-		return testInputResult;
-	}
-
-	private static void format(Object obj, StringBuffer stringBuffer) {
-		if (obj == null) {
-			stringBuffer.append("null");
-			return;
-		}
-		if (obj instanceof Integer || obj instanceof Long || obj instanceof Double || obj instanceof Float || obj instanceof Boolean) {
-			stringBuffer.append(obj.toString());
-		} else if (obj instanceof String) {
-			stringBuffer.append("\"" + chageStr(obj.toString()) + "\"");
-		} else if (obj instanceof List) {
-
-			List results = (List) obj;
-			stringBuffer.append("[");
-			for (int i = 0; i < results.size(); i++) {
-				Object item = results.get(i);
-				if (item == null) {
-					stringBuffer.append("null");
-				}
-				if (item instanceof Integer || item instanceof String || item instanceof Long || item instanceof Double || item instanceof Float || item instanceof Boolean) {
-					stringBuffer.append(item);
-				} else if (item instanceof List) {
-					format(item, stringBuffer);
-				}
-				if (i < results.size() - 1) {
-					stringBuffer.append(',');
-				}
-			}
-			stringBuffer.append("]");
-		} else if (obj instanceof ListNode) {
-			ListNode listNode = (ListNode) obj;
-			stringBuffer.append("[" + String.valueOf(listNode.val));
-			ListNode p = listNode.next;
-			while (p != null) {
-				stringBuffer.append(",").append(String.valueOf(p.val));
-				p = p.next;
-			}
-			stringBuffer.append("]");
-		} else if (obj.getClass().isArray()) {
-			String className = obj.getClass().getName();
-			if (className.equals("[I")) {
-				format((int[]) obj, stringBuffer);
-			} else if (className.equals("[[I")) {
-				format((int[][]) obj, stringBuffer);
-			} else if (className.equals("[C")) {
-				format((char[]) obj, stringBuffer);
-			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				format((ListNode[]) obj, stringBuffer);
-			} else {
-				format((Object[]) obj, stringBuffer);
-			}
-		} else if (obj instanceof TreeNode) {
-			format((TreeNode) obj, stringBuffer);
-		}
-	}
-
-
-	private static void format(int[] array, StringBuffer stringBuffer) {
-		if (array == null) {
-			stringBuffer.append("null");
-		}
-		stringBuffer.append("[");
-		for (int i = 0; i < array.length; i++) {
-			Object dataObj = array[i];
-			if (dataObj == null) {
-				stringBuffer.append("null");
-			} else {
-				String data = dataObj.toString();
-				stringBuffer.append(data);
-			}
-			if (i < array.length - 1) {
-				stringBuffer.append(',');
-			}
-		}
-		stringBuffer.append("]");
-	}
-
-
-	private static void format(int[][] matrix, StringBuffer stringBuffer) {
-		if (matrix == null) {
-			return;
-		}
-		int row = matrix.length;
-		int cow = matrix[0].length;
-		stringBuffer.append("[");
-		for (int i = 0; i < row; i++) {
-			stringBuffer.append("[");
-			for (int j = 0; j < cow; j++) {
-				stringBuffer.append(matrix[i][j]);
-				if (j < cow - 1) {
-					stringBuffer.append(',');
-				}
-			}
-			stringBuffer.append("]");
-			if (i < row - 1) {
-				stringBuffer.append(',');
-			}
-		}
-		stringBuffer.append("]");
-	}
-
-	private static void format(char[] array, StringBuffer stringBuffer) {
-		if (array == null) {
-			stringBuffer.append("null");
-		}
-		stringBuffer.append("[");
-		for (int i = 0; i < array.length; i++) {
-			Object dataObj = array[i];
-			if (dataObj == null) {
-				stringBuffer.append("null");
-			} else {
-				String data = dataObj.toString();
-				stringBuffer.append("\"").append(data).append("\"");
-			}
-			if (i < array.length - 1) {
-				stringBuffer.append(',');
-			}
-		}
-		stringBuffer.append("]");
-	}
-
-	private static void format(ListNode[] array, StringBuffer stringBuffer) {
-		if (array == null) {
-			stringBuffer.append("[]");
-		}
-		stringBuffer.append("[");
-		for (int i = 0; i < array.length; i++) {
-			ListNode listNode = array[i];
-			if (listNode == null) {
-				stringBuffer.append("[]");
-			} else {
-				format(listNode, stringBuffer);
-			}
-			if (i < array.length - 1) {
-				stringBuffer.append(',');
-			}
-		}
-		stringBuffer.append("]");
-	}
-
-	private static void format(Object[] array, StringBuffer stringBuffer) {
-		if (array == null) {
-			stringBuffer.append("null");
-		}
-		stringBuffer.append("[");
-		for (int i = 0; i < array.length; i++) {
-			Object dataObj = array[i];
-			if (dataObj == null) {
-				stringBuffer.append("null");
-			} else {
-				String data = dataObj.toString();
-
-				if (judgeNumber(data)) {
-					stringBuffer.append(data);
-				} else {
-					stringBuffer.append("\"").append(chageStr(data)).append("\"");
-				}
-
-			}
-			if (i < array.length - 1) {
-				stringBuffer.append(',');
-			}
-		}
-		stringBuffer.append("]");
-	}
-
-
-	private static void format(TreeNode treeNode, StringBuffer stringBuffer) {
-		if (treeNode == null) {
-			stringBuffer.append("null");
-		}
-		stringBuffer.append("[");
-		stringBuffer.append(levelOrderFormat(treeNode));
-		stringBuffer.append("]");
-
-	}
-
-
-	private static String levelOrderFormat(TreeNode root) {
-		TreeNode current = root;
-		StringBuffer stringBuffer = new StringBuffer();
-		if (current != null) {
-			Queue<TreeNode> queue = new LinkedList();
-			Stack<TreeNode> stack = new Stack<>();
-			queue.offer(current);
-			while (!queue.isEmpty()) {
-				current = queue.poll();
-				if (current != null) {
-					stack.push(current);
-					//stringBuffer.append(current.val).append(',');
-					if (current.left != null) {
-						queue.offer(current.left);
-					} else {
-						queue.offer(null);
-					}
-					if (current.right != null) {
-						queue.offer(current.right);
-					} else {
-						queue.offer(null);
-					}
-				} else {
-					//stringBuffer.append("null").append(',');
-					stack.push(null);
-				}
-			}
-			while (!stack.isEmpty()) {
-				if (stack.peek() == null) {
-					stack.pop();
-				} else {
-					break;
-				}
-			}
-
-
-			while (!stack.isEmpty()) {
-				TreeNode treeNode = stack.pop();
-				String item = treeNode != null ? (treeNode.val + ",") : "null,";
-				stringBuffer.insert(0, item);
-			}
-			if (stringBuffer.length() > 0) {
-				stringBuffer.deleteCharAt(stringBuffer.length() - 1);
-			}
-		}
-		return stringBuffer.toString();
-	}
 
 
 	/**
@@ -1043,7 +65,9 @@ public class Utilitys {
 			}
 			String[] funcArr = funcStr.split("\\.");
 			if (funcArr.length < 2) {
-				throw new RuntimeException("方法参数定义错误,应该是: className.funcName");
+				//throw new RuntimeException("方法参数定义错误,应该是: className.funcName");
+				System.out.println("方法参数定义错误,应该是: className.funcName");
+				return false;
 			}
 			String algorithmClassName = funcArr[0];
 			String algorithmFuncName = funcArr[1].trim();
@@ -1162,7 +186,7 @@ public class Utilitys {
 								if (StringUtils.isNotBlank(trueResult)) {
 									trueResultOutputList.add(trueResult);
 								}
-							} else if (inputPattern.matcher(trueResult).matches()) {
+							} else if (StringUtil.judgeNumber(trueResult)) {
 								/**
 								 * 验证输入参数
 								 */
@@ -1280,27 +304,27 @@ public class Utilitys {
 									} else if (parameterName.equals("java.lang.Boolean")&&data instanceof Boolean) {
 										inputObjArr[k] = Boolean.valueOf(data.toString());
 									} else if (parameterName.equals("java.lang.String")&&data instanceof String) {
-										inputObjArr[k] = chageStr(data.toString());
+										inputObjArr[k] = StringUtil.chageStr(data.toString());
 									} else if (parameterName.equals("[I")&&data instanceof List) {
-										int[] array = buildArray((List)data);
+										int[] array = Build.buildArray((List)data);
 										inputObjArr[k] = array;
 									} else if (parameterName.equals("[C")&&data instanceof List) {
-										char[] array = buildArrayChar((List)data);
+										char[] array = Build.buildArrayChar((List)data);
 										inputObjArr[k] = array;
 									} else if (parameterName.equals("[Ljava.lang.String;")&&data instanceof List) {
-										String[] array = buildArrayString((List)data);
+										String[] array = Build.buildArrayString((List)data);
 										inputObjArr[k] = array;
 									} else if (parameterName.equals("java.util.List")&&data instanceof List) {
 										List list = (List) data;
 										inputObjArr[k] = list;
 									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
-										TreeNode treeNode = Utilitys.buildBinaryTree((List) data);
+										TreeNode treeNode = Build.buildBinaryTree((List) data);
 										inputObjArr[k] = treeNode;
 									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
-											ListNode listNode = Utilitys.buildListNode((List)data);
+											ListNode listNode = Build.buildListNode((List)data);
 											inputObjArr[k] = listNode;
 									} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
-											ListNode[] listNode = Utilitys.buildListNodeArray((List)data);
+											ListNode[] listNode = Build.buildListNodeArray((List)data);
 											inputObjArr[k] = listNode;
 									}else{
 										//可能有未处理的类型
@@ -1359,30 +383,30 @@ public class Utilitys {
 								} else if (parameterName.equals("java.lang.Boolean")) {
 									inputObjArr[j] = Boolean.valueOf(data.toString());
 								} else if (parameterName.equals("java.lang.String")) {
-									inputObjArr[j] = chageStr(data.toString());
+									inputObjArr[j] = StringUtil.chageStr(data.toString());
 								} else if (parameterName.equals("[I")) {
-									int[] array = buildArray(data.toString());
+									int[] array = Build.buildArray(data.toString());
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("[C")) {
-									char[] array = buildArrayChar(data.toString());
+									char[] array = Build.buildArrayChar(data.toString());
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("[[I")) {
-									int[][] matrix = buildMatrix(data.toString());
+									int[][] matrix = Build.buildMatrix(data.toString());
 									inputObjArr[j] = matrix;
 								} else if (parameterName.equals("[Ljava.lang.String;")) {
-									String[] array = buildArrayString(data.toString());
+									String[] array = Build.buildArrayString(data.toString());
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("java.util.List")) {
-									List list = buildList(data.toString());
+									List list = Build.buildList(data.toString());
 									inputObjArr[j] = list;
 								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
-									TreeNode treeNode = Utilitys.buildBinaryTree((List) data);
+									TreeNode treeNode = Build.buildBinaryTree((List) data);
 									inputObjArr[j] = treeNode;
 								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
-									ListNode listNode = Utilitys.buildListNode((List)data);
+									ListNode listNode = Build.buildListNode((List)data);
 									inputObjArr[j] = listNode;
 								} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
-									ListNode[] listNode = Utilitys.buildListNodeArray((List) data);
+									ListNode[] listNode = Build.buildListNodeArray((List) data);
 									inputObjArr[j] = listNode;
 								}
 							}
@@ -1411,7 +435,7 @@ public class Utilitys {
 	 * @param clazz
 	 * @return
 	 */
-	public static List<List<String>> readTxtFile(Class clazz) {
+	private static List<List<String>> readTxtFile(Class clazz) {
 		String packageName = clazz.getPackage().getName();
 		String path = "/" + packageName.replaceAll("\\.", "/") + "/README.md";
 		String str = readTxtFile(path);
@@ -1433,7 +457,7 @@ public class Utilitys {
 	}
 
 
-	public static String readTxtFile(String path) {
+	private static String readTxtFile(String path) {
 		StringBuilder lastJson = new StringBuilder();
 		BufferedReader reader = null;
 		try {
@@ -1451,7 +475,7 @@ public class Utilitys {
 				if (flag && tempString.equals("```")) {
 					i++;
 				} else {
-					if (i == 1) {
+					if (i == 1&&tempString.length() > 0 && !tempString.startsWith("#")) {
 						lastJson.append(tempString).append("\r");
 					}
 				}
@@ -1484,12 +508,9 @@ public class Utilitys {
 	 * @return
 	 */
 	public static String copyNewArrayToString(String testInputResult, String trueResult) {
-		int[] array = buildArray(testInputResult);
+		int[] array = Build.buildArray(testInputResult);
 		int[] newArray = Arrays.copyOf(array, Integer.parseInt(trueResult));
-		StringBuffer stringBuffer = new StringBuffer();
-		format(newArray, stringBuffer);
-		testInputResult = stringBuffer.toString();
-		return testInputResult;
+		return Format.format(newArray);
 	}
 
 	public static boolean compareArrays(int[] array1, int[] array2) {
@@ -1512,7 +533,7 @@ public class Utilitys {
 		return true;
 	}
 
-	public static boolean compareMatrices(int[][] m1, int[][] m2) {
+	public static boolean compareMatrix(int[][] m1, int[][] m2) {
 		if (m1 == null && m2 == null) {
 			return true;
 		}

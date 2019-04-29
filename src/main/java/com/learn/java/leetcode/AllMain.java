@@ -1,6 +1,7 @@
 package com.learn.java.leetcode;
 
 import com.learn.java.leetcode.base.Utilitys;
+import com.learn.java.leetcode.base.utils.Format;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -33,7 +34,7 @@ public class AllMain {
 		long endTime = System.currentTimeMillis();
 		System.out.println("总题数:" + packageArray.length + ", 正确数:" + successCount + ", 错误数:" + failCount);
 		if (failList.size() > 0) {
-			System.out.println("错误题目: " + Utilitys.format(failList));
+			System.out.println("错误题目: " + Format.format(failList));
 		}
 		System.out.println("计算时长: " + (endTime - startTime) + "ms");
 

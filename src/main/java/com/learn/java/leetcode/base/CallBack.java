@@ -2,6 +2,10 @@ package com.learn.java.leetcode.base;
 
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
+import com.learn.java.leetcode.base.utils.Build;
+import com.learn.java.leetcode.base.utils.Format;
+import com.learn.java.leetcode.base.utils.Print;
+import com.learn.java.leetcode.base.utils.StringUtil;
 
 import java.util.List;
 
@@ -23,7 +27,7 @@ public class CallBack {
 			return;
 		}
 		for (int i = 0; i < dataList.size() && i < paramLength; i++) {
-			Utilitys.print(dataList.get(i));
+			Print.print(dataList.get(i));
 		}
 	}
 
@@ -40,13 +44,13 @@ public class CallBack {
 			String parameterName = parameterTypes[j].getName();
 			String data = dataList.get(j);
 			if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")) {
-				ListNode listNode = Utilitys.buildListNode(data);
+				ListNode listNode = Build.buildListNode(data);
 				inputObjArr[j] = listNode;
 			} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				ListNode[] listNode = Utilitys.buildListNodeArray(data);
+				ListNode[] listNode = Build.buildListNodeArray(data);
 				inputObjArr[j] = listNode;
 			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")) {
-				TreeNode treeNode = Utilitys.buildBinaryTree(data);
+				TreeNode treeNode = Build.buildBinaryTree(data);
 				inputObjArr[j] = treeNode;
 			} else if (parameterName.equals("int")) {
 				inputObjArr[j] = Integer.parseInt(data);
@@ -69,21 +73,21 @@ public class CallBack {
 			} else if (parameterName.equals("java.lang.Boolean")) {
 				inputObjArr[j] = Boolean.valueOf(data);
 			} else if (parameterName.equals("java.lang.String")) {
-				inputObjArr[j] = Utilitys.chageStr(data);
+				inputObjArr[j] = StringUtil.chageStr(data);
 			} else if (parameterName.equals("[I")) {
-				int[] array = Utilitys.buildArray(data);
+				int[] array = Build.buildArray(data);
 				inputObjArr[j] = array;
 			} else if (parameterName.equals("[C")) {
-				char[] array = Utilitys.buildArrayChar(data);
+				char[] array = Build.buildArrayChar(data);
 				inputObjArr[j] = array;
 			} else if (parameterName.equals("[[I")) {
-				int[][] matrix = Utilitys.buildMatrix(data);
+				int[][] matrix = Build.buildMatrix(data);
 				inputObjArr[j] = matrix;
 			} else if (parameterName.equals("[Ljava.lang.String;")) {
-				String[] array = Utilitys.buildArrayString(data);
+				String[] array = Build.buildArrayString(data);
 				inputObjArr[j] = array;
 			} else if (parameterName.equals("java.util.List")) {
-				List list = Utilitys.buildList(data);
+				List list = Build.buildList(data);
 				inputObjArr[j] = list;
 			}
 		}
@@ -96,7 +100,7 @@ public class CallBack {
 	 */
 	public void printOutput(Object outputObj) {
 		System.out.println("格式输出:");
-		Utilitys.print(outputObj);
+		Print.print(outputObj);
 	}
 
 	/**
@@ -110,7 +114,7 @@ public class CallBack {
 	 */
 	public boolean outputVerify(Object[] inputObjArr, List<String> trueResultList, Object outputObj, List<String> dataList, List tempList) {
 		boolean resultFlag = false;
-		String testResult = Utilitys.format(outputObj);
+		String testResult = Format.format(outputObj);
 		for (int i = 0; i < trueResultList.size(); i++) {
 			String trueResult = trueResultList.get(i);
 			if (trueResult.equals("null") && outputObj == null) {
@@ -163,7 +167,7 @@ public class CallBack {
 	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List tempList) {
 		try {
 			Object inputObj = inputObjArr[inputIndex];
-			String testInputResult = Utilitys.format(inputObj);
+			String testInputResult = Format.format(inputObj);
 			boolean resultFlag = trueInputResult.equals(testInputResult);
 			printInputVerify(trueInputResult, testInputResult, resultFlag);
 			return resultFlag;

@@ -2,6 +2,8 @@ package com.learn.java.leetcode.lc0089;
 
 import com.learn.java.leetcode.base.CallBack;
 import com.learn.java.leetcode.base.Utilitys;
+import com.learn.java.leetcode.base.utils.Build;
+import com.learn.java.leetcode.base.utils.Format;
 
 import java.util.List;
 
@@ -15,7 +17,7 @@ public class Main extends CallBack {
 
 		boolean resultFlag = false;
 		List<Integer> testList = (List<Integer>) outputObj;
-		String testResult = Utilitys.format(testList);
+		String testResult = Format.format(testList);
 		for (int i = 0; i < trueResultList.size(); i++) {
 			String trueResult = trueResultList.get(i);
 			if (trueResult.equals("null") && outputObj == null) {
@@ -23,7 +25,7 @@ public class Main extends CallBack {
 				return true;
 			}
 
-			List<Integer> trueList = Utilitys.buildList(trueResult);
+			List<Integer> trueList = Build.buildList(trueResult);
 			resultFlag = Utilitys.compareListsIgnoreOrder(trueList, testList);
 			if (resultFlag) {
 				printOutVerify(trueResultList, testResult, resultFlag);

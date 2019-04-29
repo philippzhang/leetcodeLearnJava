@@ -3,6 +3,7 @@ package com.learn.java.leetcode.lc0235;
 import com.learn.java.leetcode.base.CallBack;
 import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.structure.TreeNode;
+import com.learn.java.leetcode.base.utils.Build;
 
 import java.util.List;
 
@@ -21,7 +22,7 @@ public class Main extends CallBack {
 		String data = dataList.get(0);
 		int ip = Integer.parseInt(dataList.get(1));
 		int iq = Integer.parseInt(dataList.get(2));
-		TreeNode root = Utilitys.buildBinaryTree(data);
+		TreeNode root = Build.buildBinaryTree(data);
 		TreeNode p = Utilitys.searchBinaryTree(root, ip);
 		TreeNode q = Utilitys.searchBinaryTree(root, iq);
 		inputObjArr[0] = root;

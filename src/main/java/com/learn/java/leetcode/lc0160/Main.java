@@ -3,6 +3,8 @@ package com.learn.java.leetcode.lc0160;
 import com.learn.java.leetcode.base.CallBack;
 import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.utils.Build;
+import com.learn.java.leetcode.base.utils.Print;
 
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class Main extends CallBack {
 		int skipA = Integer.parseInt(dataList.get(3));
 		int skipB = Integer.parseInt(dataList.get(4));
 		//构造相交链表
-		ListNode[] listNodeArr = Utilitys.buildIntersectListNode(listA, listB, skipA, skipB);
+		ListNode[] listNodeArr = Build.buildIntersectListNode(listA, listB, skipA, skipB);
 		if (listNodeArr != null && listNodeArr.length > 1) {
 			inputObjArr[0] = listNodeArr[0];
 			inputObjArr[1] = listNodeArr[1];
@@ -36,7 +38,7 @@ public class Main extends CallBack {
 			return;
 		}
 		for (int i = 0; i < dataList.size() && i < paramLength + 3; i++) {
-			Utilitys.print(dataList.get(i));
+			Print.print(dataList.get(i));
 		}
 
 	}

@@ -3,6 +3,8 @@ package com.learn.java.leetcode.lc0237;
 import com.learn.java.leetcode.base.CallBack;
 import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.utils.Format;
+import com.learn.java.leetcode.base.utils.Print;
 
 import java.util.List;
 
@@ -17,7 +19,7 @@ public class Main extends CallBack {
 			return;
 		}
 		for (int i = 0; i < dataList.size() && i < paramLength + 1; i++) {
-			Utilitys.print(dataList.get(i));
+			Print.print(dataList.get(i));
 		}
 	}
 
@@ -36,7 +38,7 @@ public class Main extends CallBack {
 	@Override
 	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List tempList) {
 		ListNode listNode = (ListNode) tempList.get(0);
-		String testInputResult = Utilitys.format(listNode);
+		String testInputResult = Format.format(listNode);
 		boolean resultFlag = trueInputResult.equals(testInputResult);
 		printInputVerify(trueInputResult, testInputResult, resultFlag);
 		return resultFlag;

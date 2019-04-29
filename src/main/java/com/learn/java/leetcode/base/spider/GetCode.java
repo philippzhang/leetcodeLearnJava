@@ -1,6 +1,7 @@
 package com.learn.java.leetcode.base.spider;
 
 import com.learn.java.leetcode.base.Utilitys;
+import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.InitializationConfig;
 import okhttp3.Headers;
 import okhttp3.Response;
@@ -49,7 +50,7 @@ public class GetCode {
 		boolean hasNext = true;
 		String lastKey = "";
 
-		List<String> languageList = Utilitys.buildList(InitializationConfig.readProperties().getProperty("SUBMISSIONS_LANGUAGE"));
+		List<String> languageList = Build.buildList(InitializationConfig.readProperties().getProperty("SUBMISSIONS_LANGUAGE"));
 
 
 		//判断某个语言的代码是否已经抓取
