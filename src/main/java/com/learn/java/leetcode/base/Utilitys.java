@@ -658,13 +658,13 @@ public class Utilitys {
 	 * @param path        文件夹的路径
 	 * @return
 	 */
-	public static void getAllFileName(String path, List<String> packageList) {
+	public static void getAllLCFileName(String path, List<String> packageList) {
 		File file = new File(path);
 		File[] tempList = file.listFiles();
 		for (int i = 0; i < tempList.length; i++) {
 			if (tempList[i].isDirectory()) {
 				String packageName = tempList[i].getName();
-				if (packageName.indexOf("lc") >= 0) {
+				if (packageName.startsWith("lc") ) {
 					packageList.add(packageName);
 				}
 			}

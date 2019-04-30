@@ -14,7 +14,7 @@ public class AllMain {
 	public static void main(String[] args) {
 		List<String> packageList = new ArrayList<>();
 		String path = AllMain.class.getResource(".").getFile();
-		Utilitys.getAllFileName(path, packageList);
+		Utilitys.getAllLCFileName(path, packageList);
 		Object[] packageArray = packageList.toArray();
 		Arrays.sort(packageArray);
 		int successCount = 0;
