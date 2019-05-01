@@ -304,7 +304,7 @@ public class Utilitys {
 									} else if (parameterName.equals("java.lang.Boolean")&&data instanceof Boolean) {
 										inputObjArr[k] = Boolean.valueOf(data.toString());
 									} else if (parameterName.equals("java.lang.String")&&data instanceof String) {
-										inputObjArr[k] = StringUtil.chageStr(data.toString());
+										inputObjArr[k] = StringUtil.changeStr(data.toString());
 									} else if (parameterName.equals("[I")&&data instanceof List) {
 										int[] array = Build.buildArray((List)data);
 										inputObjArr[k] = array;
@@ -383,7 +383,7 @@ public class Utilitys {
 								} else if (parameterName.equals("java.lang.Boolean")) {
 									inputObjArr[j] = Boolean.valueOf(data.toString());
 								} else if (parameterName.equals("java.lang.String")) {
-									inputObjArr[j] = StringUtil.chageStr(data.toString());
+									inputObjArr[j] = StringUtil.changeStr(data.toString());
 								} else if (parameterName.equals("[I")) {
 									int[] array = Build.buildArray(data.toString());
 									inputObjArr[j] = array;

@@ -73,7 +73,7 @@ public class CallBack {
 			} else if (parameterName.equals("java.lang.Boolean")) {
 				inputObjArr[j] = Boolean.valueOf(data);
 			} else if (parameterName.equals("java.lang.String")) {
-				inputObjArr[j] = StringUtil.chageStr(data);
+				inputObjArr[j] = StringUtil.changeStr(data);
 			} else if (parameterName.equals("[I")) {
 				int[] array = Build.buildArray(data);
 				inputObjArr[j] = array;

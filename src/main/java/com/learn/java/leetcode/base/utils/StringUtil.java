@@ -31,7 +31,7 @@ public class StringUtil {
 	 * @return
 	 */
 	public static boolean judgeNumber(String str) {
-		return str.matches("-?[0-9]+.*[0-9]*");
+		return str.matches("[-+]?[0-9]+.*[0-9]*");
 
 	}
 
@@ -45,7 +45,7 @@ public class StringUtil {
 	 * @param temp
 	 * @return
 	 */
-	public static String chageStr(String temp) {
+	public static String changeStr(String temp) {
 		if (temp == null || temp.equals("null")) {
 			return null;
 		}

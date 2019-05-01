@@ -78,7 +78,7 @@ public class Print {
 				if (StringUtil.judgeNumber(data)) {
 					System.out.print(data);
 				} else {
-					System.out.print("\"" + StringUtil.chageStr(data) + "\"");
+					System.out.print("\"" + StringUtil.changeStr(data) + "\"");
 				}
 			}
 			if (i < array.length - 1) {

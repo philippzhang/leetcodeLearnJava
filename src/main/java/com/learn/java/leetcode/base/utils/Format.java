@@ -34,7 +34,7 @@ public class Format {
 		if (obj instanceof Integer || obj instanceof Long || obj instanceof Double || obj instanceof Float || obj instanceof Boolean) {
 			stringBuffer.append(obj.toString());
 		} else if (obj instanceof String) {
-			stringBuffer.append("\"" + StringUtil.chageStr(obj.toString()) + "\"");
+			stringBuffer.append("\"" + StringUtil.changeStr(obj.toString()) + "\"");
 		} else if (obj instanceof List) {
 
 			List results = (List) obj;
@@ -180,7 +180,7 @@ public class Format {
 				if (StringUtil.judgeNumber(data)) {
 					stringBuffer.append(data);
 				} else {
-					stringBuffer.append("\"").append(StringUtil.chageStr(data)).append("\"");
+					stringBuffer.append("\"").append(StringUtil.changeStr(data)).append("\"");
 				}
 
 			}

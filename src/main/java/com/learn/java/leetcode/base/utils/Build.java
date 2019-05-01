@@ -64,7 +64,7 @@ public class Build {
 		int length = arr.length;
 		String[] results = new String[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = StringUtil.chageStr(arr[i]);
+			results[i] = StringUtil.changeStr(arr[i]);
 		}
 		return results;
 	}
@@ -75,7 +75,7 @@ public class Build {
 		}
 		String[] results = new String[list.size()];
 		for (int i = 0; i < list.size(); i++) {
-			results[i] = StringUtil.chageStr(list.get(i).toString());
+			results[i] = StringUtil.changeStr(list.get(i).toString());
 		}
 		return results;
 	}
@@ -97,7 +97,7 @@ public class Build {
 		int length = arr.length;
 		char[] results = new char[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = StringUtil.chageStr(arr[i]).charAt(0);
+			results[i] = StringUtil.changeStr(arr[i]).charAt(0);
 		}
 		return results;
 	}
@@ -108,7 +108,7 @@ public class Build {
 		}
 		char[] results = new char[list.size()];
 		for (int i = 0; i < list.size(); i++) {
-			results[i] = StringUtil.chageStr(list.get(i).toString()).charAt(0);
+			results[i] = StringUtil.changeStr(list.get(i).toString()).charAt(0);
 		}
 		return results;
 	}
@@ -371,12 +371,9 @@ public class Build {
 		data = data.substring(1, data.length() - 1);
 
 		String splitStr;
-		boolean flag = false;
+
 		String[] arr = null;
 		if (data.indexOf("[") >= 0) {
-			//splitStr = "],\\[";
-			//data = data.substring(1, data.length() - 1);
-			flag = true;
 			List<String> vList = new ArrayList<>();
 			int count = 0;
 			StringBuffer stringBuffer = new StringBuffer();
@@ -404,7 +401,7 @@ public class Build {
 			arr = data.split(splitStr, -1);
 		}
 
-
+		boolean flag;
 		int length = arr.length;
 		List list = new ArrayList<>();
 		for (int i = 0; i < length; i++) {
@@ -422,7 +419,7 @@ public class Build {
 					if (StringUtil.judgeNumber(arr[i])) {
 						list.add(Integer.parseInt(arr[i]));
 					} else {
-						list.add(StringUtil.chageStr(arr[i]));
+						list.add(StringUtil.changeStr(arr[i]));
 					}
 				}
 			}
