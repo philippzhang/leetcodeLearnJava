@@ -85,6 +85,7 @@ public class Format {
 	private static void format(int[] array, StringBuffer stringBuffer) {
 		if (array == null) {
 			stringBuffer.append("null");
+			return;
 		}
 		stringBuffer.append("[");
 		for (int i = 0; i < array.length; i++) {
@@ -129,6 +130,7 @@ public class Format {
 	private static void format(char[] array, StringBuffer stringBuffer) {
 		if (array == null) {
 			stringBuffer.append("null");
+			return;
 		}
 		stringBuffer.append("[");
 		for (int i = 0; i < array.length; i++) {
@@ -168,6 +170,7 @@ public class Format {
 	private static void format(Object[] array, StringBuffer stringBuffer) {
 		if (array == null) {
 			stringBuffer.append("null");
+			return;
 		}
 		stringBuffer.append("[");
 		for (int i = 0; i < array.length; i++) {
