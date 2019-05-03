@@ -195,6 +195,7 @@ public class Format {
 	private static void format(TreeNode treeNode, StringBuffer stringBuffer) {
 		if (treeNode == null) {
 			stringBuffer.append("null");
+			return;
 		}
 		stringBuffer.append("[");
 		stringBuffer.append(levelOrderFormat(treeNode));
@@ -212,7 +213,6 @@ public class Format {
 				current = queue.poll();
 				if (current != null) {
 					stack.push(current);
-					//stringBuffer.append(current.val).append(',');
 					if (current.left != null) {
 						queue.offer(current.left);
 					} else {
@@ -224,7 +224,6 @@ public class Format {
 						queue.offer(null);
 					}
 				} else {
-					//stringBuffer.append("null").append(',');
 					stack.push(null);
 				}
 			}
