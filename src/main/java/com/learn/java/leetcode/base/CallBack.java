@@ -140,6 +140,12 @@ public class CallBack {
 
 	}
 
+	/**
+	 * 打印校验结果
+	 * @param trueResultList   正确结果集，如果存在多个正确值，任意结果均正确
+	 * @param testResult       算法运行结果
+	 * @param resultFlag       验证结果
+	 */
 	protected void printOutVerify(List<String> trueResultList, String testResult, boolean resultFlag) {
 		System.out.println("输出结果:");
 		System.out.println(testResult);
@@ -178,6 +184,12 @@ public class CallBack {
 		}
 	}
 
+	/**
+	 * 打印输入结果
+	 * @param trueInputResult    正确输入结果
+	 * @param testInputResult    算法运行结果
+	 * @param resultFlag         验证结果
+	 */
 	protected void printInputVerify(String trueInputResult, String testInputResult, boolean resultFlag) {
 		System.out.println("入参输出:");
 		System.out.println(testInputResult);

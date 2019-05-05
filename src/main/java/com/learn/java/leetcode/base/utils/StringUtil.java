@@ -1,7 +1,5 @@
 package com.learn.java.leetcode.base.utils;
 
-import java.util.regex.Pattern;
-
 /**
  * 字符串相关的处理
  */

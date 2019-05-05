@@ -1,4 +1,4 @@
-leetcode刷题项目
+leetcode刷题项目(java版)
 
 
 1. 本人实现的leetcode算法测试项目

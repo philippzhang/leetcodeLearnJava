@@ -110,7 +110,7 @@ public class Utilitys {
 	 * @param algorithmFuncName
 	 * @param dataList
 	 */
-	public static boolean test(Class<? extends CallBack> mainClass, String algorithmClassName, String algorithmFuncName, List<String> dataList) {
+	private static boolean test(Class<? extends CallBack> mainClass, String algorithmClassName, String algorithmFuncName, List<String> dataList) {
 		boolean testFlag = true;
 		try {
 			String packageName = mainClass.getPackage().getName();
