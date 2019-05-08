@@ -263,7 +263,7 @@ public class Utilitys {
 			String packageName = mainClass.getPackage().getName();
 			for (int i = 0; i < funcList.size(); i++) {
 				String funcName = funcList.get(i).toString();
-				List<Integer> params = (List<Integer>) paramList.get(i);
+				List params = (List) paramList.get(i);
 				if (i == 0) {
 					//第一个值是构造方法
 					try {
