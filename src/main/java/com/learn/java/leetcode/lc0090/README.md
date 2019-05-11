@@ -50,6 +50,11 @@ Output:
 # 测试用例
 ```
 90. Subsets II 90. 子集 II Medium
+Solution.subsetsWithDup
+---
+[1,2,2]
+
+=[[],[2],[2,2],[1],[1,2],[1,2,2]]
 ```
 
 [enTitle]: https://leetcode.com/problems/subsets-ii/
