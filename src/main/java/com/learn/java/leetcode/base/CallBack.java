@@ -123,7 +123,13 @@ public class CallBack {
 			}
 			try {
 
-				resultFlag = trueResult.equals(testResult);
+				if(outputObj!=null&&outputObj instanceof List){
+						List<List<Integer>> trueResultsList = (List)outputObj;
+						List<List<Integer>> testResultsList = Build.buildList(testResult);
+						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultsList,testResultsList);
+				}else {
+					resultFlag = trueResult.equals(testResult);
+				}
 				if (resultFlag) {
 					printOutVerify(trueResultList, testResult, resultFlag);
 					return true;
