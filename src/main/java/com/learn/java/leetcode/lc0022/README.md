@@ -41,6 +41,12 @@ For example, given n = 3, a solution set is:
 # 测试用例
 ```
 22. Generate Parentheses 22. 括号生成 Medium
+Solution.generateParenthesis
+---
+3
+
+=["((()))","(()())","(())()","()(())","()()()"]
+
 ```
 
 [enTitle]: https://leetcode.com/problems/generate-parentheses/

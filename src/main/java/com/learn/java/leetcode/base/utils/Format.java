@@ -44,8 +44,10 @@ public class Format {
 				if (item == null) {
 					stringBuffer.append("null");
 				}
-				if (item instanceof Integer || item instanceof String || item instanceof Long || item instanceof Double || item instanceof Float || item instanceof Boolean) {
+				if (item instanceof Integer || item instanceof Long || item instanceof Double || item instanceof Float || item instanceof Boolean) {
 					stringBuffer.append(item);
+				}else if(item instanceof String ){
+					stringBuffer.append("\"" + StringUtil.changeStr(item.toString()) + "\"");
 				} else if (item instanceof List) {
 					format(item, stringBuffer);
 				}
