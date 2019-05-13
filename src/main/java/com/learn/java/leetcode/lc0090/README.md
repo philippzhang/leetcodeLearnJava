@@ -55,6 +55,7 @@ Solution.subsetsWithDup
 [1,2,2]
 
 =[[],[2],[2,2],[1],[1,2],[1,2,2]]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/subsets-ii/

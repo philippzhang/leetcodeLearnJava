@@ -46,7 +46,7 @@ Solution.generateParenthesis
 3
 
 =["((()))","(()())","(())()","()(())","()()()"]
-
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/generate-parentheses/

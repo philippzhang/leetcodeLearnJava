@@ -124,9 +124,21 @@ public class CallBack {
 			try {
 
 				if(outputObj!=null&&outputObj instanceof List){
-						List<List<Integer>> trueResultsList = (List)outputObj;
+					boolean disOrder = false;
+					for(int j = inputObjArr.length;j<dataList.size();j++){
+						if(dataList.get(j).equals("$disorder")){
+							//List 无序标志
+							disOrder = true;
+							break;
+						}
+					}
+					if(disOrder) {
+						List<List<Integer>> trueResultsList = (List) outputObj;
 						List<List<Integer>> testResultsList = Build.buildList(testResult);
-						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultsList,testResultsList);
+						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultsList, testResultsList);
+					}else{
+						resultFlag = trueResult.equals(testResult);
+					}
 				}else {
 					resultFlag = trueResult.equals(testResult);
 				}
