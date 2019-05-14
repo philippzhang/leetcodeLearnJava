@@ -123,23 +123,57 @@ public class CallBack {
 			}
 			try {
 
-				if(outputObj!=null&&outputObj instanceof List){
-					boolean disOrder = false;
-					for(int j = inputObjArr.length;j<dataList.size();j++){
-						if(dataList.get(j).equals("$disorder")){
-							//List 无序标志
-							disOrder = true;
-							break;
-						}
+				boolean disOrder = false;
+				for (int j = inputObjArr.length; j < dataList.size(); j++) {
+					if (dataList.get(j).equals("$disorder")) {
+						//List 无序标志
+						disOrder = true;
+						break;
 					}
-					if(disOrder) {
+				}
+
+				String parameterName = outputObj != null ? outputObj.getClass().getName() : null;
+				if (outputObj != null && outputObj instanceof List) {
+					if (disOrder) {
 						List<List<Integer>> trueResultsList = (List) outputObj;
 						List<List<Integer>> testResultsList = Build.buildList(testResult);
 						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultsList, testResultsList);
-					}else{
+					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
-				}else {
+				} else if (outputObj != null && parameterName.equals("[I")) {
+					if (disOrder) {
+						int[] trueResultsArray = (int[]) outputObj;
+						int[] testResultsArray = Build.buildArray(testResult);
+						resultFlag = Utilitys.compareArrays(trueResultsArray, testResultsArray);
+					} else {
+						resultFlag = trueResult.equals(testResult);
+					}
+				} else if (outputObj != null && parameterName.equals("[Ljava.lang.String;")) {
+					if (disOrder) {
+						String[] trueResultsArray = (String[]) outputObj;
+						String[] testResultsArray = Build.buildArrayString(testResult);
+						resultFlag = Utilitys.compareArraysString(trueResultsArray, testResultsArray);
+					} else {
+						resultFlag = trueResult.equals(testResult);
+					}
+				} else if (outputObj != null && parameterName.equals("[C")) {
+					if (disOrder) {
+						char[] trueResultsArray = (char[]) outputObj;
+						char[] testResultsArray = Build.buildArrayChar(testResult);
+						resultFlag = Utilitys.compareArraysChar(trueResultsArray, testResultsArray);
+					} else {
+						resultFlag = trueResult.equals(testResult);
+					}
+				} else if (outputObj != null && parameterName.equals("[[I")) {
+					if (disOrder) {
+						int[][] trueResultsMatrix = (int[][]) outputObj;
+						int[][] testResultsMatrix = Build.buildMatrix(testResult);
+						resultFlag = Utilitys.compareMatrix(trueResultsMatrix, testResultsMatrix);
+					} else {
+						resultFlag = trueResult.equals(testResult);
+					}
+				} else {
 					resultFlag = trueResult.equals(testResult);
 				}
 				if (resultFlag) {
@@ -160,14 +194,15 @@ public class CallBack {
 
 	/**
 	 * 打印校验结果
-	 * @param trueResultList   正确结果集，如果存在多个正确值，任意结果均正确
-	 * @param testResult       算法运行结果
-	 * @param resultFlag       验证结果
+	 *
+	 * @param trueResultList 正确结果集，如果存在多个正确值，任意结果均正确
+	 * @param testResult     算法运行结果
+	 * @param resultFlag     验证结果
 	 */
 	protected void printOutVerify(List<String> trueResultList, String testResult, boolean resultFlag) {
 		System.out.println("输出结果:");
 		System.out.println(testResult);
-		System.out.println("预期结果"+(trueResultList.size()>1?" (以下任意结果均正确) ":"")+":");
+		System.out.println("预期结果" + (trueResultList.size() > 1 ? " (以下任意结果均正确) " : "") + ":");
 		for (int i = 0; i < trueResultList.size(); i++) {
 			System.out.println(trueResultList.get(i));
 		}
@@ -204,9 +239,10 @@ public class CallBack {
 
 	/**
 	 * 打印输入结果
-	 * @param trueInputResult    正确输入结果
-	 * @param testInputResult    算法运行结果
-	 * @param resultFlag         验证结果
+	 *
+	 * @param trueInputResult 正确输入结果
+	 * @param testInputResult 算法运行结果
+	 * @param resultFlag      验证结果
 	 */
 	protected void printInputVerify(String trueInputResult, String testInputResult, boolean resultFlag) {
 		System.out.println("入参输出:");

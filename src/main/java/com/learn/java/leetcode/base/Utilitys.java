@@ -26,8 +26,6 @@ import java.util.*;
 public class Utilitys {
 
 
-
-
 	/**
 	 * 批量测试
 	 *
@@ -84,7 +82,7 @@ public class Utilitys {
 			for (int j = 1; j < testList.size(); j++) {
 				//数据
 				List<String> dataList = testList.get(j);
-				if(dataList!=null&&dataList.size()>0) {
+				if (dataList != null && dataList.size() > 0) {
 					System.out.println("第" + jCount + "组数据:");
 					boolean resultFlag = test(mainClass, algorithmClassName, algorithmFuncName, dataList);
 					if (!resultFlag) {
@@ -272,68 +270,68 @@ public class Utilitys {
 						Constructor<?>[] constructors = algorithmClass.getConstructors();
 						for (int j = 0; j < constructors.length; j++) {
 							Constructor c = constructors[j];
-							if (params.size()==0&&c.getParameterTypes().length ==0) {
-								obj =  c.newInstance();
+							if (params.size() == 0 && c.getParameterTypes().length == 0) {
+								obj = c.newInstance();
 							}
 							//通过参数个数判断,可能有更好的办法
-							else if (params.size()>0&&c.getParameterTypes().length == params.size()) {
+							else if (params.size() > 0 && c.getParameterTypes().length == params.size()) {
 								boolean flag = true;
-								Object[] inputObjArr =  new Object[params.size()];
-								for(int k=0;k<params.size();k++){
+								Object[] inputObjArr = new Object[params.size()];
+								for (int k = 0; k < params.size(); k++) {
 									String parameterName = c.getParameterTypes()[k].getName();
 									Object data = params.get(k);
 
-									if (parameterName.equals("int")&&data instanceof Integer) {
+									if (parameterName.equals("int") && data instanceof Integer) {
 										inputObjArr[k] = Integer.parseInt(data.toString());
-									} else if (parameterName.equals("long")&&data instanceof Long) {
+									} else if (parameterName.equals("long") && data instanceof Long) {
 										inputObjArr[k] = Long.parseLong(data.toString());
-									} else if (parameterName.equals("double")&&data instanceof Double) {
+									} else if (parameterName.equals("double") && data instanceof Double) {
 										inputObjArr[k] = Double.parseDouble(data.toString());
-									} else if (parameterName.equals("float")&&data instanceof Float) {
+									} else if (parameterName.equals("float") && data instanceof Float) {
 										inputObjArr[k] = Float.parseFloat(data.toString());
-									} else if (parameterName.equals("boolean")&&data instanceof Boolean) {
+									} else if (parameterName.equals("boolean") && data instanceof Boolean) {
 										inputObjArr[k] = Boolean.parseBoolean(data.toString());
-									} else if (parameterName.equals("java.lang.Integer")&&data instanceof Integer) {
+									} else if (parameterName.equals("java.lang.Integer") && data instanceof Integer) {
 										inputObjArr[k] = Integer.valueOf(data.toString());
-									} else if (parameterName.equals("java.lang.Long")&&data instanceof Long) {
+									} else if (parameterName.equals("java.lang.Long") && data instanceof Long) {
 										inputObjArr[k] = Long.valueOf(data.toString());
-									} else if (parameterName.equals("java.lang.Double")&&data instanceof Double) {
+									} else if (parameterName.equals("java.lang.Double") && data instanceof Double) {
 										inputObjArr[k] = Double.valueOf(data.toString());
-									} else if (parameterName.equals("java.lang.Float")&&data instanceof Float) {
+									} else if (parameterName.equals("java.lang.Float") && data instanceof Float) {
 										inputObjArr[k] = Float.valueOf(data.toString());
-									} else if (parameterName.equals("java.lang.Boolean")&&data instanceof Boolean) {
+									} else if (parameterName.equals("java.lang.Boolean") && data instanceof Boolean) {
 										inputObjArr[k] = Boolean.valueOf(data.toString());
-									} else if (parameterName.equals("java.lang.String")&&data instanceof String) {
+									} else if (parameterName.equals("java.lang.String") && data instanceof String) {
 										inputObjArr[k] = StringUtil.changeStr(data.toString());
-									} else if (parameterName.equals("[I")&&data instanceof List) {
-										int[] array = Build.buildArray((List)data);
+									} else if (parameterName.equals("[I") && data instanceof List) {
+										int[] array = Build.buildArray((List) data);
 										inputObjArr[k] = array;
-									} else if (parameterName.equals("[C")&&data instanceof List) {
-										char[] array = Build.buildArrayChar((List)data);
+									} else if (parameterName.equals("[C") && data instanceof List) {
+										char[] array = Build.buildArrayChar((List) data);
 										inputObjArr[k] = array;
-									} else if (parameterName.equals("[Ljava.lang.String;")&&data instanceof List) {
-										String[] array = Build.buildArrayString((List)data);
+									} else if (parameterName.equals("[Ljava.lang.String;") && data instanceof List) {
+										String[] array = Build.buildArrayString((List) data);
 										inputObjArr[k] = array;
-									} else if (parameterName.equals("java.util.List")&&data instanceof List) {
+									} else if (parameterName.equals("java.util.List") && data instanceof List) {
 										List list = (List) data;
 										inputObjArr[k] = list;
-									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
+									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode") && data instanceof List) {
 										TreeNode treeNode = Build.buildBinaryTree((List) data);
 										inputObjArr[k] = treeNode;
-									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
-											ListNode listNode = Build.buildListNode((List)data);
-											inputObjArr[k] = listNode;
-									} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
-											ListNode[] listNode = Build.buildListNodeArray((List)data);
-											inputObjArr[k] = listNode;
-									}else{
+									} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode") && data instanceof List) {
+										ListNode listNode = Build.buildListNode((List) data);
+										inputObjArr[k] = listNode;
+									} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;") && data instanceof List) {
+										ListNode[] listNode = Build.buildListNodeArray((List) data);
+										inputObjArr[k] = listNode;
+									} else {
 										//可能有未处理的类型
 										flag = false;
 										break;
 									}
 
 								}
-								if(flag) {
+								if (flag) {
 									obj = c.newInstance(inputObjArr);
 									break;
 								}
@@ -399,13 +397,13 @@ public class Utilitys {
 								} else if (parameterName.equals("java.util.List")) {
 									List list = Build.buildList(data.toString());
 									inputObjArr[j] = list;
-								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")&&data instanceof List) {
+								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode") && data instanceof List) {
 									TreeNode treeNode = Build.buildBinaryTree((List) data);
 									inputObjArr[j] = treeNode;
-								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")&&data instanceof List) {
-									ListNode listNode = Build.buildListNode((List)data);
+								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode") && data instanceof List) {
+									ListNode listNode = Build.buildListNode((List) data);
 									inputObjArr[j] = listNode;
-								} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")&&data instanceof List) {
+								} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;") && data instanceof List) {
 									ListNode[] listNode = Build.buildListNodeArray((List) data);
 									inputObjArr[j] = listNode;
 								}
@@ -475,7 +473,7 @@ public class Utilitys {
 				if (flag && tempString.equals("```")) {
 					i++;
 				} else {
-					if (i == 1&&tempString.length() > 0 && !tempString.startsWith("#")) {
+					if (i == 1 && tempString.length() > 0 && !tempString.startsWith("#")) {
 						lastJson.append(tempString).append("\r");
 					}
 				}
@@ -514,6 +512,46 @@ public class Utilitys {
 	}
 
 	public static boolean compareArrays(int[] array1, int[] array2) {
+		if (array1 == null && array2 == null) {
+			return true;
+		}
+		if (array1 == null || array2 == null) {
+			return false;
+		}
+		if (array1.length != array2.length) {
+			return false;
+		}
+
+
+		for (int i = 0; i < array1.length; i++) {
+			if (array1[i] != array2[i]) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static boolean compareArraysString(String[] array1, String[] array2) {
+		if (array1 == null && array2 == null) {
+			return true;
+		}
+		if (array1 == null || array2 == null) {
+			return false;
+		}
+		if (array1.length != array2.length) {
+			return false;
+		}
+
+
+		for (int i = 0; i < array1.length; i++) {
+			if (array1[i].equals(array2[i])) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public static boolean compareArraysChar(char[] array1, char[] array2) {
 		if (array1 == null && array2 == null) {
 			return true;
 		}
@@ -664,7 +702,7 @@ public class Utilitys {
 		for (int i = 0; i < tempList.length; i++) {
 			if (tempList[i].isDirectory()) {
 				String packageName = tempList[i].getName();
-				if (packageName.startsWith("lc") ) {
+				if (packageName.startsWith("lc")) {
 					packageList.add(packageName);
 				}
 			}
@@ -672,38 +710,30 @@ public class Utilitys {
 	}
 
 
-	public static void sort(JsonElement e)
-	{
-		if (e.isJsonNull())
-		{
+	public static void sort(JsonElement e) {
+		if (e.isJsonNull()) {
 			return;
 		}
 
-		if (e.isJsonPrimitive())
-		{
+		if (e.isJsonPrimitive()) {
 			return;
 		}
 
-		if (e.isJsonArray())
-		{
+		if (e.isJsonArray()) {
 			JsonArray a = e.getAsJsonArray();
-			for (Iterator<JsonElement> it = a.iterator(); it.hasNext();)
-			{
+			for (Iterator<JsonElement> it = a.iterator(); it.hasNext(); ) {
 				sort(it.next());
 			}
 			return;
 		}
 
-		if (e.isJsonObject())
-		{
+		if (e.isJsonObject()) {
 			Map<String, JsonElement> tm = new TreeMap<String, JsonElement>(String::compareTo);
-			for (Map.Entry<String, JsonElement> en : e.getAsJsonObject().entrySet())
-			{
+			for (Map.Entry<String, JsonElement> en : e.getAsJsonObject().entrySet()) {
 				tm.put(en.getKey(), en.getValue());
 			}
 
-			for (Map.Entry<String, JsonElement> en : tm.entrySet())
-			{
+			for (Map.Entry<String, JsonElement> en : tm.entrySet()) {
 				e.getAsJsonObject().remove(en.getKey());
 				e.getAsJsonObject().add(en.getKey(), en.getValue());
 				sort(en.getValue());
@@ -714,10 +744,11 @@ public class Utilitys {
 
 	/**
 	 * 排序Json字符串
+	 *
 	 * @param json
 	 * @return
 	 */
-	public static String sortJsonObject(String json){
+	public static String sortJsonObject(String json) {
 		JsonParser p = new JsonParser();
 		JsonElement e = p.parse(json);
 
