@@ -67,6 +67,12 @@ Explanation: There exist two distinct solutions to the 4-queens puzzle as shown 
 # 测试用例
 ```
 51. N-Queens 51. N皇后 Hard
+Solution.solveNQueens
+---
+4
+
+=[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/n-queens/
