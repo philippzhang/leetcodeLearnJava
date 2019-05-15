@@ -41,6 +41,15 @@ To the right of 1 there is 0 smaller element.
 # 测试用例
 ```
 315. Count of Smaller Numbers After Self 315. 计算右侧小于当前元素的个数 Hard
+Solution.countSmaller
+---
+[5,2,6,1]
+
+=[2,1,1,0]
+---
+[-1,-1]
+
+=[0,0]
 ```
 
 [enTitle]: https://leetcode.com/problems/count-of-smaller-numbers-after-self/
