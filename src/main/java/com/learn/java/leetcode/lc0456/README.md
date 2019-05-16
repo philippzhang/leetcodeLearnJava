@@ -91,6 +91,11 @@ Explanation: There are three 132 patterns in the sequence: [-1, 3, 2], [-1, 3, 0
 # 测试用例
 ```
 456. 132 Pattern 456. 132模式 Medium
+Solution.find132pattern
+---
+[1,2,3,4]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/132-pattern/
