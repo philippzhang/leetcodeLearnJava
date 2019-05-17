@@ -132,6 +132,23 @@ asteroids = [-2, -1, 1, 2]
 # 测试用例
 ```
 735. Asteroid Collision 735. 行星碰撞 Medium
+Solution.asteroidCollision
+---
+[5,10,-5]
+
+=[5,10]
+---
+[8,-8]
+
+=[]
+---
+[10,2,-5]
+
+=[10]
+---
+[-2,-1,1,2]
+
+=[-2,-1,1,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/asteroid-collision/

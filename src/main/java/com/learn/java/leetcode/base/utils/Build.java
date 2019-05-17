@@ -24,6 +24,9 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
+		if(data.equals("[]")){
+			return new int[]{};
+		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
 
 		String[] arr = data.split(",", -1);
@@ -58,6 +61,9 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
+		if(data.equals("[]")){
+			return new String[]{};
+		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
 
 		String[] arr = data.split(",", -1);
@@ -91,6 +97,9 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
+		if(data.equals("[]")){
+			return new char[]{};
+		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
 
 		String[] arr = data.split(",", -1);
