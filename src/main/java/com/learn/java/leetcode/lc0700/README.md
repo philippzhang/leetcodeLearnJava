@@ -68,6 +68,12 @@ Note that an empty tree is represented by  *NULL* , therefore you would see the 
 # 测试用例
 ```
 700. Search in a Binary Search Tree 700. 二叉搜索树中的搜索 Easy
+Solution.searchBST
+---
+[4,2,7,1,3]
+2
+
+=[2,1,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/search-in-a-binary-search-tree/
