@@ -41,6 +41,11 @@ Note: The length of given array won't exceed 10000.
 # 测试用例
 ```
 503. Next Greater Element II 503. 下一个更大元素 II Medium
+Solution.nextGreaterElements
+---
+[1,2,1]
+
+=[2,-1,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/next-greater-element-ii/
