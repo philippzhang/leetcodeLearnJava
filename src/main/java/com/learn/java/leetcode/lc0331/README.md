@@ -97,6 +97,19 @@ Output:false
 # 测试用例
 ```
 331. Verify Preorder Serialization of a Binary Tree 331. 验证二叉树的前序序列化 Medium
+Solution.isValidSerialization
+---
+"9,3,4,#,#,1,#,#,2,#,6,#,#"
+
+=true
+---
+"1,#"
+
+=false
+---
+"9,#,#,1"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/
