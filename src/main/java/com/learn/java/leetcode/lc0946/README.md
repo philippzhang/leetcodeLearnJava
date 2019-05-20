@@ -80,6 +80,15 @@ push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 # 测试用例
 ```
 946. Validate Stack Sequences 946. 验证栈序列 Medium
+Solution.validateStackSequences
+---
+[1,2,3,4,5]
+[4,5,3,2,1]
+=true
+---
+[1,2,3,4,5]
+[4,3,5,1,2]
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/validate-stack-sequences/
