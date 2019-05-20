@@ -117,6 +117,28 @@ The decoded string is "a" repeated 8301530446056247680 times.  The 1st letter is
 # 测试用例
 ```
 880. Decoded String at Index 880. 索引处的解码字符串 Medium
+Solution.decodeAtIndex
+---
+"leet2code3"
+10
+
+="o"
+---
+"ha22"
+5
+
+="h"
+---
+"a2345678999999999999999"
+1
+
+="a"
+
+---
+"y959q969u3hb22odq595"
+222280369
+
+="y"
 ```
 
 [enTitle]: https://leetcode.com/problems/decoded-string-at-index/
