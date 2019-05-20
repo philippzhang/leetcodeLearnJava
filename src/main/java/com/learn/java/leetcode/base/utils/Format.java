@@ -71,10 +71,16 @@ public class Format {
 				format((int[]) obj, stringBuffer);
 			} else if (className.equals("[[I")) {
 				format((int[][]) obj, stringBuffer);
+			} else if (className.equals("[[D")) {
+				format((double[][]) obj);
+			} else if (className.equals("[[F")) {
+				format((float[][]) obj);
 			} else if (className.equals("[C")) {
 				format((char[]) obj, stringBuffer);
 			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
 				format((ListNode[]) obj, stringBuffer);
+			} else if (className.equals("[Ljava.lang.String;")){
+				format((String[]) obj);
 			} else {
 				format((Object[]) obj, stringBuffer);
 			}
@@ -106,7 +112,55 @@ public class Format {
 	}
 
 
+
+
 	private static void format(int[][] matrix, StringBuffer stringBuffer) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		stringBuffer.append("[");
+		for (int i = 0; i < row; i++) {
+			stringBuffer.append("[");
+			for (int j = 0; j < cow; j++) {
+				stringBuffer.append(matrix[i][j]);
+				if (j < cow - 1) {
+					stringBuffer.append(',');
+				}
+			}
+			stringBuffer.append("]");
+			if (i < row - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+	private static void format(double[][] matrix, StringBuffer stringBuffer) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		stringBuffer.append("[");
+		for (int i = 0; i < row; i++) {
+			stringBuffer.append("[");
+			for (int j = 0; j < cow; j++) {
+				stringBuffer.append(matrix[i][j]);
+				if (j < cow - 1) {
+					stringBuffer.append(',');
+				}
+			}
+			stringBuffer.append("]");
+			if (i < row - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+	private static void format(float[][] matrix, StringBuffer stringBuffer) {
 		if (matrix == null) {
 			return;
 		}
@@ -142,6 +196,27 @@ public class Format {
 			} else {
 				String data = dataObj.toString();
 				stringBuffer.append("\"").append(data).append("\"");
+			}
+			if (i < array.length - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+	private static void format(String[] array, StringBuffer stringBuffer) {
+		if (array == null) {
+			stringBuffer.append("null");
+			return;
+		}
+		stringBuffer.append("[");
+		for (int i = 0; i < array.length; i++) {
+			Object dataObj = array[i];
+			if (dataObj == null) {
+				stringBuffer.append("null");
+			} else {
+				String data = dataObj.toString();
+				stringBuffer.append("\"" + StringUtil.changeStr(data) + "\"");
 			}
 			if (i < array.length - 1) {
 				stringBuffer.append(',');
