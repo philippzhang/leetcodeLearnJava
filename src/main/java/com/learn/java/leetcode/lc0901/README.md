@@ -87,6 +87,12 @@ S.next(85) 被调用并返回 6。
 # 测试用例
 ```
 901. Online Stock Span 901. 股票价格跨度 Medium
+Main.funcListTest
+---
+["StockSpanner","next","next","next","next","next","next","next"]
+[[],[100],[80],[60],[70],[60],[75],[85]]
+
+=[null,1,1,1,2,1,4,6]
 ```
 
 [enTitle]: https://leetcode.com/problems/online-stock-span/
