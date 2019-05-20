@@ -86,6 +86,13 @@ Note that no other cars meet these fleets before the destination, so the answer 
 # 测试用例
 ```
 853. Car Fleet 853. 车队 Medium
+Solution.carFleet
+---
+12
+[10,8,0,5,3]
+[2,4,1,1,3]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/car-fleet/
