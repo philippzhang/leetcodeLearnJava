@@ -133,6 +133,31 @@ M             1000
 # 测试用例
 ```
 12. Integer to Roman 12. 整数转罗马数字 Medium
+Solution.intToRoman
+---
+3
+
+="III"
+---
+4
+
+="IV"
+---
+9
+
+="IX"
+---
+58
+
+="LVIII"
+---
+1994
+
+="MCMXCIV"
+---
+2425
+
+="MMCDXXV"
 ```
 
 [enTitle]: https://leetcode.com/problems/integer-to-roman/
