@@ -310,9 +310,21 @@
 
 155 https://leetcode.com/problems/min-stack/ https://leetcode-cn.com/problems/min-stack/ min-stack "最小栈"
 
+156 https://leetcode.com/problems/binary-tree-upside-down/ https://leetcode-cn.com/problems/binary-tree-upside-down/ binary-tree-upside-down "上下翻转二叉树"
+
+157 https://leetcode.com/problems/read-n-characters-given-read4/ https://leetcode-cn.com/problems/read-n-characters-given-read4/ read-n-characters-given-read4 "用 Read4 读取 N 个字符"
+
+158 https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/ https://leetcode-cn.com/problems/read-n-characters-given-read4-ii-call-multiple-times/ read-n-characters-given-read4-ii-call-multiple-times "用 Read4 读取 N 个字符 II"
+
+159 https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/ https://leetcode-cn.com/problems/longest-substring-with-at-most-two-distinct-characters/ longest-substring-with-at-most-two-distinct-characters "至多包含两个不同字符的最长子串"
+
 160 https://leetcode.com/problems/intersection-of-two-linked-lists/ https://leetcode-cn.com/problems/intersection-of-two-linked-lists/ intersection-of-two-linked-lists "相交链表"
 
+161 https://leetcode.com/problems/one-edit-distance/ https://leetcode-cn.com/problems/one-edit-distance/ one-edit-distance "相隔为 1 的编辑距离"
+
 162 https://leetcode.com/problems/find-peak-element/ https://leetcode-cn.com/problems/find-peak-element/ find-peak-element "寻找峰值"
+
+163 https://leetcode.com/problems/missing-ranges/ https://leetcode-cn.com/problems/missing-ranges/ missing-ranges "缺失的区间"
 
 164 https://leetcode.com/problems/maximum-gap/ https://leetcode-cn.com/problems/maximum-gap/ maximum-gap "最大间距"
 
@@ -325,6 +337,8 @@
 168 https://leetcode.com/problems/excel-sheet-column-title/ https://leetcode-cn.com/problems/excel-sheet-column-title/ excel-sheet-column-title "Excel表列名称"
 
 169 https://leetcode.com/problems/majority-element/ https://leetcode-cn.com/problems/majority-element/ majority-element "求众数"
+
+170 https://leetcode.com/problems/two-sum-iii-data-structure-design/ https://leetcode-cn.com/problems/two-sum-iii-data-structure-design/ two-sum-iii-data-structure-design "两数之和 III - 数据结构设计"
 
 171 https://leetcode.com/problems/excel-sheet-column-number/ https://leetcode-cn.com/problems/excel-sheet-column-number/ excel-sheet-column-number "Excel表列序号"
 
@@ -356,6 +370,8 @@
 
 185 https://leetcode.com/problems/department-top-three-salaries/ https://leetcode-cn.com/problems/department-top-three-salaries/ department-top-three-salaries "部门工资前三高的员工"
 
+186 https://leetcode.com/problems/reverse-words-in-a-string-ii/ https://leetcode-cn.com/problems/reverse-words-in-a-string-ii/ reverse-words-in-a-string-ii "翻转字符串里的单词 II"
+
 187 https://leetcode.com/problems/repeated-dna-sequences/ https://leetcode-cn.com/problems/repeated-dna-sequences/ repeated-dna-sequences "重复的DNA序列"
 
 188 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/ best-time-to-buy-and-sell-stock-iv "买卖股票的最佳时机 IV"
@@ -382,7 +398,7 @@
 
 199 https://leetcode.com/problems/binary-tree-right-side-view/ https://leetcode-cn.com/problems/binary-tree-right-side-view/ binary-tree-right-side-view "二叉树的右视图"
 
-200 https://leetcode.com/problems/number-of-islands/ https://leetcode-cn.com/problems/number-of-islands/ number-of-islands "岛屿的个数"
+200 https://leetcode.com/problems/number-of-islands/ https://leetcode-cn.com/problems/number-of-islands/ number-of-islands "岛屿数量"
 
 201 https://leetcode.com/problems/bitwise-and-of-numbers-range/ https://leetcode-cn.com/problems/bitwise-and-of-numbers-range/ bitwise-and-of-numbers-range "数字范围按位与"
 
@@ -448,7 +464,7 @@
 
 232 https://leetcode.com/problems/implement-queue-using-stacks/ https://leetcode-cn.com/problems/implement-queue-using-stacks/ implement-queue-using-stacks "用栈实现队列"
 
-233 https://leetcode.com/problems/number-of-digit-one/ https://leetcode-cn.com/problems/number-of-digit-one/ number-of-digit-one "数字1的个数"
+233 https://leetcode.com/problems/number-of-digit-one/ https://leetcode-cn.com/problems/number-of-digit-one/ number-of-digit-one "数字 1 的个数"
 
 234 https://leetcode.com/problems/palindrome-linked-list/ https://leetcode-cn.com/problems/palindrome-linked-list/ palindrome-linked-list "回文链表"
 
@@ -468,11 +484,43 @@
 
 242 https://leetcode.com/problems/valid-anagram/ https://leetcode-cn.com/problems/valid-anagram/ valid-anagram "有效的字母异位词"
 
+243 https://leetcode.com/problems/shortest-word-distance/ https://leetcode-cn.com/problems/shortest-word-distance/ shortest-word-distance "最短单词距离"
+
+244 https://leetcode.com/problems/shortest-word-distance-ii/ https://leetcode-cn.com/problems/shortest-word-distance-ii/ shortest-word-distance-ii "最短单词距离 II"
+
+245 https://leetcode.com/problems/shortest-word-distance-iii/ https://leetcode-cn.com/problems/shortest-word-distance-iii/ shortest-word-distance-iii "最短单词距离 III"
+
+246 https://leetcode.com/problems/strobogrammatic-number/ https://leetcode-cn.com/problems/strobogrammatic-number/ strobogrammatic-number "中心对称数"
+
+247 https://leetcode.com/problems/strobogrammatic-number-ii/ https://leetcode-cn.com/problems/strobogrammatic-number-ii/ strobogrammatic-number-ii "中心对称数 II"
+
+248 https://leetcode.com/problems/strobogrammatic-number-iii/ https://leetcode-cn.com/problems/strobogrammatic-number-iii/ strobogrammatic-number-iii "中心对称数 III"
+
+249 https://leetcode.com/problems/group-shifted-strings/ https://leetcode-cn.com/problems/group-shifted-strings/ group-shifted-strings "移位字符串分组"
+
+250 https://leetcode.com/problems/count-univalue-subtrees/ https://leetcode-cn.com/problems/count-univalue-subtrees/ count-univalue-subtrees "统计同值子树"
+
+251 https://leetcode.com/problems/flatten-2d-vector/ https://leetcode-cn.com/problems/flatten-2d-vector/ flatten-2d-vector "展开二维向量"
+
+252 https://leetcode.com/problems/meeting-rooms/ https://leetcode-cn.com/problems/meeting-rooms/ meeting-rooms "会议室"
+
+253 https://leetcode.com/problems/meeting-rooms-ii/ https://leetcode-cn.com/problems/meeting-rooms-ii/ meeting-rooms-ii "会议室 II"
+
+254 https://leetcode.com/problems/factor-combinations/ https://leetcode-cn.com/problems/factor-combinations/ factor-combinations "因子的组合"
+
+255 https://leetcode.com/problems/verify-preorder-sequence-in-binary-search-tree/ https://leetcode-cn.com/problems/verify-preorder-sequence-in-binary-search-tree/ verify-preorder-sequence-in-binary-search-tree "验证前序遍历序列二叉搜索树"
+
+256 https://leetcode.com/problems/paint-house/ https://leetcode-cn.com/problems/paint-house/ paint-house "粉刷房子"
+
 257 https://leetcode.com/problems/binary-tree-paths/ https://leetcode-cn.com/problems/binary-tree-paths/ binary-tree-paths "二叉树的所有路径"
 
 258 https://leetcode.com/problems/add-digits/ https://leetcode-cn.com/problems/add-digits/ add-digits "各位相加"
 
+259 https://leetcode.com/problems/3sum-smaller/ https://leetcode-cn.com/problems/3sum-smaller/ 3sum-smaller "较小的三数之和"
+
 260 https://leetcode.com/problems/single-number-iii/ https://leetcode-cn.com/problems/single-number-iii/ single-number-iii "只出现一次的数字 III"
+
+261 https://leetcode.com/problems/graph-valid-tree/ https://leetcode-cn.com/problems/graph-valid-tree/ graph-valid-tree "以图判树"
 
 262 https://leetcode.com/problems/trips-and-users/ https://leetcode-cn.com/problems/trips-and-users/ trips-and-users "行程和用户"
 
@@ -480,7 +528,21 @@
 
 264 https://leetcode.com/problems/ugly-number-ii/ https://leetcode-cn.com/problems/ugly-number-ii/ ugly-number-ii "丑数 II"
 
+265 https://leetcode.com/problems/paint-house-ii/ https://leetcode-cn.com/problems/paint-house-ii/ paint-house-ii "粉刷房子 II"
+
+266 https://leetcode.com/problems/palindrome-permutation/ https://leetcode-cn.com/problems/palindrome-permutation/ palindrome-permutation "回文排列"
+
+267 https://leetcode.com/problems/palindrome-permutation-ii/ https://leetcode-cn.com/problems/palindrome-permutation-ii/ palindrome-permutation-ii "回文排列 II"
+
 268 https://leetcode.com/problems/missing-number/ https://leetcode-cn.com/problems/missing-number/ missing-number "缺失数字"
+
+269 https://leetcode.com/problems/alien-dictionary/ https://leetcode-cn.com/problems/alien-dictionary/ alien-dictionary "火星词典"
+
+270 https://leetcode.com/problems/closest-binary-search-tree-value/ https://leetcode-cn.com/problems/closest-binary-search-tree-value/ closest-binary-search-tree-value "最接近的二叉搜索树值"
+
+271 https://leetcode.com/problems/encode-and-decode-strings/ https://leetcode-cn.com/problems/encode-and-decode-strings/ encode-and-decode-strings "字符串的编码与解码"
+
+272 https://leetcode.com/problems/closest-binary-search-tree-value-ii/ https://leetcode-cn.com/problems/closest-binary-search-tree-value-ii/ closest-binary-search-tree-value-ii "最接近的二叉搜索树值 II"
 
 273 https://leetcode.com/problems/integer-to-english-words/ https://leetcode-cn.com/problems/integer-to-english-words/ integer-to-english-words "整数转换英文表示"
 
@@ -488,9 +550,17 @@
 
 275 https://leetcode.com/problems/h-index-ii/ https://leetcode-cn.com/problems/h-index-ii/ h-index-ii "H指数 II"
 
+276 https://leetcode.com/problems/paint-fence/ https://leetcode-cn.com/problems/paint-fence/ paint-fence "栅栏涂色"
+
+277 https://leetcode.com/problems/find-the-celebrity/ https://leetcode-cn.com/problems/find-the-celebrity/ find-the-celebrity "搜寻名人"
+
 278 https://leetcode.com/problems/first-bad-version/ https://leetcode-cn.com/problems/first-bad-version/ first-bad-version "第一个错误的版本"
 
 279 https://leetcode.com/problems/perfect-squares/ https://leetcode-cn.com/problems/perfect-squares/ perfect-squares "完全平方数"
+
+280 https://leetcode.com/problems/wiggle-sort/ https://leetcode-cn.com/problems/wiggle-sort/ wiggle-sort "摆动排序"
+
+281 https://leetcode.com/problems/zigzag-iterator/ https://leetcode-cn.com/problems/zigzag-iterator/ zigzag-iterator "锯齿迭代器"
 
 282 https://leetcode.com/problems/expression-add-operators/ https://leetcode-cn.com/problems/expression-add-operators/ expression-add-operators "给表达式添加运算符"
 
@@ -498,17 +568,33 @@
 
 284 https://leetcode.com/problems/peeking-iterator/ https://leetcode-cn.com/problems/peeking-iterator/ peeking-iterator "顶端迭代器"
 
+285 https://leetcode.com/problems/inorder-successor-in-bst/ https://leetcode-cn.com/problems/inorder-successor-in-bst/ inorder-successor-in-bst "二叉搜索树中的顺序后继"
+
+286 https://leetcode.com/problems/walls-and-gates/ https://leetcode-cn.com/problems/walls-and-gates/ walls-and-gates "墙与门"
+
 287 https://leetcode.com/problems/find-the-duplicate-number/ https://leetcode-cn.com/problems/find-the-duplicate-number/ find-the-duplicate-number "寻找重复数"
+
+288 https://leetcode.com/problems/unique-word-abbreviation/ https://leetcode-cn.com/problems/unique-word-abbreviation/ unique-word-abbreviation "单词的唯一缩写"
 
 289 https://leetcode.com/problems/game-of-life/ https://leetcode-cn.com/problems/game-of-life/ game-of-life "生命游戏"
 
-290 https://leetcode.com/problems/word-pattern/ https://leetcode-cn.com/problems/word-pattern/ word-pattern "单词模式"
+290 https://leetcode.com/problems/word-pattern/ https://leetcode-cn.com/problems/word-pattern/ word-pattern "单词规律"
+
+291 https://leetcode.com/problems/word-pattern-ii/ https://leetcode-cn.com/problems/word-pattern-ii/ word-pattern-ii "单词规律 II"
 
 292 https://leetcode.com/problems/nim-game/ https://leetcode-cn.com/problems/nim-game/ nim-game "Nim 游戏"
 
+293 https://leetcode.com/problems/flip-game/ https://leetcode-cn.com/problems/flip-game/ flip-game "翻转游戏"
+
+294 https://leetcode.com/problems/flip-game-ii/ https://leetcode-cn.com/problems/flip-game-ii/ flip-game-ii "翻转游戏 II"
+
 295 https://leetcode.com/problems/find-median-from-data-stream/ https://leetcode-cn.com/problems/find-median-from-data-stream/ find-median-from-data-stream "数据流的中位数"
 
+296 https://leetcode.com/problems/best-meeting-point/ https://leetcode-cn.com/problems/best-meeting-point/ best-meeting-point "最佳的碰头地点"
+
 297 https://leetcode.com/problems/serialize-and-deserialize-binary-tree/ https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/ serialize-and-deserialize-binary-tree "二叉树的序列化与反序列化"
+
+298 https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/ https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence/ binary-tree-longest-consecutive-sequence "二叉树最长连续序列"
 
 299 https://leetcode.com/problems/bulls-and-cows/ https://leetcode-cn.com/problems/bulls-and-cows/ bulls-and-cows "猜数字游戏"
 
@@ -516,35 +602,53 @@
 
 301 https://leetcode.com/problems/remove-invalid-parentheses/ https://leetcode-cn.com/problems/remove-invalid-parentheses/ remove-invalid-parentheses "删除无效的括号"
 
+302 https://leetcode.com/problems/smallest-rectangle-enclosing-black-pixels/ https://leetcode-cn.com/problems/smallest-rectangle-enclosing-black-pixels/ smallest-rectangle-enclosing-black-pixels "包含全部黑色像素的最小矩形"
+
 303 https://leetcode.com/problems/range-sum-query-immutable/ https://leetcode-cn.com/problems/range-sum-query-immutable/ range-sum-query-immutable "区域和检索 - 数组不可变"
 
 304 https://leetcode.com/problems/range-sum-query-2d-immutable/ https://leetcode-cn.com/problems/range-sum-query-2d-immutable/ range-sum-query-2d-immutable "二维区域和检索 - 矩阵不可变"
+
+305 https://leetcode.com/problems/number-of-islands-ii/ https://leetcode-cn.com/problems/number-of-islands-ii/ number-of-islands-ii "岛屿数量 II"
 
 306 https://leetcode.com/problems/additive-number/ https://leetcode-cn.com/problems/additive-number/ additive-number "累加数"
 
 307 https://leetcode.com/problems/range-sum-query-mutable/ https://leetcode-cn.com/problems/range-sum-query-mutable/ range-sum-query-mutable "区域和检索 - 数组可修改"
 
+308 https://leetcode.com/problems/range-sum-query-2d-mutable/ https://leetcode-cn.com/problems/range-sum-query-2d-mutable/ range-sum-query-2d-mutable "二维区域和检索 - 可变"
+
 309 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/ best-time-to-buy-and-sell-stock-with-cooldown "最佳买卖股票时机含冷冻期"
 
 310 https://leetcode.com/problems/minimum-height-trees/ https://leetcode-cn.com/problems/minimum-height-trees/ minimum-height-trees "最小高度树"
+
+311 https://leetcode.com/problems/sparse-matrix-multiplication/ https://leetcode-cn.com/problems/sparse-matrix-multiplication/ sparse-matrix-multiplication "稀疏矩阵的乘法"
 
 312 https://leetcode.com/problems/burst-balloons/ https://leetcode-cn.com/problems/burst-balloons/ burst-balloons "戳气球"
 
 313 https://leetcode.com/problems/super-ugly-number/ https://leetcode-cn.com/problems/super-ugly-number/ super-ugly-number "超级丑数"
 
+314 https://leetcode.com/problems/binary-tree-vertical-order-traversal/ https://leetcode-cn.com/problems/binary-tree-vertical-order-traversal/ binary-tree-vertical-order-traversal "二叉树的垂直遍历"
+
 315 https://leetcode.com/problems/count-of-smaller-numbers-after-self/ https://leetcode-cn.com/problems/count-of-smaller-numbers-after-self/ count-of-smaller-numbers-after-self "计算右侧小于当前元素的个数"
 
 316 https://leetcode.com/problems/remove-duplicate-letters/ https://leetcode-cn.com/problems/remove-duplicate-letters/ remove-duplicate-letters "去除重复字母"
+
+317 https://leetcode.com/problems/shortest-distance-from-all-buildings/ https://leetcode-cn.com/problems/shortest-distance-from-all-buildings/ shortest-distance-from-all-buildings "离建筑物最近的距离"
 
 318 https://leetcode.com/problems/maximum-product-of-word-lengths/ https://leetcode-cn.com/problems/maximum-product-of-word-lengths/ maximum-product-of-word-lengths "最大单词长度乘积"
 
 319 https://leetcode.com/problems/bulb-switcher/ https://leetcode-cn.com/problems/bulb-switcher/ bulb-switcher "灯泡开关"
 
+320 https://leetcode.com/problems/generalized-abbreviation/ https://leetcode-cn.com/problems/generalized-abbreviation/ generalized-abbreviation "列举单词的全部缩写"
+
 321 https://leetcode.com/problems/create-maximum-number/ https://leetcode-cn.com/problems/create-maximum-number/ create-maximum-number "拼接最大数"
 
 322 https://leetcode.com/problems/coin-change/ https://leetcode-cn.com/problems/coin-change/ coin-change "零钱兑换"
 
+323 https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/ https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph/ number-of-connected-components-in-an-undirected-graph "无向图中连通分量的数目"
+
 324 https://leetcode.com/problems/wiggle-sort-ii/ https://leetcode-cn.com/problems/wiggle-sort-ii/ wiggle-sort-ii "摆动排序 II"
+
+325 https://leetcode.com/problems/maximum-size-subarray-sum-equals-k/ https://leetcode-cn.com/problems/maximum-size-subarray-sum-equals-k/ maximum-size-subarray-sum-equals-k "和等于 k 的最长子数组长度"
 
 326 https://leetcode.com/problems/power-of-three/ https://leetcode-cn.com/problems/power-of-three/ power-of-three "3的幂"
 
@@ -560,6 +664,8 @@
 
 332 https://leetcode.com/problems/reconstruct-itinerary/ https://leetcode-cn.com/problems/reconstruct-itinerary/ reconstruct-itinerary "重新安排行程"
 
+333 https://leetcode.com/problems/largest-bst-subtree/ https://leetcode-cn.com/problems/largest-bst-subtree/ largest-bst-subtree "最大 BST 子树"
+
 334 https://leetcode.com/problems/increasing-triplet-subsequence/ https://leetcode-cn.com/problems/increasing-triplet-subsequence/ increasing-triplet-subsequence "递增的三元子序列"
 
 335 https://leetcode.com/problems/self-crossing/ https://leetcode-cn.com/problems/self-crossing/ self-crossing "路径交叉"
@@ -569,6 +675,10 @@
 337 https://leetcode.com/problems/house-robber-iii/ https://leetcode-cn.com/problems/house-robber-iii/ house-robber-iii "打家劫舍 III"
 
 338 https://leetcode.com/problems/counting-bits/ https://leetcode-cn.com/problems/counting-bits/ counting-bits "比特位计数"
+
+339 https://leetcode.com/problems/nested-list-weight-sum/ https://leetcode-cn.com/problems/nested-list-weight-sum/ nested-list-weight-sum "嵌套列表权重和"
+
+340 https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/ https://leetcode-cn.com/problems/longest-substring-with-at-most-k-distinct-characters/ longest-substring-with-at-most-k-distinct-characters "至多包含 K 个不同字符的最长子串"
 
 341 https://leetcode.com/problems/flatten-nested-list-iterator/ https://leetcode-cn.com/problems/flatten-nested-list-iterator/ flatten-nested-list-iterator "扁平化嵌套列表迭代器"
 
@@ -580,27 +690,55 @@
 
 345 https://leetcode.com/problems/reverse-vowels-of-a-string/ https://leetcode-cn.com/problems/reverse-vowels-of-a-string/ reverse-vowels-of-a-string "反转字符串中的元音字母"
 
+346 https://leetcode.com/problems/moving-average-from-data-stream/ https://leetcode-cn.com/problems/moving-average-from-data-stream/ moving-average-from-data-stream "数据流中的移动平均值"
+
 347 https://leetcode.com/problems/top-k-frequent-elements/ https://leetcode-cn.com/problems/top-k-frequent-elements/ top-k-frequent-elements "前K个高频元素"
+
+348 https://leetcode.com/problems/design-tic-tac-toe/ https://leetcode-cn.com/problems/design-tic-tac-toe/ design-tic-tac-toe "判定井字棋胜负"
 
 349 https://leetcode.com/problems/intersection-of-two-arrays/ https://leetcode-cn.com/problems/intersection-of-two-arrays/ intersection-of-two-arrays "两个数组的交集"
 
 350 https://leetcode.com/problems/intersection-of-two-arrays-ii/ https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/ intersection-of-two-arrays-ii "两个数组的交集 II"
 
+351 https://leetcode.com/problems/android-unlock-patterns/ https://leetcode-cn.com/problems/android-unlock-patterns/ android-unlock-patterns "安卓系统手势解锁"
+
 352 https://leetcode.com/problems/data-stream-as-disjoint-intervals/ https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals/ data-stream-as-disjoint-intervals "将数据流变为多个不相交区间"
+
+353 https://leetcode.com/problems/design-snake-game/ https://leetcode-cn.com/problems/design-snake-game/ design-snake-game "贪吃蛇"
 
 354 https://leetcode.com/problems/russian-doll-envelopes/ https://leetcode-cn.com/problems/russian-doll-envelopes/ russian-doll-envelopes "俄罗斯套娃信封问题"
 
 355 https://leetcode.com/problems/design-twitter/ https://leetcode-cn.com/problems/design-twitter/ design-twitter "设计推特"
 
+356 https://leetcode.com/problems/line-reflection/ https://leetcode-cn.com/problems/line-reflection/ line-reflection "直线镜像"
+
 357 https://leetcode.com/problems/count-numbers-with-unique-digits/ https://leetcode-cn.com/problems/count-numbers-with-unique-digits/ count-numbers-with-unique-digits "计算各个位数不同的数字个数"
+
+358 https://leetcode.com/problems/rearrange-string-k-distance-apart/ https://leetcode-cn.com/problems/rearrange-string-k-distance-apart/ rearrange-string-k-distance-apart "K 距离间隔重排字符串"
+
+359 https://leetcode.com/problems/logger-rate-limiter/ https://leetcode-cn.com/problems/logger-rate-limiter/ logger-rate-limiter "日志速率限制器"
+
+360 https://leetcode.com/problems/sort-transformed-array/ https://leetcode-cn.com/problems/sort-transformed-array/ sort-transformed-array "有序转化数组"
+
+361 https://leetcode.com/problems/bomb-enemy/ https://leetcode-cn.com/problems/bomb-enemy/ bomb-enemy "轰炸敌人"
+
+362 https://leetcode.com/problems/design-hit-counter/ https://leetcode-cn.com/problems/design-hit-counter/ design-hit-counter "敲击计数器"
 
 363 https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/ https://leetcode-cn.com/problems/max-sum-of-rectangle-no-larger-than-k/ max-sum-of-rectangle-no-larger-than-k "矩形区域不超过 K 的最大数值和"
 
+364 https://leetcode.com/problems/nested-list-weight-sum-ii/ https://leetcode-cn.com/problems/nested-list-weight-sum-ii/ nested-list-weight-sum-ii "加权嵌套序列和 II"
+
 365 https://leetcode.com/problems/water-and-jug-problem/ https://leetcode-cn.com/problems/water-and-jug-problem/ water-and-jug-problem "水壶问题"
+
+366 https://leetcode.com/problems/find-leaves-of-binary-tree/ https://leetcode-cn.com/problems/find-leaves-of-binary-tree/ find-leaves-of-binary-tree "寻找完全二叉树的叶子节点"
 
 367 https://leetcode.com/problems/valid-perfect-square/ https://leetcode-cn.com/problems/valid-perfect-square/ valid-perfect-square "有效的完全平方数"
 
 368 https://leetcode.com/problems/largest-divisible-subset/ https://leetcode-cn.com/problems/largest-divisible-subset/ largest-divisible-subset "最大整除子集"
+
+369 https://leetcode.com/problems/plus-one-linked-list/ https://leetcode-cn.com/problems/plus-one-linked-list/ plus-one-linked-list "给单链表加一"
+
+370 https://leetcode.com/problems/range-addition/ https://leetcode-cn.com/problems/range-addition/ range-addition "区间加法"
 
 371 https://leetcode.com/problems/sum-of-two-integers/ https://leetcode-cn.com/problems/sum-of-two-integers/ sum-of-two-integers "两整数之和"
 
@@ -617,6 +755,8 @@
 377 https://leetcode.com/problems/combination-sum-iv/ https://leetcode-cn.com/problems/combination-sum-iv/ combination-sum-iv "组合总和 Ⅳ"
 
 378 https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/ https://leetcode-cn.com/problems/kth-smallest-element-in-a-sorted-matrix/ kth-smallest-element-in-a-sorted-matrix "有序矩阵中第K小的元素"
+
+379 https://leetcode.com/problems/design-phone-directory/ https://leetcode-cn.com/problems/design-phone-directory/ design-phone-directory "电话目录"
 
 380 https://leetcode.com/problems/insert-delete-getrandom-o1/ https://leetcode-cn.com/problems/insert-delete-getrandom-o1/ insert-delete-getrandom-o1 "常数时间插入、删除和获取随机元素"
 
@@ -674,9 +814,13 @@
 
 407 https://leetcode.com/problems/trapping-rain-water-ii/ https://leetcode-cn.com/problems/trapping-rain-water-ii/ trapping-rain-water-ii "接雨水 II"
 
+408 https://leetcode.com/problems/valid-word-abbreviation/ https://leetcode-cn.com/problems/valid-word-abbreviation/ valid-word-abbreviation "有效单词缩写"
+
 409 https://leetcode.com/problems/longest-palindrome/ https://leetcode-cn.com/problems/longest-palindrome/ longest-palindrome "最长回文串"
 
 410 https://leetcode.com/problems/split-array-largest-sum/ https://leetcode-cn.com/problems/split-array-largest-sum/ split-array-largest-sum "分割数组的最大值"
+
+411 https://leetcode.com/problems/minimum-unique-word-abbreviation/ https://leetcode-cn.com/problems/minimum-unique-word-abbreviation/ minimum-unique-word-abbreviation "最短特异单词缩写"
 
 412 https://leetcode.com/problems/fizz-buzz/ https://leetcode-cn.com/problems/fizz-buzz/ fizz-buzz "Fizz Buzz"
 
@@ -690,21 +834,33 @@
 
 417 https://leetcode.com/problems/pacific-atlantic-water-flow/ https://leetcode-cn.com/problems/pacific-atlantic-water-flow/ pacific-atlantic-water-flow "太平洋大西洋水流问题"
 
+418 https://leetcode.com/problems/sentence-screen-fitting/ https://leetcode-cn.com/problems/sentence-screen-fitting/ sentence-screen-fitting "句子屏幕显示"
+
 419 https://leetcode.com/problems/battleships-in-a-board/ https://leetcode-cn.com/problems/battleships-in-a-board/ battleships-in-a-board "甲板上的战舰"
 
 420 https://leetcode.com/problems/strong-password-checker/ https://leetcode-cn.com/problems/strong-password-checker/ strong-password-checker "强密码检验器"
 
 421 https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/ https://leetcode-cn.com/problems/maximum-xor-of-two-numbers-in-an-array/ maximum-xor-of-two-numbers-in-an-array "数组中两个数的最大异或值"
 
+422 https://leetcode.com/problems/valid-word-square/ https://leetcode-cn.com/problems/valid-word-square/ valid-word-square "有效的单词方块"
+
 423 https://leetcode.com/problems/reconstruct-original-digits-from-english/ https://leetcode-cn.com/problems/reconstruct-original-digits-from-english/ reconstruct-original-digits-from-english "从英文中重建数字"
 
 424 https://leetcode.com/problems/longest-repeating-character-replacement/ https://leetcode-cn.com/problems/longest-repeating-character-replacement/ longest-repeating-character-replacement "替换后的最长重复字符"
 
+425 https://leetcode.com/problems/word-squares/ https://leetcode-cn.com/problems/word-squares/ word-squares "单词方块"
+
+426 https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/ https://leetcode-cn.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/ convert-binary-search-tree-to-sorted-doubly-linked-list "将二叉搜索树转化为排序的双向链表"
+
 427 https://leetcode.com/problems/construct-quad-tree/ https://leetcode-cn.com/problems/construct-quad-tree/ construct-quad-tree "建立四叉树"
+
+428 https://leetcode.com/problems/serialize-and-deserialize-n-ary-tree/ https://leetcode-cn.com/problems/serialize-and-deserialize-n-ary-tree/ serialize-and-deserialize-n-ary-tree "序列化和反序列化 N 叉树"
 
 429 https://leetcode.com/problems/n-ary-tree-level-order-traversal/ https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/ n-ary-tree-level-order-traversal "N叉树的层序遍历"
 
 430 https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/ https://leetcode-cn.com/problems/flatten-a-multilevel-doubly-linked-list/ flatten-a-multilevel-doubly-linked-list "扁平化多级双向链表"
+
+431 https://leetcode.com/problems/encode-n-ary-tree-to-binary-tree/ https://leetcode-cn.com/problems/encode-n-ary-tree-to-binary-tree/ encode-n-ary-tree-to-binary-tree "将 N 叉树编码为二叉树"
 
 432 https://leetcode.com/problems/all-oone-data-structure/ https://leetcode-cn.com/problems/all-oone-data-structure/ all-oone-data-structure "全 O(1) 的数据结构"
 
@@ -720,6 +876,8 @@
 
 438 https://leetcode.com/problems/find-all-anagrams-in-a-string/ https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/ find-all-anagrams-in-a-string "找到字符串中所有字母异位词"
 
+439 https://leetcode.com/problems/ternary-expression-parser/ https://leetcode-cn.com/problems/ternary-expression-parser/ ternary-expression-parser "三元表达式解析器"
+
 440 https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/ https://leetcode-cn.com/problems/k-th-smallest-in-lexicographical-order/ k-th-smallest-in-lexicographical-order "字典序的第K小数字"
 
 441 https://leetcode.com/problems/arranging-coins/ https://leetcode-cn.com/problems/arranging-coins/ arranging-coins "排列硬币"
@@ -727,6 +885,8 @@
 442 https://leetcode.com/problems/find-all-duplicates-in-an-array/ https://leetcode-cn.com/problems/find-all-duplicates-in-an-array/ find-all-duplicates-in-an-array "数组中重复的数据"
 
 443 https://leetcode.com/problems/string-compression/ https://leetcode-cn.com/problems/string-compression/ string-compression "压缩字符串"
+
+444 https://leetcode.com/problems/sequence-reconstruction/ https://leetcode-cn.com/problems/sequence-reconstruction/ sequence-reconstruction "序列重建"
 
 445 https://leetcode.com/problems/add-two-numbers-ii/ https://leetcode-cn.com/problems/add-two-numbers-ii/ add-two-numbers-ii "两数相加 II"
 
@@ -768,13 +928,19 @@
 
 464 https://leetcode.com/problems/can-i-win/ https://leetcode-cn.com/problems/can-i-win/ can-i-win "我能赢吗"
 
+465 https://leetcode.com/problems/optimal-account-balancing/ https://leetcode-cn.com/problems/optimal-account-balancing/ optimal-account-balancing "最优账单平衡"
+
 466 https://leetcode.com/problems/count-the-repetitions/ https://leetcode-cn.com/problems/count-the-repetitions/ count-the-repetitions "统计重复个数"
 
 467 https://leetcode.com/problems/unique-substrings-in-wraparound-string/ https://leetcode-cn.com/problems/unique-substrings-in-wraparound-string/ unique-substrings-in-wraparound-string "环绕字符串中唯一的子字符串"
 
 468 https://leetcode.com/problems/validate-ip-address/ https://leetcode-cn.com/problems/validate-ip-address/ validate-ip-address "验证IP地址"
 
+469 https://leetcode.com/problems/convex-polygon/ https://leetcode-cn.com/problems/convex-polygon/ convex-polygon "凸多边形"
+
 470 https://leetcode.com/problems/implement-rand10-using-rand7/ https://leetcode-cn.com/problems/implement-rand10-using-rand7/ implement-rand10-using-rand7 "用 Rand7() 实现 Rand10()"
+
+471 https://leetcode.com/problems/encode-string-with-shortest-length/ https://leetcode-cn.com/problems/encode-string-with-shortest-length/ encode-string-with-shortest-length "编码最短长度的字符串"
 
 472 https://leetcode.com/problems/concatenated-words/ https://leetcode-cn.com/problems/concatenated-words/ concatenated-words "连接词"
 
@@ -800,11 +966,19 @@
 
 483 https://leetcode.com/problems/smallest-good-base/ https://leetcode-cn.com/problems/smallest-good-base/ smallest-good-base "最小好进制"
 
+484 https://leetcode.com/problems/find-permutation/ https://leetcode-cn.com/problems/find-permutation/ find-permutation "寻找排列"
+
 485 https://leetcode.com/problems/max-consecutive-ones/ https://leetcode-cn.com/problems/max-consecutive-ones/ max-consecutive-ones "最大连续1的个数"
 
 486 https://leetcode.com/problems/predict-the-winner/ https://leetcode-cn.com/problems/predict-the-winner/ predict-the-winner "预测赢家"
 
+487 https://leetcode.com/problems/max-consecutive-ones-ii/ https://leetcode-cn.com/problems/max-consecutive-ones-ii/ max-consecutive-ones-ii "最大连续1的个数 II"
+
 488 https://leetcode.com/problems/zuma-game/ https://leetcode-cn.com/problems/zuma-game/ zuma-game "祖玛游戏"
+
+489 https://leetcode.com/problems/robot-room-cleaner/ https://leetcode-cn.com/problems/robot-room-cleaner/ robot-room-cleaner "扫地机器人"
+
+490 https://leetcode.com/problems/the-maze/ https://leetcode-cn.com/problems/the-maze/ the-maze "迷宫"
 
 491 https://leetcode.com/problems/increasing-subsequences/ https://leetcode-cn.com/problems/increasing-subsequences/ increasing-subsequences "递增子序列"
 
@@ -822,6 +996,8 @@
 
 498 https://leetcode.com/problems/diagonal-traverse/ https://leetcode-cn.com/problems/diagonal-traverse/ diagonal-traverse "对角线遍历"
 
+499 https://leetcode.com/problems/the-maze-iii/ https://leetcode-cn.com/problems/the-maze-iii/ the-maze-iii "迷宫 III"
+
 500 https://leetcode.com/problems/keyboard-row/ https://leetcode-cn.com/problems/keyboard-row/ keyboard-row "键盘行"
 
 501 https://leetcode.com/problems/find-mode-in-binary-search-tree/ https://leetcode-cn.com/problems/find-mode-in-binary-search-tree/ find-mode-in-binary-search-tree "二叉搜索树中的众数"
@@ -832,6 +1008,8 @@
 
 504 https://leetcode.com/problems/base-7/ https://leetcode-cn.com/problems/base-7/ base-7 "七进制数"
 
+505 https://leetcode.com/problems/the-maze-ii/ https://leetcode-cn.com/problems/the-maze-ii/ the-maze-ii "迷宫 II"
+
 506 https://leetcode.com/problems/relative-ranks/ https://leetcode-cn.com/problems/relative-ranks/ relative-ranks "相对名次"
 
 507 https://leetcode.com/problems/perfect-number/ https://leetcode-cn.com/problems/perfect-number/ perfect-number "完美数"
@@ -839,6 +1017,8 @@
 508 https://leetcode.com/problems/most-frequent-subtree-sum/ https://leetcode-cn.com/problems/most-frequent-subtree-sum/ most-frequent-subtree-sum "出现次数最多的子树元素和"
 
 509 https://leetcode.com/problems/fibonacci-number/ https://leetcode-cn.com/problems/fibonacci-number/ fibonacci-number "斐波那契数"
+
+510 https://leetcode.com/problems/inorder-successor-in-bst-ii/ https://leetcode-cn.com/problems/inorder-successor-in-bst-ii/ inorder-successor-in-bst-ii "二叉搜索树中的中序后继 II"
 
 513 https://leetcode.com/problems/find-bottom-left-tree-value/ https://leetcode-cn.com/problems/find-bottom-left-tree-value/ find-bottom-left-tree-value "找树左下角的值"
 
@@ -868,15 +1048,23 @@
 
 526 https://leetcode.com/problems/beautiful-arrangement/ https://leetcode-cn.com/problems/beautiful-arrangement/ beautiful-arrangement "优美的排列"
 
+527 https://leetcode.com/problems/word-abbreviation/ https://leetcode-cn.com/problems/word-abbreviation/ word-abbreviation "单词缩写"
+
 528 https://leetcode.com/problems/random-pick-with-weight/ https://leetcode-cn.com/problems/random-pick-with-weight/ random-pick-with-weight "按权重随机选择"
 
 529 https://leetcode.com/problems/minesweeper/ https://leetcode-cn.com/problems/minesweeper/ minesweeper "扫雷游戏"
 
 530 https://leetcode.com/problems/minimum-absolute-difference-in-bst/ https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/ minimum-absolute-difference-in-bst "二叉搜索树的最小绝对差"
 
+531 https://leetcode.com/problems/lonely-pixel-i/ https://leetcode-cn.com/problems/lonely-pixel-i/ lonely-pixel-i "孤独像素 I"
+
 532 https://leetcode.com/problems/k-diff-pairs-in-an-array/ https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/ k-diff-pairs-in-an-array "数组中的K-diff数对"
 
+533 https://leetcode.com/problems/lonely-pixel-ii/ https://leetcode-cn.com/problems/lonely-pixel-ii/ lonely-pixel-ii "孤独像素 II"
+
 535 https://leetcode.com/problems/encode-and-decode-tinyurl/ https://leetcode-cn.com/problems/encode-and-decode-tinyurl/ encode-and-decode-tinyurl "TinyURL 的加密与解密"
+
+536 https://leetcode.com/problems/construct-binary-tree-from-string/ https://leetcode-cn.com/problems/construct-binary-tree-from-string/ construct-binary-tree-from-string "从字符串生成二叉树"
 
 537 https://leetcode.com/problems/complex-number-multiplication/ https://leetcode-cn.com/problems/complex-number-multiplication/ complex-number-multiplication "复数乘法"
 
@@ -892,9 +1080,17 @@
 
 543 https://leetcode.com/problems/diameter-of-binary-tree/ https://leetcode-cn.com/problems/diameter-of-binary-tree/ diameter-of-binary-tree "二叉树的直径"
 
+544 https://leetcode.com/problems/output-contest-matches/ https://leetcode-cn.com/problems/output-contest-matches/ output-contest-matches "输出比赛匹配对"
+
+545 https://leetcode.com/problems/boundary-of-binary-tree/ https://leetcode-cn.com/problems/boundary-of-binary-tree/ boundary-of-binary-tree "二叉树的边界"
+
 546 https://leetcode.com/problems/remove-boxes/ https://leetcode-cn.com/problems/remove-boxes/ remove-boxes "移除盒子"
 
 547 https://leetcode.com/problems/friend-circles/ https://leetcode-cn.com/problems/friend-circles/ friend-circles "朋友圈"
+
+548 https://leetcode.com/problems/split-array-with-equal-sum/ https://leetcode-cn.com/problems/split-array-with-equal-sum/ split-array-with-equal-sum "将数组分割成和相等的子数组"
+
+549 https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/ https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence-ii/ binary-tree-longest-consecutive-sequence-ii "二叉树中最长的连续序列"
 
 551 https://leetcode.com/problems/student-attendance-record-i/ https://leetcode-cn.com/problems/student-attendance-record-i/ student-attendance-record-i "学生出勤记录 I"
 
@@ -903,6 +1099,8 @@
 553 https://leetcode.com/problems/optimal-division/ https://leetcode-cn.com/problems/optimal-division/ optimal-division "最优除法"
 
 554 https://leetcode.com/problems/brick-wall/ https://leetcode-cn.com/problems/brick-wall/ brick-wall "砖墙"
+
+555 https://leetcode.com/problems/split-concatenated-strings/ https://leetcode-cn.com/problems/split-concatenated-strings/ split-concatenated-strings "分割连接字符串"
 
 556 https://leetcode.com/problems/next-greater-element-iii/ https://leetcode-cn.com/problems/next-greater-element-iii/ next-greater-element-iii "下一个更大元素 III"
 
@@ -916,6 +1114,8 @@
 
 561 https://leetcode.com/problems/array-partition-i/ https://leetcode-cn.com/problems/array-partition-i/ array-partition-i "数组拆分 I"
 
+562 https://leetcode.com/problems/longest-line-of-consecutive-one-in-matrix/ https://leetcode-cn.com/problems/longest-line-of-consecutive-one-in-matrix/ longest-line-of-consecutive-one-in-matrix "矩阵中最长的连续1线段"
+
 563 https://leetcode.com/problems/binary-tree-tilt/ https://leetcode-cn.com/problems/binary-tree-tilt/ binary-tree-tilt "二叉树的坡度"
 
 564 https://leetcode.com/problems/find-the-closest-palindrome/ https://leetcode-cn.com/problems/find-the-closest-palindrome/ find-the-closest-palindrome "寻找最近的回文数"
@@ -926,17 +1126,47 @@
 
 567 https://leetcode.com/problems/permutation-in-string/ https://leetcode-cn.com/problems/permutation-in-string/ permutation-in-string "字符串的排列"
 
+568 https://leetcode.com/problems/maximum-vacation-days/ https://leetcode-cn.com/problems/maximum-vacation-days/ maximum-vacation-days "最大休假天数"
+
+569 https://leetcode.com/problems/median-employee-salary/ https://leetcode-cn.com/problems/median-employee-salary/ median-employee-salary "员工薪水中位数"
+
+570 https://leetcode.com/problems/managers-with-at-least-5-direct-reports/ https://leetcode-cn.com/problems/managers-with-at-least-5-direct-reports/ managers-with-at-least-5-direct-reports "至少有5名直接下属的经理"
+
+571 https://leetcode.com/problems/find-median-given-frequency-of-numbers/ https://leetcode-cn.com/problems/find-median-given-frequency-of-numbers/ find-median-given-frequency-of-numbers "给定数字的频率查询中位数"
+
 572 https://leetcode.com/problems/subtree-of-another-tree/ https://leetcode-cn.com/problems/subtree-of-another-tree/ subtree-of-another-tree "另一个树的子树"
+
+573 https://leetcode.com/problems/squirrel-simulation/ https://leetcode-cn.com/problems/squirrel-simulation/ squirrel-simulation "松鼠模拟"
+
+574 https://leetcode.com/problems/winning-candidate/ https://leetcode-cn.com/problems/winning-candidate/ winning-candidate "当选者"
 
 575 https://leetcode.com/problems/distribute-candies/ https://leetcode-cn.com/problems/distribute-candies/ distribute-candies "分糖果"
 
 576 https://leetcode.com/problems/out-of-boundary-paths/ https://leetcode-cn.com/problems/out-of-boundary-paths/ out-of-boundary-paths "出界的路径数"
 
+577 https://leetcode.com/problems/employee-bonus/ https://leetcode-cn.com/problems/employee-bonus/ employee-bonus "员工奖金"
+
+578 https://leetcode.com/problems/get-highest-answer-rate-question/ https://leetcode-cn.com/problems/get-highest-answer-rate-question/ get-highest-answer-rate-question "查询回答率最高的问题"
+
+579 https://leetcode.com/problems/find-cumulative-salary-of-an-employee/ https://leetcode-cn.com/problems/find-cumulative-salary-of-an-employee/ find-cumulative-salary-of-an-employee "查询员工的累计薪水"
+
+580 https://leetcode.com/problems/count-student-number-in-departments/ https://leetcode-cn.com/problems/count-student-number-in-departments/ count-student-number-in-departments "统计各专业学生人数"
+
 581 https://leetcode.com/problems/shortest-unsorted-continuous-subarray/ https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/ shortest-unsorted-continuous-subarray "最短无序连续子数组"
+
+582 https://leetcode.com/problems/kill-process/ https://leetcode-cn.com/problems/kill-process/ kill-process "杀死进程"
 
 583 https://leetcode.com/problems/delete-operation-for-two-strings/ https://leetcode-cn.com/problems/delete-operation-for-two-strings/ delete-operation-for-two-strings "两个字符串的删除操作"
 
+584 https://leetcode.com/problems/find-customer-referee/ https://leetcode-cn.com/problems/find-customer-referee/ find-customer-referee "寻找用户推荐人"
+
+585 https://leetcode.com/problems/investments-in-2016/ https://leetcode-cn.com/problems/investments-in-2016/ investments-in-2016 "2016年的投资"
+
+586 https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/ https://leetcode-cn.com/problems/customer-placing-the-largest-number-of-orders/ customer-placing-the-largest-number-of-orders "订单最多的客户"
+
 587 https://leetcode.com/problems/erect-the-fence/ https://leetcode-cn.com/problems/erect-the-fence/ erect-the-fence "安装栅栏"
+
+588 https://leetcode.com/problems/design-in-memory-file-system/ https://leetcode-cn.com/problems/design-in-memory-file-system/ design-in-memory-file-system "设计内存文件系统"
 
 589 https://leetcode.com/problems/n-ary-tree-preorder-traversal/ https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/ n-ary-tree-preorder-traversal "N叉树的前序遍历"
 
@@ -954,6 +1184,8 @@
 
 596 https://leetcode.com/problems/classes-more-than-5-students/ https://leetcode-cn.com/problems/classes-more-than-5-students/ classes-more-than-5-students "超过5名学生的课"
 
+597 https://leetcode.com/problems/friend-requests-i-overall-acceptance-rate/ https://leetcode-cn.com/problems/friend-requests-i-overall-acceptance-rate/ friend-requests-i-overall-acceptance-rate "好友申请 I ：总体通过率"
+
 598 https://leetcode.com/problems/range-addition-ii/ https://leetcode-cn.com/problems/range-addition-ii/ range-addition-ii "范围求和 II"
 
 599 https://leetcode.com/problems/minimum-index-sum-of-two-lists/ https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/ minimum-index-sum-of-two-lists "两个列表的最小索引总和"
@@ -962,15 +1194,41 @@
 
 601 https://leetcode.com/problems/human-traffic-of-stadium/ https://leetcode-cn.com/problems/human-traffic-of-stadium/ human-traffic-of-stadium "体育馆的人流量"
 
+602 https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/ https://leetcode-cn.com/problems/friend-requests-ii-who-has-the-most-friends/ friend-requests-ii-who-has-the-most-friends "好友申请 II ：谁有最多的好友"
+
+603 https://leetcode.com/problems/consecutive-available-seats/ https://leetcode-cn.com/problems/consecutive-available-seats/ consecutive-available-seats "连续空余座位"
+
+604 https://leetcode.com/problems/design-compressed-string-iterator/ https://leetcode-cn.com/problems/design-compressed-string-iterator/ design-compressed-string-iterator "迭代压缩字符串"
+
 605 https://leetcode.com/problems/can-place-flowers/ https://leetcode-cn.com/problems/can-place-flowers/ can-place-flowers "种花问题"
 
 606 https://leetcode.com/problems/construct-string-from-binary-tree/ https://leetcode-cn.com/problems/construct-string-from-binary-tree/ construct-string-from-binary-tree "根据二叉树创建字符串"
 
+607 https://leetcode.com/problems/sales-person/ https://leetcode-cn.com/problems/sales-person/ sales-person "销售员"
+
+608 https://leetcode.com/problems/tree-node/ https://leetcode-cn.com/problems/tree-node/ tree-node "树节点"
+
 609 https://leetcode.com/problems/find-duplicate-file-in-system/ https://leetcode-cn.com/problems/find-duplicate-file-in-system/ find-duplicate-file-in-system "在系统中查找重复文件"
+
+610 https://leetcode.com/problems/triangle-judgement/ https://leetcode-cn.com/problems/triangle-judgement/ triangle-judgement "判断三角形"
 
 611 https://leetcode.com/problems/valid-triangle-number/ https://leetcode-cn.com/problems/valid-triangle-number/ valid-triangle-number "有效三角形的个数"
 
+612 https://leetcode.com/problems/shortest-distance-in-a-plane/ https://leetcode-cn.com/problems/shortest-distance-in-a-plane/ shortest-distance-in-a-plane "平面上的最近距离"
+
+613 https://leetcode.com/problems/shortest-distance-in-a-line/ https://leetcode-cn.com/problems/shortest-distance-in-a-line/ shortest-distance-in-a-line "直线上的最近距离"
+
+614 https://leetcode.com/problems/second-degree-follower/ https://leetcode-cn.com/problems/second-degree-follower/ second-degree-follower "二级关注者"
+
+615 https://leetcode.com/problems/average-salary-departments-vs-company/ https://leetcode-cn.com/problems/average-salary-departments-vs-company/ average-salary-departments-vs-company "平均工资：部门与公司比较"
+
+616 https://leetcode.com/problems/add-bold-tag-in-string/ https://leetcode-cn.com/problems/add-bold-tag-in-string/ add-bold-tag-in-string "给字符串添加加粗标签"
+
 617 https://leetcode.com/problems/merge-two-binary-trees/ https://leetcode-cn.com/problems/merge-two-binary-trees/ merge-two-binary-trees "合并二叉树"
+
+618 https://leetcode.com/problems/students-report-by-geography/ https://leetcode-cn.com/problems/students-report-by-geography/ students-report-by-geography "学生地理信息报告"
+
+619 https://leetcode.com/problems/biggest-single-number/ https://leetcode-cn.com/problems/biggest-single-number/ biggest-single-number "只出现一次的最大数字"
 
 620 https://leetcode.com/problems/not-boring-movies/ https://leetcode-cn.com/problems/not-boring-movies/ not-boring-movies "有趣的电影"
 
@@ -979,6 +1237,10 @@
 622 https://leetcode.com/problems/design-circular-queue/ https://leetcode-cn.com/problems/design-circular-queue/ design-circular-queue "设计循环队列"
 
 623 https://leetcode.com/problems/add-one-row-to-tree/ https://leetcode-cn.com/problems/add-one-row-to-tree/ add-one-row-to-tree "在二叉树中增加一行"
+
+624 https://leetcode.com/problems/maximum-distance-in-arrays/ https://leetcode-cn.com/problems/maximum-distance-in-arrays/ maximum-distance-in-arrays "数组列表中的最大距离"
+
+625 https://leetcode.com/problems/minimum-factorization/ https://leetcode-cn.com/problems/minimum-factorization/ minimum-factorization "最小因式分解"
 
 626 https://leetcode.com/problems/exchange-seats/ https://leetcode-cn.com/problems/exchange-seats/ exchange-seats "换座位"
 
@@ -990,9 +1252,15 @@
 
 630 https://leetcode.com/problems/course-schedule-iii/ https://leetcode-cn.com/problems/course-schedule-iii/ course-schedule-iii "课程表 III"
 
+631 https://leetcode.com/problems/design-excel-sum-formula/ https://leetcode-cn.com/problems/design-excel-sum-formula/ design-excel-sum-formula "设计 Excel 求和公式"
+
 632 https://leetcode.com/problems/smallest-range/ https://leetcode-cn.com/problems/smallest-range/ smallest-range "最小区间"
 
 633 https://leetcode.com/problems/sum-of-square-numbers/ https://leetcode-cn.com/problems/sum-of-square-numbers/ sum-of-square-numbers "平方数之和"
+
+634 https://leetcode.com/problems/find-the-derangement-of-an-array/ https://leetcode-cn.com/problems/find-the-derangement-of-an-array/ find-the-derangement-of-an-array "寻找数组的错位排列"
+
+635 https://leetcode.com/problems/design-log-storage-system/ https://leetcode-cn.com/problems/design-log-storage-system/ design-log-storage-system "设计日志存储系统"
 
 636 https://leetcode.com/problems/exclusive-time-of-functions/ https://leetcode-cn.com/problems/exclusive-time-of-functions/ exclusive-time-of-functions "函数的独占时间"
 
@@ -1006,7 +1274,11 @@
 
 641 https://leetcode.com/problems/design-circular-deque/ https://leetcode-cn.com/problems/design-circular-deque/ design-circular-deque "设计循环双端队列"
 
+642 https://leetcode.com/problems/design-search-autocomplete-system/ https://leetcode-cn.com/problems/design-search-autocomplete-system/ design-search-autocomplete-system "设计搜索自动补全系统"
+
 643 https://leetcode.com/problems/maximum-average-subarray-i/ https://leetcode-cn.com/problems/maximum-average-subarray-i/ maximum-average-subarray-i "子数组最大平均数 I"
+
+644 https://leetcode.com/problems/maximum-average-subarray-ii/ https://leetcode-cn.com/problems/maximum-average-subarray-ii/ maximum-average-subarray-ii "最大平均子段和 II"
 
 645 https://leetcode.com/problems/set-mismatch/ https://leetcode-cn.com/problems/set-mismatch/ set-mismatch "错误的集合"
 
@@ -1020,6 +1292,8 @@
 
 650 https://leetcode.com/problems/2-keys-keyboard/ https://leetcode-cn.com/problems/2-keys-keyboard/ 2-keys-keyboard "只有两个键的键盘"
 
+651 https://leetcode.com/problems/4-keys-keyboard/ https://leetcode-cn.com/problems/4-keys-keyboard/ 4-keys-keyboard "4键键盘"
+
 652 https://leetcode.com/problems/find-duplicate-subtrees/ https://leetcode-cn.com/problems/find-duplicate-subtrees/ find-duplicate-subtrees "寻找重复的子树"
 
 653 https://leetcode.com/problems/two-sum-iv-input-is-a-bst/ https://leetcode-cn.com/problems/two-sum-iv-input-is-a-bst/ two-sum-iv-input-is-a-bst "两数之和 IV - 输入 BST"
@@ -1028,19 +1302,27 @@
 
 655 https://leetcode.com/problems/print-binary-tree/ https://leetcode-cn.com/problems/print-binary-tree/ print-binary-tree "输出二叉树"
 
+656 https://leetcode.com/problems/coin-path/ https://leetcode-cn.com/problems/coin-path/ coin-path "金币路径"
+
 657 https://leetcode.com/problems/robot-return-to-origin/ https://leetcode-cn.com/problems/robot-return-to-origin/ robot-return-to-origin "机器人能否返回原点"
 
 658 https://leetcode.com/problems/find-k-closest-elements/ https://leetcode-cn.com/problems/find-k-closest-elements/ find-k-closest-elements "找到 K 个最接近的元素"
 
 659 https://leetcode.com/problems/split-array-into-consecutive-subsequences/ https://leetcode-cn.com/problems/split-array-into-consecutive-subsequences/ split-array-into-consecutive-subsequences "分割数组为连续子序列"
 
+660 https://leetcode.com/problems/remove-9/ https://leetcode-cn.com/problems/remove-9/ remove-9 "移除 9"
+
 661 https://leetcode.com/problems/image-smoother/ https://leetcode-cn.com/problems/image-smoother/ image-smoother "图片平滑器"
 
 662 https://leetcode.com/problems/maximum-width-of-binary-tree/ https://leetcode-cn.com/problems/maximum-width-of-binary-tree/ maximum-width-of-binary-tree "二叉树最大宽度"
 
+663 https://leetcode.com/problems/equal-tree-partition/ https://leetcode-cn.com/problems/equal-tree-partition/ equal-tree-partition "均匀树划分"
+
 664 https://leetcode.com/problems/strange-printer/ https://leetcode-cn.com/problems/strange-printer/ strange-printer "奇怪的打印机"
 
 665 https://leetcode.com/problems/non-decreasing-array/ https://leetcode-cn.com/problems/non-decreasing-array/ non-decreasing-array "非递减数列"
+
+666 https://leetcode.com/problems/path-sum-iv/ https://leetcode-cn.com/problems/path-sum-iv/ path-sum-iv "路径和 IV"
 
 667 https://leetcode.com/problems/beautiful-arrangement-ii/ https://leetcode-cn.com/problems/beautiful-arrangement-ii/ beautiful-arrangement-ii "优美的排列 II"
 
@@ -1070,7 +1352,11 @@
 
 680 https://leetcode.com/problems/valid-palindrome-ii/ https://leetcode-cn.com/problems/valid-palindrome-ii/ valid-palindrome-ii "验证回文字符串 Ⅱ"
 
+681 https://leetcode.com/problems/next-closest-time/ https://leetcode-cn.com/problems/next-closest-time/ next-closest-time "最近时刻"
+
 682 https://leetcode.com/problems/baseball-game/ https://leetcode-cn.com/problems/baseball-game/ baseball-game "棒球比赛"
+
+683 https://leetcode.com/problems/k-empty-slots/ https://leetcode-cn.com/problems/k-empty-slots/ k-empty-slots "K 个空花盆"
 
 684 https://leetcode.com/problems/redundant-connection/ https://leetcode-cn.com/problems/redundant-connection/ redundant-connection "冗余连接"
 
@@ -1092,6 +1378,8 @@
 
 693 https://leetcode.com/problems/binary-number-with-alternating-bits/ https://leetcode-cn.com/problems/binary-number-with-alternating-bits/ binary-number-with-alternating-bits "交替位二进制数"
 
+694 https://leetcode.com/problems/number-of-distinct-islands/ https://leetcode-cn.com/problems/number-of-distinct-islands/ number-of-distinct-islands "不同岛屿的数量"
+
 695 https://leetcode.com/problems/max-area-of-island/ https://leetcode-cn.com/problems/max-area-of-island/ max-area-of-island "岛屿的最大面积"
 
 696 https://leetcode.com/problems/count-binary-substrings/ https://leetcode-cn.com/problems/count-binary-substrings/ count-binary-substrings "计数二进制子串"
@@ -1106,6 +1394,8 @@
 
 701 https://leetcode.com/problems/insert-into-a-binary-search-tree/ https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/ insert-into-a-binary-search-tree "二叉搜索树中的插入操作"
 
+702 https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/ https://leetcode-cn.com/problems/search-in-a-sorted-array-of-unknown-size/ search-in-a-sorted-array-of-unknown-size "搜索长度未知的有序数组"
+
 703 https://leetcode.com/problems/kth-largest-element-in-a-stream/ https://leetcode-cn.com/problems/kth-largest-element-in-a-stream/ kth-largest-element-in-a-stream "数据流中的第K大元素"
 
 704 https://leetcode.com/problems/binary-search/ https://leetcode-cn.com/problems/binary-search/ binary-search "二分查找"
@@ -1116,9 +1406,13 @@
 
 707 https://leetcode.com/problems/design-linked-list/ https://leetcode-cn.com/problems/design-linked-list/ design-linked-list "设计链表"
 
+708 https://leetcode.com/problems/insert-into-a-cyclic-sorted-list/ https://leetcode-cn.com/problems/insert-into-a-cyclic-sorted-list/ insert-into-a-cyclic-sorted-list "循环有序列表的插入"
+
 709 https://leetcode.com/problems/to-lower-case/ https://leetcode-cn.com/problems/to-lower-case/ to-lower-case "转换成小写字母"
 
 710 https://leetcode.com/problems/random-pick-with-blacklist/ https://leetcode-cn.com/problems/random-pick-with-blacklist/ random-pick-with-blacklist "黑名单中的随机数"
+
+711 https://leetcode.com/problems/number-of-distinct-islands-ii/ https://leetcode-cn.com/problems/number-of-distinct-islands-ii/ number-of-distinct-islands-ii "不同岛屿的数量 II"
 
 712 https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/ https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/ minimum-ascii-delete-sum-for-two-strings "两个字符串的最小ASCII删除和"
 
@@ -1127,6 +1421,8 @@
 714 https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/ https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/ best-time-to-buy-and-sell-stock-with-transaction-fee "买卖股票的最佳时机含手续费"
 
 715 https://leetcode.com/problems/range-module/ https://leetcode-cn.com/problems/range-module/ range-module "Range 模块"
+
+716 https://leetcode.com/problems/max-stack/ https://leetcode-cn.com/problems/max-stack/ max-stack "最大栈"
 
 717 https://leetcode.com/problems/1-bit-and-2-bit-characters/ https://leetcode-cn.com/problems/1-bit-and-2-bit-characters/ 1-bit-and-2-bit-characters "1比特与2比特字符"
 
@@ -1140,11 +1436,15 @@
 
 722 https://leetcode.com/problems/remove-comments/ https://leetcode-cn.com/problems/remove-comments/ remove-comments "删除注释"
 
+723 https://leetcode.com/problems/candy-crush/ https://leetcode-cn.com/problems/candy-crush/ candy-crush "粉碎糖果"
+
 724 https://leetcode.com/problems/find-pivot-index/ https://leetcode-cn.com/problems/find-pivot-index/ find-pivot-index "寻找数组的中心索引"
 
 725 https://leetcode.com/problems/split-linked-list-in-parts/ https://leetcode-cn.com/problems/split-linked-list-in-parts/ split-linked-list-in-parts "分隔链表"
 
 726 https://leetcode.com/problems/number-of-atoms/ https://leetcode-cn.com/problems/number-of-atoms/ number-of-atoms "原子的数量"
+
+727 https://leetcode.com/problems/minimum-window-subsequence/ https://leetcode-cn.com/problems/minimum-window-subsequence/ minimum-window-subsequence "最小窗口子序列"
 
 728 https://leetcode.com/problems/self-dividing-numbers/ https://leetcode-cn.com/problems/self-dividing-numbers/ self-dividing-numbers "自除数"
 
@@ -1158,9 +1458,13 @@
 
 733 https://leetcode.com/problems/flood-fill/ https://leetcode-cn.com/problems/flood-fill/ flood-fill "图像渲染"
 
+734 https://leetcode.com/problems/sentence-similarity/ https://leetcode-cn.com/problems/sentence-similarity/ sentence-similarity "句子相似性"
+
 735 https://leetcode.com/problems/asteroid-collision/ https://leetcode-cn.com/problems/asteroid-collision/ asteroid-collision "行星碰撞"
 
 736 https://leetcode.com/problems/parse-lisp-expression/ https://leetcode-cn.com/problems/parse-lisp-expression/ parse-lisp-expression "Lisp 语法解析"
+
+737 https://leetcode.com/problems/sentence-similarity-ii/ https://leetcode-cn.com/problems/sentence-similarity-ii/ sentence-similarity-ii "句子相似性 II"
 
 738 https://leetcode.com/problems/monotone-increasing-digits/ https://leetcode-cn.com/problems/monotone-increasing-digits/ monotone-increasing-digits "单调递增的数字"
 
@@ -1169,6 +1473,8 @@
 740 https://leetcode.com/problems/delete-and-earn/ https://leetcode-cn.com/problems/delete-and-earn/ delete-and-earn "删除与获得点数"
 
 741 https://leetcode.com/problems/cherry-pickup/ https://leetcode-cn.com/problems/cherry-pickup/ cherry-pickup "摘樱桃"
+
+742 https://leetcode.com/problems/closest-leaf-in-a-binary-tree/ https://leetcode-cn.com/problems/closest-leaf-in-a-binary-tree/ closest-leaf-in-a-binary-tree "二叉树最近的叶节点"
 
 743 https://leetcode.com/problems/network-delay-time/ https://leetcode-cn.com/problems/network-delay-time/ network-delay-time "网络延迟时间"
 
@@ -1184,15 +1490,27 @@
 
 749 https://leetcode.com/problems/contain-virus/ https://leetcode-cn.com/problems/contain-virus/ contain-virus "隔离病毒"
 
+750 https://leetcode.com/problems/number-of-corner-rectangles/ https://leetcode-cn.com/problems/number-of-corner-rectangles/ number-of-corner-rectangles "角矩形的数量"
+
+751 https://leetcode.com/problems/ip-to-cidr/ https://leetcode-cn.com/problems/ip-to-cidr/ ip-to-cidr "IP 到 CIDR"
+
 752 https://leetcode.com/problems/open-the-lock/ https://leetcode-cn.com/problems/open-the-lock/ open-the-lock "打开转盘锁"
 
 753 https://leetcode.com/problems/cracking-the-safe/ https://leetcode-cn.com/problems/cracking-the-safe/ cracking-the-safe "破解保险箱"
 
 754 https://leetcode.com/problems/reach-a-number/ https://leetcode-cn.com/problems/reach-a-number/ reach-a-number "到达终点数字"
 
+755 https://leetcode.com/problems/pour-water/ https://leetcode-cn.com/problems/pour-water/ pour-water "倒水"
+
 756 https://leetcode.com/problems/pyramid-transition-matrix/ https://leetcode-cn.com/problems/pyramid-transition-matrix/ pyramid-transition-matrix "金字塔转换矩阵"
 
 757 https://leetcode.com/problems/set-intersection-size-at-least-two/ https://leetcode-cn.com/problems/set-intersection-size-at-least-two/ set-intersection-size-at-least-two "设置交集大小至少为2"
+
+758 https://leetcode.com/problems/bold-words-in-string/ https://leetcode-cn.com/problems/bold-words-in-string/ bold-words-in-string "字符串中的加粗单词"
+
+759 https://leetcode.com/problems/employee-free-time/ https://leetcode-cn.com/problems/employee-free-time/ employee-free-time "员工空闲时间"
+
+760 https://leetcode.com/problems/find-anagram-mappings/ https://leetcode-cn.com/problems/find-anagram-mappings/ find-anagram-mappings "找出变位映射"
 
 761 https://leetcode.com/problems/special-binary-string/ https://leetcode-cn.com/problems/special-binary-string/ special-binary-string "特殊的二进制序列"
 
@@ -1216,9 +1534,15 @@
 
 771 https://leetcode.com/problems/jewels-and-stones/ https://leetcode-cn.com/problems/jewels-and-stones/ jewels-and-stones "宝石与石头"
 
+772 https://leetcode.com/problems/basic-calculator-iii/ https://leetcode-cn.com/problems/basic-calculator-iii/ basic-calculator-iii "基本计算器 III"
+
 773 https://leetcode.com/problems/sliding-puzzle/ https://leetcode-cn.com/problems/sliding-puzzle/ sliding-puzzle "滑动谜题"
 
+774 https://leetcode.com/problems/minimize-max-distance-to-gas-station/ https://leetcode-cn.com/problems/minimize-max-distance-to-gas-station/ minimize-max-distance-to-gas-station "最小化加油站的最大距离"
+
 775 https://leetcode.com/problems/global-and-local-inversions/ https://leetcode-cn.com/problems/global-and-local-inversions/ global-and-local-inversions "全局倒置与局部倒置"
+
+776 https://leetcode.com/problems/split-bst/ https://leetcode-cn.com/problems/split-bst/ split-bst "拆分二叉搜索树"
 
 777 https://leetcode.com/problems/swap-adjacent-in-lr-string/ https://leetcode-cn.com/problems/swap-adjacent-in-lr-string/ swap-adjacent-in-lr-string "在LR字符串中交换相邻字符"
 
@@ -1265,6 +1589,8 @@
 798 https://leetcode.com/problems/smallest-rotation-with-highest-score/ https://leetcode-cn.com/problems/smallest-rotation-with-highest-score/ smallest-rotation-with-highest-score "得分最高的最小轮调"
 
 799 https://leetcode.com/problems/champagne-tower/ https://leetcode-cn.com/problems/champagne-tower/ champagne-tower "香槟塔"
+
+800 https://leetcode.com/problems/similar-rgb-color/ https://leetcode-cn.com/problems/similar-rgb-color/ similar-rgb-color "相似 RGB 颜色"
 
 801 https://leetcode.com/problems/minimum-swaps-to-make-sequences-increasing/ https://leetcode-cn.com/problems/minimum-swaps-to-make-sequences-increasing/ minimum-swaps-to-make-sequences-increasing "使序列递增的最小交换次数"
 
@@ -1730,5 +2056,31 @@
 
 1032 https://leetcode.com/problems/stream-of-characters/ https://leetcode-cn.com/problems/stream-of-characters/ stream-of-characters "字符流"
 
-# 共865题
+1033 https://leetcode.com/problems/moving-stones-until-consecutive/ https://leetcode-cn.com/problems/moving-stones-until-consecutive/ moving-stones-until-consecutive "移动石子直到连续"
+
+1034 https://leetcode.com/problems/coloring-a-border/ https://leetcode-cn.com/problems/coloring-a-border/ coloring-a-border "边框着色"
+
+1035 https://leetcode.com/problems/uncrossed-lines/ https://leetcode-cn.com/problems/uncrossed-lines/ uncrossed-lines "不相交的线"
+
+1036 https://leetcode.com/problems/escape-a-large-maze/ https://leetcode-cn.com/problems/escape-a-large-maze/ escape-a-large-maze "逃离大迷宫"
+
+1037 https://leetcode.com/problems/valid-boomerang/ https://leetcode-cn.com/problems/valid-boomerang/ valid-boomerang "有效的回旋镖"
+
+1038 https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/ https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/ binary-search-tree-to-greater-sum-tree "从二叉搜索树到更大和树"
+
+1039 https://leetcode.com/problems/minimum-score-triangulation-of-polygon/ https://leetcode-cn.com/problems/minimum-score-triangulation-of-polygon/ minimum-score-triangulation-of-polygon "多边形三角剖分的最低得分"
+
+1040 https://leetcode.com/problems/moving-stones-until-consecutive-ii/ https://leetcode-cn.com/problems/moving-stones-until-consecutive-ii/ moving-stones-until-consecutive-ii "移动石子直到连续 II"
+
+1041 https://leetcode.com/problems/robot-bounded-in-circle/ https://leetcode-cn.com/problems/robot-bounded-in-circle/ robot-bounded-in-circle "困于环中的机器人"
+
+1042 https://leetcode.com/problems/flower-planting-with-no-adjacent/ https://leetcode-cn.com/problems/flower-planting-with-no-adjacent/ flower-planting-with-no-adjacent "不邻接植花"
+
+1043 https://leetcode.com/problems/partition-array-for-maximum-sum/ https://leetcode-cn.com/problems/partition-array-for-maximum-sum/ partition-array-for-maximum-sum "分隔数组以得到最大和"
+
+1044 https://leetcode.com/problems/longest-duplicate-substring/ https://leetcode-cn.com/problems/longest-duplicate-substring/ longest-duplicate-substring "最长重复子串"
+
+1049 https://leetcode.com/problems/last-stone-weight-ii/ https://leetcode-cn.com/problems/last-stone-weight-ii/ last-stone-weight-ii "最后一块石头的重量 II"
+
+# 共1041题
 
