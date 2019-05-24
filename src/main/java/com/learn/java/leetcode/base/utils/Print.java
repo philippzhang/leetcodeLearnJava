@@ -66,7 +66,7 @@ public class Print {
 			StringBuilder str = new StringBuilder("[" + String.valueOf(listNode.val));
 			ListNode p = listNode.next;
 			while (p != null) {
-				str.append(",").append(String.valueOf(p.val));
+				str.append("->").append(String.valueOf(p.val));
 				p = p.next;
 			}
 			System.out.print(str.append("]"));
