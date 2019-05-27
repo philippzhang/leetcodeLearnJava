@@ -43,6 +43,11 @@ Explanation:
 # 测试用例
 ```
 199. Binary Tree Right Side View 199. 二叉树的右视图 Medium
+Solution.rightSideView
+---
+[1,2,3,null,5,null,4]
+
+=[1,3,4]
 ```
 
 [enTitle]: https://leetcode.com/problems/binary-tree-right-side-view/
