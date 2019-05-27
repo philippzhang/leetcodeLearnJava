@@ -75,6 +75,18 @@ Note:
 # 测试用例
 ```
 207. Course Schedule 207. 课程表 Medium
+Solution.canFinish
+Solution.canFinish2
+---
+2
+[[1,0]]
+
+=true
+---
+2
+[[1,0],[0,1]]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/course-schedule/
