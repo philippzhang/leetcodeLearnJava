@@ -69,6 +69,11 @@ The flattened tree should look like:
 # 测试用例
 ```
 114. Flatten Binary Tree to Linked List 114. 二叉树展开为链表 Medium
+Solution.flatten
+---
+[1,2,5,3,4,null,6]
+
+I0=[1,null,2,null,3,null,4,null,5,null,6]
 ```
 
 [enTitle]: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
