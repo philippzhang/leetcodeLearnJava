@@ -83,6 +83,27 @@ Output: 0
 # 测试用例
 ```
 35. Search Insert Position 35. 搜索插入位置 Easy
+Solution.searchInsert
+---
+[1,3,5,6]
+5
+
+=2
+---
+[1,3,5,6]
+2
+
+=1
+---
+[1,3,5,6]
+7
+
+=4
+---
+[1,3,5,6]
+0
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/search-insert-position/
