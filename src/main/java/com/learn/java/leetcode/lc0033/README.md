@@ -62,6 +62,7 @@ Output: -1
 ```
 33. Search in Rotated Sorted Array 33. 搜索旋转排序数组 Medium
 Solution.search
+Solution.search2
 ---
 [4,5,6,7,0,1,2]
 0
