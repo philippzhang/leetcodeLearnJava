@@ -83,6 +83,11 @@ Solution.search2
 1
 
 =6
+---
+[1,3]
+3
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/search-in-rotated-sorted-array/

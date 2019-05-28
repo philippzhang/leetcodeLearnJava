@@ -91,19 +91,21 @@ public class Solution {
 				}else if(nums[begin]>nums[mid]){
 					end = mid -1;
 				}else if(nums[begin]==nums[mid]){
+					//例如[6,1]查找1
 					begin = mid + 1;
 				}
 			}else{
-				if(nums[mid]<nums[end]){
-					if(target>=nums[end]){
-						end = mid -1;
+				if(nums[begin]<nums[mid]){
+					begin = mid+1;
+				}else if(nums[begin]>nums[mid]){
+					if(target>=nums[begin]){
+						end = mid-1;
 					}else{
-						begin = mid +1;
+						begin = mid+1;
 					}
-				}else if(nums[mid]>nums[end]){
-					begin = mid +1 ;
-				}else if(nums[mid]==nums[end]){
-					end = mid -1;
+				}else if(nums[begin]==nums[mid]){
+					//例如[6,7]查找7
+					begin = mid + 1;
 				}
 
 			}
