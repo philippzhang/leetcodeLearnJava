@@ -53,6 +53,11 @@ One longest palindrome that can be built is "dccaccd", whose length is 7.
 # 测试用例
 ```
 409. Longest Palindrome 409. 最长回文串 Easy
+Solution.longestPalindrome
+---
+"abccccdd"
+
+=7
 ```
 
 [enTitle]: https://leetcode.com/problems/longest-palindrome/
