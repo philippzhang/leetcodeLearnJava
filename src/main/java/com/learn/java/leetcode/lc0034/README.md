@@ -51,6 +51,22 @@ Output: [-1,-1]
 # 测试用例
 ```
 34. Find First and Last Position of Element in Sorted Array 34. 在排序数组中查找元素的第一个和最后一个位置 Medium
+Solution.searchRange
+---
+[5,7,7,8,8,10]
+8
+
+=[3,4]
+---
+[5,7,7,8,8,10]
+6
+
+=[-1,-1]
+---
+[]
+0
+
+=[-1,-1]
 ```
 
 [enTitle]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
