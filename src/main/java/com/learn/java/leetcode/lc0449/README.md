@@ -27,6 +27,16 @@ Note: Do not use class member/global/static variables to store states. Your seri
 # 测试用例
 ```
 449. Serialize and Deserialize BST 449. 序列化和反序列化二叉搜索树 Medium
+Main.test
+---
+[2,1,3]
+
+=[2,1,3]
+---
+---
+[2,-1,3]
+
+=[2,-1,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/serialize-and-deserialize-bst/
