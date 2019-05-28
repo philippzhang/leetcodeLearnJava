@@ -1,39 +1,23 @@
 package com.learn.java.leetcode.lc0315;
 
+
+import java.util.AbstractMap;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class Solution {
-	class KV<T>{
-		private T key;
-		private T value;
 
-		public KV(T key, T value) {
-			this.key = key;
-			this.value = value;
-		}
-
-		public T getKey() {
-			return key;
-		}
-
-		public void setKey(T key) {
-			this.key = key;
-		}
-
-		public T getValue() {
-			return value;
-		}
-
-		public void setValue(T value) {
-			this.value = value;
-		}
-	}
+	/**
+	 * 归并排序
+	 * @param nums
+	 * @return
+	 */
 	public List<Integer> countSmaller(int[] nums) {
 		int[] counts = new int[nums.length];
-		List<KV<Integer>> list = new ArrayList<>();
+		List<Map.Entry<Integer,Integer>> list = new ArrayList<>();
 		for(int i =0;i<nums.length;i++){
-			list.add(new KV(nums[i],i));
+			list.add(new AbstractMap.SimpleEntry<>(nums[i],i));
 			counts[i]=0;
 		}
 		mergeSort(counts,list);
@@ -44,13 +28,13 @@ public class Solution {
 		return results;
 	}
 
-	private void mergeSort(int[] counts,List<KV<Integer>> list){
+	private void mergeSort(int[] counts,List<Map.Entry<Integer,Integer>> list){
 		if(list.size()<2){
 			return ;
 		}
 		int mid = list.size()/2;
-		List<KV<Integer>> list1 = new ArrayList<>();
-		List<KV<Integer>> list2 = new ArrayList<>();
+		List<Map.Entry<Integer,Integer>> list1 = new ArrayList<>();
+		List<Map.Entry<Integer,Integer>> list2 = new ArrayList<>();
 		for(int i = 0;i<mid;i++){
 			list1.add(list.get(i));
 		}
@@ -63,7 +47,7 @@ public class Solution {
 		mergeTwoList(list1,list2,list,counts);
 	}
 
-	private void mergeTwoList(List<KV<Integer>> list1,List<KV<Integer>> list2,List<KV<Integer>> list,int[] counts){
+	private void mergeTwoList(List<Map.Entry<Integer,Integer>> list1,List<Map.Entry<Integer,Integer>> list2,List<Map.Entry<Integer,Integer>> list,int[] counts){
 		int i =0;
 		int j =0;
 		while(i<list1.size()&&j<list2.size()){
@@ -83,5 +67,69 @@ public class Solution {
 		for(;j<list2.size();j++){
 			list.add(list2.get(j));
 		}
+	}
+
+
+	class BSTNode{
+		int val;
+		int count;
+		BSTNode left;
+		BSTNode right;
+		BSTNode(int val){
+			this.val =val;
+			this.count =0;
+		}
+	}
+
+	public void bstInsert(BSTNode node,BSTNode insertNode,int[] countSmall){
+		if(insertNode.val<=node.val){
+			node.count++;
+			if(node.left!=null){
+				bstInsert(node.left,insertNode,countSmall);
+			}else{
+				node.left=insertNode;
+			}
+		}else{
+			countSmall[0]+=node.count+1;
+			if(node.right!=null){
+				bstInsert(node.right,insertNode,countSmall);
+			}else{
+				node.right=insertNode;
+			}
+		}
+	}
+
+	/**
+	 * 二叉搜索树算法
+	 * @param nums
+	 * @return
+	 */
+	public List<Integer> countSmaller2(int[] nums) {
+		List<Integer> results = new ArrayList<>();
+		if(nums==null||nums.length==0){
+			return results;
+		}
+		List<BSTNode> treeNodeList = new ArrayList<>();
+		List<Integer> counts = new ArrayList<>();
+		int[] countSmall = {0};
+		//翻转nums
+		for(int i= nums.length-1;i>=0;i--){
+			treeNodeList.add(new BSTNode(nums[i]));
+		}
+
+		counts.add(0);
+
+		for(int i = 1;i<treeNodeList.size();i++){
+			countSmall[0]=0;
+			bstInsert(treeNodeList.get(0),treeNodeList.get(i),countSmall);
+			counts.add(countSmall[0]);
+		}
+
+		//翻转nums
+		for(int i= counts.size()-1;i>=0;i--){
+			results.add(counts.get(i));
+		}
+
+		return results;
 	}
 }
