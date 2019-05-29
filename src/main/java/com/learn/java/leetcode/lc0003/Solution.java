@@ -50,4 +50,34 @@ public class Solution {
 		}
 		return max;
 	}
+
+	public int lengthOfLongestSubstring3(String s) {
+		//窗口头指针
+		int begin = 0;
+		int result = 0;
+		StringBuffer word = new StringBuffer();
+		int[] charMap = new int[128];
+		for(int i =0;i<s.length();i++){
+			char c = s.charAt(i);
+			charMap[c]++;
+			if(charMap[c]==1){
+				//单词没有出现
+				word.append(c);
+				if(result<word.length()){
+					result = word.length();
+				}
+			}else{
+				//将重复的字符删去
+				while(begin<i&&charMap[c]>1){
+					charMap[s.charAt(begin)]--;
+					begin++;
+				}
+				word.setLength(0);
+				for(int j =begin;j<=i;j++){
+					word.append(s.charAt(j));
+				}
+			}
+		}
+		return result;
+	}
 }

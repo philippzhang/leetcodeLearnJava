@@ -78,6 +78,7 @@ Explanation: The answer is "wke", with the length of 3.
 ```
 3. Longest Substring Without Repeating Characters 3. 无重复字符的最长子串 Medium
 Solution.lengthOfLongestSubstring
+Solution.lengthOfLongestSubstring3
 ---
 "abcabcbb"
 
