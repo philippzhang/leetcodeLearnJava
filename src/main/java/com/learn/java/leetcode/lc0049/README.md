@@ -49,6 +49,12 @@ Output:
 # 测试用例
 ```
 49. Group Anagrams 49. 字母异位词分组 Medium
+Solution.groupAnagrams
+---
+["eat","tea","tan","ate","nat","bat"]
+
+=[["ate","eat","tea"],["nat","tan"],["bat"]]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/group-anagrams/
