@@ -79,6 +79,32 @@ Notes: You may assume  *pattern*  contains only lowercase letters, and  *str*  c
 # 测试用例
 ```
 290. Word Pattern 290. 单词规律 Easy
+Solution.wordPattern
+---
+"abba"
+"dog cat cat dog"
+
+=true
+---
+"abba"
+"dog cat cat fish"
+
+=false
+---
+"aaaa"
+"dog cat cat dog"
+
+=false
+---
+"abba"
+"dog dog dog dog"
+
+=false
+---
+"jquery"
+"jquery"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/word-pattern/
