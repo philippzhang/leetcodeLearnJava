@@ -90,6 +90,7 @@ T     S     G
 ```
 6. ZigZag Conversion 6. Z 字形变换 Medium
 Solution.convert
+Solution.convert2
 ---
 "LEETCODEISHIRING"
 3
@@ -100,6 +101,21 @@ Solution.convert
 4
 
 ="LDREOEIIECIHNTSG"
+---
+"A"
+3
+
+="A"
+---
+"ABC"
+2
+
+="ACB"
+---
+"ABCDE"
+3
+
+="AEBDC"
 ```
 
 [enTitle]: https://leetcode.com/problems/zigzag-conversion/
