@@ -7,6 +7,7 @@ import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -135,8 +136,8 @@ public class CallBack {
 				String parameterName = outputObj != null ? outputObj.getClass().getName() : null;
 				if (outputObj != null && outputObj instanceof List) {
 					if (disOrder) {
-						List<List<Integer>> testResultList = (List) outputObj;
-						List<List<Integer>> trueResultNewList = Build.buildList(trueResult);
+						List testResultList = (List) outputObj;
+						List trueResultNewList = Build.buildList(trueResult);
 						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultNewList,testResultList);
 					} else {
 						resultFlag = trueResult.equals(testResult);

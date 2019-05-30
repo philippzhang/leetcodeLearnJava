@@ -604,10 +604,32 @@ public class Utilitys {
 		if (list1.size() != list2.size()) {
 			return false;
 		}
+		sortList(list1);
+		sortList(list2);
 		Set<T> set1 = new HashSet<>(list1);
 		Set<T> set2 = new HashSet<>(list2);
 		return set1.equals(set2);
 	}
+
+
+
+	public static  void sortList(List list){
+		if(list!=null&&list.size()>0){
+			Object o = list.get(0);
+			if(o instanceof List){
+				for(int i =0 ;i<list.size();i++){
+					List list1 = (List)list.get(i);
+					sortList(list1);
+					list.set(i,list1);
+				}
+			}else{
+				Collections.sort(list);
+			}
+		}
+	}
+
+
+
 
 	public static boolean compareTrees(TreeNode root1, TreeNode root2) {
 		if (root1 == null && root2 == null) {
