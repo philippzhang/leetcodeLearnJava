@@ -40,6 +40,17 @@ Output: "BANC"
 # 测试用例
 ```
 76. Minimum Window Substring 76. 最小覆盖子串 Hard
+Solution.minWindow
+---
+"ADOBECODEBANC"
+"ABC"
+
+="BANC"
+---
+"a"
+"aa"
+
+=""
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-window-substring/
