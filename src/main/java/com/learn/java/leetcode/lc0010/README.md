@@ -148,6 +148,32 @@ p = "mis*is*p*."
 # 测试用例
 ```
 10. Regular Expression Matching 10. 正则表达式匹配 Hard
+Solution.isMatch
+---
+"aa"
+"a"
+
+=false
+---
+"aa"
+"a*"
+
+=true
+---
+"ab"
+".*"
+
+=true
+---
+"aab"
+"c*a*b"
+
+=true
+---
+"mississippi"
+"mis*is*p*."
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/regular-expression-matching/
