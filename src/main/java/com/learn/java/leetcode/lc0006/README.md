@@ -89,6 +89,17 @@ T     S     G
 # 测试用例
 ```
 6. ZigZag Conversion 6. Z 字形变换 Medium
+Solution.convert
+---
+"LEETCODEISHIRING"
+3
+
+="LCIRETOESIIGEDHN"
+---
+"LEETCODEISHIRING"
+4
+
+="LDREOEIIECIHNTSG"
 ```
 
 [enTitle]: https://leetcode.com/problems/zigzag-conversion/
