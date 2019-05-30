@@ -135,40 +135,40 @@ public class CallBack {
 				String parameterName = outputObj != null ? outputObj.getClass().getName() : null;
 				if (outputObj != null && outputObj instanceof List) {
 					if (disOrder) {
-						List<List<Integer>> trueResultsList = (List) outputObj;
-						List<List<Integer>> testResultsList = Build.buildList(testResult);
-						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultsList, testResultsList);
+						List<List<Integer>> testResultList = (List) outputObj;
+						List<List<Integer>> trueResultNewList = Build.buildList(trueResult);
+						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultNewList,testResultList);
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
 				} else if (outputObj != null && parameterName.equals("[I")) {
 					if (disOrder) {
-						int[] trueResultsArray = (int[]) outputObj;
-						int[] testResultsArray = Build.buildArray(testResult);
+						int[] testResultsArray = (int[]) outputObj;
+						int[] trueResultsArray = Build.buildArray(trueResult);
 						resultFlag = Utilitys.compareArrays(trueResultsArray, testResultsArray);
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
 				} else if (outputObj != null && parameterName.equals("[Ljava.lang.String;")) {
 					if (disOrder) {
-						String[] trueResultsArray = (String[]) outputObj;
-						String[] testResultsArray = Build.buildArrayString(testResult);
+						String[] testResultsArray = (String[]) outputObj;
+						String[] trueResultsArray = Build.buildArrayString(trueResult);
 						resultFlag = Utilitys.compareArraysString(trueResultsArray, testResultsArray);
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
 				} else if (outputObj != null && parameterName.equals("[C")) {
 					if (disOrder) {
-						char[] trueResultsArray = (char[]) outputObj;
-						char[] testResultsArray = Build.buildArrayChar(testResult);
+						char[] testResultsArray = (char[]) outputObj;
+						char[] trueResultsArray = Build.buildArrayChar(trueResult);
 						resultFlag = Utilitys.compareArraysChar(trueResultsArray, testResultsArray);
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
 				} else if (outputObj != null && parameterName.equals("[[I")) {
 					if (disOrder) {
-						int[][] trueResultsMatrix = (int[][]) outputObj;
-						int[][] testResultsMatrix = Build.buildMatrix(testResult);
+						int[][] testResultsMatrix = (int[][]) outputObj;
+						int[][] trueResultsMatrix = Build.buildMatrix(trueResult);
 						resultFlag = Utilitys.compareMatrix(trueResultsMatrix, testResultsMatrix);
 					} else {
 						resultFlag = trueResult.equals(testResult);
