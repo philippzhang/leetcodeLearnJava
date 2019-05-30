@@ -36,6 +36,19 @@ Output: ["AAAAACCCCC", "CCCCCAAAAA"]
 # 测试用例
 ```
 187. Repeated DNA Sequences 187. 重复的DNA序列 Medium
+Solution.findRepeatedDnaSequences
+Solution.findRepeatedDnaSequences2
+---
+"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
+
+=["AAAAACCCCC","CCCCCAAAAA"]
+
+$disorder
+---
+"AAAAAAAAAAA"
+
+=["AAAAAAAAAA"]
+
 ```
 
 [enTitle]: https://leetcode.com/problems/repeated-dna-sequences/
