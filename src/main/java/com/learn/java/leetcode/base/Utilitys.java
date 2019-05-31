@@ -8,6 +8,7 @@ import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
 import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
+import com.learn.java.leetcode.base.utils.NoImplException;
 import com.learn.java.leetcode.base.utils.StringUtil;
 import org.apache.commons.lang.StringUtils;
 

@@ -1,6 +1,6 @@
 package com.learn.java.leetcode;
 
-import com.learn.java.leetcode.base.NoImplException;
+import com.learn.java.leetcode.base.utils.NoImplException;
 import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.utils.Format;
 

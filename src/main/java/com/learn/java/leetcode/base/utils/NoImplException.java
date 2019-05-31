@@ -1,4 +1,4 @@
-package com.learn.java.leetcode.base;
+package com.learn.java.leetcode.base.utils;
 
 public class NoImplException extends RuntimeException {
 	public NoImplException(String message) {
