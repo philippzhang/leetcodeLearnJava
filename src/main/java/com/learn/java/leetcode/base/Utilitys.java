@@ -44,10 +44,10 @@ public class Utilitys {
 
 		boolean testFlag = true;
 		if (classList.size() <= 1) {
-			//throw new RuntimeException("未定义算法主类和方法!");
-			System.out.println("未定义算法主类和方法!");
-			System.out.println("-----------------------------");
-			return false;
+			throw new NoImplException("未定义算法主类和方法!");
+			//System.out.println("未定义算法主类和方法!");
+			//System.out.println("-----------------------------");
+			//return false;
 		}
 
 		for (int i = 1; i < classList.size(); i++) {
@@ -620,7 +620,7 @@ public class Utilitys {
 				for(int i =0 ;i<list.size();i++){
 					List list1 = (List)list.get(i);
 					sortList(list1);
-					list.set(i,list1);
+					//list.set(i,list1);
 				}
 			}else{
 				Collections.sort(list);
@@ -699,6 +699,8 @@ public class Utilitys {
 			Class<?> algorithmClass = Class.forName(className);
 			CallBack callBack = (CallBack) algorithmClass.newInstance();
 			return test(callBack.getClass());
+		} catch (NoImplException e){
+			throw e;
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
