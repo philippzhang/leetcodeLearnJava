@@ -45,10 +45,11 @@ public class Utilitys {
 
 		boolean testFlag = true;
 		if (classList.size() <= 1) {
-			throw new NoImplException("未定义算法主类和方法!");
-			//System.out.println("未定义算法主类和方法!");
-			//System.out.println("-----------------------------");
+
+			System.out.println("未定义算法主类和方法!");
+			System.out.println("-----------------------------");
 			//return false;
+			throw new NoImplException("未定义算法主类和方法!");
 		}
 
 		for (int i = 1; i < classList.size(); i++) {
