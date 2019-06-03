@@ -69,12 +69,30 @@ public class CallBack {
 			} else if (parameterName.equals("[I")) {
 				int[] array = Build.buildArray(data);
 				inputObjArr[j] = array;
-			} else if (parameterName.equals("[C")) {
-				char[] array = Build.buildArrayChar(data);
-				inputObjArr[j] = array;
 			} else if (parameterName.equals("[[I")) {
 				int[][] matrix = Build.buildMatrix(data);
 				inputObjArr[j] = matrix;
+			} else if (parameterName.equals("[B")) {
+				boolean[] array = Build.buildArrayBoolean(data);
+				inputObjArr[j] = array;
+			} else if (parameterName.equals("[[B")) {
+				boolean[][] matrix = Build.buildMatrixBoolean(data);
+				inputObjArr[j] = matrix;
+			} else if (parameterName.equals("[D")) {
+				double[] array = Build.buildArrayDouble(data);
+				inputObjArr[j] = array;
+			} else if (parameterName.equals("[[D")) {
+				double[][] matrix = Build.buildMatrixDouble(data);
+				inputObjArr[j] = matrix;
+			} else if (parameterName.equals("[F")) {
+				float[] array = Build.buildArrayFloat(data);
+				inputObjArr[j] = array;
+			} else if (parameterName.equals("[[F")) {
+				float[][] matrix = Build.buildMatrixFloat(data);
+				inputObjArr[j] = matrix;
+			} else if (parameterName.equals("[C")) {
+				char[] array = Build.buildArrayChar(data);
+				inputObjArr[j] = array;
 			} else if (parameterName.equals("[[C")) {
 				char[][] matrix = Build.buildMatrixChar(data);
 				inputObjArr[j] = matrix;

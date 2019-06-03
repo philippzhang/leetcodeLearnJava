@@ -79,6 +79,10 @@ public class Format {
 				format((float[]) obj, stringBuffer);
 			} else if (className.equals("[[F")) {
 				format((float[][]) obj);
+			} else if (className.equals("[B")) {
+				format((boolean[]) obj, stringBuffer);
+			} else if (className.equals("[[B")) {
+				format((boolean[][]) obj);
 			} else if (className.equals("[C")) {
 				format((char[]) obj, stringBuffer);
 			} else if (className.equals("[[C")) {
@@ -121,6 +125,26 @@ public class Format {
 		stringBuffer.append("]");
 	}
 
+	private static void format(boolean[] array, StringBuffer stringBuffer) {
+		if (array == null) {
+			stringBuffer.append("null");
+			return;
+		}
+		stringBuffer.append("[");
+		for (int i = 0; i < array.length; i++) {
+			Object dataObj = array[i];
+			if (dataObj == null) {
+				stringBuffer.append("null");
+			} else {
+				String data = dataObj.toString();
+				stringBuffer.append(data);
+			}
+			if (i < array.length - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
 
 	private static void format(double[] array, StringBuffer stringBuffer) {
 		if (array == null) {
@@ -169,6 +193,30 @@ public class Format {
 
 
 	private static void format(int[][] matrix, StringBuffer stringBuffer) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		stringBuffer.append("[");
+		for (int i = 0; i < row; i++) {
+			stringBuffer.append("[");
+			for (int j = 0; j < cow; j++) {
+				stringBuffer.append(matrix[i][j]);
+				if (j < cow - 1) {
+					stringBuffer.append(',');
+				}
+			}
+			stringBuffer.append("]");
+			if (i < row - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+
+	private static void format(boolean[][] matrix, StringBuffer stringBuffer) {
 		if (matrix == null) {
 			return;
 		}

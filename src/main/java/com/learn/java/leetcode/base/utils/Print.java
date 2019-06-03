@@ -88,6 +88,10 @@ public class Print {
 				print((float[]) obj);
 			} else if (className.equals("[[F")) {
 				print((float[][]) obj);
+			} else if (className.equals("[B")) {
+				print((boolean[]) obj);
+			} else if (className.equals("[[B")) {
+				print((boolean[][]) obj);
 			} else if (className.equals("[C")) {
 				print((char[]) obj);
 			} else if (className.equals("[[C")) {
@@ -195,6 +199,26 @@ public class Print {
 		System.out.print("[");
 		for (int i = 0; i < array.length; i++) {
 			System.out.print("\"" + array[i] + "\"");
+			if (i < array.length - 1) {
+				System.out.print(',');
+			}
+		}
+		System.out.print("]");
+		System.out.println();
+	}
+
+	/**
+	 * 打印数组
+	 *
+	 * @param array
+	 */
+	public static void print(boolean[] array) {
+		if (array == null) {
+			return;
+		}
+		System.out.print("[");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]);
 			if (i < array.length - 1) {
 				System.out.print(',');
 			}
@@ -345,6 +369,38 @@ public class Print {
 		System.out.println();
 	}
 
+	/**
+	 * 打印矩阵
+	 *
+	 * @param matrix
+	 */
+	private static void print(boolean[][] matrix) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		System.out.print("[");
+		for (int i = 0; i < row; i++) {
+			if (i == 0) {
+				System.out.println();
+			}
+			System.out.print("[");
+			for (int j = 0; j < cow; j++) {
+				System.out.print(matrix[i][j]);
+				if (j < cow - 1) {
+					System.out.print(',');
+				}
+			}
+			System.out.print("]");
+			if (i < row - 1) {
+				System.out.print(',');
+			}
+			System.out.println();
+		}
+		System.out.print("]");
+		System.out.println();
+	}
 
 	/**
 	 * 打印矩阵

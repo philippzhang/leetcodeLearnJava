@@ -38,6 +38,64 @@ public class Build {
 		return results;
 	}
 
+	public static boolean[] buildArrayBoolean(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.trim();
+		if(data.equals("[]")){
+			return new boolean[]{};
+		}
+		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
+
+		String[] arr = data.split(",", -1);
+		int length = arr.length;
+		boolean[] results = new boolean[length];
+		for (int i = 0; i < length; i++) {
+			results[i] = Boolean.parseBoolean(arr[i]);
+		}
+		return results;
+	}
+
+	public static double[] buildArrayDouble(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.trim();
+		if(data.equals("[]")){
+			return new double[]{};
+		}
+		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
+
+		String[] arr = data.split(",", -1);
+		int length = arr.length;
+		double[] results = new double[length];
+		for (int i = 0; i < length; i++) {
+			results[i] = Double.parseDouble(arr[i]);
+		}
+		return results;
+	}
+
+	public static float[] buildArrayFloat(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.trim();
+		if(data.equals("[]")){
+			return new float[]{};
+		}
+		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
+
+		String[] arr = data.split(",", -1);
+		int length = arr.length;
+		float[] results = new float[length];
+		for (int i = 0; i < length; i++) {
+			results[i] = Float.parseFloat(arr[i]);
+		}
+		return results;
+	}
+
+
 	public static int[] buildArray(List list) {
 		if (list == null || list.size() == 0) {
 			return null;
@@ -143,7 +201,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = Integer.valueOf(arr2[j]);
+				results[i][j] = Integer.parseInt(arr2[j]);
 			}
 		}
 
@@ -198,6 +256,68 @@ public class Build {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
 				results[i][j] = StringUtil.changeStr(arr2[j]);
+			}
+		}
+
+		return results;
+	}
+
+
+	public static boolean[][] buildMatrixBoolean(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
+		String[] arr = data.split("],\\[", -1);
+		int row = arr.length;
+		int cow = StringUtil.countString(arr[0], ',') + 1;
+		boolean[][] results = new boolean[row][cow];
+		for (int i = 0; i < row; i++) {
+			String[] arr2 = arr[i].split(",", -1);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Boolean.parseBoolean(arr2[j]);
+			}
+		}
+
+		return results;
+	}
+
+	public static double[][] buildMatrixDouble(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
+		String[] arr = data.split("],\\[", -1);
+		int row = arr.length;
+		int cow = StringUtil.countString(arr[0], ',') + 1;
+		double[][] results = new double[row][cow];
+		for (int i = 0; i < row; i++) {
+			String[] arr2 = arr[i].split(",", -1);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Double.parseDouble(arr2[j]);
+			}
+		}
+
+		return results;
+	}
+
+
+	public static float[][] buildMatrixFloat(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
+		String[] arr = data.split("],\\[", -1);
+		int row = arr.length;
+		int cow = StringUtil.countString(arr[0], ',') + 1;
+		float[][] results = new float[row][cow];
+		for (int i = 0; i < row; i++) {
+			String[] arr2 = arr[i].split(",", -1);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Float.parseFloat(arr2[j]);
 			}
 		}
 
