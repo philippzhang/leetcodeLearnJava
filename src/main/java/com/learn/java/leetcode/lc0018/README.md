@@ -51,6 +51,14 @@ A solution set is:
 # 测试用例
 ```
 18. 4Sum 18. 四数之和 Medium
+Solution.fourSum
+---
+[1,0,-1,0,-2,2]
+0
+
+=[[-1,0,0,1],[-2,-1,1,2],[-2,0,0,2]]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/4sum/
