@@ -80,20 +80,24 @@ public class Print {
 				print((int[]) obj);
 			} else if (className.equals("[[I")) {
 				print((int[][]) obj);
+			} else if (className.equals("[D")) {
+				print((double[]) obj);
 			} else if (className.equals("[[D")) {
 				print((double[][]) obj);
+			} else if (className.equals("[F")) {
+				print((float[]) obj);
 			} else if (className.equals("[[F")) {
 				print((float[][]) obj);
 			} else if (className.equals("[C")) {
 				print((char[]) obj);
 			} else if (className.equals("[[C")) {
 				print((char[][]) obj);
-			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				print((ListNode[]) obj);
 			} else if (className.equals("[Ljava.lang.String;")){
 				print((String[]) obj);
 			} else if (className.equals("[[Ljava.lang.String;")){
 				print((String[][]) obj);
+			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
+				print((ListNode[]) obj);
 			} else {
 				print((Object[]) obj);
 			}
@@ -125,6 +129,47 @@ public class Print {
 		System.out.println();
 	}
 
+
+	/**
+	 * 打印数组
+	 *
+	 * @param array
+	 */
+	public static void print(double[] array) {
+		if (array == null) {
+			return;
+		}
+		System.out.print("[");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]);
+			if (i < array.length - 1) {
+				System.out.print(',');
+			}
+		}
+		System.out.print("]");
+		System.out.println();
+	}
+
+
+	/**
+	 * 打印数组
+	 *
+	 * @param array
+	 */
+	public static void print(float[] array) {
+		if (array == null) {
+			return;
+		}
+		System.out.print("[");
+		for (int i = 0; i < array.length; i++) {
+			System.out.print(array[i]);
+			if (i < array.length - 1) {
+				System.out.print(',');
+			}
+		}
+		System.out.print("]");
+		System.out.println();
+	}
 
 	public static void print(String[] array) {
 		if (array == null) {

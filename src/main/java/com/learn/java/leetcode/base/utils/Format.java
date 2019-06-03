@@ -71,20 +71,24 @@ public class Format {
 				format((int[]) obj, stringBuffer);
 			} else if (className.equals("[[I")) {
 				format((int[][]) obj, stringBuffer);
+			} else if (className.equals("[D")) {
+				format((double[]) obj, stringBuffer);
 			} else if (className.equals("[[D")) {
 				format((double[][]) obj);
+			} else if (className.equals("[F")) {
+				format((float[]) obj, stringBuffer);
 			} else if (className.equals("[[F")) {
 				format((float[][]) obj);
 			} else if (className.equals("[C")) {
 				format((char[]) obj, stringBuffer);
 			} else if (className.equals("[[C")) {
 				format((char[][]) obj, stringBuffer);
-			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				format((ListNode[]) obj, stringBuffer);
 			} else if (className.equals("[Ljava.lang.String;")){
 				format((String[]) obj);
 			} else if (className.equals("[[Ljava.lang.String;")){
 				format((String[][]) obj);
+			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
+				format((ListNode[]) obj, stringBuffer);
 			} else {
 				format((Object[]) obj, stringBuffer);
 			}
@@ -97,6 +101,50 @@ public class Format {
 
 
 	private static void format(int[] array, StringBuffer stringBuffer) {
+		if (array == null) {
+			stringBuffer.append("null");
+			return;
+		}
+		stringBuffer.append("[");
+		for (int i = 0; i < array.length; i++) {
+			Object dataObj = array[i];
+			if (dataObj == null) {
+				stringBuffer.append("null");
+			} else {
+				String data = dataObj.toString();
+				stringBuffer.append(data);
+			}
+			if (i < array.length - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+
+	private static void format(double[] array, StringBuffer stringBuffer) {
+		if (array == null) {
+			stringBuffer.append("null");
+			return;
+		}
+		stringBuffer.append("[");
+		for (int i = 0; i < array.length; i++) {
+			Object dataObj = array[i];
+			if (dataObj == null) {
+				stringBuffer.append("null");
+			} else {
+				String data = dataObj.toString();
+				stringBuffer.append(data);
+			}
+			if (i < array.length - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+
+	private static void format(float[] array, StringBuffer stringBuffer) {
 		if (array == null) {
 			stringBuffer.append("null");
 			return;
