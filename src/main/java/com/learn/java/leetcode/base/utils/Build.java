@@ -34,7 +34,7 @@ public class Build {
 		int length = arr.length;
 		int[] results = new int[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = Integer.parseInt(arr[i]);
+			results[i] = Integer.parseInt(arr[i].trim());
 		}
 		return results;
 	}
@@ -53,7 +53,7 @@ public class Build {
 		int length = arr.length;
 		boolean[] results = new boolean[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = Boolean.parseBoolean(arr[i]);
+			results[i] = Boolean.parseBoolean(arr[i].trim());
 		}
 		return results;
 	}
@@ -72,7 +72,7 @@ public class Build {
 		int length = arr.length;
 		double[] results = new double[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = Double.parseDouble(arr[i]);
+			results[i] = Double.parseDouble(arr[i].trim());
 		}
 		return results;
 	}
@@ -91,7 +91,7 @@ public class Build {
 		int length = arr.length;
 		float[] results = new float[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = Float.parseFloat(arr[i]);
+			results[i] = Float.parseFloat(arr[i].trim());
 		}
 		return results;
 	}
