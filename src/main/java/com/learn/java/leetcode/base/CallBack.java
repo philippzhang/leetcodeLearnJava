@@ -1,12 +1,16 @@
 package com.learn.java.leetcode.base;
 
+import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
 import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
+import sun.reflect.generics.reflectiveObjects.TypeVariableImpl;
 
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.List;
 
 /**
@@ -43,6 +47,7 @@ public class CallBack {
 		for (int j = 0; j < parameterTypes.length; j++) {
 			String parameterName = parameterTypes[j].getName();
 			String data = dataList.get(j);
+
 
 			if (parameterName.equals("int")) {
 				inputObjArr[j] = Integer.parseInt(data);
@@ -111,6 +116,9 @@ public class CallBack {
 			} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
 				ListNode[] listNode = Build.buildListNodeArray(data);
 				inputObjArr[j] = listNode;
+			} else if (parameterName.equals("Lcom.learn.java.leetcode.base.structure.Interval")) {
+				Interval interval = Build.buildListInterval(data);
+				inputObjArr[j] = interval;
 			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")) {
 				TreeNode treeNode = Build.buildBinaryTree(data);
 				inputObjArr[j] = treeNode;

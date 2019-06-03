@@ -1,5 +1,6 @@
 package com.learn.java.leetcode.base.utils;
 
+import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
@@ -50,6 +51,10 @@ public class Format {
 					stringBuffer.append("\"" + StringUtil.changeStr(item.toString()) + "\"");
 				} else if (item instanceof List) {
 					format(item, stringBuffer);
+				} else if (item instanceof Interval) {
+					Interval interval = (Interval) item;
+					stringBuffer.append('[').append(String.valueOf(interval.start)).append(',').append(String.valueOf(interval.end));
+					stringBuffer.append(']');
 				}
 				if (i < results.size() - 1) {
 					stringBuffer.append(',');
@@ -65,6 +70,10 @@ public class Format {
 				p = p.next;
 			}
 			stringBuffer.append("]");
+		} else if (obj instanceof Interval) {
+			Interval interval = (Interval) obj;
+			stringBuffer.append('[').append(String.valueOf(interval.start)).append(',').append(String.valueOf(interval.end));
+			stringBuffer.append(']');
 		} else if (obj.getClass().isArray()) {
 			String className = obj.getClass().getName();
 			if (className.equals("[I")) {

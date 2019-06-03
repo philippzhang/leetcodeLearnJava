@@ -1,5 +1,6 @@
 package com.learn.java.leetcode.base.utils;
 
+import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
@@ -44,7 +45,7 @@ public class Print {
 					if (i < results.size() - 1) {
 						System.out.print(',');
 					}
-				} else if (item instanceof List) {
+				}else if (item instanceof List) {
 					if (i == 0) {
 						System.out.println();
 					}
@@ -54,6 +55,18 @@ public class Print {
 					} else {
 						print(item, null);
 					}
+				}else if (item instanceof Interval) {
+					if (i == 0) {
+						System.out.println();
+					}
+					Interval interval = (Interval)item;
+					System.out.print("[");
+					System.out.print(interval.start+","+interval.end);
+					System.out.print("]");
+					if (i < results.size() - 1) {
+						System.out.print(',');
+					}
+					System.out.println();
 				}
 			}
 			System.out.print("]");
@@ -70,6 +83,15 @@ public class Print {
 				p = p.next;
 			}
 			System.out.print(str.append("]"));
+			if (ext != null) {
+				System.out.print(ext);
+			}
+			System.out.println();
+		} else if (obj instanceof Interval) {
+			Interval interval = (Interval)obj;
+			System.out.print("[");
+			System.out.print(interval.start+","+interval.end);
+			System.out.print("]");
 			if (ext != null) {
 				System.out.print(ext);
 			}
