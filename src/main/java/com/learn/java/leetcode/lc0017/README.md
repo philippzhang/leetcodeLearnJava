@@ -45,6 +45,13 @@ Although the above answer is in lexicographical order, your answer could be in a
 # 测试用例
 ```
 17. Letter Combinations of a Phone Number 17. 电话号码的字母组合 Medium
+Solution.letterCombinations
+---
+"23"
+
+=["ad","ae","af","bd","be","bf","cd","ce","cf"]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
