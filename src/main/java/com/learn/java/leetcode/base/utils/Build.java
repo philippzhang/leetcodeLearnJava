@@ -192,6 +192,9 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
+		if(data.equals("[]")){
+			return new int[][]{};
+		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);
@@ -218,6 +221,9 @@ public class Build {
 	public static char[][] buildMatrixChar(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
+		}
+		if(data.equals("[]")){
+			return new char[][]{};
 		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
@@ -246,6 +252,9 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
+		if(data.equals("[]")){
+			return new String[][]{};
+		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);
@@ -267,6 +276,9 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
+		if(data.equals("[]")){
+			return new boolean[][]{};
+		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);
@@ -286,6 +298,9 @@ public class Build {
 	public static double[][] buildMatrixDouble(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
+		}
+		if(data.equals("[]")){
+			return new double[][]{};
 		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
@@ -307,6 +322,9 @@ public class Build {
 	public static float[][] buildMatrixFloat(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
+		}
+		if(data.equals("[]")){
+			return new float[][]{};
 		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
