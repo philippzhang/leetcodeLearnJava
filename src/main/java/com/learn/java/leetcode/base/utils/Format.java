@@ -77,15 +77,21 @@ public class Format {
 				format((float[][]) obj);
 			} else if (className.equals("[C")) {
 				format((char[]) obj, stringBuffer);
+			} else if (className.equals("[[C")) {
+				format((char[][]) obj, stringBuffer);
 			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
 				format((ListNode[]) obj, stringBuffer);
 			} else if (className.equals("[Ljava.lang.String;")){
 				format((String[]) obj);
+			} else if (className.equals("[[Ljava.lang.String;")){
+				format((String[][]) obj);
 			} else {
 				format((Object[]) obj, stringBuffer);
 			}
 		} else if (obj instanceof TreeNode) {
 			format((TreeNode) obj, stringBuffer);
+		} else{
+			throw new RuntimeException("未定义的类型，转换失败!");
 		}
 	}
 
@@ -183,6 +189,9 @@ public class Format {
 		stringBuffer.append("]");
 	}
 
+
+
+
 	private static void format(char[] array, StringBuffer stringBuffer) {
 		if (array == null) {
 			stringBuffer.append("null");
@@ -198,6 +207,29 @@ public class Format {
 				stringBuffer.append("\"").append(data).append("\"");
 			}
 			if (i < array.length - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
+	private static void format(char[][] matrix, StringBuffer stringBuffer) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		stringBuffer.append("[");
+		for (int i = 0; i < row; i++) {
+			stringBuffer.append("[");
+			for (int j = 0; j < cow; j++) {
+				stringBuffer.append("\"").append(matrix[i][j]).append("\"");
+				if (j < cow - 1) {
+					stringBuffer.append(',');
+				}
+			}
+			stringBuffer.append("]");
+			if (i < row - 1) {
 				stringBuffer.append(',');
 			}
 		}
@@ -224,6 +256,30 @@ public class Format {
 		}
 		stringBuffer.append("]");
 	}
+
+	private static void format(String[][] matrix, StringBuffer stringBuffer) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		stringBuffer.append("[");
+		for (int i = 0; i < row; i++) {
+			stringBuffer.append("[");
+			for (int j = 0; j < cow; j++) {
+				stringBuffer.append("\"").append(matrix[i][j]).append("\"");
+				if (j < cow - 1) {
+					stringBuffer.append(',');
+				}
+			}
+			stringBuffer.append("]");
+			if (i < row - 1) {
+				stringBuffer.append(',');
+			}
+		}
+		stringBuffer.append("]");
+	}
+
 
 	private static void format(ListNode[] array, StringBuffer stringBuffer) {
 		if (array == null) {

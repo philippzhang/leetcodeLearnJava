@@ -151,6 +151,60 @@ public class Build {
 	}
 
 	/**
+	 * 构建二维字符数组
+	 * 例如[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+	 *
+	 * @param data
+	 * @return
+	 */
+	public static char[][] buildMatrixChar(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
+		String[] arr = data.split("],\\[", -1);
+		int row = arr.length;
+		int cow = StringUtil.countString(arr[0], ',') + 1;
+		char[][] results = new char[row][cow];
+		for (int i = 0; i < row; i++) {
+			String[] arr2 = arr[i].split(",", -1);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = StringUtil.changeStr(arr2[j]).charAt(0);
+			}
+		}
+
+		return results;
+	}
+
+	/**
+	 * 构建二维字符串数组
+	 * 例如[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
+	 *
+	 * @param data
+	 * @return
+	 */
+	public static String[][] buildMatrixString(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		data = data.replaceAll(" ", "");
+		data = data.substring(2, data.length() - 2);
+		String[] arr = data.split("],\\[", -1);
+		int row = arr.length;
+		int cow = StringUtil.countString(arr[0], ',') + 1;
+		String[][] results = new String[row][cow];
+		for (int i = 0; i < row; i++) {
+			String[] arr2 = arr[i].split(",", -1);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = StringUtil.changeStr(arr2[j]);
+			}
+		}
+
+		return results;
+	}
+
+	/**
 	 * 构建链表
 	 *
 	 * @param data

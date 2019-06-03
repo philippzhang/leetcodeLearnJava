@@ -86,15 +86,21 @@ public class Print {
 				print((float[][]) obj);
 			} else if (className.equals("[C")) {
 				print((char[]) obj);
+			} else if (className.equals("[[C")) {
+				print((char[][]) obj);
 			} else if (className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
 				print((ListNode[]) obj);
 			} else if (className.equals("[Ljava.lang.String;")){
-				print((String) obj);
+				print((String[]) obj);
+			} else if (className.equals("[[Ljava.lang.String;")){
+				print((String[][]) obj);
 			} else {
 				print((Object[]) obj);
 			}
 		} else if (obj instanceof TreeNode) {
 			print((TreeNode) obj);
+		} else{
+			throw new RuntimeException("未定义的类型，打印失败!");
 		}
 
 	}
@@ -134,6 +140,7 @@ public class Print {
 		System.out.print("]");
 		System.out.println();
 	}
+
 
 
 	private static void print(char[] array) {
@@ -279,6 +286,73 @@ public class Print {
 			System.out.print("[");
 			for (int j = 0; j < cow; j++) {
 				System.out.print(matrix[i][j]);
+				if (j < cow - 1) {
+					System.out.print(',');
+				}
+			}
+			System.out.print("]");
+			if (i < row - 1) {
+				System.out.print(',');
+			}
+			System.out.println();
+		}
+		System.out.print("]");
+		System.out.println();
+	}
+
+
+	/**
+	 * 打印矩阵
+	 *
+	 * @param matrix
+	 */
+	private static void print(char[][] matrix) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		System.out.print("[");
+		for (int i = 0; i < row; i++) {
+			if (i == 0) {
+				System.out.println();
+			}
+			System.out.print("[");
+			for (int j = 0; j < cow; j++) {
+				System.out.print("\""+matrix[i][j]+"\"");
+				if (j < cow - 1) {
+					System.out.print(',');
+				}
+			}
+			System.out.print("]");
+			if (i < row - 1) {
+				System.out.print(',');
+			}
+			System.out.println();
+		}
+		System.out.print("]");
+		System.out.println();
+	}
+
+	/**
+	 * 打印矩阵
+	 *
+	 * @param matrix
+	 */
+	private static void print(String[][] matrix) {
+		if (matrix == null) {
+			return;
+		}
+		int row = matrix.length;
+		int cow = matrix[0].length;
+		System.out.print("[");
+		for (int i = 0; i < row; i++) {
+			if (i == 0) {
+				System.out.println();
+			}
+			System.out.print("[");
+			for (int j = 0; j < cow; j++) {
+				System.out.print("\""+matrix[i][j]+"\"");
 				if (j < cow - 1) {
 					System.out.print(',');
 				}

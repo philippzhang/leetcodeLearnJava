@@ -7,7 +7,6 @@ import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -44,16 +43,8 @@ public class CallBack {
 		for (int j = 0; j < parameterTypes.length; j++) {
 			String parameterName = parameterTypes[j].getName();
 			String data = dataList.get(j);
-			if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")) {
-				ListNode listNode = Build.buildListNode(data);
-				inputObjArr[j] = listNode;
-			} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
-				ListNode[] listNode = Build.buildListNodeArray(data);
-				inputObjArr[j] = listNode;
-			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")) {
-				TreeNode treeNode = Build.buildBinaryTree(data);
-				inputObjArr[j] = treeNode;
-			} else if (parameterName.equals("int")) {
+
+			if (parameterName.equals("int")) {
 				inputObjArr[j] = Integer.parseInt(data);
 			} else if (parameterName.equals("long")) {
 				inputObjArr[j] = Long.parseLong(data);
@@ -84,12 +75,29 @@ public class CallBack {
 			} else if (parameterName.equals("[[I")) {
 				int[][] matrix = Build.buildMatrix(data);
 				inputObjArr[j] = matrix;
+			} else if (parameterName.equals("[[C")) {
+				char[][] matrix = Build.buildMatrixChar(data);
+				inputObjArr[j] = matrix;
 			} else if (parameterName.equals("[Ljava.lang.String;")) {
 				String[] array = Build.buildArrayString(data);
 				inputObjArr[j] = array;
+			} else if (parameterName.equals("[[Ljava.lang.String;")) {
+				String[][] matrix = Build.buildMatrixString(data);
+				inputObjArr[j] = matrix;
 			} else if (parameterName.equals("java.util.List")) {
 				List list = Build.buildList(data);
 				inputObjArr[j] = list;
+			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.ListNode")) {
+				ListNode listNode = Build.buildListNode(data);
+				inputObjArr[j] = listNode;
+			} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")) {
+				ListNode[] listNode = Build.buildListNodeArray(data);
+				inputObjArr[j] = listNode;
+			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")) {
+				TreeNode treeNode = Build.buildBinaryTree(data);
+				inputObjArr[j] = treeNode;
+			} else {
+				throw new RuntimeException("未定义的类型，构建失败!");
 			}
 		}
 	}
@@ -138,7 +146,7 @@ public class CallBack {
 					if (disOrder) {
 						List testResultList = (List) outputObj;
 						List trueResultNewList = Build.buildList(trueResult);
-						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultNewList,testResultList);
+						resultFlag = Utilitys.compareListsIgnoreOrder(trueResultNewList, testResultList);
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
