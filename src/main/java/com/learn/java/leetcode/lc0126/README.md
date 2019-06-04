@@ -98,6 +98,27 @@ wordList = ["hot","dot","dog","lot","log"]
 # 测试用例
 ```
 126. Word Ladder II 126. 单词接龙 II Hard
+Solution.findLadders
+---
+"hit"
+"cog"
+["hot","dot","dog","lot","log","cog"]
+
+=[["hit","hot","dot","dog","cog"],["hit","hot","lot","log","cog"]]
+
+$disorder
+---
+"hit"
+"cog"
+["hot","dot","dog","lot","log"]
+
+=[]
+---
+"a"
+"c"
+["a","b","c"]
+
+=[["a","c"]]
 ```
 
 [enTitle]: https://leetcode.com/problems/word-ladder-ii/
