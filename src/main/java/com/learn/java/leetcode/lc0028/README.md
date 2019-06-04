@@ -74,6 +74,26 @@ Solution.strStr
 "bba"
 
 =-1
+---
+"a"
+"a"
+
+=0
+---
+""
+"a"
+
+=-1
+---
+""
+""
+
+=0
+---
+"a"
+""
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/implement-strstr/
