@@ -64,6 +64,17 @@ words =["word","good","best","word"]
 # 测试用例
 ```
 30. Substring with Concatenation of All Words 30. 串联所有单词的子串 Hard
+Solution.findSubstring
+---
+"barfoothefoobarman",
+["foo","bar"]
+
+=[0,9]
+---
+"wordgoodgoodgoodbestword",
+["word","good","best","word"]
+
+=[]
 ```
 
 [enTitle]: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
