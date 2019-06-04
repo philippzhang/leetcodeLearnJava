@@ -96,6 +96,19 @@ wordList = ["hot","dot","dog","lot","log"]
 # 测试用例
 ```
 127. Word Ladder 127. 单词接龙 Medium
+Solution.ladderLength
+---
+"hit"
+"cog"
+["hot","dot","dog","lot","log","cog"]
+
+=5
+---
+"hit"
+"cog"
+["hot","dot","dog","lot","log"]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/word-ladder/
