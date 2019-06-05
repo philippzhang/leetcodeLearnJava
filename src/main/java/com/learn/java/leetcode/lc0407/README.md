@@ -79,6 +79,15 @@ After the rain, water is trapped between the blocks. The total volume of water t
 # 测试用例
 ```
 407. Trapping Rain Water II 407. 接雨水 II Hard
+Solution.trapRainWater
+---
+[[1,4,3,1,3,2],[3,2,1,3,2,4],[2,3,3,2,3,1]]
+
+=4
+---
+[]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/trapping-rain-water-ii/
