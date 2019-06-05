@@ -50,6 +50,17 @@ Note: You may assume that you have an infinite number of each kind of coin.
 # 测试用例
 ```
 322. Coin Change 322. 零钱兑换 Medium
+Solution.coinChange
+---
+[1,2,5]
+11
+
+=3
+---
+[2]
+3
+
+=-1
 ```
 
 [enTitle]: https://leetcode.com/problems/coin-change/
