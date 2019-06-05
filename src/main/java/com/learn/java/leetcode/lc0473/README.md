@@ -75,6 +75,25 @@ Note:
 # 测试用例
 ```
 473. Matchsticks to Square 473. 火柴拼正方形 Medium
+Solution.makesquare
+Solution.makesquare2
+Solution.makesquare3
+---
+[1,1,2,2,2]
+
+=true
+---
+[3,3,3,3,4]
+
+=false
+---
+[6035753,3826635,922363,6104805,1189018,6365253,364948,2725801,5577769,7857734,2860709,9554210,4883540,8712121,3545089]
+
+=false
+---
+[2,2,2,2,2,6]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/matchsticks-to-square/
