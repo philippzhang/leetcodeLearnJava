@@ -51,6 +51,11 @@ Bonus point if you are able to do this using only  *O* ( *n* ) extra space, wher
 # 测试用例
 ```
 120. Triangle 120. 三角形最小路径和 Medium
+Solution.minimumTotal
+---
+[[2],[3,4],[6,5,7],[4,1,8,3]]
+
+=11
 ```
 
 [enTitle]: https://leetcode.com/problems/triangle/
