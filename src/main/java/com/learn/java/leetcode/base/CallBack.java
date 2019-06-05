@@ -151,7 +151,7 @@ public class CallBack {
 		boolean resultFlag = false;
 		String testResult = Format.format(outputObj);
 		for (int i = 0; i < trueResultList.size(); i++) {
-			String trueResult = trueResultList.get(i);
+			String trueResult = trueResultList.get(i).trim();
 			if (trueResult.equals("null") && outputObj == null) {
 				printOutVerify(trueResultList, null, true);
 				return true;

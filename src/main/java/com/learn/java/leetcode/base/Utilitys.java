@@ -191,7 +191,7 @@ public class Utilitys {
 								 * 验证输入参数
 								 */
 								int inputIndex = Integer.parseInt(trueResult.substring(1, 2));
-								String trueInputResult = trueResult.substring(3);
+								String trueInputResult = trueResult.substring(3).trim();
 								if (StringUtils.isNotBlank(trueInputResult) && inputIndex >= 0 && inputIndex < inputObjArr.length) {
 									try {
 										boolean resultFlag = callBack.inputVerify(inputObjArr, trueInputResult, outputObj, inputIndex, tempList);
