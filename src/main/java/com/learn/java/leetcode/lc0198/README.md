@@ -57,6 +57,19 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 # 测试用例
 ```
 198. House Robber 198. 打家劫舍 Easy
+Solution.rob
+---
+[1,2,3,1]
+
+=4
+---
+[2,7,9,3,1]
+
+=12
+---
+[0]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/house-robber/
