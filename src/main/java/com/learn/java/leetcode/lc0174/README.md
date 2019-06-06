@@ -56,6 +56,11 @@ For example, given the dungeon below, the initial health of the knight must be a
 # 测试用例
 ```
 174. Dungeon Game 174. 地下城游戏 Hard
+Solution.calculateMinimumHP
+---
+[[-2,-3,3],[-5,-10,1],[10,30,-5]]
+
+=7
 ```
 
 [enTitle]: https://leetcode.com/problems/dungeon-game/

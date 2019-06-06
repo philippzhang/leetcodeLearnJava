@@ -51,6 +51,12 @@ sumRange(0, 2) -> 8
 # 测试用例
 ```
 307. Range Sum Query - Mutable 307. 区域和检索 - 数组可修改 Medium
+Main.funcListTest
+---
+["NumArray","sumRange","update","sumRange"]
+[[[1,3,5]],[0,2],[1,2],[0,2]]
+
+=[null,9,null,8]
 ```
 
 [enTitle]: https://leetcode.com/problems/range-sum-query-mutable/

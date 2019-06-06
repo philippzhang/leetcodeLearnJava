@@ -63,6 +63,12 @@ search("b..") -> true
 # 测试用例
 ```
 211. Add and Search Word - Data structure design 211. 添加与搜索单词 - 数据结构设计 Medium
+Main.funcListTest
+---
+["WordDictionary","addWord","addWord","addWord","search","search","search","search"]
+[[],["bad"],["dad"],["mad"],["pad"],["bad"],[".ad"],["b.."]]
+
+=[null,null,null,null,false,true,true,true]
 ```
 
 [enTitle]: https://leetcode.com/problems/add-and-search-word-data-structure-design/

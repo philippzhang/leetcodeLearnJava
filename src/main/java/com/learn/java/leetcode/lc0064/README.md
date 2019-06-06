@@ -47,6 +47,11 @@ Explanation: Because the path 1→3→1→1→1 minimizes the sum.
 # 测试用例
 ```
 64. Minimum Path Sum 64. 最小路径和 Medium
+Solution.minPathSum
+---
+[[1,3,1],[1,5,1],[4,2,1]]
+
+=7
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-path-sum/

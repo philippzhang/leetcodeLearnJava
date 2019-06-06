@@ -52,6 +52,12 @@ trie.search("app");     // 返回 true
 # 测试用例
 ```
 208. Implement Trie (Prefix Tree) 208. 实现 Trie (前缀树) Medium
+Main.funcListTest
+---
+["Trie","insert","search","search","startsWith","insert","search"]
+[[],["apple"],["apple"],["app"],["app"],["app"],["app"]]
+
+=[null,null,true,false,true,null,true]
 ```
 
 [enTitle]: https://leetcode.com/problems/implement-trie-prefix-tree/
