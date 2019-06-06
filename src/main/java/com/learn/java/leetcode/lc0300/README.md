@@ -44,6 +44,8 @@ Follow up: Could you improve it to O(n log n) time complexity?
 ```
 300. Longest Increasing Subsequence 300. 最长上升子序列 Medium
 Solution.lengthOfLIS
+Solution.lengthOfLIS2
+Solution.lengthOfLIS3
 ---
 [10,9,2,5,3,7,101,18]
 
