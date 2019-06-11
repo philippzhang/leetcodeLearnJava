@@ -56,4 +56,15 @@ public class StringUtil {
 		return temp;
 	}
 
+
+	public static boolean IsEqual(double a,double b)
+	{
+		return Math.abs(a-b) < 0.000001;
+	}
+
+	public static boolean IsEqual(float a,float b)
+	{
+		return Math.abs(a-b) < 0.000001;
+	}
+
 }

@@ -151,6 +151,7 @@ public class CallBack {
 		boolean resultFlag = false;
 		String testResult = Format.format(outputObj);
 		for (int i = 0; i < trueResultList.size(); i++) {
+			//答案
 			String trueResult = trueResultList.get(i).trim();
 			if (trueResult.equals("null") && outputObj == null) {
 				printOutVerify(trueResultList, null, true);
@@ -208,7 +209,16 @@ public class CallBack {
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
-				} else {
+				} else if(outputObj instanceof Double){
+					double testResultDouble = Double.parseDouble(outputObj.toString());
+					double trueResultDouble = Double.parseDouble(trueResult);
+					resultFlag = StringUtil.IsEqual(testResultDouble,trueResultDouble);
+				} else if(outputObj instanceof Float){
+					float testResultFloat= Float.parseFloat(outputObj.toString());
+					float trueResultFloat = Float.parseFloat(trueResult);
+					resultFlag = StringUtil.IsEqual(testResultFloat,trueResultFloat);
+				}
+				else {
 					resultFlag = trueResult.equals(testResult);
 				}
 				if (resultFlag) {
