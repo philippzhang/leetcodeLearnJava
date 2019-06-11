@@ -1,10 +1,7 @@
 package com.learn.java.leetcode.lc0315;
 
 
-import java.util.AbstractMap;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class Solution {
 
@@ -131,5 +128,93 @@ public class Solution {
 		}
 
 		return results;
+	}
+
+	class Discreate{
+		int num;
+		int disNum;
+		int id;
+
+		public Discreate(int num, int disNum, int id) {
+			this.num = num;
+			this.disNum = disNum;
+			this.id = id;
+		}
+	}
+
+	/**
+	 * 离散化
+	 * @param nums
+	 * @param disNumList
+	 */
+	private void discreateNumber(int[] nums,List<Integer> disNumList){
+		List<Discreate> temp = new ArrayList<>();
+		for(int i =0;i<nums.length;i++){
+			temp.add(new Discreate(nums[i],0,i));
+		}
+		Collections.sort(temp, Comparator.comparingInt(o -> o.num));
+		temp.get(0).disNum = 1;
+		for(int i =1;i<temp.size();i++){
+			if(temp.get(i).num == temp.get(i-1).num){
+				temp.get(i).disNum = temp.get(i-1).disNum;
+			}else {
+				temp.get(i).disNum = temp.get(i-1).disNum+1;
+			}
+		}
+		Collections.sort(temp, Comparator.comparingInt(o -> o.id));
+		for(int i =0;i<temp.size();i++){
+			disNumList.add(temp.get(i).disNum);
+		}
+	}
+
+	private void segmentTreeSearch(List<Integer> tree,int num,int pos,int left,int right,int[] countSmall){
+		tree.set(pos,tree.get(pos)+1);
+		if(left==right&&left==num){
+			return ;
+		}
+		int mid = (left+right)/2;
+		int leftChild = pos*2+1;
+		int rightChild = pos*2+2;
+		if(num<=mid){
+			segmentTreeSearch(tree,num,leftChild,left,mid,countSmall);
+		}else{
+			countSmall[0]+=tree.get(leftChild);
+			segmentTreeSearch(tree,num,rightChild,mid+1,right,countSmall);
+		}
+	}
+
+	/**
+	 * 线段树实现
+	 * @param nums
+	 * @return
+	 */
+	public List<Integer> countSmaller3(int[] nums) {
+		List<Integer> result = new ArrayList<>();
+
+		if(nums == null||nums.length==0){
+			return result;
+		}
+		List<Integer> tree = new ArrayList<>();
+
+		List<Integer> count = new ArrayList<>();
+		List<Integer> disNumList = new ArrayList<>();
+
+		discreateNumber(nums,disNumList);
+		for(int i = 0;i<4*disNumList.size();i++){
+			tree.add(0);
+		}
+		/**
+		 * 逆序进入线段树
+		 */
+		for(int i =disNumList.size()-1;i>=0;i--){
+			int[] countSmall = new int[1];
+			segmentTreeSearch(tree,disNumList.get(i),0,1,disNumList.size(), countSmall);
+			count.add(countSmall[0]);
+		}
+		//逆序输出
+		for(int i = count.size()-1;i>=0;i--){
+			result.add(count.get(i));
+		}
+		return result;
 	}
 }
