@@ -209,11 +209,11 @@ public class CallBack {
 					} else {
 						resultFlag = trueResult.equals(testResult);
 					}
-				} else if(outputObj instanceof Double){
+				} else if(outputObj != null && outputObj instanceof Double){
 					double testResultDouble = Double.parseDouble(outputObj.toString());
 					double trueResultDouble = Double.parseDouble(trueResult);
 					resultFlag = StringUtil.IsEqual(testResultDouble,trueResultDouble);
-				} else if(outputObj instanceof Float){
+				} else if(outputObj != null && outputObj instanceof Float){
 					float testResultFloat= Float.parseFloat(outputObj.toString());
 					float trueResultFloat = Float.parseFloat(trueResult);
 					resultFlag = StringUtil.IsEqual(testResultFloat,trueResultFloat);
