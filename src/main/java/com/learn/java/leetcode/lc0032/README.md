@@ -51,6 +51,15 @@ Explanation: The longest valid parentheses substring is "()()"
 # 测试用例
 ```
 32. Longest Valid Parentheses 32. 最长有效括号 Hard
+Solution.longestValidParentheses
+---
+"(()"
+
+=2
+---
+")()())"
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/longest-valid-parentheses/

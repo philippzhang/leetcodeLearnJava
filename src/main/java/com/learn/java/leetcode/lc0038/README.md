@@ -80,6 +80,15 @@ Output: "1211"
 # 测试用例
 ```
 38. Count and Say 38. 报数 Easy
+Solution.countAndSay
+---
+1
+
+="1"
+---
+4
+
+="1211"
 ```
 
 [enTitle]: https://leetcode.com/problems/count-and-say/

@@ -29,6 +29,11 @@ Here are some examples. Inputs are in the left-hand column and its corresponding
 # 测试用例
 ```
 31. Next Permutation 31. 下一个排列 Medium
+Solution.nextPermutation
+---
+[1,2,3]
+
+I0=[1,3,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/next-permutation/
