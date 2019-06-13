@@ -1,13 +1,17 @@
 package com.learn.java.leetcode.base.utils;
 
+
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
-import java.util.Stack;
+
+import java.util.*;
 
 /**
  * 各种数据结构输出
@@ -107,7 +111,10 @@ public class Format {
 			}
 		} else if (obj instanceof TreeNode) {
 			format((TreeNode) obj, stringBuffer);
-		} else{
+		}  else if (obj instanceof Node) {
+			format((Node) obj, stringBuffer);
+		}
+		else{
 			throw new RuntimeException("未定义的类型，转换失败!");
 		}
 	}
@@ -487,6 +494,67 @@ public class Format {
 			}
 		}
 		return stringBuffer.toString();
+	}
+
+	private static void format(Node node, StringBuffer stringBuffer) {
+		if (node == null) {
+			stringBuffer.append("null");
+			return;
+		}
+		JsonObject jsonObject = node2JsonObject(node);
+
+		nodeAddId(jsonObject);
+
+		stringBuffer.append(Utilitys.sortJsonObject(jsonObject.toString()));
+	}
+
+
+	private static JsonObject node2JsonObject(Node cur) {
+		if (cur == null) {
+			return null;
+		}
+		Queue<Node> queue = new LinkedList<>();
+		queue.offer(cur);
+		JsonObject jsonObject = new JsonObject();
+
+		JsonArray jsonArray = new JsonArray();
+		if (cur.children != null) {
+			List<Node> child = cur.children;
+			if(child!=null&&child.size()>0){
+
+				for(int i = 0;i<child.size();i++){
+					Node temp = child.get(i);
+					jsonArray.add(node2JsonObject(temp));
+				}
+			}
+			jsonObject.add("children",jsonArray);
+		}else {
+			jsonObject.add("children",jsonArray);
+		}
+
+		jsonObject.addProperty("val", cur.val);
+
+		return jsonObject;
+	}
+
+	private static void nodeAddId(JsonObject rootObject){
+		int index = 1;
+		Queue<JsonObject> queue = new LinkedList<>();
+		queue.offer(rootObject);
+		while(!queue.isEmpty()){
+			JsonObject jsonObject = queue.poll();
+			jsonObject.addProperty("$id", String.valueOf(index++));
+			JsonArray jsonArray = jsonObject.getAsJsonArray("children");
+			if(jsonArray!=null&&jsonArray.size()>0){
+				for(int i = 0;i< jsonArray.size();i++){
+					JsonElement childJsonElement = jsonArray.get(i);
+					JsonObject childJsonObject = childJsonElement != null && !childJsonElement.isJsonNull() ? childJsonElement.getAsJsonObject() : null;
+					if (childJsonObject != null) {
+						queue.offer(childJsonObject);
+					}
+				}
+			}
+		}
 	}
 
 }

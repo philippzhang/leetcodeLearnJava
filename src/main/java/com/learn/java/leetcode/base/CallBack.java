@@ -2,6 +2,7 @@ package com.learn.java.leetcode.base;
 
 import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
 import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
@@ -122,6 +123,9 @@ public class CallBack {
 			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode")) {
 				TreeNode treeNode = Build.buildBinaryTree(data);
 				inputObjArr[j] = treeNode;
+			} else if (parameterName.equals("com.learn.java.leetcode.base.structure.Node")) {
+				Node node = Build.buildMultiTree(data);
+				inputObjArr[j] = node;
 			} else {
 				throw new RuntimeException("未定义的类型，构建失败!");
 			}

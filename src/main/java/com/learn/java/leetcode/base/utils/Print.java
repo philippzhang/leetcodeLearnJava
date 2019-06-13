@@ -2,6 +2,7 @@ package com.learn.java.leetcode.base.utils;
 
 import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
 import java.util.List;
@@ -129,6 +130,8 @@ public class Print {
 			}
 		} else if (obj instanceof TreeNode) {
 			print((TreeNode) obj);
+		} else if (obj instanceof Node) {
+			print((Node) obj);
 		} else{
 			throw new RuntimeException("未定义的类型，打印失败!");
 		}
@@ -490,6 +493,28 @@ public class Print {
 		System.out.println();
 	}
 
+
+
+
+
+
+	/**
+	 * 二叉树的高度
+	 *
+	 * @param root
+	 * @return
+	 */
+	private static int getDepth(TreeNode root) {
+		if (root != null) {
+			int lDepth = getDepth(root.left);
+			int rDepth = getDepth(root.right);
+			return (lDepth > rDepth ? lDepth : rDepth) + 1;
+		} else {
+			return 0;
+		}
+	}
+
+
 	/**
 	 * 竖向打印二叉树
 	 *
@@ -552,21 +577,90 @@ public class Print {
 	}
 
 
-
-
 	/**
-	 * 二叉树的高度
+	 * N叉树的高度
 	 *
 	 * @param root
 	 * @return
 	 */
-	private static int getDepth(TreeNode root) {
+	private static int getDepth(Node root) {
 		if (root != null) {
-			int lDepth = getDepth(root.left);
-			int rDepth = getDepth(root.right);
-			return (lDepth > rDepth ? lDepth : rDepth) + 1;
+			int max  = 0;
+			if(root.children!=null&&root.children.size()>0){
+				for(int i =0;i<root.children.size();i++){
+					int depth = getDepth(root.children.get(i));
+					max = Math.max(max,depth);
+				}
+			}
+			return max + 1;
 		} else {
 			return 0;
 		}
+	}
+
+	/**
+	 * 竖向打印N叉树
+	 *
+	 * @param root 二叉树根节点
+	 */
+	private static void print(Node root) {
+		if (root == null) {
+			return;
+		}
+		Stack<Node> globalStack = new Stack();
+		globalStack.push(root);
+		int depth = getDepth(root);
+		int nBlank = (int) Math.pow(2, depth + 1);
+		int ndot = nBlank * 2;
+		boolean isRowEmpty = false;
+		for (int i = 0; i < ndot; i++) {
+			System.out.print('.');
+		}
+		System.out.println();
+		while (isRowEmpty == false) {
+			Stack<Node> localStack = new Stack();
+			isRowEmpty = true;
+			for (int j = 0; j < nBlank; j++) {
+				System.out.print(' ');
+			}
+			while (!globalStack.isEmpty()) {
+				//里面的while循环用于查看全局的栈是否为空
+				Node temp = globalStack.pop();
+				if (temp != null) {
+					System.out.print(temp.val);
+					System.out.print(' ');
+					if(temp.children!=null&&temp.children.size()>0) {
+						for (int i = 0; i < temp.children.size(); i++) {
+							localStack.push(temp.children.get(i));
+							if(temp.children.get(i)!=null){
+								//如果当前的节点下面还有子节点，则必须要进行下一层的循环
+								isRowEmpty = false;
+							}
+						}
+					}
+
+
+				} else {
+					//如果全局的栈则不为空
+					System.out.print("# ");
+					localStack.push(null);
+					localStack.push(null);
+				}
+				//打印一些空格
+				for (int j = 0; j < nBlank * 2 - 2; j++) {
+					System.out.print(' ');
+				}
+			}//while end
+			System.out.println();
+			nBlank /= 2;
+			//这个while循环用来判断，local栈是否为空,不为空的话，则取出来放入全局栈中
+			while (!localStack.isEmpty()) {
+				globalStack.push(localStack.pop());
+			}
+		}//大while循环结束之后，输出换行
+		for (int i = 0; i < ndot; i++) {
+			System.out.print('.');
+		}
+		System.out.println();
 	}
 }

@@ -1,7 +1,12 @@
 package com.learn.java.leetcode.base.utils;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
 import java.util.ArrayDeque;
@@ -25,7 +30,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new int[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -44,7 +49,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new boolean[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -63,7 +68,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new double[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -82,7 +87,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new float[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -120,7 +125,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new String[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -156,7 +161,7 @@ public class Build {
 			return null;
 		}
 		data = data.trim();
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new char[]{};
 		}
 		data = data.replaceAll("\\[", "").replaceAll("\\]", "");
@@ -193,7 +198,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new int[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -223,7 +228,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new char[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -253,7 +258,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new String[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -277,7 +282,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new boolean[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -300,7 +305,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new double[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -324,7 +329,7 @@ public class Build {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
-		if(data.equals("[]")){
+		if (data.equals("[]")) {
 			return new float[][]{};
 		}
 		data = data.replaceAll(" ", "");
@@ -555,6 +560,45 @@ public class Build {
 	}
 
 	/**
+	 * 构建N叉树
+	 *
+	 * @param data
+	 * @return
+	 */
+	public static Node buildMultiTree(String data) {
+		if (data == null || data.trim().length() <= 0 || data.equals("null") || data.equals("{}")) {
+			return null;
+		}
+
+		//创建json解析器,注意这里如果用fastJson解析不了
+		JsonParser parse = new JsonParser();
+
+		JsonObject jsonObject = (JsonObject) parse.parse(data);
+
+		int val = jsonObject.get("val").getAsInt();
+		//根节点
+		Node root = new Node(val, null);
+
+		JsonArray childJsonJsonArray = jsonObject.getAsJsonArray("children");
+		if (childJsonJsonArray!=null&&!childJsonJsonArray.isJsonNull()) {
+			List<Node> tempList = new ArrayList<>();
+			for (int j = 0; j < childJsonJsonArray.size(); j++) {
+				JsonElement childJsonElement = childJsonJsonArray.get(j);
+				JsonObject childJsonObject = childJsonElement != null && !childJsonElement.isJsonNull() ? childJsonElement.getAsJsonObject() : null;
+				if (childJsonObject != null) {
+					String childData = childJsonObject.toString();
+					Node temp = buildMultiTree(childData);
+					tempList.add(temp);
+				}
+			}
+			root.children = tempList;
+		}
+
+		return root;
+
+	}
+
+	/**
 	 * 字符串构建List
 	 * 例如[1,2,3]
 	 *
@@ -629,7 +673,13 @@ public class Build {
 		return list;
 	}
 
-	public static Interval buildListInterval(String data){
+	/**
+	 * 构建区间，已废弃
+	 *
+	 * @param data
+	 * @return
+	 */
+	public static Interval buildListInterval(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
 		}
@@ -640,10 +690,16 @@ public class Build {
 		//去掉最外层的[]
 		data = data.substring(1, data.length() - 1);
 		String[] newDataArr = data.split(",");
-		Interval interval = new Interval(Integer.parseInt(newDataArr[0]),Integer.parseInt(newDataArr[1]));
+		Interval interval = new Interval(Integer.parseInt(newDataArr[0]), Integer.parseInt(newDataArr[1]));
 		return interval;
 	}
 
+	/**
+	 * 构建区间列表，已废弃
+	 *
+	 * @param data
+	 * @return
+	 */
 	public static List<Interval> buildListIntervalList(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
@@ -698,7 +754,7 @@ public class Build {
 			if (flag) {
 				newData = newData.substring(1, newData.length() - 1);
 				String[] newDataArr = newData.split(",");
-				Interval interval = new Interval(Integer.parseInt(newDataArr[0]),Integer.parseInt(newDataArr[1]));
+				Interval interval = new Interval(Integer.parseInt(newDataArr[0]), Integer.parseInt(newDataArr[1]));
 				list.add(interval);
 			}
 		}
