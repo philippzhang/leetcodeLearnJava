@@ -63,6 +63,11 @@ return its bottom-up level order traversal as:
 # 测试用例
 ```
 107. Binary Tree Level Order Traversal II 107. 二叉树的层次遍历 II Easy
+Solution.levelOrderBottom
+---
+[3,9,20,null,null,15,7]
+
+=[[15,7],[9,20],[3]]
 ```
 
 [enTitle]: https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
