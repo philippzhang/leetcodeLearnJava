@@ -1,7 +1,7 @@
 package com.learn.java.leetcode.base.structure;
 
 /**
- * 区间
+ * 区间,已废弃
  */
 public class Interval {
 	public int start;

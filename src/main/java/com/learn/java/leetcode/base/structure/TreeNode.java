@@ -1,7 +1,7 @@
 package com.learn.java.leetcode.base.structure;
 
 /**
- * 树
+ * 二叉树结点
  */
 public class TreeNode {
 	public int val;

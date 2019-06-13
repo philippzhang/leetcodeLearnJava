@@ -2,6 +2,9 @@ package com.learn.java.leetcode.base.structure;
 
 import java.util.List;
 
+/**
+ * N叉树结点
+ */
 public class Node {
 	public int val;
 	public List<Node> children;
