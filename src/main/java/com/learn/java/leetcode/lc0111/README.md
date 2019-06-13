@@ -51,6 +51,15 @@ return its minimum depth = 2.
 # 测试用例
 ```
 111. Minimum Depth of Binary Tree 111. 二叉树的最小深度 Easy
+Solution.minDepth
+---
+[3,9,20,null,null,15,7]
+
+=2
+---
+[1,2]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-depth-of-binary-tree/
