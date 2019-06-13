@@ -55,6 +55,12 @@ Return the following binary tree:
 # 测试用例
 ```
 106. Construct Binary Tree from Inorder and Postorder Traversal 106. 从中序与后序遍历序列构造二叉树 Medium
+Solution.buildTree
+---
+[9,3,15,20,7]
+[9,15,7,20,3]
+
+=[3,9,20,null,null,15,7]
 ```
 
 [enTitle]: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
