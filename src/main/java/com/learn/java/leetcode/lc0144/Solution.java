@@ -94,7 +94,7 @@ public class Solution {
 		}
 	}
 
-	public List<Integer> preorderTraversal(TreeNode root) {
+	public List<Integer> preorderTraversal2(TreeNode root) {
 		List<Integer> list = new ArrayList();
 		if (root == null) {
 			return list;
@@ -113,6 +113,27 @@ public class Solution {
 				current = current.right;
 			}
 
+		}
+		return list;
+	}
+
+
+	public List<Integer> preorderTraversal(TreeNode root) {
+		List<Integer> list = new ArrayList();
+		if (root == null) {
+			return list;
+		}
+		Stack<TreeNode> stack = new Stack();
+		stack.push(root);
+		while (!stack.isEmpty()) {
+			TreeNode current = stack.pop().data;
+			list.add(current.val);
+			if(current.right!=null){
+				stack.push(current.right);
+			}
+			if(current.left!=null){
+				stack.push(current.left);
+			}
 		}
 		return list;
 	}
