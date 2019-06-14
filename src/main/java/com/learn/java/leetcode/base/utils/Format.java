@@ -59,6 +59,12 @@ public class Format {
 					Interval interval = (Interval) item;
 					stringBuffer.append('[').append(String.valueOf(interval.start)).append(',').append(String.valueOf(interval.end));
 					stringBuffer.append(']');
+				} else if(item instanceof TreeNode){
+					format((TreeNode) item, stringBuffer);
+				} else if (item instanceof Node) {
+					format((Node) item, stringBuffer);
+				} else if(item!=null){
+					throw new RuntimeException("未定义的List泛型，转换失败!");
 				}
 				if (i < results.size() - 1) {
 					stringBuffer.append(',');
@@ -111,10 +117,9 @@ public class Format {
 			}
 		} else if (obj instanceof TreeNode) {
 			format((TreeNode) obj, stringBuffer);
-		}  else if (obj instanceof Node) {
+		} else if (obj instanceof Node) {
 			format((Node) obj, stringBuffer);
-		}
-		else{
+		} else{
 			throw new RuntimeException("未定义的类型，转换失败!");
 		}
 	}

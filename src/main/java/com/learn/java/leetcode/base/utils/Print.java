@@ -68,6 +68,20 @@ public class Print {
 						System.out.print(',');
 					}
 					System.out.println();
+				}else if(item instanceof TreeNode){
+					if (i == 0) {
+						System.out.println();
+					}
+					print((TreeNode) item);
+					System.out.println();
+				}else if(item instanceof Node){
+					if (i == 0) {
+						System.out.println();
+					}
+					print((Node) item);
+					System.out.println();
+				}else if(item!=null){
+					throw new RuntimeException("未定义的List泛型，打印失败!");
 				}
 			}
 			System.out.print("]");
