@@ -501,6 +501,11 @@ public class Format {
 		return stringBuffer.toString();
 	}
 
+	/**
+	 * 格式化Node
+	 * @param node
+	 * @param stringBuffer
+	 */
 	private static void format(Node node, StringBuffer stringBuffer) {
 		if (node == null) {
 			stringBuffer.append("null");
@@ -518,8 +523,6 @@ public class Format {
 		if (cur == null) {
 			return null;
 		}
-		Queue<Node> queue = new LinkedList<>();
-		queue.offer(cur);
 		JsonObject jsonObject = new JsonObject();
 
 		JsonArray jsonArray = new JsonArray();

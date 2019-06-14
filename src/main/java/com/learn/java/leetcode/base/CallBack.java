@@ -273,7 +273,7 @@ public class CallBack {
 	 * @param dataList        读入数据列表
 	 * @param tempList        临时缓存，用于数据传递
 	 */
-	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex,List<String> dataList,  List tempList) {
+	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List<String> dataList,  List tempList) {
 		try {
 			Object inputObj = inputObjArr[inputIndex];
 
