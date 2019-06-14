@@ -270,11 +270,32 @@ public class CallBack {
 	 * @param trueInputResult 正确输入结果
 	 * @param outputObj       算法输出值
 	 * @param inputIndex      需要验证的入参参数序号
+	 * @param dataList        读入数据列表
 	 * @param tempList        临时缓存，用于数据传递
 	 */
-	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List tempList) {
+	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex,List<String> dataList,  List tempList) {
 		try {
 			Object inputObj = inputObjArr[inputIndex];
+
+			boolean enprint = false;
+			for (int j = inputObjArr.length; j < dataList.size(); j++) {
+				if (dataList.get(j).equals("$enprint")) {
+					//打印输入
+					enprint = true;
+					break;
+				}
+			}
+			if(enprint) {
+				//打印输入
+				try {
+					System.out.println("格式输入:");
+					Print.print(inputObj);
+				} catch (Exception e) {
+					e.printStackTrace();
+					return false;
+				}
+			}
+
 			String testInputResult = Format.format(inputObj);
 			boolean resultFlag = trueInputResult.equals(testInputResult);
 			printInputVerify(trueInputResult, testInputResult, resultFlag);

@@ -36,7 +36,7 @@ public class Main extends CallBack {
 
 
 	@Override
-	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List tempList) {
+	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex,List<String> dataList,  List tempList) {
 		ListNode listNode = (ListNode) tempList.get(0);
 		String testInputResult = Format.format(listNode);
 		boolean resultFlag = trueInputResult.equals(testInputResult);

@@ -167,12 +167,21 @@ public class Utilitys {
 					long endTime = System.currentTimeMillis();
 					//格式化打印
 					if (!"void".equals(returnTypeName)) {
-						//打印输出
-						try {
-							callBack.printOutput(outputObj);
-						} catch (Exception e) {
-							e.printStackTrace();
-							testFlag = false;
+						boolean enprint = true;
+						for (int j = inputObjArr.length; j < dataList.size(); j++) {
+							if (dataList.get(j).equals("$disprint")) {
+								enprint = false;
+								break;
+							}
+						}
+						if(enprint) {
+							//打印输出
+							try {
+								callBack.printOutput(outputObj);
+							} catch (Exception e) {
+								e.printStackTrace();
+								testFlag = false;
+							}
 						}
 					}
 
@@ -194,7 +203,7 @@ public class Utilitys {
 								String trueInputResult = trueResult.substring(3).trim();
 								if (StringUtils.isNotBlank(trueInputResult) && inputIndex >= 0 && inputIndex < inputObjArr.length) {
 									try {
-										boolean resultFlag = callBack.inputVerify(inputObjArr, trueInputResult, outputObj, inputIndex, tempList);
+										boolean resultFlag = callBack.inputVerify(inputObjArr, trueInputResult, outputObj, inputIndex,dataList, tempList);
 										if (!resultFlag) {
 											testFlag = false;
 										}

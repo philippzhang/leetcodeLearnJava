@@ -35,10 +35,6 @@ public class Main extends CallBack {
 		Build.buildCycleListNode(listNode, pos);
 	}
 
-	@Override
-	public void printOutput(Object obj) {
-		//不打印环形链表
-	}
 
 	@Override
 	public boolean outputVerify(Object[] inputObjArr, List<String> trueResultList, Object outputObj, List<String> dataList, List tempList) {

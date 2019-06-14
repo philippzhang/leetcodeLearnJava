@@ -107,11 +107,15 @@ Solution.detectCycle
 1
 
 =tail connects to node index 1
+
+$disprint
 ---
 [3,2,0,-4]
 -1
 
 =no cycle
+
+$disprint
 ```
 
 

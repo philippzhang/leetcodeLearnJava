@@ -24,11 +24,6 @@ public class Main extends CallBack {
 
 
 	@Override
-	public void printOutput(Object outputObj) {
-	}
-
-
-	@Override
 	public boolean outputVerify(Object[] inputObjArr, List<String> trueResultList, Object outputObj, List<String> dataList, List tempList) {
 
 		boolean resultFlag = false;

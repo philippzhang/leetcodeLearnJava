@@ -13,7 +13,7 @@ public class Main extends CallBack {
 	}
 
 	@Override
-	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List tempList) {
+	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex,List<String> dataList,  List tempList) {
 		Object inputObj = inputObjArr[inputIndex];
 		String testInputResult = Format.format(inputObj);
 		//根据trueResult对应的长度，截取testInputResult对应的数组并转化成字符串

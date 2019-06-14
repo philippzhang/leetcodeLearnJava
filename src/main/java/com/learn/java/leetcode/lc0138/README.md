@@ -64,14 +64,20 @@ Solution.copyRandomList
 {"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1}
 
 ={"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1}
+
+$disprint
 ---
 null
 
 =null
+
+$disprint
 ---
 {}
 
 ={}
+
+$disprint
 ```
 
 [enTitle]: https://leetcode.com/problems/copy-list-with-random-pointer/

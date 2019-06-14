@@ -133,6 +133,8 @@ Solution.getIntersectionNode
 3
 
 =Intersected at '8'
+
+$disprint
 ---
 2
 [0,9,1,2,4]
@@ -141,6 +143,8 @@ Solution.getIntersectionNode
 1
 
 =Intersected at '2'
+
+$disprint
 ---
 0
 [2,6,4]
@@ -149,6 +153,8 @@ Solution.getIntersectionNode
 2
 
 =No intersection
+
+$disprint
 ---
 1
 [1,6,4]
@@ -157,6 +163,8 @@ Solution.getIntersectionNode
 0
 
 =Intersected at '1'
+
+$disprint
 ---
 1
 [2,1,6,4]
@@ -165,6 +173,8 @@ Solution.getIntersectionNode
 0
 
 =Intersected at '1'
+
+$disprint
 ```
 
 [enTitle]: https://leetcode.com/problems/intersection-of-two-linked-lists/
