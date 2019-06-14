@@ -34,6 +34,14 @@ Solution.nextPermutation
 [1,2,3]
 
 I0=[1,3,2]
+---
+[3,2,1]
+
+I0=[1,2,3]
+---
+[1,1,5]
+
+I0=[1,5,1]
 ```
 
 [enTitle]: https://leetcode.com/problems/next-permutation/
