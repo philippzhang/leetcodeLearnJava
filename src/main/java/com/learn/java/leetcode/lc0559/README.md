@@ -49,6 +49,11 @@ Note:
 # 测试用例
 ```
 559. Maximum Depth of N-ary Tree 559. N叉树的最大深度 Easy
+Solution.maxDepth
+---
+{"$id":"1","children":[{"$id":"2","children":[{"$id":"5","children":[],"val":5},{"$id":"6","children":[],"val":6}],"val":3},{"$id":"3","children":[],"val":2},{"$id":"4","children":[],"val":4}],"val":1}
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/maximum-depth-of-n-ary-tree/
