@@ -45,9 +45,19 @@ public class Solution {
 						return false;
 					}
 				}
-				for(int k = i + 1; k % 3 != 0; k ++){
+				/*for(int k = i + 1; k % 3 != 0; k ++){
 					for(int h = j / 3 * 3;h < j / 3 * 3  + 3; h ++ ) {
 						if(board[i][j] == board[k][h]) {
+							return false;
+						}
+					}
+				}*/
+
+				for(int x = 0 ; x < 3 ; x++) {
+					for(int y = 0 ; y < 3 ; y++) {
+						int ii = i/3*3+x;
+						int jj = j/3*3+y;
+						if(ii!=i&&jj!=j&&board[ii][jj]==board[i][j]) {
 							return false;
 						}
 					}
