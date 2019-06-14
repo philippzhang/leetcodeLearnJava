@@ -44,6 +44,11 @@ Explanation:Given n = 3, there are a total of 5 unique BST's:
 # 测试用例
 ```
 96. Unique Binary Search Trees 96. 不同的二叉搜索树 Medium
+Solution.numTrees
+---
+3
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/unique-binary-search-trees/
