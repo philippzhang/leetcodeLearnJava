@@ -61,6 +61,11 @@ The above output corresponds to the 5 unique BST's shown below:
 # 测试用例
 ```
 95. Unique Binary Search Trees II 95. 不同的二叉搜索树 II Medium
+Solution.generateTrees
+---
+3
+
+=[[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]
 ```
 
 [enTitle]: https://leetcode.com/problems/unique-binary-search-trees-ii/
