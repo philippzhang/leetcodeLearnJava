@@ -67,6 +67,11 @@ Note:
 # 测试用例
 ```
 429. N-ary Tree Level Order Traversal 429. N叉树的层序遍历 Easy
+Solution.levelOrder
+---
+{"$id":"1","children":[{"$id":"2","children":[{"$id":"5","children":[],"val":5},{"$id":"6","children":[],"val":6}],"val":3},{"$id":"3","children":[],"val":2},{"$id":"4","children":[],"val":4}],"val":1}
+
+=[[1],[3,2,4],[5,6]]
 ```
 
 [enTitle]: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
