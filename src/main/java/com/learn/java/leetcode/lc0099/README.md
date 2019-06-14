@@ -112,6 +112,15 @@ Output: [2,1,4,null,null,3]
 # 测试用例
 ```
 99. Recover Binary Search Tree 99. 恢复二叉搜索树 Hard
+Solution.recoverTree
+---
+[1,3,null,null,2]
+
+I0=[3,1,null,null,2]
+---
+[3,1,4,null,null,2]
+
+I0=[2,1,4,null,null,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/recover-binary-search-tree/
