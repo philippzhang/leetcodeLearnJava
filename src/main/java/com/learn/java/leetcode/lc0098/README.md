@@ -81,6 +81,22 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 # 测试用例
 ```
 98. Validate Binary Search Tree 98. 验证二叉搜索树 Medium
+Solution.isValidBST
+---
+[2,1,3]
+
+=true
+[5,1,4,null,null,3,6]
+
+=false
+---
+[1,1]
+
+=false
+---
+[10,5,15,null,null,6,20]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/validate-binary-search-tree/
