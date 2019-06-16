@@ -11,7 +11,7 @@ import java.io.File;
  * @author zhangyangshuo
  */
 public class GetQuestion {
-	private static final String[] QUESTION_IDS = {"819"};
+	private static final String[] QUESTION_IDS = {"41","44","48","66"};
 	private static final String package_parent = InitializationConfig.readProperties().getProperty("GetQuestionPath");
 
 	private static final String userDir = System.getProperty("user.dir");
