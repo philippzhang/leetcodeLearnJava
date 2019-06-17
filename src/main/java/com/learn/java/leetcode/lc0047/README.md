@@ -40,6 +40,10 @@ Output:
 # 测试用例
 ```
 47. Permutations II 47. 全排列 II Medium
+Solution.permuteUnique
+---
+[1,1,2]
+=[[1,1,2],[1,2,1],[2,1,1]]
 ```
 
 [enTitle]: https://leetcode.com/problems/permutations-ii/
