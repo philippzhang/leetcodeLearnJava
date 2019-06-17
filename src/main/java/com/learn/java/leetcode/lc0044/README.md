@@ -147,6 +147,32 @@ p = "a*c?b"
 # 测试用例
 ```
 44. Wildcard Matching 44. 通配符匹配 Hard
+Solution.isMatch
+---
+"aa"
+"a"
+
+=false
+---
+"aa"
+"*"
+
+=true
+---
+"cb"
+"?a"
+
+=false
+---
+"adceb"
+"*a*b"
+
+=true
+---
+"acdcb"
+"a*c?b"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/wildcard-matching/
