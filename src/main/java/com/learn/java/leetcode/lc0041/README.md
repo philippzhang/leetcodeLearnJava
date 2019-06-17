@@ -71,6 +71,19 @@ Your algorithm should run in  *O* ( *n* ) time and uses constant extra space.
 # 测试用例
 ```
 41. First Missing Positive 41. 缺失的第一个正数 Hard
+Solution.firstMissingPositive
+---
+[1,2,0]
+
+=3
+---
+[3,4,-1,1]
+
+=2
+---
+[7,8,9,11,12]
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/first-missing-positive/
