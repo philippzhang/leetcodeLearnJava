@@ -59,6 +59,15 @@ Explanation: The array represents the integer 4321.
 # 测试用例
 ```
 66. Plus One 66. 加一 Easy
+Solution.plusOne
+---
+[1,2,3]
+
+=[1,2,4]
+---
+[4,3,2,1]
+
+=[4,3,2,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/plus-one/

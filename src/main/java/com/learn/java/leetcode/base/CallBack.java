@@ -8,10 +8,7 @@ import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
-import sun.reflect.generics.reflectiveObjects.TypeVariableImpl;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.List;
 
 /**
@@ -138,8 +135,18 @@ public class CallBack {
 	 * @param outputObj 算法输出值
 	 */
 	public void printOutput(Object outputObj) {
-		System.out.println("格式输出:");
+		System.out.println("格式化出参输出:");
 		Print.print(outputObj);
+	}
+
+	/**
+	 * 打印输入参数方法
+	 *
+	 * @param inputObj 算法输入值
+	 */
+	public void printInput(Object inputObj) {
+		System.out.println("格式化入参输出:");
+		Print.print(inputObj);
 	}
 
 	/**
@@ -276,26 +283,6 @@ public class CallBack {
 	public boolean inputVerify(Object[] inputObjArr, String trueInputResult, Object outputObj, int inputIndex, List<String> dataList,  List tempList) {
 		try {
 			Object inputObj = inputObjArr[inputIndex];
-
-			boolean enprint = false;
-			for (int j = inputObjArr.length; j < dataList.size(); j++) {
-				if (dataList.get(j).equals("$enprint")) {
-					//打印输入
-					enprint = true;
-					break;
-				}
-			}
-			if(enprint) {
-				//打印输入
-				try {
-					System.out.println("格式输入:");
-					Print.print(inputObj);
-				} catch (Exception e) {
-					e.printStackTrace();
-					return false;
-				}
-			}
-
 			String testInputResult = Format.format(inputObj);
 			boolean resultFlag = trueInputResult.equals(testInputResult);
 			printInputVerify(trueInputResult, testInputResult, resultFlag);

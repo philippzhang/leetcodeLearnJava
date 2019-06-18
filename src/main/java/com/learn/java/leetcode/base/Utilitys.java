@@ -6,10 +6,7 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
-import com.learn.java.leetcode.base.utils.Build;
-import com.learn.java.leetcode.base.utils.Format;
-import com.learn.java.leetcode.base.utils.NoImplException;
-import com.learn.java.leetcode.base.utils.StringUtil;
+import com.learn.java.leetcode.base.utils.*;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
@@ -174,7 +171,7 @@ public class Utilitys {
 								break;
 							}
 						}
-						if(enprint) {
+						if(enprint&&Print.judgePrint(outputObj)) {
 							//打印输出
 							try {
 								callBack.printOutput(outputObj);
@@ -203,6 +200,26 @@ public class Utilitys {
 								String trueInputResult = trueResult.substring(3).trim();
 								if (StringUtils.isNotBlank(trueInputResult) && inputIndex >= 0 && inputIndex < inputObjArr.length) {
 									try {
+
+										Object inputObj = inputObjArr[inputIndex];
+										boolean enprint = true;
+										for (int j = inputObjArr.length; j < dataList.size(); j++) {
+											if (dataList.get(j).equals("$disprint")) {
+												//打印输入
+												enprint = false;
+												break;
+											}
+										}
+										if(enprint&&Print.judgePrint(inputObj)) {
+											//打印输入
+											try {
+												callBack.printInput(inputObj);
+											} catch (Exception e) {
+												e.printStackTrace();
+												testFlag = false;
+											}
+										}
+
 										boolean resultFlag = callBack.inputVerify(inputObjArr, trueInputResult, outputObj, inputIndex, dataList, tempList);
 										if (!resultFlag) {
 											testFlag = false;

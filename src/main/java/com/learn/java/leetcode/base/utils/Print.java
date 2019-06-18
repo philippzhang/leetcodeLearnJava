@@ -153,11 +153,42 @@ public class Print {
 	}
 
 	/**
+	 * 判断是否需要格式化打印
+	 * @param obj
+	 * @return
+	 */
+	public static boolean judgePrint(Object obj){
+		if (obj == null) {
+			return false;
+		}
+		if (obj instanceof ListNode || obj instanceof TreeNode || obj instanceof Node) {
+			return true;
+		} else if (obj instanceof List) {
+			List results = (List) obj;
+			System.out.print("[");
+			for (int i = 0; i < results.size(); i++) {
+				Object item = results.get(i);
+				if(item!=null){
+					if (item instanceof List||item instanceof ListNode||item instanceof TreeNode || item instanceof Node) {
+						return true;
+					}
+				}
+			}
+		}else if (obj.getClass().isArray()) {
+			String className = obj.getClass().getName();
+			if(className.startsWith("[[")||className.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;")){
+				return true;
+			}
+		}
+		return false;
+	}
+
+	/**
 	 * 打印数组
 	 *
 	 * @param array
 	 */
-	public static void print(int[] array) {
+	private static void print(int[] array) {
 		if (array == null) {
 			return;
 		}
@@ -178,7 +209,7 @@ public class Print {
 	 *
 	 * @param array
 	 */
-	public static void print(double[] array) {
+	private static void print(double[] array) {
 		if (array == null) {
 			return;
 		}
@@ -199,7 +230,7 @@ public class Print {
 	 *
 	 * @param array
 	 */
-	public static void print(float[] array) {
+	private static void print(float[] array) {
 		if (array == null) {
 			return;
 		}
@@ -214,7 +245,7 @@ public class Print {
 		System.out.println();
 	}
 
-	public static void print(String[] array) {
+	private static void print(String[] array) {
 		if (array == null) {
 			return;
 		}
@@ -251,7 +282,7 @@ public class Print {
 	 *
 	 * @param array
 	 */
-	public static void print(boolean[] array) {
+	private static void print(boolean[] array) {
 		if (array == null) {
 			return;
 		}
