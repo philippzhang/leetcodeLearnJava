@@ -65,7 +65,7 @@ Solution.isNumber
 
 =true
 ---
-" -90e3   "
+" -90e3   "
 
 =true
 ---

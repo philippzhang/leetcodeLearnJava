@@ -29,7 +29,7 @@ public class Solution {
 			char c = s.charAt(i);
 			switch (state) {
 				case BEGIN_STATE: {
-					if (c == ' '|| c==160) {
+					if (c == ' ') {
 
 					} else if (c >= '0' && c <= '9') {
 						state = STATE.NUMBER_STATE;
@@ -77,7 +77,7 @@ public class Solution {
 						}
 						state = STATE.EXPONENT_STATE;
 						existExponent = true;
-					} else if (c == ' '|| c==160) {
+					} else if (c == ' ') {
 						state = STATE.END_STATE;
 					} else {
 						return false;
@@ -87,7 +87,7 @@ public class Solution {
 				case POINT_STATE: {
 					if (c >= '0' && c <= '9') {
 						state = STATE.NUMBER_STATE;
-					} else if (c == ' '|| c==160) {
+					} else if (c == ' ') {
 						state = STATE.END_STATE;
 					} else if (c == 'e') {
 						if (existExponent) {
@@ -113,7 +113,7 @@ public class Solution {
 				case EXPONENT_NUMBER_STATE: {
 					if (c >= '0' && c <= '9') {
 						state = STATE.EXPONENT_NUMBER_STATE;
-					} else if (c == ' '|| c==160) {
+					} else if (c == ' ') {
 						state = STATE.END_STATE;
 					} else {
 						return false;
@@ -129,7 +129,7 @@ public class Solution {
 					break;
 				}
 				case END_STATE: {
-					if (c == ' '|| c==160) {
+					if (c == ' ') {
 						state = STATE.END_STATE;
 					} else {
 						return false;
