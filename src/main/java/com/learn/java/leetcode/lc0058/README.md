@@ -41,6 +41,10 @@ Output: 5
 # 测试用例
 ```
 58. Length of Last Word 58. 最后一个单词的长度 Easy
+Solution.lengthOfLastWord
+---
+"Hello World"
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/length-of-last-word/
