@@ -47,6 +47,17 @@ Output: "10101"
 # 测试用例
 ```
 67. Add Binary 67. 二进制求和 Easy
+Solution.addBinary
+---
+"11"
+"1"
+
+="100"
+---
+"1010"
+"1011"
+
+="10101"
 ```
 
 [enTitle]: https://leetcode.com/problems/add-binary/
