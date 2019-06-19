@@ -54,6 +54,22 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 # 测试用例
 ```
 57. Insert Interval 57. 插入区间 Hard
+Solution.insert
+---
+[[1,3],[6,9]]
+[2,5]
+
+=[[1,5],[6,9]]
+---
+[[1,2],[3,5],[6,7],[8,10],[12,16]]
+[4,8]
+
+=[[1,2],[3,10],[12,16]]
+---
+[[1,5]]
+[6,8]
+
+=[[1,5],[6,8]]
 ```
 
 [enTitle]: https://leetcode.com/problems/insert-interval/
