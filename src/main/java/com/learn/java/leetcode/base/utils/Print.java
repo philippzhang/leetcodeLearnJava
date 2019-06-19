@@ -165,7 +165,6 @@ public class Print {
 			return true;
 		} else if (obj instanceof List) {
 			List results = (List) obj;
-			System.out.print("[");
 			for (int i = 0; i < results.size(); i++) {
 				Object item = results.get(i);
 				if(item!=null){
