@@ -1,6 +1,5 @@
 package com.learn.java.leetcode.lc0056;
 
-import com.learn.java.leetcode.base.structure.Interval;
 
 import java.util.*;
 
