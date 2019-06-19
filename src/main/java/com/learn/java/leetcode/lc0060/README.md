@@ -79,6 +79,22 @@ Output: "2314"
 # 测试用例
 ```
 60. Permutation Sequence 60. 第k个排列 Medium
+Solution.getPermutation
+---
+3
+3
+
+="213"
+---
+4
+9
+
+="2314"
+---
+1
+1
+
+="1"
 ```
 
 [enTitle]: https://leetcode.com/problems/permutation-sequence/
