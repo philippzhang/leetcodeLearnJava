@@ -43,6 +43,91 @@ Of course, the context of these characters also matters in the input.
 # 测试用例
 ```
 65. Valid Number 65. 有效数字 Hard
+Solution.isNumber
+---
+"0"
+
+=true
+---
+" 0.1 "
+
+=true
+---
+"abc"
+
+=false
+---
+"1 a"
+
+=false
+----
+"2e10"
+
+=true
+---
+" -90e3   "
+
+=true
+---
+" 1e"
+
+=false
+---
+"e3"
+
+=false
+---
+" 6e-1"
+
+=true
+---
+" 99e2.5 "
+
+=false
+---
+"53.5e93"
+
+=true
+---
+" --6 "
+
+=false
+---
+"-+3"
+
+=false
+---
+"95a54e53"
+
+=false
+---
+" "
+
+=false
+---
+".1"
+
+=true
+---
+"3."
+
+=true
+---
+"+.8"
+
+=true
+---
+" +0e-"
+
+=false
+---
+"46.e3"
+
+=true
+---
+" 005047e+6"
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/valid-number/
