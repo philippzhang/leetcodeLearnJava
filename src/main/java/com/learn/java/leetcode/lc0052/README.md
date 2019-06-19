@@ -65,6 +65,11 @@ Explanation: There are two distinct solutions to the 4-queens puzzle as shown be
 # 测试用例
 ```
 52. N-Queens II 52. N皇后 II Hard
+Solution.totalNQueens
+---
+4
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/n-queens-ii/
