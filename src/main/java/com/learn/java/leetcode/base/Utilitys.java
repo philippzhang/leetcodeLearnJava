@@ -844,9 +844,13 @@ public class Utilitys {
 					if(tempString.trim().length()>0 && !tempString.startsWith("#")){
 						tempString = tempString.replaceAll(";"," ");
 						if(tempString.toLowerCase().startsWith("drop")) {
-							Statement state = conn.createStatement();
-							state.executeUpdate(tempString);
-							state.close();
+							try {
+								Statement state = conn.createStatement();
+								state.executeUpdate(tempString);
+								state.close();
+							}catch (SQLException e){
+
+							}
 						}else if(tempString.toLowerCase().startsWith("create")){
 							Statement state = conn.createStatement();
 							state.executeUpdate(tempString);

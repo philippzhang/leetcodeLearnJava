@@ -8,7 +8,7 @@ import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
-import com.learn.java.leetcode.lc0175.Main;
+
 
 import java.util.List;
 
@@ -335,6 +335,13 @@ public class CallBack {
 	 * 运行sql
 	 */
 	public void runSql(){
-		Utilitys.runSql(Main.class);
+		Utilitys.runSql(getClass());
+	}
+
+	/**
+	 * 跳过测试
+	 */
+	public void skip(){
+
 	}
 }
