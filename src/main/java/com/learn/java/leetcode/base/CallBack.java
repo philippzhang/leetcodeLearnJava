@@ -8,6 +8,7 @@ import com.learn.java.leetcode.base.utils.Build;
 import com.learn.java.leetcode.base.utils.Format;
 import com.learn.java.leetcode.base.utils.Print;
 import com.learn.java.leetcode.base.utils.StringUtil;
+import com.learn.java.leetcode.lc0175.Main;
 
 import java.util.List;
 
@@ -328,5 +329,12 @@ public class CallBack {
 	public List funcListTest(List funcList, List paramList) {
 		List retList = Utilitys.funcListTest(getClass(), funcList, paramList);
 		return retList;
+	}
+
+	/**
+	 * 运行sql
+	 */
+	public void runSql(){
+		Utilitys.runSql(Main.class);
 	}
 }

@@ -143,6 +143,23 @@ maxWidth = 20
 # 测试用例
 ```
 68. Text Justification 68. 文本左右对齐 Hard
+Solution.fullJustify
+---
+["This","is","an","example","of","text","justification."]
+16
+
+=["This    is    an","example  of text","justification.  "]
+---
+["What","must","be","acknowledgment","shall","be"]
+16
+
+=["What   must   be","acknowledgment  ","shall be        "]
+---
+["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]
+20
+
+=["Science  is  what we","understand      well","enough to explain to","a  computer.  Art is","everything  else  we","do                  "]
+
 ```
 
 [enTitle]: https://leetcode.com/problems/text-justification/

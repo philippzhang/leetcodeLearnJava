@@ -101,6 +101,8 @@ FirstName, LastName, City, State
 # 测试用例
 ```
 175. Combine Two Tables 175. 组合两个表 Easy
+Main.runSql
+---
 ```
 
 [enTitle]: https://leetcode.com/problems/combine-two-tables/

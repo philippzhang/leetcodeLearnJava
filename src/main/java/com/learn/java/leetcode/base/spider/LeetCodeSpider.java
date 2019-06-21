@@ -67,9 +67,19 @@ public class LeetCodeSpider  {
 			enDegree = enElements2.text();
 			Elements enElements33 = enDoc.select("div.content__u3I1.question-content__JfgR");
 
-			Elements enElements3 = enElements33.first().children().first().children();
-			String enHtml = enElements3.toString();
-			String enContent = Html2MdEn.getMarkDownText(enHtml);
+			String enContent = "";
+			Elements enElements30 = enElements33.first().children();
+			if(enElements30!=null&&enElements30.size()>0){
+				for(int j=0;j<enElements30.size();j++){
+					Elements enElements3 = enElements30.get(j).children();
+					String enHtml = enElements3.toString();
+					enContent += Html2MdEn.getMarkDownText(enHtml)+"\n\n";
+				}
+			}
+
+			//Elements enElements3 = enElements33.first().children().first().children();
+			//String enHtml = enElements3.toString();
+			//String enContent = Html2MdEn.getMarkDownText(enHtml);
 
 			stringBuffer.append("# [" + enTitle + "][enTitle]\n\n").append("**").append(enDegree).append("**\n\n").append(enContent);
 
@@ -123,9 +133,19 @@ public class LeetCodeSpider  {
 			String cnTitle = cnElements1.text();
 			Elements cnElements2 = cnDoc.select("div.css-r0ewhb-Left.e5i1odf2 > div > span:nth-child(2)");
 			String cnDegree = cnElements2.text();
-			Elements cnElements3 = cnDoc.select("div.content__2ebE").first().children().first().children();
-			String cnHtml = cnElements3.toString();
-			String cnContent = Html2MdCn.getMarkDownText(cnHtml);
+
+			Elements cnElements30 = cnDoc.select("div.content__2ebE").first().children();
+
+			String cnContent = "";
+			for(int j = 0;j<cnElements30.size();j++){
+				Elements cnElements3 = cnElements30.get(j).children();
+				String cnHtml = cnElements3.toString();
+				cnContent += Html2MdCn.getMarkDownText(cnHtml)+"\n\n";
+			}
+
+			//Elements cnElements3 = cnDoc.select("div.content__2ebE").first().children().first().children();
+			//String cnHtml = cnElements3.toString();
+			//String cnContent = Html2MdCn.getMarkDownText(cnHtml);
 
 
 			//WebElement cnElements4 = cnDriver.findElement(By.cssSelector("#lang-select"));

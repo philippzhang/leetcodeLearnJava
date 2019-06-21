@@ -1,6 +1,8 @@
 package com.learn.java.leetcode.base;
 
 
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -8,11 +10,17 @@ import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.TreeNode;
 import com.learn.java.leetcode.base.utils.*;
 import org.apache.commons.lang.StringUtils;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.jdbc.ScriptRunner;
+import org.springframework.jdbc.core.ColumnMapRowMapper;
+import org.springframework.jdbc.core.ResultSetExtractor;
+import org.springframework.jdbc.core.RowMapperResultSetExtractor;
 
 import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.sql.*;
 import java.util.*;
 
 
@@ -81,8 +89,10 @@ public class Utilitys {
 			for (int j = 1; j < testList.size(); j++) {
 				//数据
 				List<String> dataList = testList.get(j);
-				if (dataList != null && dataList.size() > 0) {
-					System.out.println("第" + jCount + "组数据:");
+				if (dataList != null ) {
+					if(dataList.size()>0) {
+						System.out.println("第" + jCount + "组数据:");
+					}
 					boolean resultFlag = test(mainClass, algorithmClassName, algorithmFuncName, dataList);
 					if (!resultFlag) {
 						testFlag = false;
@@ -132,14 +142,16 @@ public class Utilitys {
 					//临时集合，用于输入和输出之间传递
 					List tempList = new ArrayList();
 
-					System.out.println("输入:");
-					//打印输入参数
-					try {
-						callBack.printInput(dataList, paramLength);
-					} catch (Exception e) {
-						e.printStackTrace();
-						testFlag = false;
-						invokeFlag = false;
+					if(paramLength>0) {
+						System.out.println("输入:");
+						//打印输入参数
+						try {
+							callBack.printInput(dataList, paramLength);
+						} catch (Exception e) {
+							e.printStackTrace();
+							testFlag = false;
+							invokeFlag = false;
+						}
 					}
 
 					//如果入参需要重构
@@ -808,4 +820,150 @@ public class Utilitys {
 		return e.toString();
 	}
 
+
+	public static void runSql(Class clazz) {
+		Connection conn  = null;
+		try {
+
+			String packageName = clazz.getPackage().getName();
+			String path = "/" + packageName.replaceAll("\\.", "/") + "/main.sql";
+
+			Class.forName("org.apache.derby.jdbc.EmbeddedDriver");
+
+			// 建立连接
+			conn = DriverManager.getConnection("jdbc:derby:derbydb;create=true");
+
+			BufferedReader reader = null;
+			try {
+				InputStream is = Utilitys.class.getResourceAsStream(path);
+				reader = new BufferedReader(new InputStreamReader(is));
+				String tempString = null;
+
+
+				while ((tempString = reader.readLine()) != null) {
+					if(tempString.trim().length()>0 && !tempString.startsWith("#")){
+						tempString = tempString.replaceAll(";"," ");
+						if(tempString.toLowerCase().startsWith("drop")) {
+							Statement state = conn.createStatement();
+							state.executeUpdate(tempString);
+							state.close();
+						}else if(tempString.toLowerCase().startsWith("create")){
+							Statement state = conn.createStatement();
+							state.executeUpdate(tempString);
+							state.close();
+						}else if(tempString.toLowerCase().startsWith("insert")){
+							Statement state = conn.createStatement();
+							state.executeUpdate(tempString);
+							state.close();
+						}else  if(tempString.toLowerCase().startsWith("select")){
+							List<Map<String, Object>>  queryResult = selectSqlMap(conn,tempString);
+							if (queryResult != null && queryResult.size() > 0) {
+								String str = JSONArray.toJSONString(queryResult, SerializerFeature.WriteMapNullValue);
+								System.out.println(str);
+							}
+						}
+
+
+					}
+				}
+
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			} finally {
+				if (reader != null) {
+					try {
+						reader.close();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
+			}
+
+
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} finally {
+			if(conn!=null){
+				try {
+					conn.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+	private static String readSqlFile(String path) {
+		StringBuilder lastJson = new StringBuilder();
+		BufferedReader reader = null;
+		try {
+			InputStream is = Utilitys.class.getResourceAsStream(path);
+			reader = new BufferedReader(new InputStreamReader(is));
+			String tempString = null;
+
+
+			while ((tempString = reader.readLine()) != null) {
+				if(!tempString.startsWith("#")){
+					lastJson.append(tempString.replaceAll("\r"," ").replaceAll("\n"," "));
+				}
+			}
+
+		} catch (IOException e1) {
+			e1.printStackTrace();
+		} finally {
+			if (reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return lastJson.toString();
+	}
+
+	private static List<Map<String, Object>> selectSqlMap(Connection conn, String sql)throws SQLException{
+		Statement st = null;
+		ResultSet rs = null;
+		try {
+			// 创建语句执行者
+			st = conn.createStatement();
+
+			//直接查询
+			rs = st.executeQuery(sql);
+			/*while(rs.next()){
+				String s = rs.getString(1);
+				System.out.println(s);
+			}*/
+
+
+			ColumnMapRowMapper rowMapper = new ColumnMapRowMapper();
+			ResultSetExtractor<List<Map<String, Object>>> resultSetExtractor = new RowMapperResultSetExtractor<>(rowMapper);
+			List<Map<String, Object>> queryResult = resultSetExtractor.extractData(rs);
+			return queryResult;
+
+		} catch (SQLException e) {
+			throw e;
+		} finally {
+			//关闭
+			if (rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if (st != null) {
+				try {
+					st.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+	}
 }
