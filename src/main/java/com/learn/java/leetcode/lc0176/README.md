@@ -71,7 +71,7 @@ SQL架构
 # 测试用例
 ```
 176. Second Highest Salary 176. 第二高的薪水 Easy
-Main.runSql
+Main.skip
 ---
 ```
 
