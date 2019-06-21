@@ -35,3 +35,4 @@ jacoco.exec
 target/
 logs/
 *.log
+derbydb/
