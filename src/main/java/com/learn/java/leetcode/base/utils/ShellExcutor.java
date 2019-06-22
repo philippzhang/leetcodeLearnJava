@@ -62,7 +62,7 @@ public class ShellExcutor {
 			if(commandThread.getExitValue() != 0){
 				throw new Exception("shell " + script + "执行失败,exitValue = " + commandThread.getExitValue());
 			}
-			System.out.println("执行成功,返回 " + commandThread.getExitValue());
+			System.out.println("shell执行成功,返回 " + commandThread.getExitValue());
 		}
 		catch (Exception e){
 			throw new Exception("执行脚本发生异常,脚本路径" + script, e);
