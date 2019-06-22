@@ -149,6 +149,7 @@
                     <include>**/*.txt</include>
                     <include>**/*.md</include>
                     <include>**/*.sql</include>
+                    <include>**/*.sh</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>

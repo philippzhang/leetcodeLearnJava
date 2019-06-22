@@ -81,6 +81,8 @@ day 1
 # 测试用例
 ```
 192. Word Frequency 192. 统计词频 Medium
+Main.runShell
+---
 ```
 
 [enTitle]: https://leetcode.com/problems/word-frequency/

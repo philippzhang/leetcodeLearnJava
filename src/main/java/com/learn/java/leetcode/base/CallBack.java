@@ -4,10 +4,7 @@ import com.learn.java.leetcode.base.structure.Interval;
 import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
-import com.learn.java.leetcode.base.utils.Build;
-import com.learn.java.leetcode.base.utils.Format;
-import com.learn.java.leetcode.base.utils.Print;
-import com.learn.java.leetcode.base.utils.StringUtil;
+import com.learn.java.leetcode.base.utils.*;
 
 
 import java.util.List;
@@ -343,5 +340,8 @@ public class CallBack {
 	 */
 	public void skip(){
 
+	}
+
+	public void runShell(){ShellExcutor.service(getClass());
 	}
 }
