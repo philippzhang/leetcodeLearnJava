@@ -63,6 +63,8 @@ age 21 30
 # 测试用例
 ```
 194. Transpose File 194. 转置文件 Medium
+Main.runShell
+---
 ```
 
 [enTitle]: https://leetcode.com/problems/transpose-file/

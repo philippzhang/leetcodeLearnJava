@@ -65,6 +65,8 @@ Your script should output the following valid phone numbers:
 # 测试用例
 ```
 193. Valid Phone Numbers 193. 有效电话号码 Easy
+Main.runShell
+---
 ```
 
 [enTitle]: https://leetcode.com/problems/valid-phone-numbers/
