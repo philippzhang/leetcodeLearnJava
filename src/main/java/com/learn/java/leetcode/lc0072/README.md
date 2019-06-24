@@ -83,6 +83,17 @@ exection -> execution (插入 'u')
 # 测试用例
 ```
 72. Edit Distance 72. 编辑距离 Hard
+Solution.minDistance
+---
+"horse"
+"ros"
+
+=3
+---
+"intention"
+"execution"
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/edit-distance/
