@@ -51,6 +51,11 @@ Output: [0,0,1,1,2,2]
 # 测试用例
 ```
 75. Sort Colors 75. 颜色分类 Medium
+Solution.sortColors
+Solution.sortColors2
+---
+[2,0,2,1,1,0]
+I0=[0,0,1,1,2,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/sort-colors/
