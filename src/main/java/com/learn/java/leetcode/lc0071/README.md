@@ -126,6 +126,47 @@ Output: "/a/b/c"
 # 测试用例
 ```
 71. Simplify Path 71. 简化路径 Medium
+Solution.simplifyPath
+---
+"/home/"
+
+="/home"
+---
+"/../"
+
+="/"
+---
+"/home//foo/"
+
+="/home/foo"
+---
+"/a/./b/../../c/"
+
+="/c"
+---
+"/a/../../b/../c//.//"
+
+="/c"
+---
+"/a//b////c/d//././/.."
+
+="/a/b/c"
+---
+"/..."
+
+="/..."
+---
+"/.../"
+
+="/..."
+---
+"/abc/..."
+
+="/abc/..."
+---
+"/..hidden"
+
+="/..hidden"
 ```
 
 [enTitle]: https://leetcode.com/problems/simplify-path/
