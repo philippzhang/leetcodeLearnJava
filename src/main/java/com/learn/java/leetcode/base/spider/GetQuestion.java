@@ -12,7 +12,7 @@ import java.io.File;
  */
 public class GetQuestion {
 
-	private static final String[] QUESTION_IDS = {"192","193","194","195"};
+	private static final String[] QUESTION_IDS = {"71","72","73","74","75","77","79","80","81","84","85","87","91","93","97"};
 	private static final String package_parent = InitializationConfig.readProperties().getProperty("GetQuestionPath");
 
 	private static final String userDir = System.getProperty("user.dir");

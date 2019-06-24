@@ -2108,6 +2108,8 @@
 
 1058 https://leetcode.com/problems/minimize-rounding-error-to-meet-target/ https://leetcode-cn.com/problems/minimize-rounding-error-to-meet-target/ minimize-rounding-error-to-meet-target "最小化舍入误差以满足目标"
 
+1059 https://leetcode.com/problems/all-paths-from-source-lead-to-destination/ https://leetcode-cn.com/problems/all-paths-from-source-lead-to-destination/ all-paths-from-source-lead-to-destination "从始点到终点的所有路径"
+
 1060 https://leetcode.com/problems/missing-element-in-sorted-array/ https://leetcode-cn.com/problems/missing-element-in-sorted-array/ missing-element-in-sorted-array "有序数组中的缺失元素"
 
 1061 https://leetcode.com/problems/lexicographically-smallest-equivalent-string/ https://leetcode-cn.com/problems/lexicographically-smallest-equivalent-string/ lexicographically-smallest-equivalent-string "按字典序排列最小的等效字符串"
@@ -2146,5 +2148,5 @@
 
 1081 https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/ https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/ smallest-subsequence-of-distinct-characters "不同字符的最小子序列"
 
-# 共1073题
+# 共1074题
 
