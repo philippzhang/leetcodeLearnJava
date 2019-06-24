@@ -102,6 +102,19 @@ Output:
 # 测试用例
 ```
 73. Set Matrix Zeroes 73. 矩阵置零 Medium
+Solution.setZeroes
+---
+[[1,1,1],[1,0,1],[1,1,1]]
+ 
+I0=[[1,0,1],[0,0,0],[1,0,1]]
+---
+[[0,1,2,0],[3,4,5,2],[1,3,1,5]]
+
+I0=[[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+---
+[[1,0,3]]
+
+I0=[[0,0,0]]
 ```
 
 [enTitle]: https://leetcode.com/problems/set-matrix-zeroes/
