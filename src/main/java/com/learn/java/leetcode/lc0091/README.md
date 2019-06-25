@@ -74,6 +74,15 @@ Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6).
 # 测试用例
 ```
 91. Decode Ways 91. 解码方法 Medium
+Solution.numDecodings
+---
+"12"
+
+=2
+---
+"226"
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/decode-ways/
