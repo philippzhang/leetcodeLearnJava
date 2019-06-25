@@ -60,6 +60,10 @@ Output: 10
 # 测试用例
 ```
 84. Largest Rectangle in Histogram 84. 柱状图中最大的矩形 Hard
+Solution.largestRectangleArea
+---
+[2,1,5,6,2,3]
+=10
 ```
 
 [enTitle]: https://leetcode.com/problems/largest-rectangle-in-histogram/
