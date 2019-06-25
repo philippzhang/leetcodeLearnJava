@@ -63,6 +63,7 @@ Output: 10
 Solution.largestRectangleArea
 ---
 [2,1,5,6,2,3]
+
 =10
 ```
 
