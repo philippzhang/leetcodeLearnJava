@@ -104,6 +104,19 @@ for (int i = 0; i < len; i++) {
 # 测试用例
 ```
 80. Remove Duplicates from Sorted Array II 80. 删除排序数组中的重复项 II Medium
+Solution.removeDuplicates
+---
+[1,1,1,2,2,3]
+
+=5
+
+I0=[1,1,2,2,3]
+---
+[0,0,1,1,1,1,2,3,3]
+
+=7
+
+I0=[0,0,1,1,2,3,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
