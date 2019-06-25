@@ -54,6 +54,22 @@ board =
 # 测试用例
 ```
 79. Word Search 79. 单词搜索 Medium
+Solution.exist
+---
+[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+"ABCCED"
+
+=true
+---
+[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+"SEE"
+
+=true
+---
+[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+"ABCB"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/word-search/
