@@ -33,6 +33,17 @@ Output: ["255.255.11.135", "255.255.111.35"]
 # 测试用例
 ```
 93. Restore IP Addresses 93. 复原IP地址 Medium
+Solution.restoreIpAddresses
+---
+"25525511135"
+
+=["255.255.11.135","255.255.111.35"]
+---
+"010010"
+
+=["0.10.0.10","0.100.1.0"]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/restore-ip-addresses/
