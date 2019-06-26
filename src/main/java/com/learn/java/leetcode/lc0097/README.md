@@ -50,6 +50,19 @@ Output: false
 # 测试用例
 ```
 97. Interleaving String 97. 交错字符串 Hard
+Solution.isInterleave
+---
+"aabcc"
+"dbbca"
+"aadbbcbcac"
+
+=true
+---
+"aabcc"
+"dbbca"
+"aadbbbaccc"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/interleaving-string/
