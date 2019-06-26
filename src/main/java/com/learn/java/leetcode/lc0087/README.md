@@ -143,6 +143,17 @@ r   g  ta  e
 # 测试用例
 ```
 87. Scramble String 87. 扰乱字符串 Hard
+Solution.isScramble
+---
+"great"
+"rgeat"
+
+=true
+---
+"abcde"
+"caebd"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/scramble-string/
