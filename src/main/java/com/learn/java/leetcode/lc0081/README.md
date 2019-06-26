@@ -67,6 +67,22 @@ Output: false
 # 测试用例
 ```
 81. Search in Rotated Sorted Array II 81. 搜索旋转排序数组 II Medium
+Solution.search
+---
+[2,5,6,0,0,1,2]
+0
+
+=true
+---
+[2,5,6,0,0,1,2]
+3
+
+=false
+---
+[1,3,1,1,1]
+3
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
