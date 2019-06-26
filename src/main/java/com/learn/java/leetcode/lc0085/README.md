@@ -46,6 +46,11 @@ Output: 6
 # 测试用例
 ```
 85. Maximal Rectangle 85. 最大矩形 Hard
+Solution.maximalRectangle
+---
+[["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+
+=6
 ```
 
 [enTitle]: https://leetcode.com/problems/maximal-rectangle/
