@@ -1,0 +1,1 @@
+SELECT c.NAME AS Department, a.NAME AS employee, a.Salary FROM Employee AS a JOIN ( SELECT MAX( Salary ) AS Salary, DepartmentId FROM Employee GROUP BY DepartmentId ) AS b ON a.Salary = b.Salary AND a.DepartmentId = b.DepartmentId JOIN Department AS c ON a.DepartmentId = c.Id

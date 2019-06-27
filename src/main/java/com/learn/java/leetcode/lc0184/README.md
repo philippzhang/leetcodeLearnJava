@@ -105,6 +105,10 @@ SQL架构
 # 测试用例
 ```
 184. Department Highest Salary 184. 部门工资最高的员工 Medium
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/department-highest-salary/
