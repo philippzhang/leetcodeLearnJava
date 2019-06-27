@@ -77,6 +77,8 @@ Line 10
 # 测试用例
 ```
 195. Tenth Line 195. 第十行 Easy
+Main.runShell
+---
 ```
 
 [enTitle]: https://leetcode.com/problems/tenth-line/

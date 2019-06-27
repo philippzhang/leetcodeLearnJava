@@ -115,6 +115,10 @@ SQL架构
 # 测试用例
 ```
 185. Department Top Three Salaries 185. 部门工资前三高的员工 Hard
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/department-top-three-salaries/
