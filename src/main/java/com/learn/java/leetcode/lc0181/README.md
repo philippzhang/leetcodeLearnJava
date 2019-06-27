@@ -73,6 +73,10 @@ SQL架构
 # 测试用例
 ```
 181. Employees Earning More Than Their Managers 181. 超过经理收入的员工 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/employees-earning-more-than-their-managers/
