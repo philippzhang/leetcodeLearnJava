@@ -79,6 +79,10 @@ SQL架构
 # 测试用例
 ```
 180. Consecutive Numbers 180. 连续出现的数字 Medium
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/consecutive-numbers/
