@@ -1,0 +1,1 @@
+select Email from (select Email,count(Email) as count_email from Person group by Email having count_email>1) as Person_group_email

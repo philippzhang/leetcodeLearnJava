@@ -77,6 +77,10 @@ SQL架构
 # 测试用例
 ```
 182. Duplicate Emails 182. 查找重复的电子邮箱 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/duplicate-emails/
