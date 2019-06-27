@@ -71,6 +71,10 @@ Id 是这个表的主键。
 # 测试用例
 ```
 196. Delete Duplicate Emails 196. 删除重复的电子邮箱 Easy
+Main.runSql
+---
+["run","select","run","select"]
+["create.sql","test.sql","main.sql","test.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/delete-duplicate-emails/

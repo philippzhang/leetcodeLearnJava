@@ -73,6 +73,10 @@ SQL架构
 # 测试用例
 ```
 197. Rising Temperature 197. 上升的温度 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/rising-temperature/

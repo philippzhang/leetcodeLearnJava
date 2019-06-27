@@ -1,0 +1,1 @@
+select Id from Weather a  where a.Temperature > (select b.Temperature from Weather b where DATEDIFF(a.RecordDate, b.RecordDate) = 1)
