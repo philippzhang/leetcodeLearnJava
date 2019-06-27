@@ -331,8 +331,8 @@ public class CallBack {
 	/**
 	 * 运行sql
 	 */
-	public void runSql(){
-		Utilitys.runSql(getClass());
+	public void runSql(List funcList,List sqlList){
+		SqlExcutor.runSql(getClass(), funcList, sqlList);
 	}
 
 	/**

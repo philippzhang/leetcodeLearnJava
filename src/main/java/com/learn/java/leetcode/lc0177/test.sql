@@ -1,0 +1,1 @@
+select getNthHighestSalary(20);

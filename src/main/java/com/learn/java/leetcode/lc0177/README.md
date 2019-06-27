@@ -64,6 +64,8 @@ For example, given the above Employee table, the  *n* <sup>th</sup> highest sala
 ```
 177. Nth Highest Salary 177. 第N高的薪水 Medium
 Main.skip
+---
+
 ```
 
 [enTitle]: https://leetcode.com/problems/nth-highest-salary/

@@ -87,6 +87,10 @@ SQL架构
 # 测试用例
 ```
 178. Rank Scores 178. 分数排名 Medium
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/rank-scores/
