@@ -103,6 +103,10 @@ SQL架构
 # 测试用例
 ```
 183. Customers Who Never Order 183. 从不订购的客户 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/customers-who-never-order/
