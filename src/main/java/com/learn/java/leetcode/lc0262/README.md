@@ -129,6 +129,10 @@ SQL架构
 # 测试用例
 ```
 262. Trips and Users 262. 行程和用户 Hard
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/trips-and-users/
