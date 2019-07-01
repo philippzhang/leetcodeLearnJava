@@ -51,6 +51,11 @@ Could you optimize your algorithm to use only  *O* ( *k* ) extra space?
 # 测试用例
 ```
 119. Pascal's Triangle II 119. 杨辉三角 II Easy
+Solution.getRow
+---
+3
+
+=[1,3,3,1]
 ```
 
 [enTitle]: https://leetcode.com/problems/pascals-triangle-ii/
