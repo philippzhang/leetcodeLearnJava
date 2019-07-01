@@ -49,8 +49,9 @@ public class LeetCodeSpider  {
 		try {
 			enDriver = MyWebDriver.createWebDriver();
 			enDriver.get(EN_TARGET_URL);
+			Thread.sleep(5000);
+			enDriver.get(EN_TARGET_URL);
 			Thread.sleep(10000);
-
 
 			int i = 0;
 			Document enDoc = Jsoup.parse(enDriver.getPageSource());
