@@ -98,6 +98,17 @@ babgbag
 # 测试用例
 ```
 115. Distinct Subsequences 115. 不同的子序列 Hard
+Solution.numDistinct
+---
+"rabbbit"
+"rabbit"
+
+=3
+---
+"babgbag"
+"bag"
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/distinct-subsequences/
