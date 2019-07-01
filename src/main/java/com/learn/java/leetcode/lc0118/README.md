@@ -54,6 +54,11 @@ Output:
 # 测试用例
 ```
 118. Pascal's Triangle 118. 杨辉三角 Easy
+Solution.generate
+---
+5
+
+=[[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
 ```
 
 [enTitle]: https://leetcode.com/problems/pascals-triangle/
