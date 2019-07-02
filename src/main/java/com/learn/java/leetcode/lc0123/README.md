@@ -83,6 +83,19 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 # 测试用例
 ```
 123. Best Time to Buy and Sell Stock III 123. 买卖股票的最佳时机 III Hard
+Solution.maxProfit
+---
+[3,3,5,0,0,3,1,4]
+
+=6
+---
+[1,2,3,4,5]
+
+=4
+---
+[7,6,4,3,1]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
