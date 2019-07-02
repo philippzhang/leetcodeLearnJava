@@ -1020,6 +1020,10 @@
 
 510 https://leetcode.com/problems/inorder-successor-in-bst-ii/ https://leetcode-cn.com/problems/inorder-successor-in-bst-ii/ inorder-successor-in-bst-ii "二叉搜索树中的中序后继 II"
 
+511 https://leetcode.com/problems/game-play-analysis-i/ https://leetcode-cn.com/problems/game-play-analysis-i/ game-play-analysis-i "Game Play Analysis I"
+
+512 https://leetcode.com/problems/game-play-analysis-ii/ https://leetcode-cn.com/problems/game-play-analysis-ii/ game-play-analysis-ii "Game Play Analysis II"
+
 513 https://leetcode.com/problems/find-bottom-left-tree-value/ https://leetcode-cn.com/problems/find-bottom-left-tree-value/ find-bottom-left-tree-value "找树左下角的值"
 
 514 https://leetcode.com/problems/freedom-trail/ https://leetcode-cn.com/problems/freedom-trail/ freedom-trail "自由之路"
@@ -1062,6 +1066,8 @@
 
 533 https://leetcode.com/problems/lonely-pixel-ii/ https://leetcode-cn.com/problems/lonely-pixel-ii/ lonely-pixel-ii "孤独像素 II"
 
+534 https://leetcode.com/problems/game-play-analysis-iii/ https://leetcode-cn.com/problems/game-play-analysis-iii/ game-play-analysis-iii "Game Play Analysis III"
+
 535 https://leetcode.com/problems/encode-and-decode-tinyurl/ https://leetcode-cn.com/problems/encode-and-decode-tinyurl/ encode-and-decode-tinyurl "TinyURL 的加密与解密"
 
 536 https://leetcode.com/problems/construct-binary-tree-from-string/ https://leetcode-cn.com/problems/construct-binary-tree-from-string/ construct-binary-tree-from-string "从字符串生成二叉树"
@@ -1091,6 +1097,8 @@
 548 https://leetcode.com/problems/split-array-with-equal-sum/ https://leetcode-cn.com/problems/split-array-with-equal-sum/ split-array-with-equal-sum "将数组分割成和相等的子数组"
 
 549 https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/ https://leetcode-cn.com/problems/binary-tree-longest-consecutive-sequence-ii/ binary-tree-longest-consecutive-sequence-ii "二叉树中最长的连续序列"
+
+550 https://leetcode.com/problems/game-play-analysis-iv/ https://leetcode-cn.com/problems/game-play-analysis-iv/ game-play-analysis-iv "Game Play Analysis IV"
 
 551 https://leetcode.com/problems/student-attendance-record-i/ https://leetcode-cn.com/problems/student-attendance-record-i/ student-attendance-record-i "学生出勤记录 I"
 
@@ -2140,6 +2148,12 @@
 
 1074 https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/ https://leetcode-cn.com/problems/number-of-submatrices-that-sum-to-target/ number-of-submatrices-that-sum-to-target "元素和为目标值的子矩阵数量"
 
+1075 https://leetcode.com/problems/project-employees-i/ https://leetcode-cn.com/problems/project-employees-i/ project-employees-i "Project Employees I"
+
+1076 https://leetcode.com/problems/project-employees-ii/ https://leetcode-cn.com/problems/project-employees-ii/ project-employees-ii "Project Employees II"
+
+1077 https://leetcode.com/problems/project-employees-iii/ https://leetcode-cn.com/problems/project-employees-iii/ project-employees-iii "Project Employees III"
+
 1078 https://leetcode.com/problems/occurrences-after-bigram/ https://leetcode-cn.com/problems/occurrences-after-bigram/ occurrences-after-bigram "Bigram 分词"
 
 1079 https://leetcode.com/problems/letter-tile-possibilities/ https://leetcode-cn.com/problems/letter-tile-possibilities/ letter-tile-possibilities "活字印刷"
@@ -2148,5 +2162,39 @@
 
 1081 https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/ https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/ smallest-subsequence-of-distinct-characters "不同字符的最小子序列"
 
-# 共1074题
+1082 https://leetcode.com/problems/sales-analysis-i/ https://leetcode-cn.com/problems/sales-analysis-i/ sales-analysis-i "Sales Analysis I"
+
+1083 https://leetcode.com/problems/sales-analysis-ii/ https://leetcode-cn.com/problems/sales-analysis-ii/ sales-analysis-ii "Sales Analysis II"
+
+1084 https://leetcode.com/problems/sales-analysis-iii/ https://leetcode-cn.com/problems/sales-analysis-iii/ sales-analysis-iii "Sales Analysis III"
+
+1085 https://leetcode.com/problems/sum-of-digits-in-the-minimum-number/ https://leetcode-cn.com/problems/sum-of-digits-in-the-minimum-number/ sum-of-digits-in-the-minimum-number "最小元素各数位之和"
+
+1086 https://leetcode.com/problems/high-five/ https://leetcode-cn.com/problems/high-five/ high-five "前五科的均分"
+
+1087 https://leetcode.com/problems/brace-expansion/ https://leetcode-cn.com/problems/brace-expansion/ brace-expansion "字母切换"
+
+1088 https://leetcode.com/problems/confusing-number-ii/ https://leetcode-cn.com/problems/confusing-number-ii/ confusing-number-ii "易混淆数 II"
+
+1089 https://leetcode.com/problems/duplicate-zeros/ https://leetcode-cn.com/problems/duplicate-zeros/ duplicate-zeros "复写零"
+
+1090 https://leetcode.com/problems/largest-values-from-labels/ https://leetcode-cn.com/problems/largest-values-from-labels/ largest-values-from-labels "受标签影响的最大值"
+
+1091 https://leetcode.com/problems/shortest-path-in-binary-matrix/ https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/ shortest-path-in-binary-matrix "二进制矩阵中的最短路径"
+
+1092 https://leetcode.com/problems/shortest-common-supersequence/ https://leetcode-cn.com/problems/shortest-common-supersequence/ shortest-common-supersequence "最短公共超序列"
+
+1093 https://leetcode.com/problems/statistics-from-a-large-sample/ https://leetcode-cn.com/problems/statistics-from-a-large-sample/ statistics-from-a-large-sample "大样本统计"
+
+1094 https://leetcode.com/problems/car-pooling/ https://leetcode-cn.com/problems/car-pooling/ car-pooling "拼车"
+
+1095 https://leetcode.com/problems/find-in-mountain-array/ https://leetcode-cn.com/problems/find-in-mountain-array/ find-in-mountain-array "山脉数组中查找目标值"
+
+1096 https://leetcode.com/problems/brace-expansion-ii/ https://leetcode-cn.com/problems/brace-expansion-ii/ brace-expansion-ii "花括号展开 II"
+
+1097 https://leetcode.com/problems/game-play-analysis-v/ https://leetcode-cn.com/problems/game-play-analysis-v/ game-play-analysis-v "Game Play Analysis V"
+
+1098 https://leetcode.com/problems/unpopular-books/ https://leetcode-cn.com/problems/unpopular-books/ unpopular-books "Unpopular Books"
+
+# 共1098题
 

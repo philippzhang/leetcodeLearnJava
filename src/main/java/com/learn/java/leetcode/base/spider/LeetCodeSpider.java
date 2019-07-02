@@ -50,6 +50,7 @@ public class LeetCodeSpider  {
 			enDriver = MyWebDriver.createWebDriver();
 			enDriver.get(EN_TARGET_URL);
 			Thread.sleep(5000);
+			//解决英文跳转到中文的问题
 			enDriver.get(EN_TARGET_URL);
 			Thread.sleep(10000);
 
