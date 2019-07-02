@@ -83,6 +83,22 @@ Output: false
 # 测试用例
 ```
 139. Word Break 139. 单词拆分 Medium
+Solution.wordBreak
+---
+"leetcode"
+["leet","code"]
+
+=true
+---
+"applepenapple"
+["apple","pen"]
+
+=true
+---
+"catsandog"
+["cats","dog","sand","and","cat"]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/word-break/
