@@ -69,6 +69,11 @@ Output:
 # 测试用例
 ```
 226. Invert Binary Tree 226. 翻转二叉树 Easy
+Solution.invertTree
+---
+[4,2,7,1,3,6,9]
+
+=[4,7,2,9,6,3,1]
 ```
 
 [enTitle]: https://leetcode.com/problems/invert-binary-tree/
