@@ -55,6 +55,15 @@ Output: false
 # 测试用例
 ```
 125. Valid Palindrome 125. 验证回文串 Easy
+Solution.isPalindrome
+---
+"A man, a plan, a canal: Panama"
+
+=true
+---
+"race a car"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/valid-palindrome/
