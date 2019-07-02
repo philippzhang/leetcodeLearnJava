@@ -98,6 +98,25 @@ wordDict = ["cats", "dog", "sand", "and", "cat"]
 # 测试用例
 ```
 140. Word Break II 140. 单词拆分 II Hard
+Solution.wordBreak
+---
+"catsanddog"
+["cat","cats","and","sand","dog"]
+
+=["cats and dog","cat sand dog"]
+$disorder
+---
+"pineapplepenapple"
+["apple","pen","applepen","pine","pineapple"]
+
+=["pine apple pen apple","pineapple pen apple","pine applepen apple"]
+$disorder
+---
+"catsandog"
+["cats","dog","sand","and","cat"]
+
+=[]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/word-break-ii/
