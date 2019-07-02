@@ -53,6 +53,27 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 # 测试用例
 ```
 152. Maximum Product Subarray 152. 乘积最大子序列 Medium
+Solution.maxProduct
+---
+[2,3,-2,4]
+
+=6
+---
+[-2,0,-1]
+
+=0
+---
+[0,2]
+
+=2
+---
+[-2,3,-4]
+
+=24
+---
+[-2]
+
+=-2
 ```
 
 [enTitle]: https://leetcode.com/problems/maximum-product-subarray/
