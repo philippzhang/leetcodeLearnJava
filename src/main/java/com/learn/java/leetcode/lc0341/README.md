@@ -64,6 +64,15 @@ Explanation: By calling next repeatedly until hasNext returns false,
 # 测试用例
 ```
 341. Flatten Nested List Iterator 341. 扁平化嵌套列表迭代器 Medium
+Main.test
+---
+[[1,1],2,[1,1]]
+
+=[1,1,2,1,1]
+---
+[1,[4,[6]]]
+
+=[1,4,6]
 ```
 
 [enTitle]: https://leetcode.com/problems/flatten-nested-list-iterator/
