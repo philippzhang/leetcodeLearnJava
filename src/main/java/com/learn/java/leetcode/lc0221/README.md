@@ -44,6 +44,11 @@ Output:4
 # 测试用例
 ```
 221. Maximal Square 221. 最大正方形 Medium
+Solution.maximalSquare
+---
+[["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/maximal-square/
