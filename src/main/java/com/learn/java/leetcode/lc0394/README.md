@@ -51,6 +51,23 @@ s = "2[abc]3[cd]ef", 返回 "abcabccdcdcdef".
 # 测试用例
 ```
 394. Decode String 394. 字符串解码 Medium
+Solution.decodeString
+---
+"3[a]2[bc]"
+
+="aaabcbc"
+---
+"3[a2[c]]"
+
+="accaccacc"
+---
+"2[abc]3[cd]ef"
+
+="abcabccdcdcdef"
+---
+"3[a]2[b4[F]c]"
+
+="aaabFFFFcbFFFFc"
 ```
 
 [enTitle]: https://leetcode.com/problems/decode-string/
