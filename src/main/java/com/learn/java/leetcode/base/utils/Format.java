@@ -5,10 +5,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.learn.java.leetcode.base.Utilitys;
-import com.learn.java.leetcode.base.structure.Interval;
-import com.learn.java.leetcode.base.structure.ListNode;
-import com.learn.java.leetcode.base.structure.Node;
-import com.learn.java.leetcode.base.structure.TreeNode;
+import com.learn.java.leetcode.base.structure.*;
 
 
 import java.util.*;
@@ -27,6 +24,9 @@ public class Format {
 	public static String format(Object obj) {
 		StringBuffer stringBuffer = new StringBuffer();
 		format(obj, stringBuffer);
+		if(stringBuffer.length()>0&&stringBuffer.charAt(stringBuffer.length()-1)==','){
+			stringBuffer.deleteCharAt(stringBuffer.length()-1);
+		}
 		String testInputResult = stringBuffer.toString();
 		return testInputResult;
 	}
@@ -119,6 +119,8 @@ public class Format {
 			format((TreeNode) obj, stringBuffer);
 		} else if (obj instanceof Node) {
 			format((Node) obj, stringBuffer);
+		} else if(obj instanceof NestedInteger){
+			format((NestedInteger) obj,stringBuffer);
 		} else{
 			throw new RuntimeException("未定义的类型，转换失败!");
 		}
@@ -563,6 +565,26 @@ public class Format {
 				}
 			}
 		}
+	}
+
+	private static void format(NestedInteger nestedInteger, StringBuffer stringBuffer) {
+		if(nestedInteger.isInteger()){
+			stringBuffer.append(nestedInteger.getInteger()).append(",");
+		}else {
+			stringBuffer.append("[");
+			List<NestedInteger> list = nestedInteger.getList();
+			if(list!=null&&list.size()>0){
+				for(int i =0;i<list.size();i++) {
+					format(list.get(i), stringBuffer);
+				}
+			}
+			if(stringBuffer.length()>0&&stringBuffer.charAt(stringBuffer.length()-1)==','){
+				stringBuffer.deleteCharAt(stringBuffer.length()-1);
+			}
+			stringBuffer.append("]");
+		}
+
+
 	}
 
 }

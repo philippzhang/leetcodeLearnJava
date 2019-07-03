@@ -3,6 +3,7 @@ package com.learn.java.leetcode.lc0341;
 import com.learn.java.leetcode.base.CallBack;
 import com.learn.java.leetcode.base.Utilitys;
 import com.learn.java.leetcode.base.structure.ListNode;
+import com.learn.java.leetcode.base.structure.NestedInteger;
 import com.learn.java.leetcode.base.utils.Build;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ public class Main extends CallBack {
 	@Override
 	public void inputBuild(Class<?>[] parameterTypes, Object[] objArr, List<String> dataList, List tempList) {
 		String data = dataList.get(0);
-		List<NestedInteger> nestedList = Utils.buildList(data);
+		List<NestedInteger> nestedList = Build.buildNestedIntegerList(data);
 		objArr[0] = nestedList;
 
 	}

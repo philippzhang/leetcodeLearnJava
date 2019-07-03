@@ -95,6 +95,15 @@ Return a NestedInteger object containing a nested list with 2 elements:
 # 测试用例
 ```
 385. Mini Parser 385. 迷你语法分析器 Medium
+Solution.deserialize
+---
+"324"
+
+=324
+---
+"[123,[456,[789]]]"
+
+=[123,[456,[789]]]
 ```
 
 [enTitle]: https://leetcode.com/problems/mini-parser/

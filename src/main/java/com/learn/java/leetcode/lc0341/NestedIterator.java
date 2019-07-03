@@ -1,5 +1,7 @@
 package com.learn.java.leetcode.lc0341;
 
+import com.learn.java.leetcode.base.structure.NestedInteger;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;

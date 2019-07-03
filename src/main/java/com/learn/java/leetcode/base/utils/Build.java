@@ -4,10 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.learn.java.leetcode.base.structure.Interval;
-import com.learn.java.leetcode.base.structure.ListNode;
-import com.learn.java.leetcode.base.structure.Node;
-import com.learn.java.leetcode.base.structure.TreeNode;
+import com.learn.java.leetcode.base.structure.*;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -756,6 +753,72 @@ public class Build {
 				String[] newDataArr = newData.split(",");
 				Interval interval = new Interval(Integer.parseInt(newDataArr[0]), Integer.parseInt(newDataArr[1]));
 				list.add(interval);
+			}
+		}
+		return list;
+	}
+
+	public static List<NestedInteger> buildNestedIntegerList(String data) {
+		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
+			return null;
+		}
+		if (data.equals("[]")) {
+			return new ArrayList<>();
+		}
+		data = data.trim();
+		//去掉最外层的[]
+		data = data.substring(1, data.length() - 1);
+
+		String splitStr;
+
+		String[] arr = null;
+		if (data.indexOf("[") >= 0) {
+			List<String> vList = new ArrayList<>();
+			int count = 0;
+			StringBuffer stringBuffer = new StringBuffer();
+			for (int i = 0; i < data.length(); i++) {
+				char c = data.charAt(i);
+				stringBuffer.append(c);
+				if (c == '[') {
+					count++;
+				} else if (c == ']') {
+					count--;
+				} else if (c == ',' && count == 0) {
+					stringBuffer.deleteCharAt(stringBuffer.length() - 1);
+					vList.add(stringBuffer.toString());
+					stringBuffer = new StringBuffer();
+				}
+			}
+			vList.add(stringBuffer.toString());
+			arr = new String[vList.size()];
+			for (int i = 0; i < vList.size(); i++) {
+				arr[i] = vList.get(i);
+			}
+
+		} else {
+			splitStr = ",";
+			arr = data.split(splitStr, -1);
+		}
+
+		boolean flag;
+		int length = arr.length;
+		List<NestedInteger> list = new ArrayList<>();
+		for (int i = 0; i < length; i++) {
+			String newData = arr[i];
+			flag = false;
+			if (newData.indexOf("[") >= 0) {
+				flag = true;
+			}
+			if (flag) {
+				list.add(new NestedInteger(buildNestedIntegerList(newData)));
+			} else {
+				if (arr[i] == null || arr[i].trim().length() == 0) {
+					list.add(null);
+				} else {
+					if (StringUtil.judgeNumber(arr[i])) {
+						list.add(new NestedInteger(Integer.parseInt(arr[i])));
+					}
+				}
 			}
 		}
 		return list;
