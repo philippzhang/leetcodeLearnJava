@@ -50,6 +50,15 @@ Output: "acdb"
 # 测试用例
 ```
 316. Remove Duplicate Letters 316. 去除重复字母 Hard
+Solution.removeDuplicateLetters
+---
+"bcabc"
+
+="abc"
+---
+"cbacdcbc"
+
+="acdb"
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-duplicate-letters/
