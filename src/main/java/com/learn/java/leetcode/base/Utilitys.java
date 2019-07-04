@@ -174,25 +174,6 @@ public class Utilitys {
 						testFlag = false;
 					}
 					long endTime = System.currentTimeMillis();
-					//格式化打印
-					if (!"void".equals(returnTypeName)) {
-						boolean enprint = true;
-						for (int j = inputObjArr.length; j < dataList.size(); j++) {
-							if (dataList.get(j).equals("$disprint")) {
-								enprint = false;
-								break;
-							}
-						}
-						if(enprint&&Print.judgePrint(outputObj)) {
-							//打印输出
-							try {
-								callBack.printOutput(outputObj);
-							} catch (Exception e) {
-								e.printStackTrace();
-								testFlag = false;
-							}
-						}
-					}
 
 					List<String> trueResultOutputList = new ArrayList<>();
 					for (int k = paramLength; k < dataList.size(); k++) {
@@ -204,7 +185,41 @@ public class Utilitys {
 								if (StringUtils.isNotBlank(trueResult)) {
 									trueResultOutputList.add(trueResult);
 								}
-							} else if (StringUtil.judgeINumber(trueResult)) {
+							}
+						}
+					}
+					//格式化打印
+					if (!"void".equals(returnTypeName)) {
+						boolean enprint = true;
+						for (int j = inputObjArr.length; j < dataList.size(); j++) {
+							if (dataList.get(j).equals("$disprint")) {
+								enprint = false;
+								break;
+							}
+						}
+						if(enprint&&(Print.judgePrint(outputObj)|| trueResultOutputList.size() == 0)) {
+							//打印输出
+							try {
+								callBack.printOutput(outputObj);
+							} catch (Exception e) {
+								e.printStackTrace();
+								testFlag = false;
+							}
+						}
+					}
+
+
+					for (int k = paramLength; k < dataList.size(); k++) {
+
+						String trueResult = dataList.get(k);
+						if (StringUtils.isNotBlank(trueResult)) {
+							/*if (trueResult.startsWith("=")) {
+								trueResult = trueResult.substring(1);
+								if (StringUtils.isNotBlank(trueResult)) {
+									trueResultOutputList.add(trueResult);
+								}
+							} else*/
+							if (StringUtil.judgeINumber(trueResult)) {
 								/**
 								 * 验证输入参数
 								 */

@@ -198,6 +198,9 @@ public class Build {
 		if (data.equals("[]")) {
 			return new int[][]{};
 		}
+		if (data.equals("[[]]")) {
+			return new int[][]{};
+		}
 		data = data.replaceAll(" ", "");
 		data = data.substring(2, data.length() - 2);
 		String[] arr = data.split("],\\[", -1);

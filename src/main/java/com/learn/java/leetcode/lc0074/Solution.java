@@ -47,7 +47,11 @@ public class Solution {
 	private boolean searchMatrix(int[][] matrix, int target,int index) {
 		int left = 0;
 		int right = matrix[index].length-1;
-		return searchMatrixBinary(matrix,target,index,left,right);
+		if(matrix[index][left]<=target&&matrix[index][right]>=target) {
+			return searchMatrixBinary(matrix, target, index, left, right);
+		}else {
+			return false;
+		}
 	}
 
 	private boolean searchMatrixBinary(int[][] matrix, int target,int index,int left,int right) {
