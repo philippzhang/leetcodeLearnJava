@@ -66,6 +66,17 @@ Window position                Max
 # 测试用例
 ```
 239. Sliding Window Maximum 239. 滑动窗口最大值 Hard
+Solution.maxSlidingWindow
+---
+[1,3,-1,-3,5,3,6,7]
+3
+
+=[3,3,5,5,6,7] 
+---
+[]
+0
+
+=[]
 ```
 
 [enTitle]: https://leetcode.com/problems/sliding-window-maximum/
