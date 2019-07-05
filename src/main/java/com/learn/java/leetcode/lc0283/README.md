@@ -43,6 +43,11 @@ Note:
 # 测试用例
 ```
 283. Move Zeroes 283. 移动零 Easy
+Solution.moveZeroes
+---
+[0,1,0,3,12]
+
+I0=[1,3,12,0,0]
 ```
 
 [enTitle]: https://leetcode.com/problems/move-zeroes/
