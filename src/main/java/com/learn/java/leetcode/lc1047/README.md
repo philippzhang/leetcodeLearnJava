@@ -64,6 +64,11 @@ For example, in "abbaca" we could remove "bb" since the letters are adjacent and
 # 测试用例
 ```
 1047. Remove All Adjacent Duplicates In String 1047. 删除字符串中的所有相邻重复项 Easy
+Solution.removeDuplicates
+---
+"abbaca"
+
+="ca"
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
