@@ -61,6 +61,12 @@ The above arrows point to positions where the corresponding bits are different.
 # 测试用例
 ```
 461. Hamming Distance 461. 汉明距离 Easy
+Solution.hammingDistance
+---
+1
+4
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/hamming-distance/
