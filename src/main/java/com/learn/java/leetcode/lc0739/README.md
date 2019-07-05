@@ -27,6 +27,11 @@ Note: The length of  *temperatures*  will be in the range  *[1, 30000]* . Each t
 # 测试用例
 ```
 739. Daily Temperatures 739. 每日温度 Medium
+Solution.dailyTemperatures
+---
+[73,74,75,71,69,72,76,73]
+
+=[1,1,4,2,1,1,0,0]
 ```
 
 [enTitle]: https://leetcode.com/problems/daily-temperatures/
