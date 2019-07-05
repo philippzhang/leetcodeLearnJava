@@ -172,6 +172,55 @@ cdata 不是 "<![CDATA[<div>]>]]>]]>" 的原因参照规则 7 。
 # 测试用例
 ```
 591. Tag Validator 591. 标签验证器 Hard
+Solution.isValid
+---
+"<DIV>This is the first line <![CDATA[<div>]]></DIV>"
+
+=true
+---
+"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>"
+
+=true
+---
+"<A>  <B> </A>   </B>"
+
+=false
+---
+"<DIV>  div tag is not closed  <DIV>"
+
+=false
+---
+"<DIV>  unmatched <  </DIV>"
+
+=false
+---
+"<DIV> closed tags with invalid tag name  <b>123</b> </DIV>"
+
+=false
+---
+<DIV> unmatched tags with invalid tag name  </1234567890> 
+
+=false
+---
+"<DIV>  unmatched start tag <B>  and unmatched end tag </C>  </DIV>"
+
+=false
+---
+"<A><![CDATA[</A>]]123></A>"
+
+=false
+---
+"<A><!A></A>"
+
+=false
+---
+"<![CDATA[wahaha]]]><![CDATA[]> wahaha]]>"
+
+=false
+---
+"<DIV> closed tags with invalid</div>"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/tag-validator/
