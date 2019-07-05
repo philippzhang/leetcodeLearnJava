@@ -124,6 +124,19 @@ formula = "K4(ON(SO3)2)2"
 # 测试用例
 ```
 726. Number of Atoms 726. 原子的数量 Hard
+Solution.countOfAtoms
+---
+"H2O"
+
+="H2O"
+---
+"Mg(OH)2"
+
+="H2MgO2"
+---
+"K4(ON(SO3)2)2"
+
+="K4N2O14S4"
 ```
 
 [enTitle]: https://leetcode.com/problems/number-of-atoms/
