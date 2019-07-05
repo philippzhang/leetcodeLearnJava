@@ -51,6 +51,11 @@ Output:
 # 测试用例
 ```
 448. Find All Numbers Disappeared in an Array 448. 找到所有数组中消失的数字 Easy
+Solution.findDisappearedNumbers
+---
+[4,3,2,7,8,2,3,1]
+
+=[5,6]
 ```
 
 [enTitle]: https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
