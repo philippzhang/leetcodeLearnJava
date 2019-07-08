@@ -53,10 +53,16 @@ public class LeetCodeSpiderAll implements Spider {
 			int length = enElements.size();
 			StringBuffer stringBuffer = new StringBuffer();
 			stringBuffer.append("# LeetCode题网页\n\n");
+			int faLockNum = 0;
 			for (int i = 0; i < length; i++) {
 				Element element = enElements.get(i);
 				Elements enElementsTd = element.children();
 				String id = enElementsTd.get(1).text();
+				Elements enElementsTdDiv = enElementsTd.get(2).children().first().children();
+				String divStr = enElementsTdDiv.toString();
+				if(divStr.indexOf("fa-lock")>=0){
+					faLockNum++;
+				}
 				Element enElementsTdHref = enElementsTd.get(2).children().first().children().first();
 				String href = enElementsTdHref.attr("href");
 				String title = href.substring("/problems/".length());
@@ -72,7 +78,7 @@ public class LeetCodeSpiderAll implements Spider {
 
 			MyFileWriter.writeString(packagePath + "/README.md", stringBuffer.toString());
 
-			System.out.println("共"+length+"题");
+			System.out.println("共"+length+"题,其中加锁"+faLockNum+"题,正常"+(length-faLockNum)+"题");
 
 			Thread.sleep(3000);
 		} catch (Exception e) {
