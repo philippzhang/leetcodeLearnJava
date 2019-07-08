@@ -72,7 +72,7 @@ public class LeetCodeSpiderAll implements Spider {
 				stringBuffer.append(id + " " + enHref + " " + cnHref + " " +title+ " \""+ enElementsTdHref.text() + "\"\n\n");
 			}
 
-			stringBuffer.append("# 共"+length+"题\n\n");
+			stringBuffer.append("# 共"+length+"题,其中加锁"+faLockNum+"题,正常"+(length-faLockNum)+"题\n\n");
 
 			String packagePath = userDir + package_parent ;
 
