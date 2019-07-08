@@ -47,6 +47,12 @@ Note:
 # 测试用例
 ```
 363. Max Sum of Rectangle No Larger Than K 363. 矩形区域不超过 K 的最大数值和 Hard
+Solution.maxSumSubmatrix
+---
+[[1,0,1],[0,-2,3]]
+2
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
