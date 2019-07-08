@@ -87,6 +87,10 @@ SQL架构
 # 测试用例
 ```
 595. Big Countries 595. 大的国家 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/big-countries/

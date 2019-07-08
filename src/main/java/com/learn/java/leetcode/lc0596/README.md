@@ -97,6 +97,10 @@ SQL架构
 # 测试用例
 ```
 596. Classes More Than 5 Students 596. 超过5名学生的课 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/classes-more-than-5-students/

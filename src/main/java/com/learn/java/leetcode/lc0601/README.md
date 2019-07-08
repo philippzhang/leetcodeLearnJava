@@ -100,6 +100,10 @@ X 市建了一个新的体育馆，每日人流量信息被记录在这三列信
 # 测试用例
 ```
 601. Human Traffic of Stadium 601. 体育馆的人流量 Hard
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/human-traffic-of-stadium/

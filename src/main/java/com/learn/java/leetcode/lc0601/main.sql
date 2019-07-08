@@ -1,0 +1,1 @@
+select distinct s.* from stadium s,(select s1.* from stadium s1,stadium s2,stadium s3 where s1.people >=100 and s2.people >= 100 and s3.people >= 100 and (s1.id+1 = s2.id and s2.id+1 = s3.id)) s4 where s.id = s4.id or s.id = s4.id+1 or s.id = s4.id +2
