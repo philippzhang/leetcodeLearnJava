@@ -89,6 +89,10 @@ SQL架构
 # 测试用例
 ```
 620. Not Boring Movies 620. 有趣的电影 Easy
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/not-boring-movies/

@@ -80,6 +80,10 @@ SQL架构
 # 测试用例
 ```
 627. Swap Salary 627. 交换工资 Easy
+Main.runSql
+---
+["run","run","select"]
+["create.sql","main.sql","test.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/swap-salary/

@@ -105,6 +105,10 @@ SQL架构
 # 测试用例
 ```
 626. Exchange Seats 626. 换座位 Medium
+Main.runSql
+---
+["run","select"]
+["create.sql","main.sql"]
 ```
 
 [enTitle]: https://leetcode.com/problems/exchange-seats/
