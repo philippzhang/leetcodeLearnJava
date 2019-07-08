@@ -55,6 +55,15 @@ Note:Your solution should be in logarithmic time complexity.
 # 测试用例
 ```
 172. Factorial Trailing Zeroes 172. 阶乘后的零 Easy
+Solution.trailingZeroes
+---
+3
+
+=0
+---
+5
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/factorial-trailing-zeroes/
