@@ -99,6 +99,19 @@ If this function is called many times, how would you optimize it?
 # 测试用例
 ```
 191. Number of 1 Bits 191. 位1的个数 Easy
+Solution.hammingWeight
+---
+11
+
+=3
+---
+128
+
+=1
+---
+-3
+
+=31
 ```
 
 [enTitle]: https://leetcode.com/problems/number-of-1-bits/
