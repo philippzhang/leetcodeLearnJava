@@ -49,6 +49,15 @@ s = "loveleetcode",
 # 测试用例
 ```
 387. First Unique Character in a String 387. 字符串中的第一个唯一字符 Easy
+Solution.firstUniqChar
+---
+"leetcode"
+
+=0
+---
+"loveleetcode"
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/first-unique-character-in-a-string/
