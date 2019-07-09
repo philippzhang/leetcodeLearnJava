@@ -81,6 +81,15 @@ If this function is called many times, how would you optimize it?
 # 测试用例
 ```
 190. Reverse Bits 190. 颠倒二进制位 Easy
+Solution.reverseBits
+---
+43261596
+
+=964176192
+---
+-3
+
+=-1073741825
 ```
 
 [enTitle]: https://leetcode.com/problems/reverse-bits/
