@@ -47,6 +47,15 @@ A happy number is a number defined by the following process: Starting with any p
 # 测试用例
 ```
 202. Happy Number 202. 快乐数 Easy
+Solution.isHappy
+---
+19
+
+=true
+---
+20
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/happy-number/
