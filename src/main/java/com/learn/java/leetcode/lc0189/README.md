@@ -72,6 +72,20 @@ rotate 2 steps to the right: [3,99,-1,-100]
 # 测试用例
 ```
 189. Rotate Array 189. 旋转数组 Easy
+Solution.rotate
+Solution.rotate1
+Solution.rotate2
+Solution.rotate3
+---
+[1,2,3,4,5,6,7]
+3
+
+I0=[5,6,7,1,2,3,4]
+---
+[-1,-100,3,99]
+2
+
+I0=[3,99,-1,-100]
 ```
 
 [enTitle]: https://leetcode.com/problems/rotate-array/
