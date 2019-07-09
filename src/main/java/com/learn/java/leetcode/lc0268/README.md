@@ -55,6 +55,15 @@ Note: Your algorithm should run in linear runtime complexity. Could you implemen
 # 测试用例
 ```
 268. Missing Number 268. 缺失数字 Easy
+Solution.missingNumber
+---
+[3,0,1]
+
+=2
+---
+[9,6,4,2,3,5,7,0,1]
+
+=8
 ```
 
 [enTitle]: https://leetcode.com/problems/missing-number/
