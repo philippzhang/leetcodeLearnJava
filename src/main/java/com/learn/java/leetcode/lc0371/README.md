@@ -55,6 +55,7 @@ Output: 1
 ```
 371. Sum of Two Integers 371. 两整数之和 Easy
 Solution.getSum
+Solution.getSum2
 ---
 1
 2
