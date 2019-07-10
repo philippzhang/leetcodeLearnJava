@@ -81,6 +81,26 @@ Follow up: Could you do it without using any loop / recursion?
 # 测试用例
 ```
 326. Power of Three 326. 3的幂 Easy
+Solution.isPowerOfThree
+Solution.isPowerOfThree1
+Solution.isPowerOfThree2
+Solution.isPowerOfThree3
+---
+27
+
+=true
+---
+2
+
+=false
+---
+9
+
+=true
+---
+45
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/power-of-three/
