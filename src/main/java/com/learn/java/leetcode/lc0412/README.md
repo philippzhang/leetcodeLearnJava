@@ -81,6 +81,11 @@ n = 15,
 # 测试用例
 ```
 412. Fizz Buzz 412. Fizz Buzz Easy
+Solution.fizzBuzz
+---
+15
+
+=["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13","14","FizzBuzz"]
 ```
 
 [enTitle]: https://leetcode.com/problems/fizz-buzz/
