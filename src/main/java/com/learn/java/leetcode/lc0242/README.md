@@ -58,6 +58,18 @@ Output:false
 # 测试用例
 ```
 242. Valid Anagram 242. 有效的字母异位词 Easy
+Solution.isAnagram
+Solution.isAnagram2
+---
+"anagram"
+"nagaram"
+
+=true
+---
+"rat"
+"car"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/valid-anagram/
