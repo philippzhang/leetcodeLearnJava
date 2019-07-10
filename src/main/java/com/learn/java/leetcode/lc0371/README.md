@@ -54,6 +54,17 @@ Output: 1
 # 测试用例
 ```
 371. Sum of Two Integers 371. 两整数之和 Easy
+Solution.getSum
+---
+1
+2
+
+=3
+---
+-2
+3
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/sum-of-two-integers/
