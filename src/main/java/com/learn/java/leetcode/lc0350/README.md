@@ -73,6 +73,21 @@ Follow up:
 # 测试用例
 ```
 350. Intersection of Two Arrays II 350. 两个数组的交集 II Easy
+Solution.intersect
+---
+[1,2,2,1]
+[2,2]
+
+=[2,2]
+
+$disorder
+---
+[4,9,5]
+[9,4,9,8,4]
+
+=[4,9]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/intersection-of-two-arrays-ii/
