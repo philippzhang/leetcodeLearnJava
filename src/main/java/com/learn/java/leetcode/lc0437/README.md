@@ -75,6 +75,12 @@ root = [10,5,-3,3,2,null,11,3,-2,null,1], sum = 8
 # 测试用例
 ```
 437. Path Sum III 437. 路径总和 III Easy
+Solution.pathSum
+---
+[10,5,-3,3,2,null,11,3,-2,null,1]
+8
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/path-sum-iii/
