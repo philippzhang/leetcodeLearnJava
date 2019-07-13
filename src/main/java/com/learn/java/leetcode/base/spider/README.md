@@ -692,7 +692,7 @@
 
 346 https://leetcode.com/problems/moving-average-from-data-stream/ https://leetcode-cn.com/problems/moving-average-from-data-stream/ moving-average-from-data-stream "数据流中的移动平均值"
 
-347 https://leetcode.com/problems/top-k-frequent-elements/ https://leetcode-cn.com/problems/top-k-frequent-elements/ top-k-frequent-elements "前K个高频元素"
+347 https://leetcode.com/problems/top-k-frequent-elements/ https://leetcode-cn.com/problems/top-k-frequent-elements/ top-k-frequent-elements "前 K 个高频元素"
 
 348 https://leetcode.com/problems/design-tic-tac-toe/ https://leetcode-cn.com/problems/design-tic-tac-toe/ design-tic-tac-toe "判定井字棋胜负"
 
@@ -2220,5 +2220,13 @@
 
 1111 https://leetcode.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/ https://leetcode-cn.com/problems/maximum-nesting-depth-of-two-valid-parentheses-strings/ maximum-nesting-depth-of-two-valid-parentheses-strings "有效括号的嵌套深度"
 
-# 共1110题,其中加锁201题,正常909题
+1114 https://leetcode.com/problems/print-in-order/ https://leetcode-cn.com/problems/print-in-order/ print-in-order "Print in Order"
+
+1115 https://leetcode.com/problems/print-foobar-alternately/ https://leetcode-cn.com/problems/print-foobar-alternately/ print-foobar-alternately "Print FooBar Alternately"
+
+1116 https://leetcode.com/problems/print-zero-even-odd/ https://leetcode-cn.com/problems/print-zero-even-odd/ print-zero-even-odd "Print Zero Even Odd"
+
+1117 https://leetcode.com/problems/building-h2o/ https://leetcode-cn.com/problems/building-h2o/ building-h2o "Building H2O"
+
+# 共1114题,其中加锁201题,正常913题
 
