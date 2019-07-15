@@ -60,6 +60,11 @@ as "[1,2,3,null,null,4,5]"
 # 测试用例
 ```
 297. Serialize and Deserialize Binary Tree 297. 二叉树的序列化与反序列化 Hard
+Main.test
+---
+[1,2,3,null,null,4,5]
+
+=[1,2,3,null,null,4,5]
 ```
 
 [enTitle]: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
