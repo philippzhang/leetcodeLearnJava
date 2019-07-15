@@ -51,6 +51,15 @@ Explanation:13 = 4 + 9.
 # 测试用例
 ```
 279. Perfect Squares 279. 完全平方数 Medium
+Solution.numSquares
+---
+12
+
+=3
+---
+13
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/perfect-squares/
