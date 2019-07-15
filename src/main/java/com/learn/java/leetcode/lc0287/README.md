@@ -64,6 +64,15 @@ Note:
 # 测试用例
 ```
 287. Find the Duplicate Number 287. 寻找重复数 Medium
+Solution.findDuplicate
+---
+[1,3,4,2,2]
+
+=2
+---
+[3,1,3,4,2]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/find-the-duplicate-number/
