@@ -55,6 +55,15 @@ Note:
 # 测试用例
 ```
 581. Shortest Unsorted Continuous Subarray 581. 最短无序连续子数组 Easy
+Solution.findUnsortedSubarray
+---
+[2, 6, 4, 8, 10, 9, 15]
+
+=5
+----
+[1,2,3,4]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/shortest-unsorted-continuous-subarray/
