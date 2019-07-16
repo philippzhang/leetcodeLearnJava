@@ -53,6 +53,11 @@ Output: 6
 # 测试用例
 ```
 222. Count Complete Tree Nodes 222. 完全二叉树的节点个数 Medium
+Solution.countNodes
+---
+[1,2,3,4,5,6]
+
+=6
 ```
 
 [enTitle]: https://leetcode.com/problems/count-complete-tree-nodes/
