@@ -93,6 +93,15 @@ Therefore, sum = 495 + 491 + 40 = 1026.
 # 测试用例
 ```
 129. Sum Root to Leaf Numbers 129. 求根到叶子节点数字之和 Medium
+Solution.sumNumbers
+---
+[1,2,3]
+
+=25
+---
+[4,9,0,5,1]
+
+=1026
 ```
 
 [enTitle]: https://leetcode.com/problems/sum-root-to-leaf-numbers/
