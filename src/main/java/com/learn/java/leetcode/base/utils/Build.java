@@ -167,7 +167,7 @@ public class Build {
 		int length = arr.length;
 		char[] results = new char[length];
 		for (int i = 0; i < length; i++) {
-			results[i] = StringUtil.changeStr(arr[i]).charAt(0);
+			results[i] = StringUtil.changeStr(arr[i].trim()).charAt(0);
 		}
 		return results;
 	}
@@ -210,7 +210,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = Integer.parseInt(arr2[j]);
+				results[i][j] = Integer.parseInt(arr2[j].trim());
 			}
 		}
 
@@ -240,7 +240,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = StringUtil.changeStr(arr2[j]).charAt(0);
+				results[i][j] = StringUtil.changeStr(arr2[j].trim()).charAt(0);
 			}
 		}
 
@@ -270,7 +270,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = StringUtil.changeStr(arr2[j]);
+				results[i][j] = StringUtil.changeStr(arr2[j].trim());
 			}
 		}
 
@@ -294,7 +294,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = Boolean.parseBoolean(arr2[j]);
+				results[i][j] = Boolean.parseBoolean(arr2[j].trim());
 			}
 		}
 
@@ -317,7 +317,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = Double.parseDouble(arr2[j]);
+				results[i][j] = Double.parseDouble(arr2[j].trim());
 			}
 		}
 
@@ -341,7 +341,7 @@ public class Build {
 		for (int i = 0; i < row; i++) {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = Float.parseFloat(arr2[j]);
+				results[i][j] = Float.parseFloat(arr2[j].trim());
 			}
 		}
 
@@ -363,7 +363,7 @@ public class Build {
 		String[] split = data.split(",", -1);
 		int len = split.length;
 		ListNode[] listNode = new ListNode[len + 1];
-		listNode[0] = new ListNode(Integer.valueOf(split[0]));
+		listNode[0] = new ListNode(Integer.valueOf(split[0].trim()));
 		for (int i = 1; i < len; i++) {
 			listNode[i] = new ListNode(Integer.valueOf(split[i]));
 			listNode[i - 1].next = listNode[i];
@@ -401,7 +401,7 @@ public class Build {
 		int row = arr.length;
 		ListNode[] results = new ListNode[row];
 		for (int i = 0; i < row; i++) {
-			ListNode listNode = buildListNode("[" + arr[i] + "]");
+			ListNode listNode = buildListNode("[" + arr[i].trim() + "]");
 			results[i] = listNode;
 		}
 
@@ -521,12 +521,12 @@ public class Build {
 		int i = 1;
 		while (!queue.isEmpty() && i < partTree.length) {
 			TreeNode node = queue.poll();
-			if (i < partTree.length && partTree[i] != null && !partTree[i].equals("null")) {
-				node.left = new TreeNode(Integer.parseInt(partTree[i]));
+			if (i < partTree.length && partTree[i] != null && !partTree[i].trim().equals("null")) {
+				node.left = new TreeNode(Integer.parseInt(partTree[i].trim()));
 				queue.offer(node.left);
 			}
-			if (i + 1 < partTree.length && partTree[i + 1] != null && !partTree[i + 1].equals("null")) {
-				node.right = new TreeNode(Integer.parseInt(partTree[i + 1]));
+			if (i + 1 < partTree.length && partTree[i + 1] != null && !partTree[i + 1].trim().equals("null")) {
+				node.right = new TreeNode(Integer.parseInt(partTree[i + 1].trim()));
 				queue.offer(node.right);
 			}
 			i += 2;
@@ -652,6 +652,9 @@ public class Build {
 		List list = new ArrayList<>();
 		for (int i = 0; i < length; i++) {
 			String newData = arr[i];
+			if(newData!=null){
+				newData = newData.trim();
+			}
 			flag = false;
 			if (newData.indexOf("[") >= 0) {
 				flag = true;
@@ -659,13 +662,13 @@ public class Build {
 			if (flag) {
 				list.add(buildList(newData));
 			} else {
-				if (arr[i] == null || arr[i].trim().length() == 0) {
+				if (newData == null || newData.length() == 0) {
 					list.add(null);
 				} else {
-					if (StringUtil.judgeNumber(arr[i])) {
-						list.add(Integer.parseInt(arr[i]));
+					if (StringUtil.judgeNumber(newData)) {
+						list.add(Integer.parseInt(newData));
 					} else {
-						list.add(StringUtil.changeStr(arr[i]));
+						list.add(StringUtil.changeStr(newData));
 					}
 				}
 			}
@@ -808,6 +811,9 @@ public class Build {
 		List<NestedInteger> list = new ArrayList<>();
 		for (int i = 0; i < length; i++) {
 			String newData = arr[i];
+			if(newData!=null){
+				newData = newData.trim();
+			}
 			flag = false;
 			if (newData.indexOf("[") >= 0) {
 				flag = true;
@@ -815,11 +821,11 @@ public class Build {
 			if (flag) {
 				list.add(new NestedInteger(buildNestedIntegerList(newData)));
 			} else {
-				if (arr[i] == null || arr[i].trim().length() == 0) {
+				if (newData == null || newData.length() == 0) {
 					list.add(null);
 				} else {
-					if (StringUtil.judgeNumber(arr[i])) {
-						list.add(new NestedInteger(Integer.parseInt(arr[i])));
+					if (StringUtil.judgeNumber(newData)) {
+						list.add(new NestedInteger(Integer.parseInt(newData)));
 					}
 				}
 			}
