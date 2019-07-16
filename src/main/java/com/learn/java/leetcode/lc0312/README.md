@@ -55,6 +55,11 @@ Explanation:nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
 # 测试用例
 ```
 312. Burst Balloons 312. 戳气球 Hard
+Solution.maxCoins
+---
+[3,1,5,8]
+
+=167
 ```
 
 [enTitle]: https://leetcode.com/problems/burst-balloons/

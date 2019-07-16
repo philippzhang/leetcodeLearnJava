@@ -84,6 +84,15 @@ Explanation: Maximum amount of money the thief can rob = 4 + 5 = 9.
 # 测试用例
 ```
 337. House Robber III 337. 打家劫舍 III Medium
+Solution.rob
+---
+[3,2,3,null,3,null,1]
+
+=7
+---
+[3,4,5,1,3,null,1]
+
+=9
 ```
 
 [enTitle]: https://leetcode.com/problems/house-robber-iii/
