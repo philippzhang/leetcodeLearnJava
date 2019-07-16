@@ -59,6 +59,15 @@ Follow up:
 # 测试用例
 ```
 338. Counting Bits 338. 比特位计数 Medium
+Solution.countBits
+---
+2
+
+=[0,1,1]
+---
+5
+
+=[0,1,1,2,1,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/counting-bits/
