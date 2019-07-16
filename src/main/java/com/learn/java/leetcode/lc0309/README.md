@@ -46,6 +46,11 @@ Explanation: transactions = [buy, sell, cooldown, buy, sell]
 # 测试用例
 ```
 309. Best Time to Buy and Sell Stock with Cooldown 309. 最佳买卖股票时机含冷冻期 Medium
+Solution.maxProfit
+---
+[1,2,3,0,2]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
