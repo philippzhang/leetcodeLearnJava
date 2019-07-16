@@ -70,6 +70,22 @@ Output:[""]
 # 测试用例
 ```
 301. Remove Invalid Parentheses 301. 删除无效的括号 Hard
+Solution.removeInvalidParentheses
+---
+"()())()"
+
+=["()()()","(())()"]
+$disorder
+---
+"(a)())()"
+
+=["(a)()()","(a())()"]
+$disorder
+---
+")("
+
+=[""]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/remove-invalid-parentheses/
