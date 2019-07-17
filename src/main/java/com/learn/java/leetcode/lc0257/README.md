@@ -56,6 +56,13 @@ Explanation: All root-to-leaf paths are: 1->2->5, 1->3
 # 测试用例
 ```
 257. Binary Tree Paths 257. 二叉树的所有路径 Easy
+Solution.binaryTreePaths
+Solution.binaryTreePaths2
+---
+[1,2,3,null,5]
+
+=["1->2->5","1->3"]
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/binary-tree-paths/
