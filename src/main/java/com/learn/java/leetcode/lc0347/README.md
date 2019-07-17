@@ -61,6 +61,18 @@ Note:
 # 测试用例
 ```
 347. Top K Frequent Elements 347. 前K个高频元素 Medium
+Solution.topKFrequent
+Solution.topKFrequent2
+---
+[1,1,1,2,2,3]
+2
+
+=[1,2]
+---
+[1]
+1
+
+=[1]
 ```
 
 [enTitle]: https://leetcode.com/problems/top-k-frequent-elements/
