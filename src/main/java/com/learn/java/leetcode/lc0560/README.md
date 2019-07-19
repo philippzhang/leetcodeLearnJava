@@ -49,6 +49,12 @@ Note:
 # 测试用例
 ```
 560. Subarray Sum Equals K 560. 和为K的子数组 Medium
+Solution.subarraySum
+---
+[1,1,1]
+2
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/subarray-sum-equals-k/
