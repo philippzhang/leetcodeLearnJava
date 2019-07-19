@@ -73,6 +73,13 @@ Note:
 # 测试用例
 ```
 494. Target Sum 494. 目标和 Medium
+Solution.findTargetSumWays
+Solution.findTargetSumWays2
+---
+[1,1,1,1,1]
+3
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/target-sum/
