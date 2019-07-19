@@ -50,6 +50,13 @@ queries(问题方程式) = [ ["a", "c"], ["b", "a"], ["a", "e"], ["a", "a"], ["x
 # 测试用例
 ```
 399. Evaluate Division 399. 除法求值 Medium
+Solution.calcEquation
+---
+[["a","b"],["b","c"]]
+[2.0,3.0]
+[["a","c"],["b","a"],["a","e"],["a","a"],["x","x"]]
+
+=[6.0,0.5,-1.0,1.0,-1.0]
 ```
 
 [enTitle]: https://leetcode.com/problems/evaluate-division/
