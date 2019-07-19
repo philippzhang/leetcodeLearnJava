@@ -5,6 +5,7 @@ import com.learn.java.leetcode.base.structure.ListNode;
 import com.learn.java.leetcode.base.structure.Node;
 import com.learn.java.leetcode.base.structure.TreeNode;
 
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
@@ -147,6 +148,8 @@ public class Print {
 			print((TreeNode) obj);
 		} else if (obj instanceof Node) {
 			print((Node) obj);
+		} else if(obj instanceof Map){
+			print((Map)obj);
 		} else{
 			throw new RuntimeException("未定义的类型，打印失败!");
 		}
@@ -707,5 +710,9 @@ public class Print {
 			System.out.print('.');
 		}
 		System.out.println();
+	}
+
+	private static void print(Map map) {
+		System.out.println(StringUtil.map2String(map));
 	}
 }

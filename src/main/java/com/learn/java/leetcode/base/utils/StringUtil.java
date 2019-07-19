@@ -1,5 +1,8 @@
 package com.learn.java.leetcode.base.utils;
 
+import java.util.Iterator;
+import java.util.Map;
+
 /**
  * 字符串相关的处理
  */
@@ -65,6 +68,34 @@ public class StringUtil {
 	public static boolean IsEqual(float a,float b)
 	{
 		return Math.abs(a-b) < 0.000001;
+	}
+
+	public static String map2String(Map map){
+		StringBuilder sb = new StringBuilder();
+		sb.append('{');
+		Iterator<Map.Entry> iter = map.entrySet().iterator();
+		while (iter.hasNext()) {
+			Map.Entry entry = iter.next();
+			Object key = entry.getKey();
+			Object value = entry.getValue();
+			if(key instanceof Number){
+				sb.append(key.toString());
+			}else{
+				sb.append('"').append(key.toString()).append('"');
+			}
+
+			sb.append('=');
+			if(value instanceof Number){
+				sb.append(value.toString());
+			}else{
+				sb.append('"').append(value.toString()).append('"');
+			}
+			if (iter.hasNext()) {
+				sb.append(',');
+			}
+		}
+		sb.append('}');
+		return sb.toString();
 	}
 
 }
