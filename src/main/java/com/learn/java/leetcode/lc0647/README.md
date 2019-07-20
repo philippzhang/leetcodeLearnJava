@@ -73,6 +73,17 @@ Note:
 # 测试用例
 ```
 647. Palindromic Substrings 647. 回文子串 Medium
+Solution.countSubstrings
+Solution.countSubstrings2
+---
+"abc"
+
+=3
+---
+"aaa"
+
+=6
+
 ```
 
 [enTitle]: https://leetcode.com/problems/palindromic-substrings/
