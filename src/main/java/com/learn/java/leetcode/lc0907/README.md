@@ -67,6 +67,11 @@ Minimums are 3, 1, 2, 4, 1, 1, 2, 1, 1, 1.  Sum is 17.
 # 测试用例
 ```
 907. Sum of Subarray Minimums 907. 子数组的最小值之和 Medium
+Solution.sumSubarrayMins
+---
+[3,1,2,4]
+
+=17
 ```
 
 [enTitle]: https://leetcode.com/problems/sum-of-subarray-minimums/

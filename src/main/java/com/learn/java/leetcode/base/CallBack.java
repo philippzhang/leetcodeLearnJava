@@ -345,6 +345,7 @@ public class CallBack {
 	/**
 	 * 执行shell
 	 */
-	public void runShell(){ShellExcutor.service(getClass());
+	public void runShell(){
+		ShellExcutor.service(getClass());
 	}
 }

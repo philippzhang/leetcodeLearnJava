@@ -117,6 +117,23 @@ Output: 6
 # 测试用例
 ```
 856. Score of Parentheses 856. 括号的分数 Medium
+Solution.scoreOfParentheses
+---
+"()"
+
+=1
+---
+"(())"
+
+=2
+---
+"()()"
+
+=2
+---
+"(()(()))"
+
+=6
 ```
 
 [enTitle]: https://leetcode.com/problems/score-of-parentheses/

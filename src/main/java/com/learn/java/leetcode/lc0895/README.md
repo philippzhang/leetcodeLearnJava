@@ -113,6 +113,12 @@ pop() -> 返回 4 。
 # 测试用例
 ```
 895. Maximum Frequency Stack 895. 最大频率栈 Hard
+Main.funcListTest
+---
+["FreqStack","push","push","push","push","push","push","pop","pop","pop","pop"]
+[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]
+
+=[null,null,null,null,null,null,null,5,7,5,4]
 ```
 
 [enTitle]: https://leetcode.com/problems/maximum-frequency-stack/

@@ -158,6 +158,19 @@ We can reach the end from starting indexes 1, 2, and 4.
 # 测试用例
 ```
 975. Odd Even Jump 975. 奇偶跳 Hard
+Solution.oddEvenJumps
+---
+[10,13,12,14,15]
+
+=2
+---
+[2,3,1,1,4]
+
+=3
+---
+[5,1,3,4,2]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/odd-even-jump/

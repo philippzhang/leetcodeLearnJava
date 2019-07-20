@@ -135,6 +135,23 @@ Output: 4
 # 测试用例
 ```
 921. Minimum Add to Make Parentheses Valid 921. 使括号有效的最少添加 Medium
+Solution.minAddToMakeValid
+---
+"())"
+
+=1
+---
+"((("
+
+=3
+---
+"()"
+
+=0
+---
+"()))(("
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/

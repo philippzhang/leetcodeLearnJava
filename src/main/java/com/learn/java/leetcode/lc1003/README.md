@@ -143,6 +143,23 @@ Output: false
 # 测试用例
 ```
 1003. Check If Word Is Valid After Substitutions 1003. 检查替换后的词是否有效 Medium
+Solution.isValid
+---
+"aabcbc"
+
+=true
+---
+"abcabcababcc"
+
+=true
+---
+"abccba"
+
+=false
+---
+"cababc"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/
