@@ -160,6 +160,14 @@ Solution.isValid
 "cababc"
 
 =false
+---
+ab
+
+=false
+---
+bac
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/
