@@ -91,6 +91,13 @@ randomSet.getRandom();
 # 测试用例
 ```
 380. Insert Delete GetRandom O(1) 380. 常数时间插入、删除和获取随机元素 Medium
+Main.funcListTest
+---
+["RandomizedSet","insert","remove","insert","getRandom","remove","insert","getRandom"]
+[[],[1],[2],[2],[],[1],[2],[]]
+
+=[null,true,false,true,1,true,false,2]
+=[null,true,false,true,2,true,false,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/insert-delete-getrandom-o1/
