@@ -95,6 +95,12 @@ twitter.getNewsFeed(1);
 # 测试用例
 ```
 355. Design Twitter 355. 设计推特 Medium
+Main.funcListTest
+---
+["Twitter","postTweet","getNewsFeed","follow","postTweet","getNewsFeed","unfollow","getNewsFeed"]
+[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]
+
+=[null,null,[5],null,null,[6,5],null,[5]]
 ```
 
 [enTitle]: https://leetcode.com/problems/design-twitter/
