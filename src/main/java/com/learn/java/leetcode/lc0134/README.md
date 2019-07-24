@@ -111,6 +111,12 @@ cost = [3,4,3]
 # 测试用例
 ```
 134. Gas Station 134. 加油站 Medium
+Solution.canCompleteCircuit
+---
+[1,2,3,4,5]
+[3,4,5,1,2]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/gas-station/

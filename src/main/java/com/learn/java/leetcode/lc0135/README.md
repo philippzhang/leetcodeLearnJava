@@ -70,6 +70,15 @@ Explanation: You can allocate to the first, second and third child with 1, 2, 1 
 # 测试用例
 ```
 135. Candy 135. 分发糖果 Hard
+Solution.candy
+---
+[1,0,2]
+
+=5
+---
+[1,2,2]
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/candy/

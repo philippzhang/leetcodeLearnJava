@@ -71,6 +71,11 @@ X O X X
 # 测试用例
 ```
 130. Surrounded Regions 130. 被围绕的区域 Medium
+Solution.solve
+---
+[["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]
+
+I0=[["X","X","X","X"],["X","X","X","X"],["X","X","X","X"],["X","O","X","X"]]
 ```
 
 [enTitle]: https://leetcode.com/problems/surrounded-regions/

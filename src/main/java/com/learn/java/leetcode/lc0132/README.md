@@ -41,6 +41,11 @@ Explanation: The palindrome partitioning ["aa","b"] could be produced using 1 cu
 # 测试用例
 ```
 132. Palindrome Partitioning II 132. 分割回文串 II Hard
+Solution.minCut
+---
+"aab"
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/palindrome-partitioning-ii/

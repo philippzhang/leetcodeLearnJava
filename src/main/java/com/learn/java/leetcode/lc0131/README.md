@@ -46,6 +46,11 @@ Output:
 # 测试用例
 ```
 131. Palindrome Partitioning 131. 分割回文串 Medium
+Solution.partition
+---
+"aab"
+
+=[["aa","b"],["a","a","b"]]
 ```
 
 [enTitle]: https://leetcode.com/problems/palindrome-partitioning/
