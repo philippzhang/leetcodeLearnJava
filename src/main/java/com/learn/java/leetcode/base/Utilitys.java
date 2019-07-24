@@ -379,6 +379,9 @@ public class Utilitys {
 									} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;") && data instanceof List) {
 										ListNode[] listNode = Build.buildListNodeArray((List) data);
 										inputObjArr[k] = listNode;
+									} else if (parameterName.equals("java.util.Iterator")&& data instanceof List){
+										Iterator iter = ((List)data).iterator();
+										inputObjArr[k] = iter;
 									} else {
 										//可能有未处理的类型
 										flag = false;
@@ -391,7 +394,10 @@ public class Utilitys {
 									break;
 								}
 							}
+						}
 
+						if(obj==null){
+							throw new RuntimeException("无有效的构造方法，初始化失败!");
 						}
 					} catch (InstantiationException e) {
 						e.printStackTrace();
@@ -461,6 +467,8 @@ public class Utilitys {
 								} else if (parameterName.equals("[Lcom.learn.java.leetcode.base.structure.ListNode;") && data instanceof List) {
 									ListNode[] listNode = Build.buildListNodeArray((List) data);
 									inputObjArr[j] = listNode;
+								} else {
+									throw new RuntimeException("未定义的参数类型，初始化失败!");
 								}
 							}
 							//调用方法
@@ -472,6 +480,8 @@ public class Utilitys {
 							} catch (InvocationTargetException e) {
 								e.printStackTrace();
 							}
+
+							break;
 
 						}
 					}
