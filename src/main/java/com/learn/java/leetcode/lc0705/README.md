@@ -73,6 +73,12 @@ hashSet.contains(2);    // 返回  false (已经被删除)
 # 测试用例
 ```
 705. Design HashSet 705. 设计哈希集合 Easy
+Main.funcListTest
+---
+["MyHashSet","add","add","contains","contains","add","contains","remove","contains"]
+[[],[1],[2],[1],[3],[2],[2],[2],[2]]
+
+=[null,null,null,true,false,null,true,null,false]
 ```
 
 [enTitle]: https://leetcode.com/problems/design-hashset/
