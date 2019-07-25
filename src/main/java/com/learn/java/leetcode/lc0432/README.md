@@ -41,6 +41,28 @@ Challenge: Perform all these in O(1) time complexity.
 # 测试用例
 ```
 432. All O`one Data Structure 432. 全 O(1) 的数据结构 Hard
+Main.funcListTest
+---
+["AllOne","inc","inc","inc","inc","inc","inc","dec", "dec","getMinKey","dec","getMaxKey","getMinKey"]
+[[],["a"],["b"],["b"],["c"],["c"],["c"],["b"],["b"],[],["a"],[],[]]
+
+=[null,null,null,null,null,null,null,null,null,"a",null,"c","c"]
+---
+["AllOne","getMaxKey","getMinKey"]
+[[],[],[]]
+
+=[null,"",""]
+---
+["AllOne","inc","inc","getMaxKey","getMinKey","inc","getMaxKey","getMinKey"]
+[[],["hello"],["hello"],[],[],["leet"],[],[]]
+
+=[null,null,null,"hello","hello",null,"hello","leet"]
+---
+["AllOne","inc","inc","inc","inc","getMaxKey","inc","inc","inc","dec","inc","inc","inc","getMaxKey"]
+[[],["hello"],["goodbye"],["hello"],["hello"],[],["leet"],["code"],["leet"],["hello"],["leet"],["code"],["code"],[]]
+
+=[null,null,null,null,null,"hello",null,null,null,null,null,null,null,"leet"]
+
 ```
 
 [enTitle]: https://leetcode.com/problems/all-oone-data-structure/
