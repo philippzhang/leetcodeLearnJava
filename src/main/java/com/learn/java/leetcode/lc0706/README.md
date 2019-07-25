@@ -73,6 +73,12 @@ hashMap.get(2);            // 返回 -1 (未找到)
 # 测试用例
 ```
 706. Design HashMap 706. 设计哈希映射 Easy
+Main.funcListTest
+---
+["MyHashMap","put","put","get","get","put","get", "remove", "get"]
+[[],[1,1],[2,2],[1],[3],[2,1],[2],[2],[2]]
+
+=[null,null,null,1,-1,null,1,null,-1]
 ```
 
 [enTitle]: https://leetcode.com/problems/design-hashmap/
