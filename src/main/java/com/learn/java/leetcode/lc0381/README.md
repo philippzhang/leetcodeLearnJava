@@ -88,6 +88,30 @@ collection.getRandom();
 # 测试用例
 ```
 381. Insert Delete GetRandom O(1) - Duplicates allowed 381. O(1) 时间插入、删除和获取随机元素 - 允许重复 Hard
+Main.funcListTest
+---
+["RandomizedCollection","insert","insert","insert","getRandom","remove","getRandom"]
+[[],[1],[1],[2],[],[1],[]]
+
+=[null,true,false,true,2,true,2]
+=[null,true,false,true,1,true,2]
+=[null,true,false,true,2,true,1]
+=[null,true,false,true,1,true,1]
+---
+["RandomizedCollection","insert","remove","insert"]
+[[],[1],[1],[1]]
+
+=[null,true,true,true]
+---
+["RandomizedCollection","insert","insert","remove","insert","remove","getRandom"]
+[[],[0],[1],[0],[2],[1],[]]
+
+=[null,true,true,true,true,true,2]
+---
+["RandomizedCollection","insert","insert","insert","insert","insert","insert","remove","remove","remove","remove","getRandom","getRandom","getRandom","getRandom","getRandom","getRandom","getRandom","getRandom","getRandom","getRandom"]
+[[],[1],[1],[2],[1],[2],[2],[1],[2],[2],[2],[],[],[],[],[],[],[],[],[],[]]
+
+=[null,true,false,true,false,false,false,true,true,true,true,1,1,1,1,1,1,1,1,1,1]
 ```
 
 [enTitle]: https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
