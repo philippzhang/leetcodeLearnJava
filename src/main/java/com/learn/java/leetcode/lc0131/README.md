@@ -51,6 +51,8 @@ Solution.partition
 "aab"
 
 =[["aa","b"],["a","a","b"]]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/palindrome-partitioning/
