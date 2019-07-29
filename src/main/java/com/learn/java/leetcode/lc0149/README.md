@@ -86,6 +86,15 @@ Explanation:
 # 测试用例
 ```
 149. Max Points on a Line 149. 直线上最多的点数 Hard
+Solution.maxPoints
+---
+[[1,1],[2,2],[3,3]]
+
+=3
+---
+[[1,1],[3,2],[5,3],[4,1],[2,3],[1,4]]
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/max-points-on-a-line/
