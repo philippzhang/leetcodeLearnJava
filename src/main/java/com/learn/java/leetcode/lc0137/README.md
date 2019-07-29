@@ -57,6 +57,16 @@ Output: 99
 # 测试用例
 ```
 137. Single Number II 137. 只出现一次的数字 II Medium
+Solution.singleNumber
+Solution.singleNumber2
+---
+[2,2,3,2]
+
+=3
+---
+[0,1,0,1,0,1,99]
+
+=99
 ```
 
 [enTitle]: https://leetcode.com/problems/single-number-ii/
