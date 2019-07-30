@@ -125,6 +125,37 @@ Explanation: The first version number does not have a third level revision numbe
 # 测试用例
 ```
 165. Compare Version Numbers 165. 比较版本号 Medium
+Solution.compareVersion
+---
+"0.1"
+"1.1"
+
+= -1
+---
+"1.0.1"
+"1"
+
+=1
+---
+"7.5.2.4"
+"7.5.3"
+
+=-1
+---
+"1.01"
+"1.001"
+
+=0
+---
+"1.0"
+"1.0.0"
+
+=0
+---
+"1.1"
+"1.10"
+
+=-1
 ```
 
 [enTitle]: https://leetcode.com/problems/compare-version-numbers/
