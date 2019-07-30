@@ -1,7 +1,6 @@
 package com.learn.java.leetcode.lc0153;
 
 public class Solution {
-	//int min  = Integer.MAX_VALUE;
 	public int findMin(int[] nums) {
 		if(nums.length==1){
 			return nums[0];
