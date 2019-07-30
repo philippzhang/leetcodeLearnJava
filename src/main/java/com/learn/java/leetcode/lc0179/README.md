@@ -52,6 +52,15 @@ Output: "9534330"
 # 测试用例
 ```
 179. Largest Number 179. 最大数 Medium
+Solution.largestNumber
+---
+[10,2]
+
+="210"
+---
+[3,30,34,5,9]
+
+="9534330"
 ```
 
 [enTitle]: https://leetcode.com/problems/largest-number/
