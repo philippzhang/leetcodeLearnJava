@@ -61,6 +61,15 @@ Output: 0
 # 测试用例
 ```
 153. Find Minimum in Rotated Sorted Array 153. 寻找旋转排序数组中的最小值 Medium
+Solution.findMin
+---
+[3,4,5,1,2]
+
+=1
+---
+[4,5,6,7,0,1,2]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
