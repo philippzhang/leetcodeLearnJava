@@ -48,6 +48,17 @@ Output: 0
 # 测试用例
 ```
 201. Bitwise AND of Numbers Range 201. 数字范围按位与 Medium
+Solution.rangeBitwiseAnd
+---
+5
+7
+
+=4
+--
+0
+1
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/bitwise-and-of-numbers-range/
