@@ -368,7 +368,7 @@
 
 184 https://leetcode.com/problems/department-highest-salary/ https://leetcode-cn.com/problems/department-highest-salary/ department-highest-salary "部门工资最高的员工"
 
-185 https://leetcode.com/problems/department-top-three-salaries/ https://leetcode-cn.com/problems/department-top-three-salaries/ department-top-three-salaries "部门工资前三高的员工"
+185 https://leetcode.com/problems/department-top-three-salaries/ https://leetcode-cn.com/problems/department-top-three-salaries/ department-top-three-salaries "部门工资前三高的所有员工"
 
 186 https://leetcode.com/problems/reverse-words-in-a-string-ii/ https://leetcode-cn.com/problems/reverse-words-in-a-string-ii/ reverse-words-in-a-string-ii "翻转字符串里的单词 II"
 
@@ -2244,5 +2244,29 @@
 
 1125 https://leetcode.com/problems/smallest-sufficient-team/ https://leetcode-cn.com/problems/smallest-sufficient-team/ smallest-sufficient-team "最小的必要团队"
 
-# 共1122题,其中加锁205题,正常917题
+1128 https://leetcode.com/problems/number-of-equivalent-domino-pairs/ https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs/ number-of-equivalent-domino-pairs "等价多米诺骨牌对的数量"
+
+1129 https://leetcode.com/problems/shortest-path-with-alternating-colors/ https://leetcode-cn.com/problems/shortest-path-with-alternating-colors/ shortest-path-with-alternating-colors "颜色交替的最短路径"
+
+1130 https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/ https://leetcode-cn.com/problems/minimum-cost-tree-from-leaf-values/ minimum-cost-tree-from-leaf-values "叶值的最小代价生成树"
+
+1131 https://leetcode.com/problems/maximum-of-absolute-value-expression/ https://leetcode-cn.com/problems/maximum-of-absolute-value-expression/ maximum-of-absolute-value-expression "绝对值表达式的最大值"
+
+1133 https://leetcode.com/problems/largest-unique-number/ https://leetcode-cn.com/problems/largest-unique-number/ largest-unique-number "最大唯一数"
+
+1134 https://leetcode.com/problems/armstrong-number/ https://leetcode-cn.com/problems/armstrong-number/ armstrong-number "阿姆斯特朗数"
+
+1135 https://leetcode.com/problems/connecting-cities-with-minimum-cost/ https://leetcode-cn.com/problems/connecting-cities-with-minimum-cost/ connecting-cities-with-minimum-cost "最低成本联通所有城市"
+
+1136 https://leetcode.com/problems/parallel-courses/ https://leetcode-cn.com/problems/parallel-courses/ parallel-courses "平行课程"
+
+1137 https://leetcode.com/problems/n-th-tribonacci-number/ https://leetcode-cn.com/problems/n-th-tribonacci-number/ n-th-tribonacci-number "第 N 个泰波那契数"
+
+1138 https://leetcode.com/problems/alphabet-board-path/ https://leetcode-cn.com/problems/alphabet-board-path/ alphabet-board-path "字母板上的路径"
+
+1139 https://leetcode.com/problems/largest-1-bordered-square/ https://leetcode-cn.com/problems/largest-1-bordered-square/ largest-1-bordered-square "最大的以 1 为边界的正方形"
+
+1140 https://leetcode.com/problems/stone-game-ii/ https://leetcode-cn.com/problems/stone-game-ii/ stone-game-ii "石子游戏 II"
+
+# 共1134题,其中加锁209题,正常925题
 
