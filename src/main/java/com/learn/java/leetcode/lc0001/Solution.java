@@ -10,7 +10,7 @@ import java.util.HashMap;
  */
 
 public class Solution {
-	public int[] twoSum(int[] nums, int target) {
+	public int[] twoSum2(int[] nums, int target) {
 		int[] solution = new int[2];
 
 		for (int i = 0; i < nums.length; i++) {
@@ -34,7 +34,7 @@ public class Solution {
 	 * @param target
 	 * @return
 	 */
-	public int[] twoSum2(int[] nums, int target) {
+	public int[] twoSum(int[] nums, int target) {
 		HashMap<Integer, Integer> tracker = new HashMap<Integer, Integer>();
 		int len = nums.length;
 		for (int i = 0; i < len; i++) {
