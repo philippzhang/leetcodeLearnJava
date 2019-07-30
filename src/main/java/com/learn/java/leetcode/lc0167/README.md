@@ -49,6 +49,12 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 # 测试用例
 ```
 167. Two Sum II - Input array is sorted 167. 两数之和 II - 输入有序数组 Easy
+Solution.twoSum
+---
+[2, 7, 11, 15]
+9
+
+=[1,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
