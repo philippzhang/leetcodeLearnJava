@@ -65,6 +65,17 @@ Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-
 # 测试用例
 ```
 188. Best Time to Buy and Sell Stock IV 188. 买卖股票的最佳时机 IV Hard
+Solution.maxProfit
+---
+2
+[2,4,1]
+
+=2
+---
+2
+[3,2,6,5,0,3]
+
+=7
 ```
 
 [enTitle]: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
