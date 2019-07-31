@@ -2,7 +2,7 @@ package com.learn.java.algorithm.sort;
 
 import com.learn.java.algorithm.nolinear.heap.Heap;
 
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * 1.顺序存储结构
@@ -287,6 +287,88 @@ public class SortArray {
 		return r;
 	}
 
+	/**
+	 * 计数排序 时间O(n+m),空间O(m)  m = max-min
+	 * @param arr
+	 * @return
+	 */
+	public static int[] countSort(int[] arr){
+		if (arr==null||arr.length < 2) {
+			return arr;
+		}
+		//求最大值、最小值
+		int max = arr[0];
+		int min = arr[0];
+		for(int i =1 ;i<arr.length;i++){
+			max = Math.max(max,arr[i]);
+			min = Math.min(min,arr[i]);
+		}
+		int m = max-min;
+		//根据最大值确定统计数的长度
+		int[] countArray = new int[m+1];
+		for(int i =0;i<arr.length;i++){
+			countArray[arr[i]-min]++;
+		}
+		//后面的元素等于前面元素之和
+		for(int i = 1;i<countArray.length;i++){
+			countArray[i]+=countArray[i-1];
+		}
+		int[] sortArray = new int[arr.length];
+		for(int i =arr.length-1;i>=0;i--){
+			sortArray[countArray[arr[i]-min]-1]=arr[i];
+			countArray[arr[i]-min]--;
+		}
+
+		return sortArray;
+
+	}
+
+	/**
+	 * 桶排序 时间O(n) 空间O(n)
+	 * @param arr
+	 * @return
+	 */
+	public static int[] bucketSort(int[] arr){
+		if (arr==null||arr.length < 2) {
+			return arr;
+		}
+		//求最大值、最小值
+		int max = arr[0];
+		int min = arr[0];
+		for(int i =1 ;i<arr.length;i++){
+			max = Math.max(max,arr[i]);
+			min = Math.min(min,arr[i]);
+		}
+		int m = max-min;
+
+		//桶的数量
+		int bucketNum = arr.length;
+		List<LinkedList<Integer>> bucketList = new ArrayList<>(bucketNum);
+		for(int i = 0;i<bucketNum;i++){
+			bucketList.add(new LinkedList<>());
+		}
+
+		for(int i = 0;i<arr.length;i++){
+			int num = (arr[i]-min)*(bucketNum-1)/m;
+			bucketList.get(num).add(arr[i]);
+		}
+
+		for(int i = 0;i<bucketList.size();i++){
+			Collections.sort(bucketList.get(i));
+		}
+
+		int[] sortArray = new int[arr.length];
+		int index = 0;
+		for(LinkedList<Integer> list:bucketList){
+			for(int element:list){
+				sortArray[index++] = element;
+			}
+		}
+
+		return sortArray;
+
+	}
+
 	public static void main(String[] args) {
 		int[] arr = {7, 2, 4, 5, 3, 6, 2, 8};
 		int[] brr = null;
@@ -310,6 +392,12 @@ public class SortArray {
 		System.out.println(Arrays.toString(brr));
 
 		brr = SortArray.mergeSort(arr);
+		System.out.println(Arrays.toString(brr));
+
+		brr = SortArray.countSort(arr);
+		System.out.println(Arrays.toString(brr));
+
+		brr = SortArray.bucketSort(arr);
 		System.out.println(Arrays.toString(brr));
 	}
 
