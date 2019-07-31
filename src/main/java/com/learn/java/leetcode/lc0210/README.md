@@ -84,6 +84,18 @@ Explanation: There are a total of 4 courses to take. To take course 3 you should
 # 测试用例
 ```
 210. Course Schedule II 210. 课程表 II Medium
+Solution.findOrder
+---
+2
+[[1,0]] 
+
+=[0,1]
+---
+4
+[[1,0],[2,0],[3,1],[3,2]]
+
+=[0,1,2,3]
+=[0,2,1,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/course-schedule-ii/
