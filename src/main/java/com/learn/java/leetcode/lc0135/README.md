@@ -70,6 +70,8 @@ Explanation: You can allocate to the first, second and third child with 1, 2, 1 
 # 测试用例
 ```
 135. Candy 135. 分发糖果 Hard
+Solution.candy1
+Solution.candy2
 Solution.candy
 ---
 [1,0,2]
