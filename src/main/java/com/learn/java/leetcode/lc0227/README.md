@@ -79,6 +79,19 @@ Note:
 # 测试用例
 ```
 227. Basic Calculator II 227. 基本计算器 II Medium
+Solution.calculate
+---
+"3+2*2"
+
+=7
+---
+" 3/2 "
+
+=1
+---
+" 3+5 / 2 "
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/basic-calculator-ii/
