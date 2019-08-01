@@ -52,6 +52,23 @@ Explanation:the subarray [4,3] has the minimal length under the problem constrai
 # 测试用例
 ```
 209. Minimum Size Subarray Sum 209. 长度最小的子数组 Medium
+Solution.minSubArrayLen
+Solution.minSubArrayLen3
+---
+7
+[2,3,1,2,4,3]
+
+=2
+---
+11
+[1,2,3,4,5]
+
+=3
+---
+15
+[1,2,3,4,5]
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/minimum-size-subarray-sum/
