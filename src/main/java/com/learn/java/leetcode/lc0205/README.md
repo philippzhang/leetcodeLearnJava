@@ -75,6 +75,28 @@ Note: You may assume both sand thave the same length.
 # 测试用例
 ```
 205. Isomorphic Strings 205. 同构字符串 Easy
+Solution.isIsomorphic
+Solution.isIsomorphic2
+---
+"egg"
+"add"
+
+=true
+---
+"foo"
+"bar"
+
+=false
+---
+"paper"
+"title"
+
+=true
+---
+"ab"
+"aa"
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/isomorphic-strings/
