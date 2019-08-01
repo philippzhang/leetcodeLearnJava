@@ -69,6 +69,11 @@ Node 4's value is 4, and it has two neighbors: Node 1 and 3.
 # 测试用例
 ```
 133. Clone Graph 133. 克隆图 Medium
+Solution.cloneGraph
+---
+{"$id":"1","neighbors":[{"$id":"2","neighbors":[{"$ref":"1"},{"$id":"3","neighbors":[{"$ref":"2"},{"$id":"4","neighbors":[{"$ref":"3"},{"$ref":"1"}],"val":4}],"val":3}],"val":2},{"$ref":"4"}],"val":1}
+
+={"$id":"1","neighbors":[{"$id":"2","neighbors":[{"$ref":"1"},{"$id":"3","neighbors":[{"$ref":"2"},{"$id":"4","neighbors":[{"$ref":"3"},{"$ref":"1"}],"val":4}],"val":3}],"val":2},{"$ref":"4"}],"val":1}
 ```
 
 [enTitle]: https://leetcode.com/problems/clone-graph/
