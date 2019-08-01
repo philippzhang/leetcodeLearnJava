@@ -64,6 +64,14 @@ words = ["oath","pea","eat","rain"] and board=
 # 测试用例
 ```
 212. Word Search II 212. 单词搜索 II Hard
+Solution.findWords
+---
+[["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]]
+["oath","pea","eat","rain"]
+
+=["eat","oath"]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/word-search-ii/
