@@ -63,6 +63,14 @@ D = [ 0, 2]
 # 测试用例
 ```
 454. 4Sum II 454. 四数相加 II Medium
+Solution.fourSumCount
+---
+[1,2]
+[-2,-1]
+[-1,2]
+[0,2]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/4sum-ii/
