@@ -82,6 +82,11 @@ Follow up:
 # 测试用例
 ```
 289. Game of Life 289. 生命游戏 Medium
+Solution.gameOfLife
+---
+[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]
+
+I0=[[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
 ```
 
 [enTitle]: https://leetcode.com/problems/game-of-life/
