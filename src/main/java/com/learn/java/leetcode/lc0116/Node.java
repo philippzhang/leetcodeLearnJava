@@ -1,5 +1,6 @@
 package com.learn.java.leetcode.lc0116;
 
+
 class Node {
 	public int val;
 	public Node left;

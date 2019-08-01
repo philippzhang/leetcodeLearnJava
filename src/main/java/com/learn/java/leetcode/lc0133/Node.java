@@ -2,6 +2,9 @@ package com.learn.java.leetcode.lc0133;
 
 import java.util.List;
 
+/**
+ * 图结点
+ */
 class Node {
 	public int val;
 	public List<Node> neighbors;
