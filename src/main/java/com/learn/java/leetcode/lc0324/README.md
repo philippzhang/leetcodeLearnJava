@@ -55,6 +55,27 @@ Follow Up: Can you do it in O(n) time and/or in-place with O(1) extra space?
 # 测试用例
 ```
 324. Wiggle Sort II 324. 摆动排序 II Medium
+Solution.wiggleSort
+Solution.wiggleSort2
+---
+[1,5,1,1,6,4]
+
+I0=[1,4,1,5,1,6]
+I0=[1,6,1,5,1,4]
+I0=[1,5,1,6,1,4]
+---
+[1,3,2,2,3,1]
+
+I0=[2,3,1,3,1,2]
+I0=[1,3,2,3,1,2]
+---
+[1,2,2,1,2,1,1,1,1,2,2,2]
+
+I0=[1,2,1,2,1,2,1,2,1,2,1,2]
+---
+[4,5,5,6]
+
+I0=[5,6,4,5]
 ```
 
 [enTitle]: https://leetcode.com/problems/wiggle-sort-ii/
