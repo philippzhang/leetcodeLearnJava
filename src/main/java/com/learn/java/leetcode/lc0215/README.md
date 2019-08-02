@@ -52,6 +52,7 @@ Output: 4
 ```
 215. Kth Largest Element in an Array 215. 数组中的第K个最大元素 Medium
 Solution.findKthLargest
+Solution.findKthLargest1
 ---
 [3,2,1,5,6,4]
 2

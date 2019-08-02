@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
  */
 public class Solution {
 
-	public int findKthLargest(int[] nums, int k) {
+	public int findKthLargest1(int[] nums, int k) {
 		PriorityQueue<Integer> priorityQueue = new PriorityQueue<>(k);
 
 		for (int i = 0; i < nums.length; i++) {
@@ -32,13 +32,13 @@ public class Solution {
 	 * @param k
 	 * @return
 	 */
-	public int findKthLargest2(int[] nums, int k) {
+	public int findKthLargest3(int[] nums, int k) {
 		final int N = nums.length;
 		Arrays.sort(nums);
 		return nums[N - k];
 	}
 
-	public int findKthLargest1(int[] nums, int k) {
+	public int findKthLargest2(int[] nums, int k) {
 		PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 		for (int i = 0; i < nums.length; i++) {
 			priorityQueue.add(nums[i]);
@@ -49,10 +49,45 @@ public class Solution {
 		return priorityQueue.peek();
 	}
 
+	public int findKthLargest(int[] nums, int k) {
+		if (nums == null || nums.length == 0) {
+			return Integer.MAX_VALUE;
+		}
+		return findKthLargest(nums, 0, nums.length - 1, nums.length - k);
+
+	}
+
+	/**
+	 * 快速选择算法O(N)
+	 * @param nums
+	 * @param start
+	 * @param end
+	 * @param k
+	 * @return
+	 */
+	private int findKthLargest(int[] nums,int start,int end,int k){
+		if(start>end){
+			return Integer.MAX_VALUE;
+		}
+		int pivot = nums[end];
+		int left = start;
+		for(int i = start;i<end;i++){
+			if(nums[i]<=pivot){
+				swap(nums,left++,i);
+			}
+		}
+		swap(nums,left,end);
+		if(left==k){
+			return nums[left];
+		}else if(left<k){
+			return findKthLargest(nums,left+1,end,k);
+		}else{
+			return findKthLargest(nums,start,left-1,k);
+		}
+	}
 
 
-
-	public int findKthLargest3(int[] nums, int k) {
+	public int findKthLargest4(int[] nums, int k) {
 		k = nums.length - k;
 		int lo = 0;
 		int hi = nums.length - 1;
@@ -80,14 +115,14 @@ public class Solution {
 			if (i >= j) {
 				break;
 			}
-			exch(a, i, j);
+			swap(a, i, j);
 		}
-		exch(a, lo, j);
+		swap(a, lo, j);
 		return j;
 	}
 
 
-	private void exch(int[] a, int i, int j) {
+	private void swap(int[] a, int i, int j) {
 		final int tmp = a[i];
 		a[i] = a[j];
 		a[j] = tmp;
