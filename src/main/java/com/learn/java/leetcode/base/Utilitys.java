@@ -213,12 +213,6 @@ public class Utilitys {
 
 						String trueResult = dataList.get(k);
 						if (StringUtils.isNotBlank(trueResult)) {
-							/*if (trueResult.startsWith("=")) {
-								trueResult = trueResult.substring(1);
-								if (StringUtils.isNotBlank(trueResult)) {
-									trueResultOutputList.add(trueResult);
-								}
-							} else*/
 							if (StringUtil.judgeINumber(trueResult)) {
 								/**
 								 * 验证输入参数
@@ -250,6 +244,10 @@ public class Utilitys {
 										boolean resultFlag = callBack.inputVerify(inputObjArr, trueInputResult, outputObj, inputIndex, dataList, tempList);
 										if (!resultFlag) {
 											testFlag = false;
+										}else{
+											//支持多个答案
+											testFlag = true;
+											break;
 										}
 									} catch (Exception e) {
 										e.printStackTrace();
