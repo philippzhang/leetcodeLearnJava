@@ -63,6 +63,33 @@ public class Format {
 					format((TreeNode) item, stringBuffer);
 				} else if (item instanceof Node) {
 					format((Node) item, stringBuffer);
+				} else if (item!=null && item.getClass().isArray()) {
+					String className = item.getClass().getName();
+					if (className.equals("[I")) {
+						format((int[]) item, stringBuffer);
+					} else if (className.equals("[[I")) {
+						format((int[][]) item, stringBuffer);
+					} else if (className.equals("[D")) {
+						format((double[]) item, stringBuffer);
+					} else if (className.equals("[[D")) {
+						format((double[][]) item);
+					} else if (className.equals("[F")) {
+						format((float[]) item, stringBuffer);
+					} else if (className.equals("[[F")) {
+						format((float[][]) item);
+					} else if (className.equals("[B")) {
+						format((boolean[]) item, stringBuffer);
+					} else if (className.equals("[[B")) {
+						format((boolean[][]) item);
+					} else if (className.equals("[C")) {
+						format((char[]) item, stringBuffer);
+					} else if (className.equals("[[C")) {
+						format((char[][]) item, stringBuffer);
+					} else if (className.equals("[Ljava.lang.String;")){
+						format((String[]) item);
+					} else if (className.equals("[[Ljava.lang.String;")){
+						format((String[][]) item);
+					}
 				} else if(item!=null){
 					throw new RuntimeException("未定义的List泛型，转换失败!");
 				}
