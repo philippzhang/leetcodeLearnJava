@@ -75,6 +75,17 @@ s = "ababbc", k = 2
 # 测试用例
 ```
 395. Longest Substring with At Least K Repeating Characters 395. 至少有K个重复字符的最长子串 Medium
+Solution.longestSubstring
+---
+"aaabb"
+3
+
+=3
+---
+"ababbc"
+2
+
+=5
 ```
 
 [enTitle]: https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
