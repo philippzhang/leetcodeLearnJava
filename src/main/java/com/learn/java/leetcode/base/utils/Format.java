@@ -89,6 +89,8 @@ public class Format {
 						format((String[]) item);
 					} else if (className.equals("[[Ljava.lang.String;")){
 						format((String[][]) item);
+					} else {
+						format((Object[]) obj, stringBuffer);
 					}
 				} else if(item!=null){
 					throw new RuntimeException("未定义的List泛型，转换失败!");
