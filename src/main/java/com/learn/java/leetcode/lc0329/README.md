@@ -78,6 +78,15 @@ Explanation:The longest increasing path is [3, 4, 5, 6]. Moving diagonally is no
 # 测试用例
 ```
 329. Longest Increasing Path in a Matrix 329. 矩阵中的最长递增路径 Hard
+Solution.longestIncreasingPath
+Solution.longestIncreasingPath1
+---
+[[9,9,4],[6,6,8],[2,1,1]] 
+=4
+---
+[[3,4,5],[3,2,6],[2,2,1]] 
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
