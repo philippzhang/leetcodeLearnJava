@@ -64,6 +64,28 @@ Output: false
 # 测试用例
 ```
 334. Increasing Triplet Subsequence 334. 递增的三元子序列 Medium
+Solution.increasingTriplet
+Solution.increasingTriplet2
+---
+[1,2,3,4,5]
+
+=true
+---
+[5,4,3,2,1]
+
+=false
+---
+[2,1,5,0,4,6]
+
+=true
+---
+[5,1,5,5,2,5,4]
+
+=true
+---
+[2,1,5,0,3]
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/increasing-triplet-subsequence/
