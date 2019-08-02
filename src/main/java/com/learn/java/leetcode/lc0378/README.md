@@ -55,6 +55,12 @@ k = 8,
 # 测试用例
 ```
 378. Kth Smallest Element in a Sorted Matrix 378. 有序矩阵中第K小的元素 Medium
+Solution.kthSmallest
+---
+[[1,5,9],[10,11,13],[12,13,15]]
+8
+
+=13
 ```
 
 [enTitle]: https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
