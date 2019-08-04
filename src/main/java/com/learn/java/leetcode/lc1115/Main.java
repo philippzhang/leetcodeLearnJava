@@ -36,8 +36,6 @@ public class Main extends CallBack {
 		t2.start();
 
 
-
-
 		t1.join();
 		t2.join();
 
