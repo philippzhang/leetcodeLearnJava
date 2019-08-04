@@ -93,6 +93,15 @@ class ZeroEvenOdd {
 # 测试用例
 ```
 1116. Print Zero Even Odd 1116. 打印零与奇偶数 Medium
+Main.test
+---
+2
+
+="0102"
+---
+5
+
+="0102030405"
 ```
 
 [enTitle]: https://leetcode.com/problems/print-zero-even-odd/

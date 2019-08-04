@@ -99,6 +99,15 @@ class FooBar {
 # 测试用例
 ```
 1115. Print FooBar Alternately 1115. 交替打印FooBar Medium
+Main.test
+---
+1
+
+="foobar"
+---
+2
+
+="foobarfoobar"
 ```
 
 [enTitle]: https://leetcode.com/problems/print-foobar-alternately/

@@ -104,6 +104,15 @@ public class Foo {
 # 测试用例
 ```
 1114. Print in Order 1114. 按序打印 Easy
+Main.test
+---
+[1,2,3]
+
+="onetwothree"
+---
+[1,3,2]
+
+="onetwothree"
 ```
 
 [enTitle]: https://leetcode.com/problems/print-in-order/
