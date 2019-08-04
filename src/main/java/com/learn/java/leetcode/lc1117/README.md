@@ -106,6 +106,25 @@ Explanation: "HOHHHO", "OHHHHO", "HHOHOH", "HOHHOH", "OHHHOH", "HHOOHH", "HOHOHH
 # 测试用例
 ```
 1117. Building H2O 1117. H2O 生成 Hard
+Main.test
+---
+"HOH"
+
+="HHO"
+="HOH"
+="OHH"
+---
+"OOHHHH"
+
+="HHOHHO"
+="HOHHHO"
+="OHHHHO"
+="HHOHOH"
+="HOHHOH"
+="OHHHOH"
+="HHOOHH"
+="HOHOHH"
+="OHHOHH"
 ```
 
 [enTitle]: https://leetcode.com/problems/building-h2o/
