@@ -46,6 +46,18 @@ Assume that the total area is never beyond the maximum possible value of **int**
 # 测试用例
 ```
 223. Rectangle Area 223. 矩形面积 Medium
+Solution.computeArea
+---
+-3
+0
+3
+4
+0
+-1
+9
+2
+
+=45
 ```
 
 [enTitle]: https://leetcode.com/problems/rectangle-area/
