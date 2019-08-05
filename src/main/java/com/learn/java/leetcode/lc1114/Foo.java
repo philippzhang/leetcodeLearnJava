@@ -13,19 +13,21 @@ public class Foo {
 
 		// printFirst.run() outputs "first". Do not change or remove this line.
 		printFirst.run();
+		//second启动
 		second.countDown();
 	}
 
 	public void second(Runnable printSecond) throws InterruptedException {
-
+		//second阻塞
 		second.await();
 		// printSecond.run() outputs "second". Do not change or remove this line.
 		printSecond.run();
+		//third启动
 		third.countDown();
 	}
 
 	public void third(Runnable printThird) throws InterruptedException {
-
+		//third阻塞
 		third.await();
 		// printThird.run() outputs "third". Do not change or remove this line.
 		printThird.run();

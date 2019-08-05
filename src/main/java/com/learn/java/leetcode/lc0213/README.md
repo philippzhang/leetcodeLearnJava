@@ -60,6 +60,23 @@ Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3).
 # 测试用例
 ```
 213. House Robber II 213. 打家劫舍 II Medium
+Solution.rob
+---
+[2,3,2]
+
+=3
+---
+[1,2,3,1]
+
+=4
+---
+[0]
+
+=0
+---
+[1,2,1,1]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/house-robber-ii/
