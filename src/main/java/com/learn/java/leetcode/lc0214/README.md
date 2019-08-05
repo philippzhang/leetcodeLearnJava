@@ -49,6 +49,16 @@ Output: "dcbabcd"
 # 测试用例
 ```
 214. Shortest Palindrome 214. 最短回文串 Hard
+Solution.shortestPalindrome
+Solution.shortestPalindrome2
+---
+"aacecaaa"
+
+="aaacecaaa"
+---
+"abcd"
+
+="dcbabcd"
 ```
 
 [enTitle]: https://leetcode.com/problems/shortest-palindrome/
