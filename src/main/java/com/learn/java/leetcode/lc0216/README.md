@@ -64,6 +64,21 @@ Output: [[1,2,6], [1,3,5], [2,3,4]]
 # 测试用例
 ```
 216. Combination Sum III 216. 组合总和 III Medium
+Solution.combinationSum3
+---
+3
+7
+
+=[[1,2,4]]
+
+$disorder
+---
+3
+9
+
+=[[1,2,6],[1,3,5],[2,3,4]]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/combination-sum-iii/
