@@ -70,6 +70,22 @@ Output: false
 # 测试用例
 ```
 219. Contains Duplicate II 219. 存在重复元素 II Easy
+Solution.containsNearbyDuplicate
+---
+[1,2,3,1]
+3
+
+=true
+---
+[1,0,1,1]
+1
+
+=true
+---
+[1,2,3,1,2,3]
+2
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/contains-duplicate-ii/
