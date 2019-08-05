@@ -70,6 +70,31 @@ Output: false
 # 测试用例
 ```
 220. Contains Duplicate III 220. 存在重复元素 III Medium
+Solution.containsNearbyAlmostDuplicate
+---
+[1,2,3,1]
+3
+0
+
+=true
+---
+[1,0,1,1]
+1
+2
+
+=true
+---
+[1,5,9,1,5,9]
+2
+3
+
+=false
+---
+[0,2147483647]
+1
+2147483647
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/contains-duplicate-iii/
