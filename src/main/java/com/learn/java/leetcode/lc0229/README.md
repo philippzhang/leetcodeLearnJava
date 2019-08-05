@@ -51,6 +51,15 @@ Output: [1,2]
 # 测试用例
 ```
 229. Majority Element II 229. 求众数 II Medium
+Solution.majorityElement
+---
+[3,2,3]
+
+=[3]
+---
+[1,1,1,3,3,2,2,2]
+
+=[1,2]
 ```
 
 [enTitle]: https://leetcode.com/problems/majority-element-ii/

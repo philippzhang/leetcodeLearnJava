@@ -53,6 +53,19 @@ Explanation:2,3,4 form a continuous range; 8,9 form a continuous range.
 # 测试用例
 ```
 228. Summary Ranges 228. 汇总区间 Medium
+Solution.summaryRanges
+---
+[0,1,2,4,5,7]
+
+=["0->2","4->5","7"]
+---
+[0,2,3,4,6,8,9]
+
+=["0","2->4","6","8->9"]
+---
+[]
+
+=[]
 ```
 
 [enTitle]: https://leetcode.com/problems/summary-ranges/
