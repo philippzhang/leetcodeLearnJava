@@ -42,6 +42,11 @@ Follow up: Could you do it without any loop/recursion in O(1) runtime?
 # 测试用例
 ```
 258. Add Digits 258. 各位相加 Easy
+Solution.addDigits
+---
+38
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/add-digits/
