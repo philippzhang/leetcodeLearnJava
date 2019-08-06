@@ -84,6 +84,19 @@ Explanation:14 is not ugly since it includes another prime factor 7.
 # 测试用例
 ```
 263. Ugly Number 263. 丑数 Easy
+Solution.isUgly
+---
+6
+
+=true
+---
+8
+
+=true
+---
+14
+
+=false
 ```
 
 [enTitle]: https://leetcode.com/problems/ugly-number/
