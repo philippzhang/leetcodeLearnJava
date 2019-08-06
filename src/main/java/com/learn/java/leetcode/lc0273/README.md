@@ -79,6 +79,23 @@ Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Th
 # 测试用例
 ```
 273. Integer to English Words 273. 整数转换英文表示 Hard
+Solution.numberToWords
+---
+123
+
+="One Hundred Twenty Three"
+---
+12345
+
+="Twelve Thousand Three Hundred Forty Five"
+---
+1234567
+
+="One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
+---
+1234567891
+
+="One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One"
 ```
 
 [enTitle]: https://leetcode.com/problems/integer-to-english-words/
