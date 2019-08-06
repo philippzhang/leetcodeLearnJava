@@ -54,6 +54,17 @@ Note:
 # 测试用例
 ```
 313. Super Ugly Number 313. 超级丑数 Medium
+Solution.nthSuperUglyNumber
+---
+12
+[2,7,13,19]
+
+=32
+---
+15
+[3,5,7,11,19,23,29,41,43,47]
+
+=35
 ```
 
 [enTitle]: https://leetcode.com/problems/super-ugly-number/
