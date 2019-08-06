@@ -43,6 +43,12 @@ Note:
 # 测试用例
 ```
 260. Single Number III 260. 只出现一次的数字 III Medium
+Solution.singleNumber
+---
+[1,2,1,3,2,5]
+[3,5]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/single-number-iii/
