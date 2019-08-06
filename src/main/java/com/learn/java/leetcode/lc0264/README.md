@@ -49,6 +49,11 @@ Explanation:1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly 
 # 测试用例
 ```
 264. Ugly Number II 264. 丑数 II Medium
+Solution.nthUglyNumber
+---
+10
+
+=12
 ```
 
 [enTitle]: https://leetcode.com/problems/ugly-number-ii/
