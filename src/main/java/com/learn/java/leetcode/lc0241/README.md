@@ -63,6 +63,19 @@ Explanation:(2*(3-(4*5))) = -34
 # 测试用例
 ```
 241. Different Ways to Add Parentheses 241. 为运算表达式设计优先级 Medium
+Solution.diffWaysToCompute
+---
+"2-1-1"
+
+=[0,2]
+
+$disorder
+---
+"2*3-4*5"
+
+=[-34,-14,-10,-10,10]
+
+$disorder
 ```
 
 [enTitle]: https://leetcode.com/problems/different-ways-to-add-parentheses/
