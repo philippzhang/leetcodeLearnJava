@@ -54,6 +54,12 @@ sumRange(0, 5) -> -3
 # 测试用例
 ```
 303. Range Sum Query - Immutable 303. 区域和检索 - 数组不可变 Easy
+Main.funcListTest
+---
+["NumArray","sumRange","sumRange","sumRange"]
+[[[-2,0,3,-5,2,-1]],[0,2],[2,5],[0,5]]
+
+=[null,1,-1,-3]
 ```
 
 [enTitle]: https://leetcode.com/problems/range-sum-query-immutable/
