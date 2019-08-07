@@ -41,6 +41,17 @@ public class Build {
 		return results;
 	}
 
+	public static int[] buildArray(List list) {
+		if (list == null || list.size() == 0) {
+			return null;
+		}
+		int[] results = new int[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = Integer.parseInt(list.get(i).toString());
+		}
+		return results;
+	}
+
 	public static boolean[] buildArrayBoolean(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
@@ -56,6 +67,17 @@ public class Build {
 		boolean[] results = new boolean[length];
 		for (int i = 0; i < length; i++) {
 			results[i] = Boolean.parseBoolean(arr[i].trim());
+		}
+		return results;
+	}
+
+	public static boolean[] buildArrayBoolean(List list) {
+		if (list == null || list.size() == 0) {
+			return null;
+		}
+		boolean[] results = new boolean[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = Boolean.parseBoolean(list.get(i).toString());
 		}
 		return results;
 	}
@@ -79,6 +101,17 @@ public class Build {
 		return results;
 	}
 
+	public static double[] buildArrayDouble(List list) {
+		if (list == null || list.size() == 0) {
+			return null;
+		}
+		double[] results = new double[list.size()];
+		for (int i = 0; i < list.size(); i++) {
+			results[i] = Double.parseDouble(list.get(i).toString());
+		}
+		return results;
+	}
+
 	public static float[] buildArrayFloat(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
@@ -98,17 +131,18 @@ public class Build {
 		return results;
 	}
 
-
-	public static int[] buildArray(List list) {
+	public static float[] buildArrayFloat(List list) {
 		if (list == null || list.size() == 0) {
 			return null;
 		}
-		int[] results = new int[list.size()];
+		float[] results = new float[list.size()];
 		for (int i = 0; i < list.size(); i++) {
-			results[i] = Integer.parseInt(list.get(i).toString());
+			results[i] = Float.parseFloat(list.get(i).toString());
 		}
 		return results;
 	}
+
+
 
 	/**
 	 * 字符串构建字符串数组
@@ -376,6 +410,31 @@ public class Build {
 		return results;
 	}
 
+	public static boolean[][] buildMatrixBoolean(List list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new boolean[][]{};
+		}
+
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new boolean[][]{};
+		}
+
+		int row = list.size();
+		int cow = ((List)list.get(0)).size();
+		boolean[][] results = new boolean[row][cow];
+		for (int i = 0; i < row; i++) {
+			List childList = (List)list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Boolean.parseBoolean(childList.get(j).toString());
+			}
+		}
+
+		return results;
+	}
+
 	public static double[][] buildMatrixDouble(String data) {
 		if (data == null || data.trim().length() == 0 || data.equals("null") || data.indexOf("[") < 0) {
 			return null;
@@ -393,6 +452,31 @@ public class Build {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
 				results[i][j] = Double.parseDouble(arr2[j].trim());
+			}
+		}
+
+		return results;
+	}
+
+	public static double[][] buildMatrixDouble(List list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new double[][]{};
+		}
+
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new double[][]{};
+		}
+
+		int row = list.size();
+		int cow = ((List)list.get(0)).size();
+		double[][] results = new double[row][cow];
+		for (int i = 0; i < row; i++) {
+			List childList = (List)list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Double.parseDouble(childList.get(j).toString());
 			}
 		}
 
@@ -417,6 +501,31 @@ public class Build {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
 				results[i][j] = Float.parseFloat(arr2[j].trim());
+			}
+		}
+
+		return results;
+	}
+
+	public static float[][] buildMatrixFloat(List list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new float[][]{};
+		}
+
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new float[][]{};
+		}
+
+		int row = list.size();
+		int cow = ((List)list.get(0)).size();
+		float[][] results = new float[row][cow];
+		for (int i = 0; i < row; i++) {
+			List childList = (List)list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = Float.parseFloat(childList.get(j).toString());
 			}
 		}
 

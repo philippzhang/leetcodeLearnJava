@@ -362,6 +362,24 @@ public class Utilitys {
 									} else if (parameterName.equals("[[I")&& data instanceof List){
 										int[][] matrix = Build.buildMatrix((List) data);
 										inputObjArr[k] = matrix;
+									} else if (parameterName.equals("[B")&& data instanceof List) {
+										boolean[] array = Build.buildArrayBoolean((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("[[B")&& data instanceof List) {
+										boolean[][] matrix = Build.buildMatrixBoolean((List)data);
+										inputObjArr[k] = matrix;
+									} else if (parameterName.equals("[D")&& data instanceof List) {
+										double[] array = Build.buildArrayDouble((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("[[D")&& data instanceof List) {
+										double[][] matrix = Build.buildMatrixDouble((List)data);
+										inputObjArr[k] = matrix;
+									} else if (parameterName.equals("[F")&& data instanceof List) {
+										float[] array = Build.buildArrayFloat((List)data);
+										inputObjArr[k] = array;
+									} else if (parameterName.equals("[[F")&& data instanceof List) {
+										float[][] matrix = Build.buildMatrixFloat((List)data);
+										inputObjArr[k] = matrix;
 									} else if (parameterName.equals("[C") && data instanceof List) {
 										char[] array = Build.buildArrayChar((List) data);
 										inputObjArr[k] = array;
@@ -455,6 +473,24 @@ public class Utilitys {
 									inputObjArr[j] = array;
 								} else if (parameterName.equals("[[I")&& data instanceof List) {
 									int[][] matrix = Build.buildMatrix((List)data);
+									inputObjArr[j] = matrix;
+								} else if (parameterName.equals("[B")&& data instanceof List) {
+									boolean[] array = Build.buildArrayBoolean((List)data);
+									inputObjArr[j] = array;
+								} else if (parameterName.equals("[[B")&& data instanceof List) {
+									boolean[][] matrix = Build.buildMatrixBoolean((List)data);
+									inputObjArr[j] = matrix;
+								} else if (parameterName.equals("[D")&& data instanceof List) {
+									double[] array = Build.buildArrayDouble((List)data);
+									inputObjArr[j] = array;
+								} else if (parameterName.equals("[[D")&& data instanceof List) {
+									double[][] matrix = Build.buildMatrixDouble((List)data);
+									inputObjArr[j] = matrix;
+								} else if (parameterName.equals("[F")&& data instanceof List) {
+									float[] array = Build.buildArrayFloat((List)data);
+									inputObjArr[j] = array;
+								} else if (parameterName.equals("[[F")&& data instanceof List) {
+									float[][] matrix = Build.buildMatrixFloat((List)data);
 									inputObjArr[j] = matrix;
 								} else if (parameterName.equals("[C")&& data instanceof List) {
 									char[] array = Build.buildArrayChar((List)data);
