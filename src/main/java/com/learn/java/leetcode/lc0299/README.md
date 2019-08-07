@@ -71,6 +71,22 @@ Explanation:The 1st 1in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
 # 测试用例
 ```
 299. Bulls and Cows 299. 猜数字游戏 Easy
+Solution.getHint
+---
+"1807"
+"7810"
+
+="1A3B"
+---
+"1123"
+"0111"
+
+="1A1B"
+---
+"1122"
+"1222"
+
+="3A0B"
 ```
 
 [enTitle]: https://leetcode.com/problems/bulls-and-cows/
