@@ -218,21 +218,24 @@ public class Build {
 	}
 
 
-	public static int[][] buildMatrix(List<List<Integer>> list) {
+	public static int[][] buildMatrix(List list) {
 		if (list == null ) {
 			return null;
 		}
 		if (list.size() == 0) {
 			return new int[][]{};
 		}
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new int[][]{};
+		}
 
 		int row = list.size();
-		int cow = list.get(0).size();
+		int cow = ((List)list.get(0)).size();
 		int[][] results = new int[row][cow];
 		for (int i = 0; i < row; i++) {
-			List<Integer> childList = list.get(i);
+			List childList = (List)list.get(i);
 			for (int j = 0; j < cow; j++) {
-				results[i][j] = childList.get(j);
+				results[i][j] = Integer.parseInt(childList.get(j).toString());
 			}
 		}
 
@@ -269,6 +272,31 @@ public class Build {
 		return results;
 	}
 
+	public static char[][] buildMatrixChar(List list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new char[][]{};
+		}
+
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new char[][]{};
+		}
+
+		int row = list.size();
+		int cow = ((List)list.get(0)).size();
+		char[][] results = new char[row][cow];
+		for (int i = 0; i < row; i++) {
+			List childList = (List)list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = StringUtil.changeStr(childList.get(j).toString()).charAt(0);
+			}
+		}
+
+		return results;
+	}
+
 	/**
 	 * 构建二维字符串数组
 	 * 例如[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
@@ -293,6 +321,31 @@ public class Build {
 			String[] arr2 = arr[i].split(",", -1);
 			for (int j = 0; j < cow; j++) {
 				results[i][j] = StringUtil.changeStr(arr2[j].trim());
+			}
+		}
+
+		return results;
+	}
+
+	public static String[][] buildMatrixString(List list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new String[][]{};
+		}
+
+		if(list.get(0)==null|| !(list.get(0) instanceof List)|| ((List)list.get(0)).size()==0){
+			return new String[][]{};
+		}
+
+		int row = list.size();
+		int cow = ((List)list.get(0)).size();
+		String[][] results = new String[row][cow];
+		for (int i = 0; i < row; i++) {
+			List childList = (List)list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = StringUtil.changeStr(childList.get(j).toString().trim());
 			}
 		}
 
