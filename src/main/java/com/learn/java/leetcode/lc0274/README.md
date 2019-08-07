@@ -57,6 +57,10 @@ Solution.hIndex2
 [3,0,6,1,5]
 
 =3
+---
+[0]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/h-index/
