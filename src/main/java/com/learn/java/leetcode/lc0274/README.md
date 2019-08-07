@@ -51,6 +51,12 @@ h 指数的定义: “h 代表“高引用次数”（high citations），一名
 # 测试用例
 ```
 274. H-Index 274. H指数 Medium
+Solution.hIndex
+Solution.hIndex2
+---
+[3,0,6,1,5]
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/h-index/
