@@ -362,6 +362,9 @@ public class Utilitys {
 									} else if (parameterName.equals("[C") && data instanceof List) {
 										char[] array = Build.buildArrayChar((List) data);
 										inputObjArr[k] = array;
+									} else if (parameterName.equals("[[I")&& data instanceof List){
+										int[][] matrix = Build.buildMatrix((List) data);
+										inputObjArr[k] = matrix;
 									} else if (parameterName.equals("[Ljava.lang.String;") && data instanceof List) {
 										String[] array = Build.buildArrayString((List) data);
 										inputObjArr[k] = array;
@@ -441,20 +444,20 @@ public class Utilitys {
 									inputObjArr[j] = Boolean.valueOf(data.toString());
 								} else if (parameterName.equals("java.lang.String")) {
 									inputObjArr[j] = StringUtil.changeStr(data.toString());
-								} else if (parameterName.equals("[I")) {
-									int[] array = Build.buildArray(data.toString());
+								} else if (parameterName.equals("[I")&& data instanceof List) {
+									int[] array = Build.buildArray((List)data);
 									inputObjArr[j] = array;
-								} else if (parameterName.equals("[C")) {
-									char[] array = Build.buildArrayChar(data.toString());
+								} else if (parameterName.equals("[C")&& data instanceof List) {
+									char[] array = Build.buildArrayChar((List)data);
 									inputObjArr[j] = array;
-								} else if (parameterName.equals("[[I")) {
-									int[][] matrix = Build.buildMatrix(data.toString());
+								} else if (parameterName.equals("[[I")&& data instanceof List) {
+									int[][] matrix = Build.buildMatrix((List)data);
 									inputObjArr[j] = matrix;
-								} else if (parameterName.equals("[Ljava.lang.String;")) {
-									String[] array = Build.buildArrayString(data.toString());
+								} else if (parameterName.equals("[Ljava.lang.String;")&& data instanceof List) {
+									String[] array = Build.buildArrayString((List)data);
 									inputObjArr[j] = array;
-								} else if (parameterName.equals("java.util.List")) {
-									List list = Build.buildList(data.toString());
+								} else if (parameterName.equals("java.util.List")&& data instanceof List) {
+									List list = (List) data;
 									inputObjArr[j] = list;
 								} else if (parameterName.equals("com.learn.java.leetcode.base.structure.TreeNode") && data instanceof List) {
 									TreeNode treeNode = Build.buildBinaryTree((List) data);

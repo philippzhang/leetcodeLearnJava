@@ -217,6 +217,28 @@ public class Build {
 		return results;
 	}
 
+
+	public static int[][] buildMatrix(List<List<Integer>> list) {
+		if (list == null ) {
+			return null;
+		}
+		if (list.size() == 0) {
+			return new int[][]{};
+		}
+
+		int row = list.size();
+		int cow = list.get(0).size();
+		int[][] results = new int[row][cow];
+		for (int i = 0; i < row; i++) {
+			List<Integer> childList = list.get(i);
+			for (int j = 0; j < cow; j++) {
+				results[i][j] = childList.get(j);
+			}
+		}
+
+		return results;
+	}
+
 	/**
 	 * 构建二维字符数组
 	 * 例如[["1","1","0","0","0"],["1","1","0","0","0"],["0","0","1","0","0"],["0","0","0","1","1"]]
