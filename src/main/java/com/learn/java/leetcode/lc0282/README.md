@@ -95,6 +95,41 @@ Output:[]
 # 测试用例
 ```
 282. Expression Add Operators 282. 给表达式添加运算符 Hard
+Solution.addOperators
+---
+"123"
+6
+
+=["1+2+3","1*2*3"]
+$disorder
+---
+"232"
+8
+
+=["2*3+2","2+3*2"]
+$disorder
+---
+"105"
+5
+
+=["1*0+5","10-5"]
+$disorder
+---
+"00"
+0
+
+=["0+0","0-0","0*0"]
+$disorder
+---
+"3456237490"
+9191
+
+=[]
+---
+"123"
+123
+
+=["123"]
 ```
 
 [enTitle]: https://leetcode.com/problems/expression-add-operators/
