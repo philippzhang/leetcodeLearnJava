@@ -52,6 +52,12 @@ Then 4 is the first bad version.
 # 测试用例
 ```
 278. First Bad Version 278. 第一个错误的版本 Easy
+Main.test
+---
+5
+4
+
+=4
 ```
 
 [enTitle]: https://leetcode.com/problems/first-bad-version/
