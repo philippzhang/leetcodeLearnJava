@@ -71,6 +71,15 @@ Follow up: How would you handle overflow for very large input integers?
 # 测试用例
 ```
 306. Additive Number 306. 累加数 Medium
+Solution.isAdditiveNumber
+---
+"112358"
+
+=true 
+---
+"199100199"
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/additive-number/
