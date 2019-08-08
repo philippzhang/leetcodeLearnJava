@@ -53,6 +53,14 @@ solution.getRandom();
 # 测试用例
 ```
 382. Linked List Random Node 382. 链表随机节点 Medium
+Main.funcListTest
+---
+["Solution","getRandom"]
+[[[1,2,3]],[]]
+
+=[null,1]
+=[null,2]
+=[null,3]
 ```
 
 [enTitle]: https://leetcode.com/problems/linked-list-random-node/
