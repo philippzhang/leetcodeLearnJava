@@ -49,6 +49,11 @@ So you should return 1, because there is only one bulb is on.
 # 测试用例
 ```
 319. Bulb Switcher 319. 灯泡开关 Medium
+Solution.bulbSwitch
+---
+3
+
+=1
 ```
 
 [enTitle]: https://leetcode.com/problems/bulb-switcher/
