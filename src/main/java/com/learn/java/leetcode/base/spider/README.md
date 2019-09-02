@@ -54,7 +54,7 @@
 
 27 https://leetcode.com/problems/remove-element/ https://leetcode-cn.com/problems/remove-element/ remove-element "移除元素"
 
-28 https://leetcode.com/problems/implement-strstr/ https://leetcode-cn.com/problems/implement-strstr/ implement-strstr "实现strStr()"
+28 https://leetcode.com/problems/implement-strstr/ https://leetcode-cn.com/problems/implement-strstr/ implement-strstr "实现 strStr()"
 
 29 https://leetcode.com/problems/divide-two-integers/ https://leetcode-cn.com/problems/divide-two-integers/ divide-two-integers "两数相除"
 
@@ -2136,7 +2136,7 @@
 
 1068 https://leetcode.com/problems/product-sales-analysis-i/ https://leetcode-cn.com/problems/product-sales-analysis-i/ product-sales-analysis-i "Product Sales Analysis I"
 
-1069 https://leetcode.com/problems/product-sales-analysis-ii/ https://leetcode-cn.com/problems/product-sales-analysis-ii/ product-sales-analysis-ii "Product Sales Analysis II"
+1069 https://leetcode.com/problems/product-sales-analysis-ii/ https://leetcode-cn.com/problems/product-sales-analysis-ii/ product-sales-analysis-ii "产品销售分析 II"
 
 1070 https://leetcode.com/problems/product-sales-analysis-iii/ https://leetcode-cn.com/problems/product-sales-analysis-iii/ product-sales-analysis-iii "Product Sales Analysis III"
 
@@ -2152,7 +2152,7 @@
 
 1076 https://leetcode.com/problems/project-employees-ii/ https://leetcode-cn.com/problems/project-employees-ii/ project-employees-ii "Project Employees II"
 
-1077 https://leetcode.com/problems/project-employees-iii/ https://leetcode-cn.com/problems/project-employees-iii/ project-employees-iii "Project Employees III"
+1077 https://leetcode.com/problems/project-employees-iii/ https://leetcode-cn.com/problems/project-employees-iii/ project-employees-iii "项目员工 III"
 
 1078 https://leetcode.com/problems/occurrences-after-bigram/ https://leetcode-cn.com/problems/occurrences-after-bigram/ occurrences-after-bigram "Bigram 分词"
 
@@ -2162,7 +2162,7 @@
 
 1081 https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/ https://leetcode-cn.com/problems/smallest-subsequence-of-distinct-characters/ smallest-subsequence-of-distinct-characters "不同字符的最小子序列"
 
-1082 https://leetcode.com/problems/sales-analysis-i/ https://leetcode-cn.com/problems/sales-analysis-i/ sales-analysis-i "Sales Analysis I"
+1082 https://leetcode.com/problems/sales-analysis-i/ https://leetcode-cn.com/problems/sales-analysis-i/ sales-analysis-i "销售分析 I"
 
 1083 https://leetcode.com/problems/sales-analysis-ii/ https://leetcode-cn.com/problems/sales-analysis-ii/ sales-analysis-ii "Sales Analysis II"
 
@@ -2194,7 +2194,7 @@
 
 1097 https://leetcode.com/problems/game-play-analysis-v/ https://leetcode-cn.com/problems/game-play-analysis-v/ game-play-analysis-v "Game Play Analysis V"
 
-1098 https://leetcode.com/problems/unpopular-books/ https://leetcode-cn.com/problems/unpopular-books/ unpopular-books "Unpopular Books"
+1098 https://leetcode.com/problems/unpopular-books/ https://leetcode-cn.com/problems/unpopular-books/ unpopular-books "小众书籍"
 
 1099 https://leetcode.com/problems/two-sum-less-than-k/ https://leetcode-cn.com/problems/two-sum-less-than-k/ two-sum-less-than-k "小于 K 的两数之和"
 
@@ -2268,5 +2268,61 @@
 
 1140 https://leetcode.com/problems/stone-game-ii/ https://leetcode-cn.com/problems/stone-game-ii/ stone-game-ii "石子游戏 II"
 
-# 共1134题,其中加锁209题,正常925题
+1144 https://leetcode.com/problems/decrease-elements-to-make-array-zigzag/ https://leetcode-cn.com/problems/decrease-elements-to-make-array-zigzag/ decrease-elements-to-make-array-zigzag "递减元素使数组呈锯齿状"
+
+1145 https://leetcode.com/problems/binary-tree-coloring-game/ https://leetcode-cn.com/problems/binary-tree-coloring-game/ binary-tree-coloring-game "二叉树着色游戏"
+
+1146 https://leetcode.com/problems/snapshot-array/ https://leetcode-cn.com/problems/snapshot-array/ snapshot-array "快照数组"
+
+1147 https://leetcode.com/problems/longest-chunked-palindrome-decomposition/ https://leetcode-cn.com/problems/longest-chunked-palindrome-decomposition/ longest-chunked-palindrome-decomposition "段式回文"
+
+1150 https://leetcode.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/ https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/ check-if-a-number-is-majority-element-in-a-sorted-array "检查一个数是否在数组中占绝大多数"
+
+1151 https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/ https://leetcode-cn.com/problems/minimum-swaps-to-group-all-1s-together/ minimum-swaps-to-group-all-1s-together "最少交换次数来组合所有的 1"
+
+1152 https://leetcode.com/problems/analyze-user-website-visit-pattern/ https://leetcode-cn.com/problems/analyze-user-website-visit-pattern/ analyze-user-website-visit-pattern "用户网站访问行为分析"
+
+1153 https://leetcode.com/problems/string-transforms-into-another-string/ https://leetcode-cn.com/problems/string-transforms-into-another-string/ string-transforms-into-another-string "字符串转化"
+
+1154 https://leetcode.com/problems/ordinal-number-of-date/ https://leetcode-cn.com/problems/ordinal-number-of-date/ ordinal-number-of-date "一年中的第几天"
+
+1155 https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/ https://leetcode-cn.com/problems/number-of-dice-rolls-with-target-sum/ number-of-dice-rolls-with-target-sum "掷骰子的N种方法"
+
+1156 https://leetcode.com/problems/swap-for-maximum-repeated-substring/ https://leetcode-cn.com/problems/swap-for-maximum-repeated-substring/ swap-for-maximum-repeated-substring "单字符重复子串的最大长度"
+
+1157 https://leetcode.com/problems/online-majority-element-in-subarray/ https://leetcode-cn.com/problems/online-majority-element-in-subarray/ online-majority-element-in-subarray "子数组中占绝大多数的元素"
+
+1160 https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/ https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/ find-words-that-can-be-formed-by-characters "拼写单词"
+
+1161 https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/ https://leetcode-cn.com/problems/maximum-level-sum-of-a-binary-tree/ maximum-level-sum-of-a-binary-tree "最大层内元素和"
+
+1162 https://leetcode.com/problems/as-far-from-land-as-possible/ https://leetcode-cn.com/problems/as-far-from-land-as-possible/ as-far-from-land-as-possible "地图分析"
+
+1163 https://leetcode.com/problems/last-substring-in-lexicographical-order/ https://leetcode-cn.com/problems/last-substring-in-lexicographical-order/ last-substring-in-lexicographical-order "按字典序排在最后的子串"
+
+1165 https://leetcode.com/problems/single-row-keyboard/ https://leetcode-cn.com/problems/single-row-keyboard/ single-row-keyboard "单行键盘"
+
+1166 https://leetcode.com/problems/design-file-system/ https://leetcode-cn.com/problems/design-file-system/ design-file-system "设计文件系统"
+
+1167 https://leetcode.com/problems/minimum-cost-to-connect-sticks/ https://leetcode-cn.com/problems/minimum-cost-to-connect-sticks/ minimum-cost-to-connect-sticks "连接棒材的最低费用"
+
+1168 https://leetcode.com/problems/optimize-water-distribution-in-a-village/ https://leetcode-cn.com/problems/optimize-water-distribution-in-a-village/ optimize-water-distribution-in-a-village "水资源分配优化"
+
+1169 https://leetcode.com/problems/invalid-transactions/ https://leetcode-cn.com/problems/invalid-transactions/ invalid-transactions "查询无效交易"
+
+1170 https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/ https://leetcode-cn.com/problems/compare-strings-by-frequency-of-the-smallest-character/ compare-strings-by-frequency-of-the-smallest-character "比较字符串最小字母出现频次"
+
+1171 https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/ https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/ remove-zero-sum-consecutive-nodes-from-linked-list "从链表中删去总和值为零的连续节点"
+
+1172 https://leetcode.com/problems/dinner-plate-stacks/ https://leetcode-cn.com/problems/dinner-plate-stacks/ dinner-plate-stacks "餐盘栈"
+
+5173 https://leetcode.com/problems/prime-arrangements/ https://leetcode-cn.com/problems/prime-arrangements/ prime-arrangements "质数排列"
+
+5174 https://leetcode.com/problems/diet-plan-performance/ https://leetcode-cn.com/problems/diet-plan-performance/ diet-plan-performance "健身计划评估"
+
+5175 https://leetcode.com/problems/can-make-palindrome-from-substring/ https://leetcode-cn.com/problems/can-make-palindrome-from-substring/ can-make-palindrome-from-substring "构建回文串检测"
+
+5176 https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/ https://leetcode-cn.com/problems/number-of-valid-words-for-each-puzzle/ number-of-valid-words-for-each-puzzle "猜字谜"
+
+# 共1162题,其中加锁217题,正常945题
 
