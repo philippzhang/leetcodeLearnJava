@@ -68,6 +68,19 @@ Explanation:No such pair of words.
 # 测试用例
 ```
 318. Maximum Product of Word Lengths 318. 最大单词长度乘积 Medium
+Solution.maxProduct
+---
+["abcw","baz","foo","bar","xtfn","abcdef"]
+
+=16
+---
+["a","ab","abc","d","cd","bcd","abcd"]
+
+=4
+---
+["a","aa","aaa","aaaa"]
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/maximum-product-of-word-lengths/
