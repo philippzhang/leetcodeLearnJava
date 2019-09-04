@@ -61,6 +61,15 @@ Note: You may assume that n is not less than 2 and not larger than 58.
 # 测试用例
 ```
 343. Integer Break 343. 整数拆分 Medium
+Solution.integerBreak
+---
+2
+
+=1
+---
+10
+
+=36
 ```
 
 [enTitle]: https://leetcode.com/problems/integer-break/
