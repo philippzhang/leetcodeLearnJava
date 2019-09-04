@@ -58,6 +58,20 @@ Output: false
 # 测试用例
 ```
 367. Valid Perfect Square 367. 有效的完全平方数 Easy
+Solution.isPerfectSquare
+Solution.isPerfectSquare2
+---
+16
+
+true
+---
+14
+
+false
+---
+9
+
+=true
 ```
 
 [enTitle]: https://leetcode.com/problems/valid-perfect-square/
