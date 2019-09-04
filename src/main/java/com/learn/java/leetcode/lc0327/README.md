@@ -41,6 +41,13 @@ Explanation:The three ranges are : [0,0], [2,2], [0,2] and their respective sums
 # 测试用例
 ```
 327. Count of Range Sum 327. 区间和的个数 Hard
+Solution.countRangeSum
+---
+[-2,5,-1]
+-2
+2
+
+=3
 ```
 
 [enTitle]: https://leetcode.com/problems/count-of-range-sum/
