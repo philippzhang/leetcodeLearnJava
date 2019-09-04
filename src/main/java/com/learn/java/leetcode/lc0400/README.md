@@ -77,6 +77,15 @@ The 11th digit of the sequence 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ... is a 0, wh
 # 测试用例
 ```
 400. Nth Digit 400. 第N个数字 Medium
+Solution.findNthDigit
+---
+3
+
+=3
+---
+11
+
+=0
 ```
 
 [enTitle]: https://leetcode.com/problems/nth-digit/
