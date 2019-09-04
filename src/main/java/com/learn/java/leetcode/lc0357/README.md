@@ -40,6 +40,11 @@ Explanation: The answer should be the total numbers in the range of 0 ≤ x < 10
 # 测试用例
 ```
 357. Count Numbers with Unique Digits 357. 计算各个位数不同的数字个数 Medium
+Solution.countNumbersWithUniqueDigits
+---
+2
+
+=91
 ```
 
 [enTitle]: https://leetcode.com/problems/count-numbers-with-unique-digits/
