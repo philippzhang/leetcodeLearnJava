@@ -73,6 +73,10 @@ Solution.findDuplicate
 [3,1,3,4,2]
 
 =3
+---
+[2,2,2,2,2]
+
+=2
 ```
 
 [enTitle]: https://leetcode.com/problems/find-the-duplicate-number/

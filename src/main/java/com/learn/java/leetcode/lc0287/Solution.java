@@ -6,7 +6,7 @@ public class Solution {
 	 * @param nums
 	 * @return
 	 */
-	public int findDuplicate(int[] nums) {
+	public int findDuplicate2(int[] nums) {
 		int len = nums.length;
 		int left = 1;
 		int right = len-1;
@@ -25,5 +25,33 @@ public class Solution {
 			}
 		}
 		return left;
+	}
+
+	/**
+	 * 快慢指针，重复数据会形成环路
+	 * @param nums
+	 * @return
+	 */
+	public int findDuplicate(int[] nums) {
+		int fast = 0;
+		int low = 0;
+		while(true){
+			fast = nums[nums[fast]];
+			low = nums[low];
+			if(fast==low){
+				break;
+			}
+		}
+		low = 0;
+		while(true){
+			low = nums[low];
+			fast = nums[fast];
+			if(fast==low){
+				break;
+			}
+		}
+
+		return low;
+
 	}
 }
