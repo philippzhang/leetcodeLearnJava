@@ -3,7 +3,7 @@ package com.learn.java.algorithm.linear.queue;
 import com.learn.java.algorithm.linear.node.Node;
 
 /**
- * 链表队列LinkQueu
+ * 链表队列LinkQueue
  */
 public class LinkQueue<T> implements IQueue {
 	//队首指针

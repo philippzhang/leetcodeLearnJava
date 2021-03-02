@@ -57,19 +57,35 @@ public class LeetCodeSpiderAll implements Spider {
 			for (int i = 0; i < length; i++) {
 				Element element = enElements.get(i);
 				Elements enElementsTd = element.children();
+
+				Element lock_element = enElementsTd.get(0);
+				String lock_elementStr = lock_element.toString();
+				String reed = "yes";
+				if(lock_elementStr!=null && lock_elementStr.indexOf("lock")>0){
+					//上锁
+					faLockNum++;
+					reed = "no";
+				}
+
+
+				//获取题id
 				String id = enElementsTd.get(1).text();
+
 				Elements enElementsTdDiv = enElementsTd.get(2).children().first().children();
 				String divStr = enElementsTdDiv.toString();
-				if(divStr.indexOf("fa-lock")>=0){
+				/*if(divStr.indexOf("fa-lock")>=0){
 					faLockNum++;
-				}
-				Element enElementsTdHref = enElementsTd.get(2).children().first().children().first();
+				}*/
+				Element enElementsTdHref = enElementsTd.get(2).children().first().children().first().children().first();
 				String href = enElementsTdHref.attr("href");
-				String title = href.substring("/problems/".length());
-				String cnHref = "https://leetcode-cn.com" + enElementsTdHref.attr("href") + "/";
-				String enHref = "https://leetcode.com" + enElementsTdHref.attr("href") + "/";
+				if(href!=null&&href.length()>0){
+					String title = href.substring("/problems/".length());
+					String cnHref = "https://leetcode-cn.com" + enElementsTdHref.attr("href") + "/";
+					String enHref = "https://leetcode.com" + enElementsTdHref.attr("href") + "/";
 
-				stringBuffer.append(id + " " + enHref + " " + cnHref + " " +title+ " \""+ enElementsTdHref.text() + "\"\n\n");
+					stringBuffer.append(id + "\t" + enHref + "\t" + cnHref + "\t" + reed + "\t"+title+ "\t\""+ enElementsTdHref.text() + "\"\n\n");
+				}
+
 			}
 
 			stringBuffer.append("# 共"+length+"题,其中加锁"+faLockNum+"题,正常"+(length-faLockNum)+"题\n\n");

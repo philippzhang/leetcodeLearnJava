@@ -121,10 +121,9 @@ public class LeetCodeSpider  {
 			//elemPassword.sendKeys("XXXXX");
 			//btn.click();
 
-
+			//获取标题，中文的界面经常变化
 			Document cnDoc = Jsoup.parse(cnDriver.getPageSource());
-			Elements cnElements1 = cnDoc.select("div.css-r0ewhb-Left.e5i1odf2 > h4 > a");
-
+			Elements cnElements1 = cnDoc.select("div.css-xfm0cl-Container.eugt34i0 > h4 > a");
 			int i = 0;
 			while ((cnElements1 == null || cnElements1.size() <= 0) && i < 10) {
 				//解决外网延迟
@@ -133,10 +132,13 @@ public class LeetCodeSpider  {
 			}
 
 			String cnTitle = cnElements1.text();
-			Elements cnElements2 = cnDoc.select("div.css-r0ewhb-Left.e5i1odf2 > div > span:nth-child(2)");
+
+			//获取难度，中文的界面经常变化
+			Elements cnElements2 = cnDoc.select("div.css-xfm0cl-Container.eugt34i0 > div > span:nth-child(2)");
 			String cnDegree = cnElements2.text();
 
-			Elements cnElements30 = cnDoc.select("div.content__2ebE").first().children();
+			//获取内容，中文的界面经常变化
+			Elements cnElements30 = cnDoc.select("div.content__1Y2H").first().children();
 
 			String cnContent = "";
 			for(int j = 0;j<cnElements30.size();j++){

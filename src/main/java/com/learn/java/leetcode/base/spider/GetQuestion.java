@@ -12,7 +12,10 @@ import java.io.File;
  */
 public class GetQuestion {
 
-	private static final String[] QUESTION_IDS = {"410","413","414"};
+
+	private static final int START_ID = 156; // 743;
+	private static final int END_ID = 157; //749;
+	private static final String[] QUESTION_IDS = {"605"};
 	//private static final String[] QUESTION_IDS = {"123","125","316","341","385","394","591","726","739","770","856","895","907","921","975","1003","1047"};
 	//,"117","118","119","123","125","316","341","385","394","591","726","739","770","856","895","907","921","975","1003","1047"
 	private static final String package_parent = InitializationConfig.readProperties().getProperty("GetQuestionPath");
@@ -20,7 +23,9 @@ public class GetQuestion {
 	private static final String userDir = System.getProperty("user.dir");
 
 	public static void main(String[] args) {
-		for (String questionId : QUESTION_IDS) {
+		//for (String questionId : QUESTION_IDS) {
+		for (int i = START_ID;i<=END_ID;i++){
+			String questionId = String.valueOf(i);
 			try {
 				getQuestion(questionId);
 			} catch (Exception e) {
@@ -38,12 +43,7 @@ public class GetQuestion {
 		String questionName = MyFileWriter.GetQuestionName(questionId);
 		String packagePath = userDir + package_parent + "/" + questionName;
 		File path = new File(packagePath);
-		if (!path.exists()) {
-			path.mkdir();
-		} else {
-			//System.out.println(packagePath + " exists!");
-			//return;
-		}
+
 
 		if (new File(packagePath + "/Main.java").exists() || new File(packagePath + "/README.md").exists()) {
 			System.out.println(packagePath + " exists!");
@@ -53,8 +53,12 @@ public class GetQuestion {
 		String retInfo = LeetCodeSpider.GetQuestionMd(questionId);
 
 		if (StringUtils.isBlank(retInfo)) {
-			System.out.println("get data is null!");
+			System.out.println(questionId+":get data is null!");
 			return;
+		}
+
+		if (!path.exists()) {
+			path.mkdir();
 		}
 
 		MyFileWriter.writeString(packagePath + "/README.md", retInfo);

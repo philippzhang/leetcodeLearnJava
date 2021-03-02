@@ -20,10 +20,12 @@ public class SpiderUtils {
 		Map<String, String> map = readReadmeFile(path);
 		if (map.containsKey(questionId)) {
 			String line = map.get(questionId);
-			String[] arr = line.split(" ", -1);
-			retList.add(arr[1]);
-			retList.add(arr[2]);
-			retList.add(arr[3]);
+			String[] arr = line.split("\t", -1);
+			if("yes".equals(arr[4])){
+				retList.add(arr[1]);
+				retList.add(arr[2]);
+				retList.add(arr[3]);
+			}
 		}
 		return retList;
 	}
