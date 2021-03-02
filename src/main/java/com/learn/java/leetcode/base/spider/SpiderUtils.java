@@ -21,7 +21,7 @@ public class SpiderUtils {
 		if (map.containsKey(questionId)) {
 			String line = map.get(questionId);
 			String[] arr = line.split("\t", -1);
-			if("yes".equals(arr[4])){
+			if("yes".equals(arr[3])){
 				retList.add(arr[1]);
 				retList.add(arr[2]);
 				retList.add(arr[3]);
@@ -43,7 +43,7 @@ public class SpiderUtils {
 			while ((tempString = reader.readLine()) != null) {
 				tempString = tempString.trim();
 				if (tempString.length() > 0 && !tempString.startsWith("#") && !tempString.startsWith("`")) {
-					String[] arr = tempString.split(" ", -1);
+					String[] arr = tempString.split("\t", -1);
 					if (arr.length > 3) {
 						map.put(arr[0], tempString);
 					}
