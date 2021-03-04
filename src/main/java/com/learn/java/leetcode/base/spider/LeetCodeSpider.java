@@ -2,6 +2,7 @@ package com.learn.java.leetcode.base.spider;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 
@@ -73,8 +74,17 @@ public class LeetCodeSpider {
 			Elements enElements30 = enElements33.first().children();
 			if (enElements30 != null && enElements30.size() > 0) {
 				for (int j = 0; j < enElements30.size(); j++) {
-					Elements enElements3 = enElements30.get(j).children();
-					String enHtml = enElements3.toString();
+					//Elements enElements3 = enElements30.get(j).children();
+					//String enHtml = enElements3.toString();
+
+					Element enElements3 = enElements30.get(j);
+					String enHtml = null;
+					if(enElements3.tagName().equals("div")){
+						enHtml = enElements3.children().toString();
+					}else{
+						enHtml = enElements3.toString();
+					}
+
 					enContent += Html2MdEn.getMarkDownText(enHtml) + "\n\n";
 				}
 			}
@@ -142,8 +152,17 @@ public class LeetCodeSpider {
 
 			String cnContent = "";
 			for (int j = 0; j < cnElements30.size(); j++) {
-				Elements cnElements3 = cnElements30.get(j).children();
-				String cnHtml = cnElements3.toString();
+				//Elements cnElements3 = cnElements30.get(j).children();
+				//String cnHtml = cnElements3.toString();
+
+				Element cnElements3 = cnElements30.get(j);
+				String cnHtml = null;
+				if(cnElements3.tagName().equals("div")){
+					cnHtml = cnElements3.children().toString();
+				}else{
+					cnHtml = cnElements3.toString();
+				}
+
 				cnContent += Html2MdCn.getMarkDownText(cnHtml) + "\n\n";
 			}
 
@@ -216,12 +235,25 @@ public class LeetCodeSpider {
 			String cnDegree = cnElements2.text();
 
 			//获取内容，中文的界面经常变化
-			Elements cnElements30 = cnDoc.select("div.content__1Y2H").first().children();
+			Elements cnElements30 = null;
+
+			if (cnDoc.select("div.content__1Y2H").size()>0){
+				cnElements30 = cnDoc.select("div.content__1Y2H").first().children();
+			}else if(cnDoc.select("div.css-1708ckn").size()>0){
+				cnElements30 = cnDoc.select("div.css-1708ckn").first().children();
+			}
+
 
 			String cnContent = "";
 			for (int j = 0; j < cnElements30.size(); j++) {
-				Elements cnElements3 = cnElements30.get(j).children();
-				String cnHtml = cnElements3.toString();
+				//Elements cnElements3 = cnElements30.get(j).children();
+				Element cnElements3 = cnElements30.get(j);
+				String cnHtml = null;
+				if(cnElements3.tagName().equals("div")){
+					cnHtml = cnElements3.children().toString();
+				}else{
+					cnHtml = cnElements3.toString();
+				}
 				cnContent += Html2MdCn.getMarkDownText(cnHtml) + "\n\n";
 			}
 
