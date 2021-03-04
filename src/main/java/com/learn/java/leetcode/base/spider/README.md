@@ -3554,209 +3554,209 @@
 
 1777	https://leetcode.com/problems/products-price-for-each-store/	https://leetcode-cn.com/problems/products-price-for-each-store/	no	products-price-for-each-store	"每家商店的产品价格"
 
-LCP01	https://leetcode.com/problems/guess-numbers/	https://leetcode-cn.com/problems/guess-numbers/	yes	guess-numbers	"猜数字"
+lcp01	https://leetcode.com/problems/guess-numbers/	https://leetcode-cn.com/problems/guess-numbers/	yes	guess-numbers	"猜数字"
 
-LCP02	https://leetcode.com/problems/deep-dark-fraction/	https://leetcode-cn.com/problems/deep-dark-fraction/	yes	deep-dark-fraction	"分式化简"
+lcp02	https://leetcode.com/problems/deep-dark-fraction/	https://leetcode-cn.com/problems/deep-dark-fraction/	yes	deep-dark-fraction	"分式化简"
 
-LCP03	https://leetcode.com/problems/programmable-robot/	https://leetcode-cn.com/problems/programmable-robot/	yes	programmable-robot	"机器人大冒险"
+lcp03	https://leetcode.com/problems/programmable-robot/	https://leetcode-cn.com/problems/programmable-robot/	yes	programmable-robot	"机器人大冒险"
 
-LCP04	https://leetcode.com/problems/broken-board-dominoes/	https://leetcode-cn.com/problems/broken-board-dominoes/	yes	broken-board-dominoes	"覆盖"
+lcp04	https://leetcode.com/problems/broken-board-dominoes/	https://leetcode-cn.com/problems/broken-board-dominoes/	yes	broken-board-dominoes	"覆盖"
 
-LCP05	https://leetcode.com/problems/coin-bonus/	https://leetcode-cn.com/problems/coin-bonus/	yes	coin-bonus	"发 LeetCoin"
+lcp05	https://leetcode.com/problems/coin-bonus/	https://leetcode-cn.com/problems/coin-bonus/	yes	coin-bonus	"发 LeetCoin"
 
-LCP06	https://leetcode.com/problems/na-ying-bi/	https://leetcode-cn.com/problems/na-ying-bi/	yes	na-ying-bi	"拿硬币"
+lcp06	https://leetcode.com/problems/na-ying-bi/	https://leetcode-cn.com/problems/na-ying-bi/	yes	na-ying-bi	"拿硬币"
 
-LCP07	https://leetcode.com/problems/chuan-di-xin-xi/	https://leetcode-cn.com/problems/chuan-di-xin-xi/	yes	chuan-di-xin-xi	"传递信息"
+lcp07	https://leetcode.com/problems/chuan-di-xin-xi/	https://leetcode-cn.com/problems/chuan-di-xin-xi/	yes	chuan-di-xin-xi	"传递信息"
 
-LCP08	https://leetcode.com/problems/ju-qing-hong-fa-shi-jian/	https://leetcode-cn.com/problems/ju-qing-hong-fa-shi-jian/	yes	ju-qing-hong-fa-shi-jian	"剧情触发时间"
+lcp08	https://leetcode.com/problems/ju-qing-hong-fa-shi-jian/	https://leetcode-cn.com/problems/ju-qing-hong-fa-shi-jian/	yes	ju-qing-hong-fa-shi-jian	"剧情触发时间"
 
-LCP09	https://leetcode.com/problems/zui-xiao-tiao-yue-ci-shu/	https://leetcode-cn.com/problems/zui-xiao-tiao-yue-ci-shu/	yes	zui-xiao-tiao-yue-ci-shu	"最小跳跃次数"
+lcp09	https://leetcode.com/problems/zui-xiao-tiao-yue-ci-shu/	https://leetcode-cn.com/problems/zui-xiao-tiao-yue-ci-shu/	yes	zui-xiao-tiao-yue-ci-shu	"最小跳跃次数"
 
-LCP10	https://leetcode.com/problems/er-cha-shu-ren-wu-diao-du/	https://leetcode-cn.com/problems/er-cha-shu-ren-wu-diao-du/	yes	er-cha-shu-ren-wu-diao-du	"二叉树任务调度"
+lcp10	https://leetcode.com/problems/er-cha-shu-ren-wu-diao-du/	https://leetcode-cn.com/problems/er-cha-shu-ren-wu-diao-du/	yes	er-cha-shu-ren-wu-diao-du	"二叉树任务调度"
 
-LCP11	https://leetcode.com/problems/qi-wang-ge-shu-tong-ji/	https://leetcode-cn.com/problems/qi-wang-ge-shu-tong-ji/	yes	qi-wang-ge-shu-tong-ji	"期望个数统计"
+lcp11	https://leetcode.com/problems/qi-wang-ge-shu-tong-ji/	https://leetcode-cn.com/problems/qi-wang-ge-shu-tong-ji/	yes	qi-wang-ge-shu-tong-ji	"期望个数统计"
 
-LCP12	https://leetcode.com/problems/xiao-zhang-shua-ti-ji-hua/	https://leetcode-cn.com/problems/xiao-zhang-shua-ti-ji-hua/	yes	xiao-zhang-shua-ti-ji-hua	"小张刷题计划"
+lcp12	https://leetcode.com/problems/xiao-zhang-shua-ti-ji-hua/	https://leetcode-cn.com/problems/xiao-zhang-shua-ti-ji-hua/	yes	xiao-zhang-shua-ti-ji-hua	"小张刷题计划"
 
-LCP13	https://leetcode.com/problems/xun-bao/	https://leetcode-cn.com/problems/xun-bao/	yes	xun-bao	"寻宝"
+lcp13	https://leetcode.com/problems/xun-bao/	https://leetcode-cn.com/problems/xun-bao/	yes	xun-bao	"寻宝"
 
-LCP14	https://leetcode.com/problems/qie-fen-shu-zu/	https://leetcode-cn.com/problems/qie-fen-shu-zu/	yes	qie-fen-shu-zu	"切分数组"
+lcp14	https://leetcode.com/problems/qie-fen-shu-zu/	https://leetcode-cn.com/problems/qie-fen-shu-zu/	yes	qie-fen-shu-zu	"切分数组"
 
-LCP15	https://leetcode.com/problems/you-le-yuan-de-mi-gong/	https://leetcode-cn.com/problems/you-le-yuan-de-mi-gong/	yes	you-le-yuan-de-mi-gong	"游乐园的迷宫"
+lcp15	https://leetcode.com/problems/you-le-yuan-de-mi-gong/	https://leetcode-cn.com/problems/you-le-yuan-de-mi-gong/	yes	you-le-yuan-de-mi-gong	"游乐园的迷宫"
 
-LCP16	https://leetcode.com/problems/you-le-yuan-de-you-lan-ji-hua/	https://leetcode-cn.com/problems/you-le-yuan-de-you-lan-ji-hua/	yes	you-le-yuan-de-you-lan-ji-hua	"游乐园的游览计划"
+lcp16	https://leetcode.com/problems/you-le-yuan-de-you-lan-ji-hua/	https://leetcode-cn.com/problems/you-le-yuan-de-you-lan-ji-hua/	yes	you-le-yuan-de-you-lan-ji-hua	"游乐园的游览计划"
 
-LCP17	https://leetcode.com/problems/nGK0Fy/	https://leetcode-cn.com/problems/nGK0Fy/	yes	nGK0Fy	"速算机器人"
+lcp17	https://leetcode.com/problems/nGK0Fy/	https://leetcode-cn.com/problems/nGK0Fy/	yes	nGK0Fy	"速算机器人"
 
-LCP18	https://leetcode.com/problems/2vYnGI/	https://leetcode-cn.com/problems/2vYnGI/	yes	2vYnGI	"早餐组合"
+lcp18	https://leetcode.com/problems/2vYnGI/	https://leetcode-cn.com/problems/2vYnGI/	yes	2vYnGI	"早餐组合"
 
-LCP19	https://leetcode.com/problems/UlBDOe/	https://leetcode-cn.com/problems/UlBDOe/	yes	UlBDOe	"秋叶收藏集"
+lcp19	https://leetcode.com/problems/UlBDOe/	https://leetcode-cn.com/problems/UlBDOe/	yes	UlBDOe	"秋叶收藏集"
 
-LCP20	https://leetcode.com/problems/meChtZ/	https://leetcode-cn.com/problems/meChtZ/	yes	meChtZ	"快速公交"
+lcp20	https://leetcode.com/problems/meChtZ/	https://leetcode-cn.com/problems/meChtZ/	yes	meChtZ	"快速公交"
 
-LCP21	https://leetcode.com/problems/Za25hA/	https://leetcode-cn.com/problems/Za25hA/	yes	Za25hA	"追逐游戏"
+lcp21	https://leetcode.com/problems/Za25hA/	https://leetcode-cn.com/problems/Za25hA/	yes	Za25hA	"追逐游戏"
 
-LCP22	https://leetcode.com/problems/ccw6C7/	https://leetcode-cn.com/problems/ccw6C7/	yes	ccw6C7	"黑白方格画"
+lcp22	https://leetcode.com/problems/ccw6C7/	https://leetcode-cn.com/problems/ccw6C7/	yes	ccw6C7	"黑白方格画"
 
-LCP23	https://leetcode.com/problems/er94lq/	https://leetcode-cn.com/problems/er94lq/	yes	er94lq	"魔术排列"
+lcp23	https://leetcode.com/problems/er94lq/	https://leetcode-cn.com/problems/er94lq/	yes	er94lq	"魔术排列"
 
-LCP24	https://leetcode.com/problems/5TxKeK/	https://leetcode-cn.com/problems/5TxKeK/	yes	5TxKeK	"数字游戏"
+lcp24	https://leetcode.com/problems/5TxKeK/	https://leetcode-cn.com/problems/5TxKeK/	yes	5TxKeK	"数字游戏"
 
-LCP25	https://leetcode.com/problems/Uh984O/	https://leetcode-cn.com/problems/Uh984O/	yes	Uh984O	"古董键盘"
+lcp25	https://leetcode.com/problems/Uh984O/	https://leetcode-cn.com/problems/Uh984O/	yes	Uh984O	"古董键盘"
 
-LCP26	https://leetcode.com/problems/hSRGyL/	https://leetcode-cn.com/problems/hSRGyL/	yes	hSRGyL	"导航装置"
+lcp26	https://leetcode.com/problems/hSRGyL/	https://leetcode-cn.com/problems/hSRGyL/	yes	hSRGyL	"导航装置"
 
-LCP27	https://leetcode.com/problems/IQvJ9i/	https://leetcode-cn.com/problems/IQvJ9i/	yes	IQvJ9i	"黑盒光线反射"
+lcp27	https://leetcode.com/problems/IQvJ9i/	https://leetcode-cn.com/problems/IQvJ9i/	yes	IQvJ9i	"黑盒光线反射"
 
-Offer03	https://leetcode.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/	yes	shu-zu-zhong-zhong-fu-de-shu-zi-lcof	"数组中重复的数字"
+offer03	https://leetcode.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/	yes	shu-zu-zhong-zhong-fu-de-shu-zi-lcof	"数组中重复的数字"
 
-Offer04	https://leetcode.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/	https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/	yes	er-wei-shu-zu-zhong-de-cha-zhao-lcof	"二维数组中的查找"
+offer04	https://leetcode.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/	https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/	yes	er-wei-shu-zu-zhong-de-cha-zhao-lcof	"二维数组中的查找"
 
-Offer05	https://leetcode.com/problems/ti-huan-kong-ge-lcof/	https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/	yes	ti-huan-kong-ge-lcof	"替换空格"
+offer05	https://leetcode.com/problems/ti-huan-kong-ge-lcof/	https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/	yes	ti-huan-kong-ge-lcof	"替换空格"
 
-Offer06	https://leetcode.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/	https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/	yes	cong-wei-dao-tou-da-yin-lian-biao-lcof	"从尾到头打印链表"
+offer06	https://leetcode.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/	https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/	yes	cong-wei-dao-tou-da-yin-lian-biao-lcof	"从尾到头打印链表"
 
-Offer07	https://leetcode.com/problems/zhong-jian-er-cha-shu-lcof/	https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/	yes	zhong-jian-er-cha-shu-lcof	"重建二叉树"
+offer07	https://leetcode.com/problems/zhong-jian-er-cha-shu-lcof/	https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/	yes	zhong-jian-er-cha-shu-lcof	"重建二叉树"
 
-Offer09	https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/	https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/	yes	yong-liang-ge-zhan-shi-xian-dui-lie-lcof	"用两个栈实现队列"
+offer09	https://leetcode.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/	https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/	yes	yong-liang-ge-zhan-shi-xian-dui-lie-lcof	"用两个栈实现队列"
 
-Offer10I	https://leetcode.com/problems/fei-bo-na-qi-shu-lie-lcof/	https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/	yes	fei-bo-na-qi-shu-lie-lcof	"斐波那契数列"
+offer10i	https://leetcode.com/problems/fei-bo-na-qi-shu-lie-lcof/	https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/	yes	fei-bo-na-qi-shu-lie-lcof	"斐波那契数列"
 
-Offer10II	https://leetcode.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/	https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/	yes	qing-wa-tiao-tai-jie-wen-ti-lcof	"青蛙跳台阶问题"
+offer10ii	https://leetcode.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/	https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/	yes	qing-wa-tiao-tai-jie-wen-ti-lcof	"青蛙跳台阶问题"
 
-Offer11	https://leetcode.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/	https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/	yes	xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof	"旋转数组的最小数字"
+offer11	https://leetcode.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/	https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/	yes	xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof	"旋转数组的最小数字"
 
-Offer12	https://leetcode.com/problems/ju-zhen-zhong-de-lu-jing-lcof/	https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/	yes	ju-zhen-zhong-de-lu-jing-lcof	"矩阵中的路径"
+offer12	https://leetcode.com/problems/ju-zhen-zhong-de-lu-jing-lcof/	https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/	yes	ju-zhen-zhong-de-lu-jing-lcof	"矩阵中的路径"
 
-Offer13	https://leetcode.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/	https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/	yes	ji-qi-ren-de-yun-dong-fan-wei-lcof	"机器人的运动范围"
+offer13	https://leetcode.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/	https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/	yes	ji-qi-ren-de-yun-dong-fan-wei-lcof	"机器人的运动范围"
 
-Offer14I	https://leetcode.com/problems/jian-sheng-zi-lcof/	https://leetcode-cn.com/problems/jian-sheng-zi-lcof/	yes	jian-sheng-zi-lcof	"剪绳子"
+offer14i	https://leetcode.com/problems/jian-sheng-zi-lcof/	https://leetcode-cn.com/problems/jian-sheng-zi-lcof/	yes	jian-sheng-zi-lcof	"剪绳子"
 
-Offer14II	https://leetcode.com/problems/jian-sheng-zi-ii-lcof/	https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/	yes	jian-sheng-zi-ii-lcof	"剪绳子 II"
+offer14ii	https://leetcode.com/problems/jian-sheng-zi-ii-lcof/	https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/	yes	jian-sheng-zi-ii-lcof	"剪绳子 II"
 
-Offer15	https://leetcode.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/	https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/	yes	er-jin-zhi-zhong-1de-ge-shu-lcof	"二进制中1的个数"
+offer15	https://leetcode.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/	https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/	yes	er-jin-zhi-zhong-1de-ge-shu-lcof	"二进制中1的个数"
 
-Offer16	https://leetcode.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/	https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/	yes	shu-zhi-de-zheng-shu-ci-fang-lcof	"数值的整数次方"
+offer16	https://leetcode.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/	https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/	yes	shu-zhi-de-zheng-shu-ci-fang-lcof	"数值的整数次方"
 
-Offer17	https://leetcode.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/	https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/	yes	da-yin-cong-1dao-zui-da-de-nwei-shu-lcof	"打印从1到最大的n位数"
+offer17	https://leetcode.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/	https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/	yes	da-yin-cong-1dao-zui-da-de-nwei-shu-lcof	"打印从1到最大的n位数"
 
-Offer18	https://leetcode.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/	https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/	yes	shan-chu-lian-biao-de-jie-dian-lcof	"删除链表的节点"
+offer18	https://leetcode.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/	https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/	yes	shan-chu-lian-biao-de-jie-dian-lcof	"删除链表的节点"
 
-Offer19	https://leetcode.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/	https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/	yes	zheng-ze-biao-da-shi-pi-pei-lcof	"正则表达式匹配"
+offer19	https://leetcode.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/	https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/	yes	zheng-ze-biao-da-shi-pi-pei-lcof	"正则表达式匹配"
 
-Offer20	https://leetcode.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/	yes	biao-shi-shu-zhi-de-zi-fu-chuan-lcof	"表示数值的字符串"
+offer20	https://leetcode.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/	yes	biao-shi-shu-zhi-de-zi-fu-chuan-lcof	"表示数值的字符串"
 
-Offer21	https://leetcode.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/	https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/	yes	diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof	"调整数组顺序使奇数位于偶数前面"
+offer21	https://leetcode.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/	https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/	yes	diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof	"调整数组顺序使奇数位于偶数前面"
 
-Offer22	https://leetcode.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/	https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/	yes	lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof	"链表中倒数第k个节点"
+offer22	https://leetcode.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/	https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/	yes	lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof	"链表中倒数第k个节点"
 
-Offer24	https://leetcode.com/problems/fan-zhuan-lian-biao-lcof/	https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/	yes	fan-zhuan-lian-biao-lcof	"反转链表"
+offer24	https://leetcode.com/problems/fan-zhuan-lian-biao-lcof/	https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/	yes	fan-zhuan-lian-biao-lcof	"反转链表"
 
-Offer25	https://leetcode.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/	https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/	yes	he-bing-liang-ge-pai-xu-de-lian-biao-lcof	"合并两个排序的链表"
+offer25	https://leetcode.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/	https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/	yes	he-bing-liang-ge-pai-xu-de-lian-biao-lcof	"合并两个排序的链表"
 
-Offer26	https://leetcode.com/problems/shu-de-zi-jie-gou-lcof/	https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/	yes	shu-de-zi-jie-gou-lcof	"树的子结构"
+offer26	https://leetcode.com/problems/shu-de-zi-jie-gou-lcof/	https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/	yes	shu-de-zi-jie-gou-lcof	"树的子结构"
 
-Offer27	https://leetcode.com/problems/er-cha-shu-de-jing-xiang-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/	yes	er-cha-shu-de-jing-xiang-lcof	"二叉树的镜像"
+offer27	https://leetcode.com/problems/er-cha-shu-de-jing-xiang-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/	yes	er-cha-shu-de-jing-xiang-lcof	"二叉树的镜像"
 
-Offer28	https://leetcode.com/problems/dui-cheng-de-er-cha-shu-lcof/	https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/	yes	dui-cheng-de-er-cha-shu-lcof	"对称的二叉树"
+offer28	https://leetcode.com/problems/dui-cheng-de-er-cha-shu-lcof/	https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/	yes	dui-cheng-de-er-cha-shu-lcof	"对称的二叉树"
 
-Offer29	https://leetcode.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	yes	shun-shi-zhen-da-yin-ju-zhen-lcof	"顺时针打印矩阵"
+offer29	https://leetcode.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	yes	shun-shi-zhen-da-yin-ju-zhen-lcof	"顺时针打印矩阵"
 
-Offer30	https://leetcode.com/problems/bao-han-minhan-shu-de-zhan-lcof/	https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/	yes	bao-han-minhan-shu-de-zhan-lcof	"包含min函数的栈"
+offer30	https://leetcode.com/problems/bao-han-minhan-shu-de-zhan-lcof/	https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/	yes	bao-han-minhan-shu-de-zhan-lcof	"包含min函数的栈"
 
-Offer31	https://leetcode.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	yes	zhan-de-ya-ru-dan-chu-xu-lie-lcof	"栈的压入、弹出序列"
+offer31	https://leetcode.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	yes	zhan-de-ya-ru-dan-chu-xu-lie-lcof	"栈的压入、弹出序列"
 
-Offer32I	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-lcof	"从上到下打印二叉树"
+offer32i	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-lcof	"从上到下打印二叉树"
 
-Offer32II	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof	"从上到下打印二叉树 II"
+offer32ii	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof	"从上到下打印二叉树 II"
 
-Offer32III	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof	"从上到下打印二叉树 III"
+offer32iii	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof	"从上到下打印二叉树 III"
 
-Offer33	https://leetcode.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	yes	er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof	"二叉搜索树的后序遍历序列"
+offer33	https://leetcode.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	yes	er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof	"二叉搜索树的后序遍历序列"
 
-Offer34	https://leetcode.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	yes	er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof	"二叉树中和为某一值的路径"
+offer34	https://leetcode.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	yes	er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof	"二叉树中和为某一值的路径"
 
-Offer35	https://leetcode.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	yes	fu-za-lian-biao-de-fu-zhi-lcof	"复杂链表的复制"
+offer35	https://leetcode.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	yes	fu-za-lian-biao-de-fu-zhi-lcof	"复杂链表的复制"
 
-Offer36	https://leetcode.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/	yes	er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof	"二叉搜索树与双向链表"
+offer36	https://leetcode.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/	yes	er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof	"二叉搜索树与双向链表"
 
-Offer37	https://leetcode.com/problems/xu-lie-hua-er-cha-shu-lcof/	https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/	yes	xu-lie-hua-er-cha-shu-lcof	"序列化二叉树"
+offer37	https://leetcode.com/problems/xu-lie-hua-er-cha-shu-lcof/	https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/	yes	xu-lie-hua-er-cha-shu-lcof	"序列化二叉树"
 
-Offer38	https://leetcode.com/problems/zi-fu-chuan-de-pai-lie-lcof/	https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/	yes	zi-fu-chuan-de-pai-lie-lcof	"字符串的排列"
+offer38	https://leetcode.com/problems/zi-fu-chuan-de-pai-lie-lcof/	https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/	yes	zi-fu-chuan-de-pai-lie-lcof	"字符串的排列"
 
-Offer39	https://leetcode.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/	yes	shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof	"数组中出现次数超过一半的数字"
+offer39	https://leetcode.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/	yes	shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof	"数组中出现次数超过一半的数字"
 
-Offer40	https://leetcode.com/problems/zui-xiao-de-kge-shu-lcof/	https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/	yes	zui-xiao-de-kge-shu-lcof	"最小的k个数"
+offer40	https://leetcode.com/problems/zui-xiao-de-kge-shu-lcof/	https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/	yes	zui-xiao-de-kge-shu-lcof	"最小的k个数"
 
-Offer41	https://leetcode.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/	https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/	yes	shu-ju-liu-zhong-de-zhong-wei-shu-lcof	"数据流中的中位数"
+offer41	https://leetcode.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/	https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/	yes	shu-ju-liu-zhong-de-zhong-wei-shu-lcof	"数据流中的中位数"
 
-Offer42	https://leetcode.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/	https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/	yes	lian-xu-zi-shu-zu-de-zui-da-he-lcof	"连续子数组的最大和"
+offer42	https://leetcode.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/	https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/	yes	lian-xu-zi-shu-zu-de-zui-da-he-lcof	"连续子数组的最大和"
 
-Offer43	https://leetcode.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/	https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/	yes	1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof	"1～n 整数中 1 出现的次数"
+offer43	https://leetcode.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/	https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/	yes	1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof	"1～n 整数中 1 出现的次数"
 
-Offer44	https://leetcode.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/	yes	shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof	"数字序列中某一位的数字"
+offer44	https://leetcode.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/	https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/	yes	shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof	"数字序列中某一位的数字"
 
-Offer45	https://leetcode.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/	https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/	yes	ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof	"把数组排成最小的数"
+offer45	https://leetcode.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/	https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/	yes	ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof	"把数组排成最小的数"
 
-Offer46	https://leetcode.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/	yes	ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof	"把数字翻译成字符串"
+offer46	https://leetcode.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/	yes	ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof	"把数字翻译成字符串"
 
-Offer47	https://leetcode.com/problems/li-wu-de-zui-da-jie-zhi-lcof/	https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/	yes	li-wu-de-zui-da-jie-zhi-lcof	"礼物的最大价值"
+offer47	https://leetcode.com/problems/li-wu-de-zui-da-jie-zhi-lcof/	https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/	yes	li-wu-de-zui-da-jie-zhi-lcof	"礼物的最大价值"
 
-Offer48	https://leetcode.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/	yes	zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof	"最长不含重复字符的子字符串"
+offer48	https://leetcode.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/	yes	zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof	"最长不含重复字符的子字符串"
 
-Offer49	https://leetcode.com/problems/chou-shu-lcof/	https://leetcode-cn.com/problems/chou-shu-lcof/	yes	chou-shu-lcof	"丑数"
+offer49	https://leetcode.com/problems/chou-shu-lcof/	https://leetcode-cn.com/problems/chou-shu-lcof/	yes	chou-shu-lcof	"丑数"
 
-Offer50	https://leetcode.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/	https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/	yes	di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof	"第一个只出现一次的字符"
+offer50	https://leetcode.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/	https://leetcode-cn.com/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/	yes	di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof	"第一个只出现一次的字符"
 
-Offer51	https://leetcode.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/	yes	shu-zu-zhong-de-ni-xu-dui-lcof	"数组中的逆序对"
+offer51	https://leetcode.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/	yes	shu-zu-zhong-de-ni-xu-dui-lcof	"数组中的逆序对"
 
-Offer52	https://leetcode.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/	https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/	yes	liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof	"两个链表的第一个公共节点"
+offer52	https://leetcode.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/	https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/	yes	liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof	"两个链表的第一个公共节点"
 
-Offer53I	https://leetcode.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/	https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/	yes	zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof	"在排序数组中查找数字 I"
+offer53i	https://leetcode.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/	https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/	yes	zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof	"在排序数组中查找数字 I"
 
-Offer53II	https://leetcode.com/problems/que-shi-de-shu-zi-lcof/	https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/	yes	que-shi-de-shu-zi-lcof	"0～n-1中缺失的数字"
+offer53ii	https://leetcode.com/problems/que-shi-de-shu-zi-lcof/	https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/	yes	que-shi-de-shu-zi-lcof	"0～n-1中缺失的数字"
 
-Offer54	https://leetcode.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/	yes	er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof	"二叉搜索树的第k大节点"
+offer54	https://leetcode.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/	yes	er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof	"二叉搜索树的第k大节点"
 
-Offer55I	https://leetcode.com/problems/er-cha-shu-de-shen-du-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/	yes	er-cha-shu-de-shen-du-lcof	"二叉树的深度"
+offer55i	https://leetcode.com/problems/er-cha-shu-de-shen-du-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/	yes	er-cha-shu-de-shen-du-lcof	"二叉树的深度"
 
-Offer55II	https://leetcode.com/problems/ping-heng-er-cha-shu-lcof/	https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/	yes	ping-heng-er-cha-shu-lcof	"平衡二叉树"
+offer55ii	https://leetcode.com/problems/ping-heng-er-cha-shu-lcof/	https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/	yes	ping-heng-er-cha-shu-lcof	"平衡二叉树"
 
-Offer56I	https://leetcode.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/	yes	shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof	"数组中数字出现的次数"
+offer56i	https://leetcode.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/	yes	shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof	"数组中数字出现的次数"
 
-Offer56II	https://leetcode.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/	yes	shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof	"数组中数字出现的次数 II"
+offer56ii	https://leetcode.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/	https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/	yes	shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof	"数组中数字出现的次数 II"
 
-Offer57	https://leetcode.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/	https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/	yes	he-wei-sde-liang-ge-shu-zi-lcof	"和为s的两个数字"
+offer57	https://leetcode.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/	https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/	yes	he-wei-sde-liang-ge-shu-zi-lcof	"和为s的两个数字"
 
-Offer57II	https://leetcode.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/	https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/	yes	he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof	"和为s的连续正数序列"
+offer57ii	https://leetcode.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/	https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/	yes	he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof	"和为s的连续正数序列"
 
-Offer58I	https://leetcode.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/	https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/	yes	fan-zhuan-dan-ci-shun-xu-lcof	"翻转单词顺序"
+offer58i	https://leetcode.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/	https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/	yes	fan-zhuan-dan-ci-shun-xu-lcof	"翻转单词顺序"
 
-Offer58II	https://leetcode.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/	yes	zuo-xuan-zhuan-zi-fu-chuan-lcof	"左旋转字符串"
+offer58ii	https://leetcode.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/	https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/	yes	zuo-xuan-zhuan-zi-fu-chuan-lcof	"左旋转字符串"
 
-Offer59I	https://leetcode.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/	https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/	yes	hua-dong-chuang-kou-de-zui-da-zhi-lcof	"滑动窗口的最大值"
+offer59i	https://leetcode.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/	https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/	yes	hua-dong-chuang-kou-de-zui-da-zhi-lcof	"滑动窗口的最大值"
 
-Offer59II	https://leetcode.com/problems/dui-lie-de-zui-da-zhi-lcof/	https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/	yes	dui-lie-de-zui-da-zhi-lcof	"队列的最大值"
+offer59ii	https://leetcode.com/problems/dui-lie-de-zui-da-zhi-lcof/	https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/	yes	dui-lie-de-zui-da-zhi-lcof	"队列的最大值"
 
-Offer60	https://leetcode.com/problems/nge-tou-zi-de-dian-shu-lcof/	https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/	yes	nge-tou-zi-de-dian-shu-lcof	"n个骰子的点数"
+offer60	https://leetcode.com/problems/nge-tou-zi-de-dian-shu-lcof/	https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/	yes	nge-tou-zi-de-dian-shu-lcof	"n个骰子的点数"
 
-Offer61	https://leetcode.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/	https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/	yes	bu-ke-pai-zhong-de-shun-zi-lcof	"扑克牌中的顺子"
+offer61	https://leetcode.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/	https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/	yes	bu-ke-pai-zhong-de-shun-zi-lcof	"扑克牌中的顺子"
 
-Offer62	https://leetcode.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/	https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/	yes	yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof	"圆圈中最后剩下的数字"
+offer62	https://leetcode.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/	https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/	yes	yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof	"圆圈中最后剩下的数字"
 
-Offer63	https://leetcode.com/problems/gu-piao-de-zui-da-li-run-lcof/	https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/	yes	gu-piao-de-zui-da-li-run-lcof	"股票的最大利润"
+offer63	https://leetcode.com/problems/gu-piao-de-zui-da-li-run-lcof/	https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/	yes	gu-piao-de-zui-da-li-run-lcof	"股票的最大利润"
 
-Offer64	https://leetcode.com/problems/qiu-12n-lcof/	https://leetcode-cn.com/problems/qiu-12n-lcof/	yes	qiu-12n-lcof	"求1+2+…+n"
+offer64	https://leetcode.com/problems/qiu-12n-lcof/	https://leetcode-cn.com/problems/qiu-12n-lcof/	yes	qiu-12n-lcof	"求1+2+…+n"
 
-Offer65	https://leetcode.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/	https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/	yes	bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof	"不用加减乘除做加法"
+offer65	https://leetcode.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/	https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/	yes	bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof	"不用加减乘除做加法"
 
-Offer66	https://leetcode.com/problems/gou-jian-cheng-ji-shu-zu-lcof/	https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/	yes	gou-jian-cheng-ji-shu-zu-lcof	"构建乘积数组"
+offer66	https://leetcode.com/problems/gou-jian-cheng-ji-shu-zu-lcof/	https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/	yes	gou-jian-cheng-ji-shu-zu-lcof	"构建乘积数组"
 
-Offer67	https://leetcode.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/	https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/	yes	ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof	"把字符串转换成整数"
+offer67	https://leetcode.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/	https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/	yes	ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof	"把字符串转换成整数"
 
-Offer68I	https://leetcode.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/	yes	er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof	"二叉搜索树的最近公共祖先"
+offer68i	https://leetcode.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/	yes	er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof	"二叉搜索树的最近公共祖先"
 
-Offer68II	https://leetcode.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	yes	er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof	"二叉树的最近公共祖先"
+offer68ii	https://leetcode.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	yes	er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof	"二叉树的最近公共祖先"
 
 ms0101	https://leetcode.com/problems/is-unique-lcci/	https://leetcode-cn.com/problems/is-unique-lcci/	yes	is-unique-lcci	"判定字符是否唯一"
 

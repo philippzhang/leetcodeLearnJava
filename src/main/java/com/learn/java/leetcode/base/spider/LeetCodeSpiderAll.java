@@ -75,7 +75,7 @@ public class LeetCodeSpiderAll implements Spider {
 							.replaceAll("面试题","ms")
 							.replaceAll("剑指","")
 							.replaceAll("-","")
-							.replaceAll("\\.","");
+							.replaceAll("\\.","").toLowerCase();
 				}
 
 
