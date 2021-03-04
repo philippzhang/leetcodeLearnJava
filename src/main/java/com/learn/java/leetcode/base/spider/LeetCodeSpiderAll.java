@@ -70,6 +70,14 @@ public class LeetCodeSpiderAll implements Spider {
 
 				//获取题id
 				String id = enElementsTd.get(1).text();
+				if(id!=null){
+					id = id.replaceAll(" ","")
+							.replaceAll("面试题","ms")
+							.replaceAll("剑指","")
+							.replaceAll("-","")
+							.replaceAll("\\.","");
+				}
+
 
 				Elements enElementsTdDiv = enElementsTd.get(2).children().first().children();
 				String divStr = enElementsTdDiv.toString();

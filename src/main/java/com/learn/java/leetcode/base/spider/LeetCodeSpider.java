@@ -1,26 +1,26 @@
 package com.learn.java.leetcode.base.spider;
 
-import okhttp3.Headers;
-import okhttp3.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import org.openqa.selenium.WebDriver;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static java.lang.System.out;
+public class LeetCodeSpider {
+	private static Map<String, List<String>> questionMap;
 
-public class LeetCodeSpider  {
-
-
+	static {
+		questionMap = SpiderUtils.getQuestionMap(LeetCodeSpider.class);
+	}
 
 	public static String GetQuestionMd(String QUESTION_ID) {
-		List<String> targetUrlList = SpiderUtils.readReadmeFile(LeetCodeSpider.class, QUESTION_ID);
+		if (questionMap == null || questionMap.size() <= 0) {
+			questionMap = SpiderUtils.getQuestionMap(LeetCodeSpider.class);
+		}
+		List<String> targetUrlList = questionMap.get(QUESTION_ID);
+		//SpiderUtils.readReadmeFile(LeetCodeSpider.class, QUESTION_ID);
 		if (targetUrlList == null || targetUrlList.size() <= 1) {
 			return null;
 		}
@@ -31,7 +31,7 @@ public class LeetCodeSpider  {
 		String retInfo = null;
 
 		try {
-			retInfo = LeetCodeSpider.func(EN_TARGET_URL, CN_TARGET_URL);
+			retInfo = QUESTION_ID.matches("[0-9]+]") ? LeetCodeSpider.func(EN_TARGET_URL, CN_TARGET_URL) : LeetCodeSpider.funcCN(CN_TARGET_URL);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -71,11 +71,11 @@ public class LeetCodeSpider  {
 
 			String enContent = "";
 			Elements enElements30 = enElements33.first().children();
-			if(enElements30!=null&&enElements30.size()>0){
-				for(int j=0;j<enElements30.size();j++){
+			if (enElements30 != null && enElements30.size() > 0) {
+				for (int j = 0; j < enElements30.size(); j++) {
 					Elements enElements3 = enElements30.get(j).children();
 					String enHtml = enElements3.toString();
-					enContent += Html2MdEn.getMarkDownText(enHtml)+"\n\n";
+					enContent += Html2MdEn.getMarkDownText(enHtml) + "\n\n";
 				}
 			}
 
@@ -141,10 +141,10 @@ public class LeetCodeSpider  {
 			Elements cnElements30 = cnDoc.select("div.content__1Y2H").first().children();
 
 			String cnContent = "";
-			for(int j = 0;j<cnElements30.size();j++){
+			for (int j = 0; j < cnElements30.size(); j++) {
 				Elements cnElements3 = cnElements30.get(j).children();
 				String cnHtml = cnElements3.toString();
-				cnContent += Html2MdCn.getMarkDownText(cnHtml)+"\n\n";
+				cnContent += Html2MdCn.getMarkDownText(cnHtml) + "\n\n";
 			}
 
 			//Elements cnElements3 = cnDoc.select("div.content__2ebE").first().children().first().children();
@@ -189,5 +189,68 @@ public class LeetCodeSpider  {
 	}
 
 
+	public static String funcCN(String CN_TARGET_URL) throws Exception {
+		StringBuffer stringBuffer = new StringBuffer();
+
+		WebDriver cnDriver = null;
+		try {
+			cnDriver = MyWebDriver.createWebDriver();
+			cnDriver.get(CN_TARGET_URL);
+			Thread.sleep(10000);
+
+
+			//获取标题，中文的界面经常变化
+			Document cnDoc = Jsoup.parse(cnDriver.getPageSource());
+			Elements cnElements1 = cnDoc.select("div.css-xfm0cl-Container.eugt34i0 > h4 > a");
+			int i = 0;
+			while ((cnElements1 == null || cnElements1.size() <= 0) && i < 10) {
+				//解决外网延迟
+				Thread.sleep(2000);
+				i++;
+			}
+
+			String cnTitle = cnElements1.text();
+
+			//获取难度，中文的界面经常变化
+			Elements cnElements2 = cnDoc.select("div.css-xfm0cl-Container.eugt34i0 > div > span:nth-child(2)");
+			String cnDegree = cnElements2.text();
+
+			//获取内容，中文的界面经常变化
+			Elements cnElements30 = cnDoc.select("div.content__1Y2H").first().children();
+
+			String cnContent = "";
+			for (int j = 0; j < cnElements30.size(); j++) {
+				Elements cnElements3 = cnElements30.get(j).children();
+				String cnHtml = cnElements3.toString();
+				cnContent += Html2MdCn.getMarkDownText(cnHtml) + "\n\n";
+			}
+
+			stringBuffer.append("# [" + cnTitle + "][cnTitle]\n\n").append("**").append(cnDegree).append("**\n\n").append(cnContent);
+
+			stringBuffer.append("\n\n");
+
+			stringBuffer.append("# 算法思路\n\n");
+
+			stringBuffer.append("# 测试用例\n");
+			stringBuffer.append("```\n");
+			stringBuffer.append("```\n\n");
+
+			stringBuffer.append("[cnTitle]: " + CN_TARGET_URL + "\n");
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw e;
+		} finally {
+			if (cnDriver != null) {
+				cnDriver.quit();
+				try {
+					cnDriver.close();
+				} catch (Exception e) {
+
+				}
+			}
+		}
+		return stringBuffer.toString();
+	}
 
 }

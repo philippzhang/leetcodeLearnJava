@@ -4,6 +4,7 @@ import com.learn.java.leetcode.base.utils.InitializationConfig;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.File;
+import java.util.List;
 
 /**
  * 生成题目
@@ -13,8 +14,8 @@ import java.io.File;
 public class GetQuestion {
 
 
-	private static final int START_ID = 1045; // 743;
-	private static final int END_ID = 1776; //749;
+	private static final int START_ID = 1777; // 743;
+	private static final int END_ID = 1777; //749;
 	private static final String[] QUESTION_IDS = {"605"};
 	//private static final String[] QUESTION_IDS = {"123","125","316","341","385","394","591","726","739","770","856","895","907","921","975","1003","1047"};
 	//,"117","118","119","123","125","316","341","385","394","591","726","739","770","856","895","907","921","975","1003","1047"
@@ -24,8 +25,11 @@ public class GetQuestion {
 
 	public static void main(String[] args) {
 		//for (String questionId : QUESTION_IDS) {
-		for (int i = START_ID;i<=END_ID;i++){
-			String questionId = String.valueOf(i);
+
+		List<String> questionIdList = SpiderUtils.getQuestionList(GetQuestion.class);
+		for(String questionId:questionIdList){
+		//for (int i = START_ID;i<=END_ID;i++){
+			//String questionId = String.valueOf(i);
 			try {
 				getQuestion(questionId);
 			} catch (Exception e) {
@@ -46,7 +50,7 @@ public class GetQuestion {
 
 
 		if (new File(packagePath + "/Main.java").exists() || new File(packagePath + "/README.md").exists()) {
-			System.out.println(packagePath + " exists!");
+			System.out.println(questionId + " exists!");
 			return;
 		}
 

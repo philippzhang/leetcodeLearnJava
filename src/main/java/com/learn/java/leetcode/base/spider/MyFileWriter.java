@@ -35,8 +35,12 @@ public class MyFileWriter {
 	 * @return
 	 */
 	public static String GetQuestionName(String QUESTION_ID) {
-		int questionId = Integer.parseInt(QUESTION_ID);
-		return "lc" + (questionId < 10 ? ("000" + QUESTION_ID) : questionId < 100 ? ("00" + QUESTION_ID) : questionId < 1000 ? ("0" + QUESTION_ID) : ("" + QUESTION_ID));
+		if(QUESTION_ID.matches("[0-9]+")){
+			int questionId = Integer.parseInt(QUESTION_ID);
+			return "lc" + (questionId < 10 ? ("000" + QUESTION_ID) : questionId < 100 ? ("00" + QUESTION_ID) : questionId < 1000 ? ("0" + QUESTION_ID) : ("" + QUESTION_ID));
+		}else{
+			return QUESTION_ID;
+		}
 	}
 
 	/**
