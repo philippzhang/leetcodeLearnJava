@@ -39,14 +39,15 @@ public class Solution {
 		}
 		int n = s.length();
 		int max = 0;
-		//字符->出现位置+1
+		//字符->出现位置
 		Map<Character, Integer> map = new HashMap<>(8);
 		for (int i = 0, j = 0; j < n; j++) {
 			if (map.containsKey(s.charAt(j))) {
-				i = Math.max(i, map.get(s.charAt(j)));
+				//取下一次出现的位置
+				i = Math.max(i, map.get(s.charAt(j))+1);
 			}
 			max = Math.max(max, j - i + 1);
-			map.put(s.charAt(j), j + 1);
+			map.put(s.charAt(j), j );
 		}
 		return max;
 	}
