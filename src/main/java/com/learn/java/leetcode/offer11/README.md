@@ -29,6 +29,16 @@
 
 # 测试用例
 ```
+剑指 Offer 11. 旋转数组的最小数字
+Solution.minArray
+---
+[3,4,5,1,2]
+
+=1
+---
+[2,2,2,0,1]
+
+=0
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/

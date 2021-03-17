@@ -44,6 +44,20 @@
 
 # 测试用例
 ```
+剑指 Offer 10- II. 青蛙跳台阶问题
+Solution.numWays
+---
+2
+
+=2
+---
+7
+
+=21
+---
+0
+
+=1
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/
