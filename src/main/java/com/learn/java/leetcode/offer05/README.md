@@ -26,6 +26,13 @@
 
 # 测试用例
 ```
+剑指 Offer 05. 替换空格
+Solution.replaceSpace
+---
+"We are happy."
+
+="We%20are%20happy."
+
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/

@@ -28,6 +28,13 @@
 
 # 测试用例
 ```
+剑指 Offer 03. 数组中重复的数字
+Solution.findRepeatNumber
+---
+[2,3,1,0,2,5,3]
+
+=2
+=3
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/

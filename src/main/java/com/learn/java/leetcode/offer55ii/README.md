@@ -52,6 +52,16 @@
 
 # 测试用例
 ```
+剑指 Offer 55 - II. 平衡二叉树
+Solution.isBalanced
+---
+[3,9,20,null,null,15,7]
+
+=true
+---
+[1,2,2,3,3,null,null,4,4]
+
+=false
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
