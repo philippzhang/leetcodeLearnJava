@@ -38,6 +38,18 @@
 
 # 测试用例
 ```
+剑指 Offer 09. 用两个栈实现队列
+Main.funcListTest
+---
+["CQueue","appendTail","deleteHead","deleteHead"]
+[[],[3],[],[]]
+
+=[null,null,3,-1]
+---
+["CQueue","deleteHead","appendTail","appendTail","deleteHead","deleteHead"]
+[[],[],[5],[2],[],[]]
+
+=[null,-1,null,null,5,2]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/
