@@ -44,6 +44,16 @@ F(N) = F(N - 1) + F(N - 2), 其中 N > 1.
 
 # 测试用例
 ```
+剑指 Offer 10- I. 斐波那契数列
+Solution.fib
+---
+2
+
+=1
+---
+5
+
+=5
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
