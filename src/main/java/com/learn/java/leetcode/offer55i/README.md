@@ -33,6 +33,12 @@
 
 # 测试用例
 ```
+剑指 Offer 55 - I. 二叉树的深度
+Solution.maxDepth
+---
+[3,9,20,null,null,15,7]
+
+=3
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/
