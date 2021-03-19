@@ -696,7 +696,7 @@ public class Build {
 		}
 
 		data = data.replaceAll(" ", "");
-		String s1 = data.substring(1, data.length() - 1);
+		String s1 = data.startsWith("[")&&data.endsWith("]") ? data.substring(1, data.length() - 1) :data;
 		String[] partTree = s1.split(",", -1);
 
 		TreeNode root = new TreeNode(Integer.parseInt(partTree[0]));

@@ -12,23 +12,7 @@ public class Main extends CallBack {
 		Utilitys.test(Main.class);
 	}
 
-	/**
-	 * 构建树和结点
-	 *
-	 * @param inputObjArr
-	 */
-	@Override
-	public void inputBuild(Class<?>[] parameterTypes, Object[] inputObjArr, List<String> dataList, List tempList) {
-		String data = dataList.get(0);
-		int ip = Integer.parseInt(dataList.get(1));
-		int iq = Integer.parseInt(dataList.get(2));
-		TreeNode root = Build.buildBinaryTree(data);
-		TreeNode p = Utilitys.searchBinaryTree(root, ip);
-		TreeNode q = Utilitys.searchBinaryTree(root, iq);
-		inputObjArr[0] = root;
-		inputObjArr[1] = p;
-		inputObjArr[2] = q;
-	}
+
 
 
 	@Override

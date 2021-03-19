@@ -42,6 +42,19 @@
 
 # 测试用例
 ```
+剑指 Offer 12. 矩阵中的路径
+Solution.exist
+---
+[["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]]
+"ABCCED"
+
+=true
+---
+[["a","b"],["c","d"]]
+"abcd"
+
+=false
+
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/

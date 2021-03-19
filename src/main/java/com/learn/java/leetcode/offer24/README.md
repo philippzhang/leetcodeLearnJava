@@ -30,6 +30,12 @@
 
 # 测试用例
 ```
+剑指 Offer 24. 反转链表
+Solution.reverseList
+---
+[1,2,3,4,5]
+
+=[5,4,3,2,1]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/fan-zhuan-lian-biao-lcof/

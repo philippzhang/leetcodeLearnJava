@@ -45,6 +45,20 @@
 
 # 测试用例
 ```
+剑指 Offer 68 - I. 二叉搜索树的最近公共祖先
+Solution.lowestCommonAncestor
+---
+[6,2,8,0,4,7,9,null,null,3,5]
+2
+8
+
+=6
+---
+[6,2,8,0,4,7,9,null,null,3,5]
+2
+4
+
+=2
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-zu-xian-lcof/

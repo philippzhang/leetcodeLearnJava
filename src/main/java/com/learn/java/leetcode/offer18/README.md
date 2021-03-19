@@ -40,6 +40,18 @@
 
 # 测试用例
 ```
+剑指 Offer 18. 删除链表的节点
+Solution.deleteNode
+---
+[4,5,1,9]
+5
+
+=[4,1,9]
+---
+[4,5,1,9]
+1
+
+=[4,5,9]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/
