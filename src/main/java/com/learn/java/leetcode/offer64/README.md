@@ -35,6 +35,17 @@
 
 # 测试用例
 ```
+剑指 Offer 64. 求1+2+…+n
+Solution.sumNums
+Solution.sumNums2
+---
+3
+
+=6
+---
+9
+
+=45
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/qiu-12n-lcof/

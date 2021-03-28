@@ -38,6 +38,23 @@ B是A的子结构， 即 A中有出现和B相同的结构和节点值。
 
 # 测试用例
 ```
+剑指 Offer 26. 树的子结构
+Solution.isSubStructure
+---
+[1,2,3]
+[3,1]
+
+=false
+---
+[3,4,5,1,2]
+[4,1]
+
+=true
+---
+[1,2,3,4]
+[3]
+
+=true
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-de-zi-jie-gou-lcof/

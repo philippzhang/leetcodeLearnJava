@@ -42,6 +42,20 @@
 
 # 测试用例
 ```
+剑指 Offer 28. 对称的二叉树
+Solution.isSymmetric
+---
+[1,2,2,3,4,4,3]
+
+=true
+---
+[1,2,2,null,3,null,3]
+
+=false
+---
+[]
+
+=true
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/

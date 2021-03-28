@@ -72,7 +72,7 @@ public class LeetCodeSpiderAll implements Spider {
 				String id = enElementsTd.get(1).text();
 				if(id!=null){
 					id = id.replaceAll(" ","")
-							.replaceAll("面试题","ms")
+							.replaceAll("面试题","tms")
 							.replaceAll("剑指","")
 							.replaceAll("-","")
 							.replaceAll("\\.","").toLowerCase();

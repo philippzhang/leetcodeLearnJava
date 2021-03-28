@@ -32,7 +32,7 @@ public class LeetCodeSpider {
 		String retInfo = null;
 
 		try {
-			retInfo = QUESTION_ID.matches("[0-9]+]") ? LeetCodeSpider.func(EN_TARGET_URL, CN_TARGET_URL) : LeetCodeSpider.funcCN(CN_TARGET_URL);
+			retInfo = QUESTION_ID.matches("[0-9]+") ? LeetCodeSpider.func(EN_TARGET_URL, CN_TARGET_URL) : LeetCodeSpider.funcCN(CN_TARGET_URL);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -265,6 +265,7 @@ public class LeetCodeSpider {
 
 			stringBuffer.append("# 测试用例\n");
 			stringBuffer.append("```\n");
+			stringBuffer.append(cnTitle).append(' ').append(cnDegree).append("\n");
 			stringBuffer.append("```\n\n");
 
 			stringBuffer.append("[cnTitle]: " + CN_TARGET_URL + "\n");

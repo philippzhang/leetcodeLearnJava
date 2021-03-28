@@ -1,6 +1,6 @@
 # LeetCode题网页
 
-354	https://leetcode.com/problems/russian-doll-envelopes/	https://leetcode-cn.com/problems/russian-doll-envelopes/	yes	russian-doll-envelopes	"俄罗斯套娃信封问题"
+173	https://leetcode.com/problems/binary-search-tree-iterator/	https://leetcode-cn.com/problems/binary-search-tree-iterator/	yes	binary-search-tree-iterator	"二叉搜索树迭代器"
 
 1	https://leetcode.com/problems/two-sum/	https://leetcode-cn.com/problems/two-sum/	yes	two-sum	"两数之和"
 
@@ -52,7 +52,7 @@
 
 25	https://leetcode.com/problems/reverse-nodes-in-k-group/	https://leetcode-cn.com/problems/reverse-nodes-in-k-group/	yes	reverse-nodes-in-k-group	"K 个一组翻转链表"
 
-26	https://leetcode.com/problems/remove-duplicates-from-sorted-array/	https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/	yes	remove-duplicates-from-sorted-array	"删除排序数组中的重复项"
+26	https://leetcode.com/problems/remove-duplicates-from-sorted-array/	https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/	yes	remove-duplicates-from-sorted-array	"删除有序数组中的重复项"
 
 27	https://leetcode.com/problems/remove-element/	https://leetcode-cn.com/problems/remove-element/	yes	remove-element	"移除元素"
 
@@ -258,7 +258,7 @@
 
 128	https://leetcode.com/problems/longest-consecutive-sequence/	https://leetcode-cn.com/problems/longest-consecutive-sequence/	yes	longest-consecutive-sequence	"最长连续序列"
 
-129	https://leetcode.com/problems/sum-root-to-leaf-numbers/	https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/	yes	sum-root-to-leaf-numbers	"求根到叶子节点数字之和"
+129	https://leetcode.com/problems/sum-root-to-leaf-numbers/	https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/	yes	sum-root-to-leaf-numbers	"求根节点到叶节点数字之和"
 
 130	https://leetcode.com/problems/surrounded-regions/	https://leetcode-cn.com/problems/surrounded-regions/	yes	surrounded-regions	"被围绕的区域"
 
@@ -345,8 +345,6 @@
 171	https://leetcode.com/problems/excel-sheet-column-number/	https://leetcode-cn.com/problems/excel-sheet-column-number/	yes	excel-sheet-column-number	"Excel表列序号"
 
 172	https://leetcode.com/problems/factorial-trailing-zeroes/	https://leetcode-cn.com/problems/factorial-trailing-zeroes/	yes	factorial-trailing-zeroes	"阶乘后的零"
-
-173	https://leetcode.com/problems/binary-search-tree-iterator/	https://leetcode-cn.com/problems/binary-search-tree-iterator/	yes	binary-search-tree-iterator	"二叉搜索树迭代器"
 
 174	https://leetcode.com/problems/dungeon-game/	https://leetcode-cn.com/problems/dungeon-game/	yes	dungeon-game	"地下城游戏"
 
@@ -570,7 +568,7 @@
 
 284	https://leetcode.com/problems/peeking-iterator/	https://leetcode-cn.com/problems/peeking-iterator/	yes	peeking-iterator	"顶端迭代器"
 
-285	https://leetcode.com/problems/inorder-successor-in-bst/	https://leetcode-cn.com/problems/inorder-successor-in-bst/	no	inorder-successor-in-bst	"二叉搜索树中的顺序后继"
+285	https://leetcode.com/problems/inorder-successor-in-bst/	https://leetcode-cn.com/problems/inorder-successor-in-bst/	no	inorder-successor-in-bst	"二叉搜索树中的中序后继"
 
 286	https://leetcode.com/problems/walls-and-gates/	https://leetcode-cn.com/problems/walls-and-gates/	no	walls-and-gates	"墙与门"
 
@@ -707,6 +705,8 @@
 352	https://leetcode.com/problems/data-stream-as-disjoint-intervals/	https://leetcode-cn.com/problems/data-stream-as-disjoint-intervals/	yes	data-stream-as-disjoint-intervals	"将数据流变为多个不相交区间"
 
 353	https://leetcode.com/problems/design-snake-game/	https://leetcode-cn.com/problems/design-snake-game/	no	design-snake-game	"贪吃蛇"
+
+354	https://leetcode.com/problems/russian-doll-envelopes/	https://leetcode-cn.com/problems/russian-doll-envelopes/	yes	russian-doll-envelopes	"俄罗斯套娃信封问题"
 
 355	https://leetcode.com/problems/design-twitter/	https://leetcode-cn.com/problems/design-twitter/	yes	design-twitter	"设计推特"
 
@@ -910,7 +910,7 @@
 
 455	https://leetcode.com/problems/assign-cookies/	https://leetcode-cn.com/problems/assign-cookies/	yes	assign-cookies	"分发饼干"
 
-456	https://leetcode.com/problems/132-pattern/	https://leetcode-cn.com/problems/132-pattern/	yes	132-pattern	"132模式"
+456	https://leetcode.com/problems/132-pattern/	https://leetcode-cn.com/problems/132-pattern/	yes	132-pattern	"132 模式"
 
 457	https://leetcode.com/problems/circular-array-loop/	https://leetcode-cn.com/problems/circular-array-loop/	yes	circular-array-loop	"环形数组是否存在循环"
 
@@ -1446,7 +1446,7 @@
 
 723	https://leetcode.com/problems/candy-crush/	https://leetcode-cn.com/problems/candy-crush/	no	candy-crush	"粉碎糖果"
 
-724	https://leetcode.com/problems/find-pivot-index/	https://leetcode-cn.com/problems/find-pivot-index/	yes	find-pivot-index	"寻找数组的中心索引"
+724	https://leetcode.com/problems/find-pivot-index/	https://leetcode-cn.com/problems/find-pivot-index/	yes	find-pivot-index	"寻找数组的中心下标"
 
 725	https://leetcode.com/problems/split-linked-list-in-parts/	https://leetcode-cn.com/problems/split-linked-list-in-parts/	yes	split-linked-list-in-parts	"分隔链表"
 
@@ -3554,6 +3554,60 @@
 
 1777	https://leetcode.com/problems/products-price-for-each-store/	https://leetcode-cn.com/problems/products-price-for-each-store/	no	products-price-for-each-store	"每家商店的产品价格"
 
+1778	https://leetcode.com/problems/shortest-path-in-a-hidden-grid/	https://leetcode-cn.com/problems/shortest-path-in-a-hidden-grid/	no	shortest-path-in-a-hidden-grid	"Shortest Path in a Hidden Grid"
+
+1779	https://leetcode.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/	https://leetcode-cn.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/	yes	find-nearest-point-that-has-the-same-x-or-y-coordinate	"找到最近的有相同 X 或 Y 坐标的点"
+
+1780	https://leetcode.com/problems/check-if-number-is-a-sum-of-powers-of-three/	https://leetcode-cn.com/problems/check-if-number-is-a-sum-of-powers-of-three/	yes	check-if-number-is-a-sum-of-powers-of-three	"判断一个数字是否可以表示成三的幂的和"
+
+1781	https://leetcode.com/problems/sum-of-beauty-of-all-substrings/	https://leetcode-cn.com/problems/sum-of-beauty-of-all-substrings/	yes	sum-of-beauty-of-all-substrings	"所有子字符串美丽值之和"
+
+1782	https://leetcode.com/problems/count-pairs-of-nodes/	https://leetcode-cn.com/problems/count-pairs-of-nodes/	yes	count-pairs-of-nodes	"统计点对的数目"
+
+1783	https://leetcode.com/problems/grand-slam-titles/	https://leetcode-cn.com/problems/grand-slam-titles/	no	grand-slam-titles	"Grand Slam Titles"
+
+1784	https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/	https://leetcode-cn.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/	yes	check-if-binary-string-has-at-most-one-segment-of-ones	"检查二进制字符串字段"
+
+1785	https://leetcode.com/problems/minimum-elements-to-add-to-form-a-given-sum/	https://leetcode-cn.com/problems/minimum-elements-to-add-to-form-a-given-sum/	yes	minimum-elements-to-add-to-form-a-given-sum	"构成特定和需要添加的最少元素"
+
+1786	https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/	https://leetcode-cn.com/problems/number-of-restricted-paths-from-first-to-last-node/	yes	number-of-restricted-paths-from-first-to-last-node	"从第一个节点出发到最后一个节点的受限路径数"
+
+1787	https://leetcode.com/problems/make-the-xor-of-all-segments-equal-to-zero/	https://leetcode-cn.com/problems/make-the-xor-of-all-segments-equal-to-zero/	yes	make-the-xor-of-all-segments-equal-to-zero	"使所有区间的异或结果为零"
+
+1788	https://leetcode.com/problems/maximize-the-beauty-of-the-garden/	https://leetcode-cn.com/problems/maximize-the-beauty-of-the-garden/	no	maximize-the-beauty-of-the-garden	"Maximize the Beauty of the Garden"
+
+1789	https://leetcode.com/problems/primary-department-for-each-employee/	https://leetcode-cn.com/problems/primary-department-for-each-employee/	no	primary-department-for-each-employee	"Primary Department for Each Employee"
+
+1790	https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/	https://leetcode-cn.com/problems/check-if-one-string-swap-can-make-strings-equal/	yes	check-if-one-string-swap-can-make-strings-equal	"仅执行一次字符串交换能否使两个字符串相等"
+
+1791	https://leetcode.com/problems/find-center-of-star-graph/	https://leetcode-cn.com/problems/find-center-of-star-graph/	yes	find-center-of-star-graph	"找出星型图的中心节点"
+
+1792	https://leetcode.com/problems/maximum-average-pass-ratio/	https://leetcode-cn.com/problems/maximum-average-pass-ratio/	yes	maximum-average-pass-ratio	"最大平均通过率"
+
+1793	https://leetcode.com/problems/maximum-score-of-a-good-subarray/	https://leetcode-cn.com/problems/maximum-score-of-a-good-subarray/	yes	maximum-score-of-a-good-subarray	"好子数组的最大分数"
+
+1794	https://leetcode.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/	https://leetcode-cn.com/problems/count-pairs-of-equal-substrings-with-minimum-difference/	no	count-pairs-of-equal-substrings-with-minimum-difference	"Count Pairs of Equal Substrings With Minimum Difference"
+
+1795	https://leetcode.com/problems/rearrange-products-table/	https://leetcode-cn.com/problems/rearrange-products-table/	no	rearrange-products-table	"Rearrange Products Table"
+
+1796	https://leetcode.com/problems/second-largest-digit-in-a-string/	https://leetcode-cn.com/problems/second-largest-digit-in-a-string/	yes	second-largest-digit-in-a-string	"字符串中第二大的数字"
+
+1797	https://leetcode.com/problems/design-authentication-manager/	https://leetcode-cn.com/problems/design-authentication-manager/	yes	design-authentication-manager	"设计一个验证系统"
+
+1798	https://leetcode.com/problems/maximum-number-of-consecutive-values-you-can-make/	https://leetcode-cn.com/problems/maximum-number-of-consecutive-values-you-can-make/	yes	maximum-number-of-consecutive-values-you-can-make	"你能构造出连续值的最大数目"
+
+1799	https://leetcode.com/problems/maximize-score-after-n-operations/	https://leetcode-cn.com/problems/maximize-score-after-n-operations/	yes	maximize-score-after-n-operations	"N 次操作后的最大分数和"
+
+1800	https://leetcode.com/problems/maximum-ascending-subarray-sum/	https://leetcode-cn.com/problems/maximum-ascending-subarray-sum/	yes	maximum-ascending-subarray-sum	"最大升序子数组和"
+
+1801	https://leetcode.com/problems/number-of-orders-in-the-backlog/	https://leetcode-cn.com/problems/number-of-orders-in-the-backlog/	yes	number-of-orders-in-the-backlog	"积压订单中的订单总数"
+
+1802	https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/	https://leetcode-cn.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/	yes	maximum-value-at-a-given-index-in-a-bounded-array	"有界数组中指定下标处的最大值"
+
+1803	https://leetcode.com/problems/count-pairs-with-xor-in-a-range/	https://leetcode-cn.com/problems/count-pairs-with-xor-in-a-range/	yes	count-pairs-with-xor-in-a-range	"统计异或值在范围内的数对有多少"
+
+1804	https://leetcode.com/problems/implement-trie-ii-prefix-tree/	https://leetcode-cn.com/problems/implement-trie-ii-prefix-tree/	no	implement-trie-ii-prefix-tree	"Implement Trie II (Prefix Tree)"
+
 lcp01	https://leetcode.com/problems/guess-numbers/	https://leetcode-cn.com/problems/guess-numbers/	yes	guess-numbers	"猜数字"
 
 lcp02	https://leetcode.com/problems/deep-dark-fraction/	https://leetcode-cn.com/problems/deep-dark-fraction/	yes	deep-dark-fraction	"分式化简"
@@ -3662,8 +3716,6 @@ offer28	https://leetcode.com/problems/dui-cheng-de-er-cha-shu-lcof/	https://leet
 
 offer29	https://leetcode.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/	yes	shun-shi-zhen-da-yin-ju-zhen-lcof	"顺时针打印矩阵"
 
-offer30	https://leetcode.com/problems/bao-han-minhan-shu-de-zhan-lcof/	https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/	yes	bao-han-minhan-shu-de-zhan-lcof	"包含min函数的栈"
-
 offer31	https://leetcode.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/	yes	zhan-de-ya-ru-dan-chu-xu-lie-lcof	"栈的压入、弹出序列"
 
 offer32i	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-lcof	"从上到下打印二叉树"
@@ -3673,8 +3725,6 @@ offer32ii	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-
 offer32iii	https://leetcode.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/	yes	cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof	"从上到下打印二叉树 III"
 
 offer33	https://leetcode.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/	yes	er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof	"二叉搜索树的后序遍历序列"
-
-offer34	https://leetcode.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	yes	er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof	"二叉树中和为某一值的路径"
 
 offer35	https://leetcode.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/	yes	fu-za-lian-biao-de-fu-zhi-lcof	"复杂链表的复制"
 
@@ -3758,223 +3808,227 @@ offer68i	https://leetcode.com/problems/er-cha-sou-suo-shu-de-zui-jin-gong-gong-z
 
 offer68ii	https://leetcode.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	https://leetcode-cn.com/problems/er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof/	yes	er-cha-shu-de-zui-jin-gong-gong-zu-xian-lcof	"二叉树的最近公共祖先"
 
-ms0101	https://leetcode.com/problems/is-unique-lcci/	https://leetcode-cn.com/problems/is-unique-lcci/	yes	is-unique-lcci	"判定字符是否唯一"
+tms0101	https://leetcode.com/problems/is-unique-lcci/	https://leetcode-cn.com/problems/is-unique-lcci/	yes	is-unique-lcci	"判定字符是否唯一"
 
-ms0102	https://leetcode.com/problems/check-permutation-lcci/	https://leetcode-cn.com/problems/check-permutation-lcci/	yes	check-permutation-lcci	"判定是否互为字符重排"
+tms0102	https://leetcode.com/problems/check-permutation-lcci/	https://leetcode-cn.com/problems/check-permutation-lcci/	yes	check-permutation-lcci	"判定是否互为字符重排"
 
-ms0103	https://leetcode.com/problems/string-to-url-lcci/	https://leetcode-cn.com/problems/string-to-url-lcci/	yes	string-to-url-lcci	"URL化"
+tms0103	https://leetcode.com/problems/string-to-url-lcci/	https://leetcode-cn.com/problems/string-to-url-lcci/	yes	string-to-url-lcci	"URL化"
 
-ms0104	https://leetcode.com/problems/palindrome-permutation-lcci/	https://leetcode-cn.com/problems/palindrome-permutation-lcci/	yes	palindrome-permutation-lcci	"回文排列"
+tms0104	https://leetcode.com/problems/palindrome-permutation-lcci/	https://leetcode-cn.com/problems/palindrome-permutation-lcci/	yes	palindrome-permutation-lcci	"回文排列"
 
-ms0105	https://leetcode.com/problems/one-away-lcci/	https://leetcode-cn.com/problems/one-away-lcci/	yes	one-away-lcci	"一次编辑"
+tms0105	https://leetcode.com/problems/one-away-lcci/	https://leetcode-cn.com/problems/one-away-lcci/	yes	one-away-lcci	"一次编辑"
 
-ms0106	https://leetcode.com/problems/compress-string-lcci/	https://leetcode-cn.com/problems/compress-string-lcci/	yes	compress-string-lcci	"字符串压缩"
+tms0106	https://leetcode.com/problems/compress-string-lcci/	https://leetcode-cn.com/problems/compress-string-lcci/	yes	compress-string-lcci	"字符串压缩"
 
-ms0107	https://leetcode.com/problems/rotate-matrix-lcci/	https://leetcode-cn.com/problems/rotate-matrix-lcci/	yes	rotate-matrix-lcci	"旋转矩阵"
+tms0107	https://leetcode.com/problems/rotate-matrix-lcci/	https://leetcode-cn.com/problems/rotate-matrix-lcci/	yes	rotate-matrix-lcci	"旋转矩阵"
 
-ms0108	https://leetcode.com/problems/zero-matrix-lcci/	https://leetcode-cn.com/problems/zero-matrix-lcci/	yes	zero-matrix-lcci	"零矩阵"
+tms0108	https://leetcode.com/problems/zero-matrix-lcci/	https://leetcode-cn.com/problems/zero-matrix-lcci/	yes	zero-matrix-lcci	"零矩阵"
 
-ms0109	https://leetcode.com/problems/string-rotation-lcci/	https://leetcode-cn.com/problems/string-rotation-lcci/	yes	string-rotation-lcci	"字符串轮转"
+tms0109	https://leetcode.com/problems/string-rotation-lcci/	https://leetcode-cn.com/problems/string-rotation-lcci/	yes	string-rotation-lcci	"字符串轮转"
 
-ms0201	https://leetcode.com/problems/remove-duplicate-node-lcci/	https://leetcode-cn.com/problems/remove-duplicate-node-lcci/	yes	remove-duplicate-node-lcci	"移除重复节点"
+tms0201	https://leetcode.com/problems/remove-duplicate-node-lcci/	https://leetcode-cn.com/problems/remove-duplicate-node-lcci/	yes	remove-duplicate-node-lcci	"移除重复节点"
 
-ms0202	https://leetcode.com/problems/kth-node-from-end-of-list-lcci/	https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/	yes	kth-node-from-end-of-list-lcci	"返回倒数第 k 个节点"
+tms0202	https://leetcode.com/problems/kth-node-from-end-of-list-lcci/	https://leetcode-cn.com/problems/kth-node-from-end-of-list-lcci/	yes	kth-node-from-end-of-list-lcci	"返回倒数第 k 个节点"
 
-ms0203	https://leetcode.com/problems/delete-middle-node-lcci/	https://leetcode-cn.com/problems/delete-middle-node-lcci/	yes	delete-middle-node-lcci	"删除中间节点"
+tms0203	https://leetcode.com/problems/delete-middle-node-lcci/	https://leetcode-cn.com/problems/delete-middle-node-lcci/	yes	delete-middle-node-lcci	"删除中间节点"
 
-ms0204	https://leetcode.com/problems/partition-list-lcci/	https://leetcode-cn.com/problems/partition-list-lcci/	yes	partition-list-lcci	"分割链表"
+tms0204	https://leetcode.com/problems/partition-list-lcci/	https://leetcode-cn.com/problems/partition-list-lcci/	yes	partition-list-lcci	"分割链表"
 
-ms0205	https://leetcode.com/problems/sum-lists-lcci/	https://leetcode-cn.com/problems/sum-lists-lcci/	yes	sum-lists-lcci	"链表求和"
+tms0205	https://leetcode.com/problems/sum-lists-lcci/	https://leetcode-cn.com/problems/sum-lists-lcci/	yes	sum-lists-lcci	"链表求和"
 
-ms0206	https://leetcode.com/problems/palindrome-linked-list-lcci/	https://leetcode-cn.com/problems/palindrome-linked-list-lcci/	yes	palindrome-linked-list-lcci	"回文链表"
+tms0206	https://leetcode.com/problems/palindrome-linked-list-lcci/	https://leetcode-cn.com/problems/palindrome-linked-list-lcci/	yes	palindrome-linked-list-lcci	"回文链表"
 
-ms0207	https://leetcode.com/problems/intersection-of-two-linked-lists-lcci/	https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/	yes	intersection-of-two-linked-lists-lcci	"链表相交"
+tms0207	https://leetcode.com/problems/intersection-of-two-linked-lists-lcci/	https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/	yes	intersection-of-two-linked-lists-lcci	"链表相交"
 
-ms0208	https://leetcode.com/problems/linked-list-cycle-lcci/	https://leetcode-cn.com/problems/linked-list-cycle-lcci/	yes	linked-list-cycle-lcci	"环路检测"
+tms0208	https://leetcode.com/problems/linked-list-cycle-lcci/	https://leetcode-cn.com/problems/linked-list-cycle-lcci/	yes	linked-list-cycle-lcci	"环路检测"
 
-ms0301	https://leetcode.com/problems/three-in-one-lcci/	https://leetcode-cn.com/problems/three-in-one-lcci/	yes	three-in-one-lcci	"三合一"
+tms0301	https://leetcode.com/problems/three-in-one-lcci/	https://leetcode-cn.com/problems/three-in-one-lcci/	yes	three-in-one-lcci	"三合一"
 
-ms0302	https://leetcode.com/problems/min-stack-lcci/	https://leetcode-cn.com/problems/min-stack-lcci/	yes	min-stack-lcci	"栈的最小值"
+tms0302	https://leetcode.com/problems/min-stack-lcci/	https://leetcode-cn.com/problems/min-stack-lcci/	yes	min-stack-lcci	"栈的最小值"
 
-ms0303	https://leetcode.com/problems/stack-of-plates-lcci/	https://leetcode-cn.com/problems/stack-of-plates-lcci/	yes	stack-of-plates-lcci	"堆盘子"
+tms0303	https://leetcode.com/problems/stack-of-plates-lcci/	https://leetcode-cn.com/problems/stack-of-plates-lcci/	yes	stack-of-plates-lcci	"堆盘子"
 
-ms0304	https://leetcode.com/problems/implement-queue-using-stacks-lcci/	https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/	yes	implement-queue-using-stacks-lcci	"化栈为队"
+tms0304	https://leetcode.com/problems/implement-queue-using-stacks-lcci/	https://leetcode-cn.com/problems/implement-queue-using-stacks-lcci/	yes	implement-queue-using-stacks-lcci	"化栈为队"
 
-ms0305	https://leetcode.com/problems/sort-of-stacks-lcci/	https://leetcode-cn.com/problems/sort-of-stacks-lcci/	yes	sort-of-stacks-lcci	"栈排序"
+tms0305	https://leetcode.com/problems/sort-of-stacks-lcci/	https://leetcode-cn.com/problems/sort-of-stacks-lcci/	yes	sort-of-stacks-lcci	"栈排序"
 
-ms0306	https://leetcode.com/problems/animal-shelter-lcci/	https://leetcode-cn.com/problems/animal-shelter-lcci/	yes	animal-shelter-lcci	"动物收容所"
+tms0306	https://leetcode.com/problems/animal-shelter-lcci/	https://leetcode-cn.com/problems/animal-shelter-lcci/	yes	animal-shelter-lcci	"动物收容所"
 
-ms0401	https://leetcode.com/problems/route-between-nodes-lcci/	https://leetcode-cn.com/problems/route-between-nodes-lcci/	yes	route-between-nodes-lcci	"节点间通路"
+tms0401	https://leetcode.com/problems/route-between-nodes-lcci/	https://leetcode-cn.com/problems/route-between-nodes-lcci/	yes	route-between-nodes-lcci	"节点间通路"
 
-ms0402	https://leetcode.com/problems/minimum-height-tree-lcci/	https://leetcode-cn.com/problems/minimum-height-tree-lcci/	yes	minimum-height-tree-lcci	"最小高度树"
+tms0402	https://leetcode.com/problems/minimum-height-tree-lcci/	https://leetcode-cn.com/problems/minimum-height-tree-lcci/	yes	minimum-height-tree-lcci	"最小高度树"
 
-ms0403	https://leetcode.com/problems/list-of-depth-lcci/	https://leetcode-cn.com/problems/list-of-depth-lcci/	yes	list-of-depth-lcci	"特定深度节点链表"
+tms0403	https://leetcode.com/problems/list-of-depth-lcci/	https://leetcode-cn.com/problems/list-of-depth-lcci/	yes	list-of-depth-lcci	"特定深度节点链表"
 
-ms0404	https://leetcode.com/problems/check-balance-lcci/	https://leetcode-cn.com/problems/check-balance-lcci/	yes	check-balance-lcci	"检查平衡性"
+tms0404	https://leetcode.com/problems/check-balance-lcci/	https://leetcode-cn.com/problems/check-balance-lcci/	yes	check-balance-lcci	"检查平衡性"
 
-ms0405	https://leetcode.com/problems/legal-binary-search-tree-lcci/	https://leetcode-cn.com/problems/legal-binary-search-tree-lcci/	yes	legal-binary-search-tree-lcci	"合法二叉搜索树"
+tms0405	https://leetcode.com/problems/legal-binary-search-tree-lcci/	https://leetcode-cn.com/problems/legal-binary-search-tree-lcci/	yes	legal-binary-search-tree-lcci	"合法二叉搜索树"
 
-ms0406	https://leetcode.com/problems/successor-lcci/	https://leetcode-cn.com/problems/successor-lcci/	yes	successor-lcci	"后继者"
+tms0406	https://leetcode.com/problems/successor-lcci/	https://leetcode-cn.com/problems/successor-lcci/	yes	successor-lcci	"后继者"
 
-ms0408	https://leetcode.com/problems/first-common-ancestor-lcci/	https://leetcode-cn.com/problems/first-common-ancestor-lcci/	yes	first-common-ancestor-lcci	"首个共同祖先"
+tms0408	https://leetcode.com/problems/first-common-ancestor-lcci/	https://leetcode-cn.com/problems/first-common-ancestor-lcci/	yes	first-common-ancestor-lcci	"首个共同祖先"
 
-ms0409	https://leetcode.com/problems/bst-sequences-lcci/	https://leetcode-cn.com/problems/bst-sequences-lcci/	yes	bst-sequences-lcci	"二叉搜索树序列"
+tms0409	https://leetcode.com/problems/bst-sequences-lcci/	https://leetcode-cn.com/problems/bst-sequences-lcci/	yes	bst-sequences-lcci	"二叉搜索树序列"
 
-ms0410	https://leetcode.com/problems/check-subtree-lcci/	https://leetcode-cn.com/problems/check-subtree-lcci/	yes	check-subtree-lcci	"检查子树"
+tms0410	https://leetcode.com/problems/check-subtree-lcci/	https://leetcode-cn.com/problems/check-subtree-lcci/	yes	check-subtree-lcci	"检查子树"
 
-ms0412	https://leetcode.com/problems/paths-with-sum-lcci/	https://leetcode-cn.com/problems/paths-with-sum-lcci/	yes	paths-with-sum-lcci	"求和路径"
+tms0412	https://leetcode.com/problems/paths-with-sum-lcci/	https://leetcode-cn.com/problems/paths-with-sum-lcci/	yes	paths-with-sum-lcci	"求和路径"
 
-ms0501	https://leetcode.com/problems/insert-into-bits-lcci/	https://leetcode-cn.com/problems/insert-into-bits-lcci/	yes	insert-into-bits-lcci	"插入"
+tms0501	https://leetcode.com/problems/insert-into-bits-lcci/	https://leetcode-cn.com/problems/insert-into-bits-lcci/	yes	insert-into-bits-lcci	"插入"
 
-ms0502	https://leetcode.com/problems/bianry-number-to-string-lcci/	https://leetcode-cn.com/problems/bianry-number-to-string-lcci/	yes	bianry-number-to-string-lcci	"二进制数转字符串"
+tms0502	https://leetcode.com/problems/bianry-number-to-string-lcci/	https://leetcode-cn.com/problems/bianry-number-to-string-lcci/	yes	bianry-number-to-string-lcci	"二进制数转字符串"
 
-ms0503	https://leetcode.com/problems/reverse-bits-lcci/	https://leetcode-cn.com/problems/reverse-bits-lcci/	yes	reverse-bits-lcci	"翻转数位"
+tms0503	https://leetcode.com/problems/reverse-bits-lcci/	https://leetcode-cn.com/problems/reverse-bits-lcci/	yes	reverse-bits-lcci	"翻转数位"
 
-ms0504	https://leetcode.com/problems/closed-number-lcci/	https://leetcode-cn.com/problems/closed-number-lcci/	yes	closed-number-lcci	"下一个数"
+tms0504	https://leetcode.com/problems/closed-number-lcci/	https://leetcode-cn.com/problems/closed-number-lcci/	yes	closed-number-lcci	"下一个数"
 
-ms0506	https://leetcode.com/problems/convert-integer-lcci/	https://leetcode-cn.com/problems/convert-integer-lcci/	yes	convert-integer-lcci	"整数转换"
+tms0506	https://leetcode.com/problems/convert-integer-lcci/	https://leetcode-cn.com/problems/convert-integer-lcci/	yes	convert-integer-lcci	"整数转换"
 
-ms0507	https://leetcode.com/problems/exchange-lcci/	https://leetcode-cn.com/problems/exchange-lcci/	yes	exchange-lcci	"配对交换"
+tms0507	https://leetcode.com/problems/exchange-lcci/	https://leetcode-cn.com/problems/exchange-lcci/	yes	exchange-lcci	"配对交换"
 
-ms0508	https://leetcode.com/problems/draw-line-lcci/	https://leetcode-cn.com/problems/draw-line-lcci/	yes	draw-line-lcci	"绘制直线"
+tms0508	https://leetcode.com/problems/draw-line-lcci/	https://leetcode-cn.com/problems/draw-line-lcci/	yes	draw-line-lcci	"绘制直线"
 
-ms0801	https://leetcode.com/problems/three-steps-problem-lcci/	https://leetcode-cn.com/problems/three-steps-problem-lcci/	yes	three-steps-problem-lcci	"三步问题"
+tms0801	https://leetcode.com/problems/three-steps-problem-lcci/	https://leetcode-cn.com/problems/three-steps-problem-lcci/	yes	three-steps-problem-lcci	"三步问题"
 
-ms0802	https://leetcode.com/problems/robot-in-a-grid-lcci/	https://leetcode-cn.com/problems/robot-in-a-grid-lcci/	yes	robot-in-a-grid-lcci	"迷路的机器人"
+tms0802	https://leetcode.com/problems/robot-in-a-grid-lcci/	https://leetcode-cn.com/problems/robot-in-a-grid-lcci/	yes	robot-in-a-grid-lcci	"迷路的机器人"
 
-ms0803	https://leetcode.com/problems/magic-index-lcci/	https://leetcode-cn.com/problems/magic-index-lcci/	yes	magic-index-lcci	"魔术索引"
+tms0803	https://leetcode.com/problems/magic-index-lcci/	https://leetcode-cn.com/problems/magic-index-lcci/	yes	magic-index-lcci	"魔术索引"
 
-ms0804	https://leetcode.com/problems/power-set-lcci/	https://leetcode-cn.com/problems/power-set-lcci/	yes	power-set-lcci	"幂集"
+tms0804	https://leetcode.com/problems/power-set-lcci/	https://leetcode-cn.com/problems/power-set-lcci/	yes	power-set-lcci	"幂集"
 
-ms0805	https://leetcode.com/problems/recursive-mulitply-lcci/	https://leetcode-cn.com/problems/recursive-mulitply-lcci/	yes	recursive-mulitply-lcci	"递归乘法"
+tms0805	https://leetcode.com/problems/recursive-mulitply-lcci/	https://leetcode-cn.com/problems/recursive-mulitply-lcci/	yes	recursive-mulitply-lcci	"递归乘法"
 
-ms0806	https://leetcode.com/problems/hanota-lcci/	https://leetcode-cn.com/problems/hanota-lcci/	yes	hanota-lcci	"汉诺塔问题"
+tms0806	https://leetcode.com/problems/hanota-lcci/	https://leetcode-cn.com/problems/hanota-lcci/	yes	hanota-lcci	"汉诺塔问题"
 
-ms0807	https://leetcode.com/problems/permutation-i-lcci/	https://leetcode-cn.com/problems/permutation-i-lcci/	yes	permutation-i-lcci	"无重复字符串的排列组合"
+tms0807	https://leetcode.com/problems/permutation-i-lcci/	https://leetcode-cn.com/problems/permutation-i-lcci/	yes	permutation-i-lcci	"无重复字符串的排列组合"
 
-ms0808	https://leetcode.com/problems/permutation-ii-lcci/	https://leetcode-cn.com/problems/permutation-ii-lcci/	yes	permutation-ii-lcci	"有重复字符串的排列组合"
+tms0808	https://leetcode.com/problems/permutation-ii-lcci/	https://leetcode-cn.com/problems/permutation-ii-lcci/	yes	permutation-ii-lcci	"有重复字符串的排列组合"
 
-ms0809	https://leetcode.com/problems/bracket-lcci/	https://leetcode-cn.com/problems/bracket-lcci/	yes	bracket-lcci	"括号"
+tms0809	https://leetcode.com/problems/bracket-lcci/	https://leetcode-cn.com/problems/bracket-lcci/	yes	bracket-lcci	"括号"
 
-ms0810	https://leetcode.com/problems/color-fill-lcci/	https://leetcode-cn.com/problems/color-fill-lcci/	yes	color-fill-lcci	"颜色填充"
+tms0810	https://leetcode.com/problems/color-fill-lcci/	https://leetcode-cn.com/problems/color-fill-lcci/	yes	color-fill-lcci	"颜色填充"
 
-ms0811	https://leetcode.com/problems/coin-lcci/	https://leetcode-cn.com/problems/coin-lcci/	yes	coin-lcci	"硬币"
+tms0811	https://leetcode.com/problems/coin-lcci/	https://leetcode-cn.com/problems/coin-lcci/	yes	coin-lcci	"硬币"
 
-ms0812	https://leetcode.com/problems/eight-queens-lcci/	https://leetcode-cn.com/problems/eight-queens-lcci/	yes	eight-queens-lcci	"八皇后"
+tms0812	https://leetcode.com/problems/eight-queens-lcci/	https://leetcode-cn.com/problems/eight-queens-lcci/	yes	eight-queens-lcci	"八皇后"
 
-ms0813	https://leetcode.com/problems/pile-box-lcci/	https://leetcode-cn.com/problems/pile-box-lcci/	yes	pile-box-lcci	"堆箱子"
+tms0813	https://leetcode.com/problems/pile-box-lcci/	https://leetcode-cn.com/problems/pile-box-lcci/	yes	pile-box-lcci	"堆箱子"
 
-ms0814	https://leetcode.com/problems/boolean-evaluation-lcci/	https://leetcode-cn.com/problems/boolean-evaluation-lcci/	yes	boolean-evaluation-lcci	"布尔运算"
+tms0814	https://leetcode.com/problems/boolean-evaluation-lcci/	https://leetcode-cn.com/problems/boolean-evaluation-lcci/	yes	boolean-evaluation-lcci	"布尔运算"
 
-ms1001	https://leetcode.com/problems/sorted-merge-lcci/	https://leetcode-cn.com/problems/sorted-merge-lcci/	yes	sorted-merge-lcci	"合并排序的数组"
+tms1001	https://leetcode.com/problems/sorted-merge-lcci/	https://leetcode-cn.com/problems/sorted-merge-lcci/	yes	sorted-merge-lcci	"合并排序的数组"
 
-ms1002	https://leetcode.com/problems/group-anagrams-lcci/	https://leetcode-cn.com/problems/group-anagrams-lcci/	yes	group-anagrams-lcci	"变位词组"
+tms1002	https://leetcode.com/problems/group-anagrams-lcci/	https://leetcode-cn.com/problems/group-anagrams-lcci/	yes	group-anagrams-lcci	"变位词组"
 
-ms1003	https://leetcode.com/problems/search-rotate-array-lcci/	https://leetcode-cn.com/problems/search-rotate-array-lcci/	yes	search-rotate-array-lcci	"搜索旋转数组"
+tms1003	https://leetcode.com/problems/search-rotate-array-lcci/	https://leetcode-cn.com/problems/search-rotate-array-lcci/	yes	search-rotate-array-lcci	"搜索旋转数组"
 
-ms1005	https://leetcode.com/problems/sparse-array-search-lcci/	https://leetcode-cn.com/problems/sparse-array-search-lcci/	yes	sparse-array-search-lcci	"稀疏数组搜索"
+tms1005	https://leetcode.com/problems/sparse-array-search-lcci/	https://leetcode-cn.com/problems/sparse-array-search-lcci/	yes	sparse-array-search-lcci	"稀疏数组搜索"
 
-ms1009	https://leetcode.com/problems/sorted-matrix-search-lcci/	https://leetcode-cn.com/problems/sorted-matrix-search-lcci/	yes	sorted-matrix-search-lcci	"排序矩阵查找"
+tms1009	https://leetcode.com/problems/sorted-matrix-search-lcci/	https://leetcode-cn.com/problems/sorted-matrix-search-lcci/	yes	sorted-matrix-search-lcci	"排序矩阵查找"
 
-ms1010	https://leetcode.com/problems/rank-from-stream-lcci/	https://leetcode-cn.com/problems/rank-from-stream-lcci/	yes	rank-from-stream-lcci	"数字流的秩"
+tms1010	https://leetcode.com/problems/rank-from-stream-lcci/	https://leetcode-cn.com/problems/rank-from-stream-lcci/	yes	rank-from-stream-lcci	"数字流的秩"
 
-ms1011	https://leetcode.com/problems/peaks-and-valleys-lcci/	https://leetcode-cn.com/problems/peaks-and-valleys-lcci/	yes	peaks-and-valleys-lcci	"峰与谷"
+tms1011	https://leetcode.com/problems/peaks-and-valleys-lcci/	https://leetcode-cn.com/problems/peaks-and-valleys-lcci/	yes	peaks-and-valleys-lcci	"峰与谷"
 
-ms1601	https://leetcode.com/problems/swap-numbers-lcci/	https://leetcode-cn.com/problems/swap-numbers-lcci/	yes	swap-numbers-lcci	"交换数字"
+tms1601	https://leetcode.com/problems/swap-numbers-lcci/	https://leetcode-cn.com/problems/swap-numbers-lcci/	yes	swap-numbers-lcci	"交换数字"
 
-ms1602	https://leetcode.com/problems/words-frequency-lcci/	https://leetcode-cn.com/problems/words-frequency-lcci/	yes	words-frequency-lcci	"单词频率"
+tms1602	https://leetcode.com/problems/words-frequency-lcci/	https://leetcode-cn.com/problems/words-frequency-lcci/	yes	words-frequency-lcci	"单词频率"
 
-ms1603	https://leetcode.com/problems/intersection-lcci/	https://leetcode-cn.com/problems/intersection-lcci/	yes	intersection-lcci	"交点"
+tms1603	https://leetcode.com/problems/intersection-lcci/	https://leetcode-cn.com/problems/intersection-lcci/	yes	intersection-lcci	"交点"
 
-ms1604	https://leetcode.com/problems/tic-tac-toe-lcci/	https://leetcode-cn.com/problems/tic-tac-toe-lcci/	yes	tic-tac-toe-lcci	"井字游戏"
+tms1604	https://leetcode.com/problems/tic-tac-toe-lcci/	https://leetcode-cn.com/problems/tic-tac-toe-lcci/	yes	tic-tac-toe-lcci	"井字游戏"
 
-ms1605	https://leetcode.com/problems/factorial-zeros-lcci/	https://leetcode-cn.com/problems/factorial-zeros-lcci/	yes	factorial-zeros-lcci	"阶乘尾数"
+tms1605	https://leetcode.com/problems/factorial-zeros-lcci/	https://leetcode-cn.com/problems/factorial-zeros-lcci/	yes	factorial-zeros-lcci	"阶乘尾数"
 
-ms1606	https://leetcode.com/problems/smallest-difference-lcci/	https://leetcode-cn.com/problems/smallest-difference-lcci/	yes	smallest-difference-lcci	"最小差"
+tms1606	https://leetcode.com/problems/smallest-difference-lcci/	https://leetcode-cn.com/problems/smallest-difference-lcci/	yes	smallest-difference-lcci	"最小差"
 
-ms1607	https://leetcode.com/problems/maximum-lcci/	https://leetcode-cn.com/problems/maximum-lcci/	yes	maximum-lcci	"最大数值"
+tms1607	https://leetcode.com/problems/maximum-lcci/	https://leetcode-cn.com/problems/maximum-lcci/	yes	maximum-lcci	"最大数值"
 
-ms1608	https://leetcode.com/problems/english-int-lcci/	https://leetcode-cn.com/problems/english-int-lcci/	yes	english-int-lcci	"整数的英语表示"
+tms1608	https://leetcode.com/problems/english-int-lcci/	https://leetcode-cn.com/problems/english-int-lcci/	yes	english-int-lcci	"整数的英语表示"
 
-ms1609	https://leetcode.com/problems/operations-lcci/	https://leetcode-cn.com/problems/operations-lcci/	yes	operations-lcci	"运算"
+tms1609	https://leetcode.com/problems/operations-lcci/	https://leetcode-cn.com/problems/operations-lcci/	yes	operations-lcci	"运算"
 
-ms1610	https://leetcode.com/problems/living-people-lcci/	https://leetcode-cn.com/problems/living-people-lcci/	yes	living-people-lcci	"生存人数"
+tms1610	https://leetcode.com/problems/living-people-lcci/	https://leetcode-cn.com/problems/living-people-lcci/	yes	living-people-lcci	"生存人数"
 
-ms1611	https://leetcode.com/problems/diving-board-lcci/	https://leetcode-cn.com/problems/diving-board-lcci/	yes	diving-board-lcci	"跳水板"
+tms1611	https://leetcode.com/problems/diving-board-lcci/	https://leetcode-cn.com/problems/diving-board-lcci/	yes	diving-board-lcci	"跳水板"
 
-ms1613	https://leetcode.com/problems/bisect-squares-lcci/	https://leetcode-cn.com/problems/bisect-squares-lcci/	yes	bisect-squares-lcci	"平分正方形"
+tms1613	https://leetcode.com/problems/bisect-squares-lcci/	https://leetcode-cn.com/problems/bisect-squares-lcci/	yes	bisect-squares-lcci	"平分正方形"
 
-ms1614	https://leetcode.com/problems/best-line-lcci/	https://leetcode-cn.com/problems/best-line-lcci/	yes	best-line-lcci	"最佳直线"
+tms1614	https://leetcode.com/problems/best-line-lcci/	https://leetcode-cn.com/problems/best-line-lcci/	yes	best-line-lcci	"最佳直线"
 
-ms1615	https://leetcode.com/problems/master-mind-lcci/	https://leetcode-cn.com/problems/master-mind-lcci/	yes	master-mind-lcci	"珠玑妙算"
+tms1615	https://leetcode.com/problems/master-mind-lcci/	https://leetcode-cn.com/problems/master-mind-lcci/	yes	master-mind-lcci	"珠玑妙算"
 
-ms1616	https://leetcode.com/problems/sub-sort-lcci/	https://leetcode-cn.com/problems/sub-sort-lcci/	yes	sub-sort-lcci	"部分排序"
+tms1616	https://leetcode.com/problems/sub-sort-lcci/	https://leetcode-cn.com/problems/sub-sort-lcci/	yes	sub-sort-lcci	"部分排序"
 
-ms1617	https://leetcode.com/problems/contiguous-sequence-lcci/	https://leetcode-cn.com/problems/contiguous-sequence-lcci/	yes	contiguous-sequence-lcci	"连续数列"
+tms1617	https://leetcode.com/problems/contiguous-sequence-lcci/	https://leetcode-cn.com/problems/contiguous-sequence-lcci/	yes	contiguous-sequence-lcci	"连续数列"
 
-ms1618	https://leetcode.com/problems/pattern-matching-lcci/	https://leetcode-cn.com/problems/pattern-matching-lcci/	yes	pattern-matching-lcci	"模式匹配"
+tms1618	https://leetcode.com/problems/pattern-matching-lcci/	https://leetcode-cn.com/problems/pattern-matching-lcci/	yes	pattern-matching-lcci	"模式匹配"
 
-ms1619	https://leetcode.com/problems/pond-sizes-lcci/	https://leetcode-cn.com/problems/pond-sizes-lcci/	yes	pond-sizes-lcci	"水域大小"
+tms1619	https://leetcode.com/problems/pond-sizes-lcci/	https://leetcode-cn.com/problems/pond-sizes-lcci/	yes	pond-sizes-lcci	"水域大小"
 
-ms1620	https://leetcode.com/problems/t9-lcci/	https://leetcode-cn.com/problems/t9-lcci/	yes	t9-lcci	"T9键盘"
+tms1620	https://leetcode.com/problems/t9-lcci/	https://leetcode-cn.com/problems/t9-lcci/	yes	t9-lcci	"T9键盘"
 
-ms1621	https://leetcode.com/problems/sum-swap-lcci/	https://leetcode-cn.com/problems/sum-swap-lcci/	yes	sum-swap-lcci	"交换和"
+tms1621	https://leetcode.com/problems/sum-swap-lcci/	https://leetcode-cn.com/problems/sum-swap-lcci/	yes	sum-swap-lcci	"交换和"
 
-ms1622	https://leetcode.com/problems/langtons-ant-lcci/	https://leetcode-cn.com/problems/langtons-ant-lcci/	yes	langtons-ant-lcci	"兰顿蚂蚁"
+tms1622	https://leetcode.com/problems/langtons-ant-lcci/	https://leetcode-cn.com/problems/langtons-ant-lcci/	yes	langtons-ant-lcci	"兰顿蚂蚁"
 
-ms1624	https://leetcode.com/problems/pairs-with-sum-lcci/	https://leetcode-cn.com/problems/pairs-with-sum-lcci/	yes	pairs-with-sum-lcci	"数对和"
+tms1624	https://leetcode.com/problems/pairs-with-sum-lcci/	https://leetcode-cn.com/problems/pairs-with-sum-lcci/	yes	pairs-with-sum-lcci	"数对和"
 
-ms1625	https://leetcode.com/problems/lru-cache-lcci/	https://leetcode-cn.com/problems/lru-cache-lcci/	yes	lru-cache-lcci	"LRU 缓存"
+tms1625	https://leetcode.com/problems/lru-cache-lcci/	https://leetcode-cn.com/problems/lru-cache-lcci/	yes	lru-cache-lcci	"LRU 缓存"
 
-ms1626	https://leetcode.com/problems/calculator-lcci/	https://leetcode-cn.com/problems/calculator-lcci/	yes	calculator-lcci	"计算器"
+tms1626	https://leetcode.com/problems/calculator-lcci/	https://leetcode-cn.com/problems/calculator-lcci/	yes	calculator-lcci	"计算器"
 
-ms1701	https://leetcode.com/problems/add-without-plus-lcci/	https://leetcode-cn.com/problems/add-without-plus-lcci/	yes	add-without-plus-lcci	"不用加号的加法"
+tms1701	https://leetcode.com/problems/add-without-plus-lcci/	https://leetcode-cn.com/problems/add-without-plus-lcci/	yes	add-without-plus-lcci	"不用加号的加法"
 
-ms1704	https://leetcode.com/problems/missing-number-lcci/	https://leetcode-cn.com/problems/missing-number-lcci/	yes	missing-number-lcci	"消失的数字"
+tms1704	https://leetcode.com/problems/missing-number-lcci/	https://leetcode-cn.com/problems/missing-number-lcci/	yes	missing-number-lcci	"消失的数字"
 
-ms1705	https://leetcode.com/problems/find-longest-subarray-lcci/	https://leetcode-cn.com/problems/find-longest-subarray-lcci/	yes	find-longest-subarray-lcci	"字母与数字"
+tms1705	https://leetcode.com/problems/find-longest-subarray-lcci/	https://leetcode-cn.com/problems/find-longest-subarray-lcci/	yes	find-longest-subarray-lcci	"字母与数字"
 
-ms1706	https://leetcode.com/problems/number-of-2s-in-range-lcci/	https://leetcode-cn.com/problems/number-of-2s-in-range-lcci/	yes	number-of-2s-in-range-lcci	"2出现的次数"
+tms1706	https://leetcode.com/problems/number-of-2s-in-range-lcci/	https://leetcode-cn.com/problems/number-of-2s-in-range-lcci/	yes	number-of-2s-in-range-lcci	"2出现的次数"
 
-ms1707	https://leetcode.com/problems/baby-names-lcci/	https://leetcode-cn.com/problems/baby-names-lcci/	yes	baby-names-lcci	"婴儿名字"
+tms1707	https://leetcode.com/problems/baby-names-lcci/	https://leetcode-cn.com/problems/baby-names-lcci/	yes	baby-names-lcci	"婴儿名字"
 
-ms1708	https://leetcode.com/problems/circus-tower-lcci/	https://leetcode-cn.com/problems/circus-tower-lcci/	yes	circus-tower-lcci	"马戏团人塔"
+tms1708	https://leetcode.com/problems/circus-tower-lcci/	https://leetcode-cn.com/problems/circus-tower-lcci/	yes	circus-tower-lcci	"马戏团人塔"
 
-ms1709	https://leetcode.com/problems/get-kth-magic-number-lcci/	https://leetcode-cn.com/problems/get-kth-magic-number-lcci/	yes	get-kth-magic-number-lcci	"第 k 个数"
+tms1709	https://leetcode.com/problems/get-kth-magic-number-lcci/	https://leetcode-cn.com/problems/get-kth-magic-number-lcci/	yes	get-kth-magic-number-lcci	"第 k 个数"
 
-ms1710	https://leetcode.com/problems/find-majority-element-lcci/	https://leetcode-cn.com/problems/find-majority-element-lcci/	yes	find-majority-element-lcci	"主要元素"
+tms1710	https://leetcode.com/problems/find-majority-element-lcci/	https://leetcode-cn.com/problems/find-majority-element-lcci/	yes	find-majority-element-lcci	"主要元素"
 
-ms1711	https://leetcode.com/problems/find-closest-lcci/	https://leetcode-cn.com/problems/find-closest-lcci/	yes	find-closest-lcci	"单词距离"
+tms1711	https://leetcode.com/problems/find-closest-lcci/	https://leetcode-cn.com/problems/find-closest-lcci/	yes	find-closest-lcci	"单词距离"
 
-ms1712	https://leetcode.com/problems/binode-lcci/	https://leetcode-cn.com/problems/binode-lcci/	yes	binode-lcci	"BiNode"
+tms1712	https://leetcode.com/problems/binode-lcci/	https://leetcode-cn.com/problems/binode-lcci/	yes	binode-lcci	"BiNode"
 
-ms1713	https://leetcode.com/problems/re-space-lcci/	https://leetcode-cn.com/problems/re-space-lcci/	yes	re-space-lcci	"恢复空格"
+tms1713	https://leetcode.com/problems/re-space-lcci/	https://leetcode-cn.com/problems/re-space-lcci/	yes	re-space-lcci	"恢复空格"
 
-ms1714	https://leetcode.com/problems/smallest-k-lcci/	https://leetcode-cn.com/problems/smallest-k-lcci/	yes	smallest-k-lcci	"最小K个数"
+tms1714	https://leetcode.com/problems/smallest-k-lcci/	https://leetcode-cn.com/problems/smallest-k-lcci/	yes	smallest-k-lcci	"最小K个数"
 
-ms1715	https://leetcode.com/problems/longest-word-lcci/	https://leetcode-cn.com/problems/longest-word-lcci/	yes	longest-word-lcci	"最长单词"
+tms1715	https://leetcode.com/problems/longest-word-lcci/	https://leetcode-cn.com/problems/longest-word-lcci/	yes	longest-word-lcci	"最长单词"
 
-ms1716	https://leetcode.com/problems/the-masseuse-lcci/	https://leetcode-cn.com/problems/the-masseuse-lcci/	yes	the-masseuse-lcci	"按摩师"
+tms1716	https://leetcode.com/problems/the-masseuse-lcci/	https://leetcode-cn.com/problems/the-masseuse-lcci/	yes	the-masseuse-lcci	"按摩师"
 
-ms1717	https://leetcode.com/problems/multi-search-lcci/	https://leetcode-cn.com/problems/multi-search-lcci/	yes	multi-search-lcci	"多次搜索"
+tms1717	https://leetcode.com/problems/multi-search-lcci/	https://leetcode-cn.com/problems/multi-search-lcci/	yes	multi-search-lcci	"多次搜索"
 
-ms1718	https://leetcode.com/problems/shortest-supersequence-lcci/	https://leetcode-cn.com/problems/shortest-supersequence-lcci/	yes	shortest-supersequence-lcci	"最短超串"
+tms1718	https://leetcode.com/problems/shortest-supersequence-lcci/	https://leetcode-cn.com/problems/shortest-supersequence-lcci/	yes	shortest-supersequence-lcci	"最短超串"
 
-ms1719	https://leetcode.com/problems/missing-two-lcci/	https://leetcode-cn.com/problems/missing-two-lcci/	yes	missing-two-lcci	"消失的两个数字"
+tms1719	https://leetcode.com/problems/missing-two-lcci/	https://leetcode-cn.com/problems/missing-two-lcci/	yes	missing-two-lcci	"消失的两个数字"
 
-ms1720	https://leetcode.com/problems/continuous-median-lcci/	https://leetcode-cn.com/problems/continuous-median-lcci/	yes	continuous-median-lcci	"连续中值"
+tms1720	https://leetcode.com/problems/continuous-median-lcci/	https://leetcode-cn.com/problems/continuous-median-lcci/	yes	continuous-median-lcci	"连续中值"
 
-ms1721	https://leetcode.com/problems/volume-of-histogram-lcci/	https://leetcode-cn.com/problems/volume-of-histogram-lcci/	yes	volume-of-histogram-lcci	"直方图的水量"
+tms1721	https://leetcode.com/problems/volume-of-histogram-lcci/	https://leetcode-cn.com/problems/volume-of-histogram-lcci/	yes	volume-of-histogram-lcci	"直方图的水量"
 
-ms1722	https://leetcode.com/problems/word-transformer-lcci/	https://leetcode-cn.com/problems/word-transformer-lcci/	yes	word-transformer-lcci	"单词转换"
+tms1722	https://leetcode.com/problems/word-transformer-lcci/	https://leetcode-cn.com/problems/word-transformer-lcci/	yes	word-transformer-lcci	"单词转换"
 
-ms1723	https://leetcode.com/problems/max-black-square-lcci/	https://leetcode-cn.com/problems/max-black-square-lcci/	yes	max-black-square-lcci	"最大黑方阵"
+tms1723	https://leetcode.com/problems/max-black-square-lcci/	https://leetcode-cn.com/problems/max-black-square-lcci/	yes	max-black-square-lcci	"最大黑方阵"
 
-ms1724	https://leetcode.com/problems/max-submatrix-lcci/	https://leetcode-cn.com/problems/max-submatrix-lcci/	yes	max-submatrix-lcci	"最大子矩阵"
+tms1724	https://leetcode.com/problems/max-submatrix-lcci/	https://leetcode-cn.com/problems/max-submatrix-lcci/	yes	max-submatrix-lcci	"最大子矩阵"
 
-ms1725	https://leetcode.com/problems/word-rectangle-lcci/	https://leetcode-cn.com/problems/word-rectangle-lcci/	yes	word-rectangle-lcci	"单词矩阵"
+tms1725	https://leetcode.com/problems/word-rectangle-lcci/	https://leetcode-cn.com/problems/word-rectangle-lcci/	yes	word-rectangle-lcci	"单词矩阵"
 
-ms1726	https://leetcode.com/problems/sparse-similarity-lcci/	https://leetcode-cn.com/problems/sparse-similarity-lcci/	yes	sparse-similarity-lcci	"稀疏相似度"
+tms1726	https://leetcode.com/problems/sparse-similarity-lcci/	https://leetcode-cn.com/problems/sparse-similarity-lcci/	yes	sparse-similarity-lcci	"稀疏相似度"
 
-# 共1988题,其中加锁385题,正常1603题
+tms30	https://leetcode.com/problems/bao-han-minhan-shu-de-zhan-lcof/	https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/	yes	bao-han-minhan-shu-de-zhan-lcof	"包含min函数的栈"
+
+tms34	https://leetcode.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/	yes	er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof	"二叉树中和为某一值的路径"
+
+# 共2015题,其中加锁392题,正常1623题
 
