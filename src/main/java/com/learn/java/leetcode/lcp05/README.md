@@ -66,6 +66,7 @@
 
 # 测试用例
 ```
+LCP 05. 发 LeetCoin 困难
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/coin-bonus/

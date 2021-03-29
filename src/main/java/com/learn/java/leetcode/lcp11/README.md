@@ -29,6 +29,7 @@
 
 # 测试用例
 ```
+LCP 11. 期望个数统计 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/qi-wang-ge-shu-tong-ji/

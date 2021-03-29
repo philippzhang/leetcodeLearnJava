@@ -40,6 +40,7 @@
 
 # 测试用例
 ```
+LCP 01. 猜数字 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/guess-numbers/

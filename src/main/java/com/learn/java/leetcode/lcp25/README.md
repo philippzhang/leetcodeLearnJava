@@ -31,6 +31,7 @@
 
 # 测试用例
 ```
+LCP 25. 古董键盘 困难
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/Uh984O/

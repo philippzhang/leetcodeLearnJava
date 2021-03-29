@@ -33,6 +33,7 @@
 
 # 测试用例
 ```
+LCP 08. 剧情触发时间 中等
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ju-qing-hong-fa-shi-jian/

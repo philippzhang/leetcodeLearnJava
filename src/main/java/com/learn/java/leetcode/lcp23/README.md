@@ -38,6 +38,7 @@
 
 # 测试用例
 ```
+LCP 23. 魔术排列 中等
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er94lq/

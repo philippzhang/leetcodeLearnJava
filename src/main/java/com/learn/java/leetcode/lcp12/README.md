@@ -29,6 +29,7 @@
 
 # 测试用例
 ```
+LCP 12. 小张刷题计划 中等
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/xiao-zhang-shua-ti-ji-hua/

@@ -30,6 +30,7 @@
 
 # 测试用例
 ```
+LCP 17. 速算机器人 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/nGK0Fy/

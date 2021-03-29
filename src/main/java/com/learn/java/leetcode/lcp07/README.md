@@ -30,6 +30,7 @@
 
 # 测试用例
 ```
+LCP 07. 传递信息 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/chuan-di-xin-xi/

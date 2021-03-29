@@ -54,6 +54,7 @@
 
 # 测试用例
 ```
+LCP 03. 机器人大冒险 中等
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/programmable-robot/

@@ -39,6 +39,7 @@
 
 # 测试用例
 ```
+LCP 24. 数字游戏 困难
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/5TxKeK/

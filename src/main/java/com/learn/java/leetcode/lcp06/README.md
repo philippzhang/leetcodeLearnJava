@@ -22,6 +22,7 @@
 
 # 测试用例
 ```
+LCP 06. 拿硬币 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/na-ying-bi/

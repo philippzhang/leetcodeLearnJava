@@ -46,6 +46,7 @@
 
 # 测试用例
 ```
+LCP 02. 分式化简 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/deep-dark-fraction/

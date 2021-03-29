@@ -37,6 +37,7 @@
 
 # 测试用例
 ```
+LCP 13. 寻宝 困难
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/xun-bao/

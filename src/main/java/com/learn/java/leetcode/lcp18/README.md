@@ -33,6 +33,7 @@
 
 # 测试用例
 ```
+LCP 18. 早餐组合 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/2vYnGI/

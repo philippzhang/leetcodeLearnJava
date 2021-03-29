@@ -39,6 +39,7 @@
 
 # 测试用例
 ```
+LCP 22. 黑白方格画 简单
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ccw6C7/
