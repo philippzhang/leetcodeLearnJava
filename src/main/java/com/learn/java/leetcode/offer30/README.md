@@ -37,6 +37,13 @@ minStack.min();   --> 返回 -2.
 
 # 测试用例
 ```
+剑指 Offer 30. 包含min函数的栈
+Main.funcListTest
+---
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+=[null,null,null,null,-3,null,0,-2]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/

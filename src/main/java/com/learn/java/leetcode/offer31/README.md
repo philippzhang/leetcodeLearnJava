@@ -43,6 +43,16 @@ push(5), pop() -> 5, pop() -> 3, pop() -> 2, pop() -> 1
 
 # 测试用例
 ```
+剑指 Offer 31. 栈的压入、弹出序列
+Solution.validateStackSequences
+---
+[1,2,3,4,5]
+[4,5,3,2,1]
+=true
+---
+[1,2,3,4,5]
+[4,3,5,1,2]
+=false
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/
