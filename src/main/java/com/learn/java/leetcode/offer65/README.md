@@ -27,6 +27,13 @@
 
 # 测试用例
 ```
+剑指 Offer 65. 不用加减乘除做加法
+Solution.add
+---
+1
+1
+
+=2
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/

@@ -35,6 +35,18 @@
 
 # 测试用例
 ```
+剑指 Offer 59 - I. 滑动窗口的最大值
+Solution.maxSlidingWindow
+---
+[1,3,-1,-3,5,3,6,7]
+3
+
+=[3,3,5,5,6,7] 
+---
+[]
+0
+
+=[]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/

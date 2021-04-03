@@ -76,6 +76,40 @@
 
 # 测试用例
 ```
+剑指 Offer 67. 把字符串转换成整数
+Solution.myAtoi
+---
+"42"
+
+=42
+---
+"   -42"
+
+=-42
+---
+"4193 with words"
+
+=4193
+---
+"words and 987"
+
+=0
+---
+"-91283472332"
+
+=-2147483648
+---
++1
+
+=1
+---
+"  0000000000012345678"
+
+=12345678
+---
+"-01324000"
+
+=-1324000
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/

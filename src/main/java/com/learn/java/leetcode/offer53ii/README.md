@@ -34,6 +34,16 @@
 
 # 测试用例
 ```
+剑指 Offer 53 - II. 0～n-1中缺失的数字
+Solution.missingNumber
+---
+[0,1,3]
+
+=2
+---
+[0,1,2,3,4,5,6,7,9]
+
+=8
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/

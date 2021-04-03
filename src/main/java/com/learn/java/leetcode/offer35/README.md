@@ -66,6 +66,26 @@
 
 # 测试用例
 ```
+剑指 Offer 35. 复杂链表的复制
+Solution.copyRandomList
+---
+{"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1}
+
+={"$id":"1","next":{"$id":"2","next":null,"random":{"$ref":"2"},"val":2},"random":{"$ref":"2"},"val":1}
+
+$disprint
+---
+null
+
+=null
+
+$disprint
+---
+{}
+
+={}
+
+$disprint
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/fu-za-lian-biao-de-fu-zhi-lcof/

@@ -23,6 +23,13 @@
 
 # 测试用例
 ```
+剑指 Offer 22. 链表中倒数第k个节点
+Solution.getKthFromEnd
+---
+[1,2,3,4,5]
+2
+
+=[4,5]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/

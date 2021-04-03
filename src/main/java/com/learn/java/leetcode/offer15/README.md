@@ -49,6 +49,12 @@
 
 # 测试用例
 ```
+剑指 Offer 15. 二进制中1的个数
+Solution.hammingWeight
+---
+00000000000000000000000000001011
+
+=3
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/

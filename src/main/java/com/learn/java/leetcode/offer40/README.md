@@ -35,6 +35,19 @@
 
 # 测试用例
 ```
+剑指 Offer 40. 最小的k个数
+Solution.getLeastNumbers
+---
+[3,2,1],
+2
+
+=[1,2]
+=[2,1]
+---
+[0,1,2,1]
+1
+
+=[0]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/

@@ -27,6 +27,12 @@
 
 # 测试用例
 ```
+剑指 Offer 37. 序列化二叉树
+Main.test
+---
+[1,2,3,null,null,4,5]
+
+=[1,2,3,null,null,4,5]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/

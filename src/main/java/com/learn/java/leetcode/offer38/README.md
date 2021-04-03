@@ -31,6 +31,14 @@
 
 # 测试用例
 ```
+剑指 Offer 38. 字符串的排列
+Solution.permutation
+---
+"abc"
+
+=["abc","acb","bac","bca","cab","cba"]
+
+$disorder
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/zi-fu-chuan-de-pai-lie-lcof/

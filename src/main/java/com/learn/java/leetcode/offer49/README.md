@@ -28,6 +28,12 @@
 
 # 测试用例
 ```
+剑指 Offer 49. 丑数
+Solution.nthUglyNumber
+---
+10
+
+=12
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/chou-shu-lcof/

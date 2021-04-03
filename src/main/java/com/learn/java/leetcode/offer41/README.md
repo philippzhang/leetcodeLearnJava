@@ -47,6 +47,18 @@
 
 # 测试用例
 ```
+剑指 Offer 41. 数据流中的中位数
+Main.funcListTest
+---
+["MedianFinder","addNum","addNum","findMedian","addNum","findMedian"]
+[[],[1],[2],[],[3],[]]
+
+=[null,null,null,1.5,null,2.0]
+---
+["MedianFinder","addNum","findMedian","addNum","findMedian","addNum","findMedian","addNum","findMedian","addNum","findMedian"]
+[[],[-1],[],[-2],[],[-3],[],[-4],[],[-5],[]]
+
+=[null,null,-1.0,null,-1.5,null,-2.0,null,-2.5,null,-3.0]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-ju-liu-zhong-de-zhong-wei-shu-lcof/

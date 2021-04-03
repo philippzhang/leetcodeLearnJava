@@ -26,6 +26,12 @@
 
 # 测试用例
 ```
+剑指 Offer 17. 打印从1到最大的n位数
+Solution.printNumbers
+---
+1
+
+=[1,2,3,4,5,6,7,8,9]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/

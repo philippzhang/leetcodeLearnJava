@@ -33,6 +33,12 @@
 
 # 测试用例
 ```
+剑指 Offer 14- I. 剪绳子
+Solution.cuttingRope
+---
+2
+
+=1
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/jian-sheng-zi-lcof/

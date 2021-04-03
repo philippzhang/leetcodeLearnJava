@@ -51,6 +51,20 @@
 
 # 测试用例
 ```
+剑指 Offer 58 - I. 翻转单词顺序
+Solution.reverseWords
+---
+"the sky is blue"
+
+="blue is sky the"
+---
+"  hello world!  "
+
+="world! hello"
+---
+"a good   example"
+
+="example good a"
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/

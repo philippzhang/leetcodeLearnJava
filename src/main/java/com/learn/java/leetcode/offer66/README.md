@@ -27,6 +27,12 @@
 
 # 测试用例
 ```
+剑指 Offer 66. 构建乘积数组
+Solution.constructArr
+---
+[1,2,3,4,5]
+
+=[120,60,40,30,24]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/

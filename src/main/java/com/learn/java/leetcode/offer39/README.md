@@ -36,6 +36,16 @@
 
 # 测试用例
 ```
+剑指 Offer 39. 数组中出现次数超过一半的数字
+Solution.majorityElement
+---
+[3,2,3]
+
+=3
+---
+[2,2,1,1,1,2,2]
+
+=2
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zu-zhong-chu-xian-ci-shu-chao-guo-yi-ban-de-shu-zi-lcof/

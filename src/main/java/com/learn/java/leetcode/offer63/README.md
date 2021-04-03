@@ -41,6 +41,16 @@
 
 # 测试用例
 ```
+剑指 Offer 63. 股票的最大利润
+Solution.maxProfit
+---
+[7,1,5,3,6,4]
+
+=5
+---
+[7,6,4,3,1]
+
+=0
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/

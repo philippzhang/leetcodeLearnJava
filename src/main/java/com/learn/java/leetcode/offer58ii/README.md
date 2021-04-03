@@ -35,6 +35,18 @@
 
 # 测试用例
 ```
+剑指 Offer 58 - II. 左旋转字符串
+Solution.reverseLeftWords
+---
+"abcdefg"
+2
+
+="cdefgab"
+---
+"lrloseumgh"
+6
+
+="umghlrlose"
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/

@@ -9,6 +9,9 @@
 **示例 1：** 
 
 ```
+剑指 Offer 59 - II. 队列的最大值
+Main.funcListTest
+---
 输入: 
 ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
 [[],[1],[2],[],[],[]]
@@ -40,6 +43,17 @@
 
 # 测试用例
 ```
+---
+["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
+[[],[1],[2],[],[],[]]
+
+=[null,null,null,2,1,2]
+---
+["MaxQueue","pop_front","max_value"]
+[[],[],[]]
+
+=[null,-1,-1]
+
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/

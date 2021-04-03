@@ -39,6 +39,15 @@
 
 # 测试用例
 ```
+剑指 Offer 57 - II. 和为s的连续正数序列
+Solution.findContinuousSequence
+---
+9
+
+=[[2,3,4],[4,5]]
+15
+
+=[[1,2,3,4,5],[4,5,6],[7,8]]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/

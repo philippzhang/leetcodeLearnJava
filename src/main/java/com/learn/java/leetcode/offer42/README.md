@@ -34,6 +34,12 @@
 
 # 测试用例
 ```
+剑指 Offer 42. 连续子数组的最大和
+Solution.maxSubArray
+---
+[-2,1,-3,4,-1,2,1,-5,4]
+
+=6
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/

@@ -37,6 +37,16 @@
 
 # 测试用例
 ```
+剑指 Offer 61. 扑克牌中的顺子
+Solution.isStraight
+---
+[1,2,3,4,5]
+
+=true
+---
+[0,0,1,2,5]
+
+=true
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/

@@ -43,6 +43,12 @@
 
 # 测试用例
 ```
+剑指 Offer 33. 二叉搜索树的后序遍历序列
+Solution.verifyPostorder
+---
+[4, 8, 6, 12, 16, 14, 10]
+
+=true
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/

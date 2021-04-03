@@ -32,6 +32,12 @@
 
 # 测试用例
 ```
+剑指 Offer 47. 礼物的最大价值
+Solution.maxValue
+---
+[[1,3,1],[1,5,1],[4,2,1]]
+
+=12
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/

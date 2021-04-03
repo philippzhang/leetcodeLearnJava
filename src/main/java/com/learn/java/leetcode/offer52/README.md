@@ -67,6 +67,58 @@
 
 # 测试用例
 ```
+剑指 Offer 52. 两个链表的第一个公共节点
+Solution.getIntersectionNode
+---
+8
+[4,1,8,4,5]
+[5,0,1,8,4,5]
+2
+3
+
+=Intersected at '8'
+
+$disprint
+---
+2
+[0,9,1,2,4]
+[3,2,4]
+3
+1
+
+=Intersected at '2'
+
+$disprint
+---
+0
+[2,6,4]
+[1,5]
+3
+2
+
+=No intersection
+
+$disprint
+---
+1
+[1,6,4]
+[1,6,4]
+0
+0
+
+=Intersected at '1'
+
+$disprint
+---
+1
+[2,1,6,4]
+[1,6,4]
+1
+0
+
+=Intersected at '1'
+
+$disprint
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/

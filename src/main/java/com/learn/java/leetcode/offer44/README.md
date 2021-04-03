@@ -38,6 +38,16 @@
 
 # 测试用例
 ```
+剑指 Offer 44. 数字序列中某一位的数字
+Solution.findNthDigit
+---
+3
+
+=3
+---
+11
+
+=0
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zi-xu-lie-zhong-mou-yi-wei-de-shu-zi-lcof/

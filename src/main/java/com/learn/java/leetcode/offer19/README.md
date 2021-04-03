@@ -69,6 +69,33 @@ p = "mis*is*p*."
 
 # 测试用例
 ```
+剑指 Offer 19. 正则表达式匹配
+Solution.isMatch
+---
+"aa"
+"a"
+
+=false
+---
+"aa"
+"a*"
+
+=true
+---
+"ab"
+".*"
+
+=true
+---
+"aab"
+"c*a*b"
+
+=true
+---
+"mississippi"
+"mis*is*p*."
+
+=false
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/zheng-ze-biao-da-shi-pi-pei-lcof/

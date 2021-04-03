@@ -36,6 +36,18 @@
 
 # 测试用例
 ```
+剑指 Offer 56 - I. 数组中数字出现的次数
+Solution.singleNumbers
+---
+[4,1,4,6]
+
+=[1,6]
+=[6,1]
+---
+[1,2,10,4,1,4,3,3]
+
+=[2,10]
+=[10,2]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/

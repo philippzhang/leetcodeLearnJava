@@ -36,6 +36,20 @@
 
 # 测试用例
 ```
+剑指 Offer 57. 和为s的两个数字
+Solution.twoSum
+---
+[2,7,11,15]
+9
+
+=[2,7]
+=[7,2]
+---
+[10,26,30,31,47,60]
+40
+
+=[10,30]
+=[30,10]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/

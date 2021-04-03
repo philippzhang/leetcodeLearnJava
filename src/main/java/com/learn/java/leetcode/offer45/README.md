@@ -38,6 +38,16 @@
 
 # 测试用例
 ```
+剑指 Offer 45. 把数组排成最小的数
+Solution.minNumber
+---
+[10,2]
+
+="102"
+---
+[3,30,34,5,9]
+
+="3033459"
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/

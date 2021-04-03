@@ -45,6 +45,18 @@
 
 # 测试用例
 ```
+剑指 Offer 54. 二叉搜索树的第k大节点
+Solution.kthLargest
+---
+[3,1,4,null,2]
+1
+
+=4
+---
+[5,3,6,2,4,null,null,1]
+3
+
+=4
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/

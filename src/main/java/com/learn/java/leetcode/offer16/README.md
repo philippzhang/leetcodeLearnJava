@@ -45,6 +45,13 @@
 
 # 测试用例
 ```
+剑指 Offer 16. 数值的整数次方
+Solution.myPow
+---
+2.00000
+10
+
+=1024.00000
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/
