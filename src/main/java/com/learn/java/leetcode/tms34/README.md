@@ -45,6 +45,17 @@
 # 测试用例
 ```
 面试题34. 二叉树中和为某一值的路径 中等
+Solution.pathSum
+---
+[5,4,8,11,null,13,4,7,2,null,null,5,1]
+22
+
+=[[5,4,11,2],[5,8,4,5]]
+---
+[1,2]
+1
+
+=[]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/
