@@ -77,7 +77,7 @@
 # 测试用例
 ```
 剑指 Offer 67. 把字符串转换成整数
-Solution.myAtoi
+Solution.strToInt
 ---
 "42"
 
@@ -110,6 +110,14 @@ Solution.myAtoi
 "-01324000"
 
 =-1324000
+---
+"9223372036854775808"
+
+=2147483647
+---
+"-2147483647"
+
+=-2147483647
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/ba-zi-fu-chuan-zhuan-huan-cheng-zheng-shu-lcof/
