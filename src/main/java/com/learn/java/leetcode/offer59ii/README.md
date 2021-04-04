@@ -9,9 +9,6 @@
 **示例 1：** 
 
 ```
-剑指 Offer 59 - II. 队列的最大值
-Main.funcListTest
----
 输入: 
 ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
 [[],[1],[2],[],[],[]]
@@ -43,6 +40,8 @@ Main.funcListTest
 
 # 测试用例
 ```
+剑指 Offer 59 - II. 队列的最大值
+Main.funcListTest
 ---
 ["MaxQueue","push_back","push_back","max_value","pop_front","max_value"]
 [[],[1],[2],[],[],[]]
@@ -53,6 +52,9 @@ Main.funcListTest
 [[],[],[]]
 
 =[null,-1,-1]
+---
+["MaxQueue","push_back","push_back","push_back","pop_front","max_value"]
+[[],[1],[2],[3],[],[],[]]
 
 ```
 

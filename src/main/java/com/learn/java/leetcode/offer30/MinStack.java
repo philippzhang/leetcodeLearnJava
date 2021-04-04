@@ -13,9 +13,7 @@ public class MinStack {
 
 	public void push(int val){
 		dataStack.push(val);
-		if(minStack.isEmpty()){
-			minStack.push(val);
-		}else if(minStack.peek()>=val){
+		if(minStack.isEmpty()||minStack.peek()>=val){
 			minStack.push(val);
 		}
 	}
@@ -24,8 +22,7 @@ public class MinStack {
 		if(dataStack.isEmpty() || minStack.isEmpty()){
 			throw new RuntimeException("null");
 		}
-		int val = dataStack.pop();
-		if(minStack.size()>0 && minStack.peek()==val){
+		if(dataStack.pop().equals(minStack.peek())){
 			minStack.pop();
 		}
 	}

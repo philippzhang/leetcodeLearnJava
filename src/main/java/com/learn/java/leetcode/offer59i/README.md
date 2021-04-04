@@ -47,6 +47,11 @@ Solution.maxSlidingWindow
 0
 
 =[]
+---
+[-7,-8,7,5,7,1,6,0]
+4
+
+=[7,7,7,7,7]
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/

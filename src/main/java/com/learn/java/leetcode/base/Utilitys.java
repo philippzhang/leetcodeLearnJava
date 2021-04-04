@@ -41,6 +41,13 @@ public class Utilitys {
 		List<List<String>> testList = readTxtFile(mainClass);
 		//类方法定义
 		List<String> classList = testList.get(0);
+		if (classList==null||classList.size() <= 1) {
+
+			System.out.println("未定义算法主类和方法!");
+			System.out.println("-----------------------------");
+			//return false;
+			throw new NoImplException("未定义算法主类和方法!");
+		}
 		//备注
 		String algorithmRemark = classList.get(0);
 
@@ -49,13 +56,6 @@ public class Utilitys {
 		System.out.println("-----------------------------");
 
 		boolean testFlag = true;
-		if (classList.size() <= 1) {
-
-			System.out.println("未定义算法主类和方法!");
-			System.out.println("-----------------------------");
-			//return false;
-			throw new NoImplException("未定义算法主类和方法!");
-		}
 
 		for (int i = 1; i < classList.size(); i++) {
 			String funcStr = classList.get(i);
