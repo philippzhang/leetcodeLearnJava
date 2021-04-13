@@ -39,6 +39,7 @@
 ```
 剑指 Offer 56 - II. 数组中数字出现的次数 II
 Solution.singleNumber
+Solution.singleNumber2
 ---
 [3,4,3,3]
 
@@ -47,6 +48,10 @@ Solution.singleNumber
 [9,1,7,9,7,9,7]
 
 =1
+---
+[1,1,6,1]
+
+=6
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/
