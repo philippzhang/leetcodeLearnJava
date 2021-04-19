@@ -52,9 +52,17 @@
 剑指 Offer 15. 二进制中1的个数
 Solution.hammingWeight
 ---
-00000000000000000000000000001011
+11
 
 =3
+---
+128
+
+=1
+---
+-3
+
+=31
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
