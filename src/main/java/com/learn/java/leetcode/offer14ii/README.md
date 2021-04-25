@@ -45,6 +45,10 @@ Solution.cuttingRope
 2
 
 =1
+---
+120
+
+=953271190
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/

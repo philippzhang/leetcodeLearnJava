@@ -35,10 +35,15 @@
 ```
 剑指 Offer 14- I. 剪绳子
 Solution.cuttingRope
+Solution.cuttingRope2
 ---
 2
 
 =1
+---
+10
+
+=36
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/jian-sheng-zi-lcof/
