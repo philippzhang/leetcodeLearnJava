@@ -36,11 +36,19 @@
 ```
 剑指 Offer 13. 机器人的运动范围
 Solution.movingCount
+Solution.movingCount2
 ---
-1
 2
+3
+1
 
-=2
+=3
+---
+3
+1
+0
+
+=1
 
 ```
 
