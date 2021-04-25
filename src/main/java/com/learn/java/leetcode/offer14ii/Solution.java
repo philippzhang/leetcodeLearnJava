@@ -28,4 +28,5 @@ public class Solution {
 			return (int)(res*6 % p);
 		}
 	}
+
 }
