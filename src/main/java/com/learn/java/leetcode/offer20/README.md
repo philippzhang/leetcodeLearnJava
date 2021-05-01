@@ -15,6 +15,27 @@
 ```
 剑指 Offer 20. 表示数值的字符串
 Solution.isNumber
+Solution.isNumber2
+---
+" 4e3."
+
+=false
+---
+".1."
+
+=false
+---
+"3."
+
+=true
+---
+".-4"
+
+=false
+---
+"0"
+
+=true
 ---
 "+100"
 
@@ -43,6 +64,7 @@ Solution.isNumber
 "12e"
 
 =false
+---
 "1a3.14
 
 =false
@@ -58,6 +80,27 @@ Solution.isNumber
 "12e+5.4"
 
 =false
+---
+"."
+
+=false
+---
+" "
+
+=false
+---
+".1"
+
+=true
+---
+". 1"
+
+=false
+---
+"4e+"
+
+=false
+
 ```
 
 [cnTitle]: https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/
